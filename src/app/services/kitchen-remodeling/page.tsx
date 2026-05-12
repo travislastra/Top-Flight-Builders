@@ -2,14 +2,17 @@ import Link from "next/link";
 import Img from "@/components/Img";
 import ContactBanner from "@/components/ContactBanner";
 
-export const metadata = { title: "Kitchen Remodeling | TopFlight Builders" };
+export const metadata = {
+  title: "Kitchen Remodeling Atlanta GA | TopFlight Builders",
+  description: "Custom kitchen remodeling in Atlanta, GA. Cabinets, countertops, layout redesign, and full renovation. Free estimates from Marietta's trusted contractors. Call (404) 369-7129.",
+};
 
 export default function KitchenPage() {
   return (
     <>
       <section className="bg-[#0D1B2E] py-20 px-6 text-center">
         <p className="text-[#4A7FE8] font-semibold text-sm uppercase tracking-widest mb-3">Kitchen Remodeling</p>
-        <h1 className="font-sans text-5xl font-extrabold text-white mb-5">Transform Your Kitchen</h1>
+        <h1 className="font-sans text-5xl font-extrabold text-white mb-5">Kitchen Remodeling in Atlanta, GA</h1>
         <p className="text-gray-300 text-lg max-w-xl mx-auto">Custom cabinetry, countertops, layout redesign — we build kitchens that work as beautifully as they look.</p>
       </section>
 

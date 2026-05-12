@@ -1,14 +1,17 @@
 import Link from "next/link";
 import ContactBanner from "@/components/ContactBanner";
 
-export const metadata = { title: "Restoration | TopFlight Builders" };
+export const metadata = {
+  title: "Home Restoration Services Atlanta GA | TopFlight Builders",
+  description: "Water damage restoration, fire damage repair, and structural restoration in Atlanta, GA. Fast response, expert crews. Call TopFlight Builders at (404) 369-7129.",
+};
 
 export default function RestorationPage() {
   return (
     <>
       <section className="bg-[#0D1B2E] py-20 px-6 text-center">
         <p className="text-[#4A7FE8] font-semibold text-sm uppercase tracking-widest mb-3">Restoration</p>
-        <h1 className="font-sans text-5xl font-extrabold text-white mb-5">Restore & Rebuild</h1>
+        <h1 className="font-sans text-5xl font-extrabold text-white mb-5">Home Restoration Services in Atlanta, GA</h1>
         <p className="text-gray-300 text-lg max-w-xl mx-auto">Expert restoration services for water damage, structural repairs, and full property recovery.</p>
       </section>
 

@@ -1,14 +1,17 @@
 import Link from "next/link";
 import ContactBanner from "@/components/ContactBanner";
 
-export const metadata = { title: "Full Home Remodeling | TopFlight Builders" };
+export const metadata = {
+  title: "Full Home Remodeling Atlanta GA | TopFlight Builders",
+  description: "Complete home renovations in Atlanta, GA. From design to finish — kitchens, bathrooms, additions, and whole-house remodels. Free estimates. Call (404) 369-7129.",
+};
 
 export default function FullHomePage() {
   return (
     <>
       <section className="bg-[#0D1B2E] py-20 px-6 text-center">
         <p className="text-[#4A7FE8] font-semibold text-sm uppercase tracking-widest mb-3">Full Home Remodeling</p>
-        <h1 className="font-sans text-5xl font-extrabold text-white mb-5">Reimagine Your Entire Home</h1>
+        <h1 className="font-sans text-5xl font-extrabold text-white mb-5">Full Home Remodeling in Atlanta, GA</h1>
         <p className="text-gray-300 text-lg max-w-xl mx-auto">Complete home renovations — cohesive design, seamless execution, stunning results.</p>
       </section>
 

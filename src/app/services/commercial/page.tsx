@@ -1,14 +1,17 @@
 import Link from "next/link";
 import ContactBanner from "@/components/ContactBanner";
 
-export const metadata = { title: "Commercial Services | TopFlight Builders" };
+export const metadata = {
+  title: "Commercial Renovation Atlanta GA | TopFlight Builders",
+  description: "Commercial remodeling and build-out services in Atlanta, GA. Office renovations, retail spaces, investment properties. Licensed & insured. Call (404) 369-7129.",
+};
 
 export default function CommercialPage() {
   return (
     <>
       <section className="bg-[#0D1B2E] py-20 px-6 text-center">
         <p className="text-[#4A7FE8] font-semibold text-sm uppercase tracking-widest mb-3">Commercial</p>
-        <h1 className="font-sans text-5xl font-extrabold text-white mb-5">Commercial Renovation</h1>
+        <h1 className="font-sans text-5xl font-extrabold text-white mb-5">Commercial Renovation in Atlanta, GA</h1>
         <p className="text-gray-300 text-lg max-w-xl mx-auto">Professional build-outs and renovations for businesses across the Greater Atlanta area.</p>
       </section>
 

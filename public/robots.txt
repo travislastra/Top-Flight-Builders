@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://travislastra.github.io/Top-Flight-Builders/sitemap.xml
