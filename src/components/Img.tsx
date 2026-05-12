@@ -1,13 +1,38 @@
-"use client";
+const BASE = "/Top-Flight-Builders";
 
-import NextImage, { type ImageProps } from "next/image";
+interface ImgProps {
+  src: string;
+  alt: string;
+  width?: number;
+  height?: number;
+  fill?: boolean;
+  className?: string;
+  priority?: boolean;
+}
 
-const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+export default function Img({ src, alt, fill, className = "", width, height, priority }: ImgProps) {
+  const resolved = src.startsWith("/") ? `${BASE}${src}` : src;
 
-export default function Img({ src, ...props }: ImageProps) {
-  const resolved =
-    typeof src === "string" && src.startsWith("/")
-      ? `${BASE}${src}`
-      : src;
-  return <NextImage src={resolved} {...props} />;
+  if (fill) {
+    return (
+      // eslint-disable-next-line @next/next/no-img-element
+      <img
+        src={resolved}
+        alt={alt}
+        className={`absolute inset-0 w-full h-full ${className}`}
+      />
+    );
+  }
+
+  return (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src={resolved}
+      alt={alt}
+      width={width}
+      height={height}
+      className={className}
+      loading={priority ? "eager" : "lazy"}
+    />
+  );
 }
