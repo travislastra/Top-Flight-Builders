@@ -77,7 +77,7 @@ export default function BlogPage() {
             return (
               <Link
                 key={post.id}
-                href={`/Top-Flight-Builders/blog/${post.slug}`}
+                href={`/blog/${post.slug}`}
                 className={`group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg hover:border-[#1E4FBF]/20 transition-all flex flex-col overflow-hidden ${
                   isFeatured ? "md:col-span-2 lg:col-span-2" : ""
                 }`}

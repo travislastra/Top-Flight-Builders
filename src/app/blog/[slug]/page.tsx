@@ -37,7 +37,7 @@ export default async function BlogPostPage({ params }: Props) {
       <section className="bg-[#0D1B2E] py-16 px-6">
         <div className="max-w-4xl mx-auto">
           <Link
-            href="/Top-Flight-Builders/blog"
+            href="/blog"
             className="inline-flex items-center gap-2 text-[#4A7FE8] text-sm font-semibold hover:text-white transition-colors mb-6"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -83,7 +83,7 @@ export default async function BlogPostPage({ params }: Props) {
                   Get a free, no-obligation estimate from Greater Atlanta&apos;s trusted remodeling experts.
                 </p>
                 <Link
-                  href="/Top-Flight-Builders/contact"
+                  href="/contact"
                   className="inline-block bg-[#1E4FBF] hover:bg-[#163A99] text-white font-bold px-7 py-3 rounded-lg transition-colors uppercase tracking-wide text-sm"
                 >
                   Get a Free Estimate
@@ -120,7 +120,7 @@ export default async function BlogPostPage({ params }: Props) {
                   </h3>
                   <div className="space-y-4">
                     {related.map((r) => (
-                      <Link key={r.id} href={`/Top-Flight-Builders/blog/${r.slug}`} className="block group">
+                      <Link key={r.id} href={`/blog/${r.slug}`} className="block group">
                         <p className="text-sm font-semibold text-[#0D1B2E] group-hover:text-[#1E4FBF] leading-snug transition-colors">
                           {r.title}
                         </p>
@@ -135,7 +135,7 @@ export default async function BlogPostPage({ params }: Props) {
                 <p className="font-sans font-bold text-white text-sm mb-1">Quality · Reliability · Value</p>
                 <p className="text-gray-400 text-xs mb-4">Greater Atlanta&apos;s trusted remodeling experts</p>
                 <Link
-                  href="/Top-Flight-Builders/contact"
+                  href="/contact"
                   className="block bg-[#1E4FBF] hover:bg-[#163A99] text-white font-bold text-xs px-4 py-2.5 rounded-lg transition-colors uppercase tracking-wide"
                 >
                   Get a Quote
@@ -153,7 +153,7 @@ export default async function BlogPostPage({ params }: Props) {
             <h2 className="font-sans font-extrabold text-2xl text-[#0D1B2E] mb-8">More {post.catLabel} Articles</h2>
             <div className="grid md:grid-cols-3 gap-5">
               {related.map((r) => (
-                <Link key={r.id} href={`/Top-Flight-Builders/blog/${r.slug}`} className="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+                <Link key={r.id} href={`/blog/${r.slug}`} className="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
                   <div className="h-24 bg-gradient-to-br from-[#0D1B2E] to-[#1E4FBF] flex items-center justify-center relative">
                     <span className="font-sans font-extrabold text-4xl text-white/10 select-none">TFB</span>
                     <span className="absolute bottom-2 left-3 text-xl">{r.icon}</span>
@@ -168,7 +168,7 @@ export default async function BlogPostPage({ params }: Props) {
               ))}
             </div>
             <div className="text-center mt-8">
-              <Link href="/Top-Flight-Builders/blog" className="inline-block border-2 border-[#1E4FBF] text-[#1E4FBF] hover:bg-[#1E4FBF] hover:text-white font-bold px-7 py-3 rounded-lg transition-colors uppercase tracking-wide text-sm">
+              <Link href="/blog" className="inline-block border-2 border-[#1E4FBF] text-[#1E4FBF] hover:bg-[#1E4FBF] hover:text-white font-bold px-7 py-3 rounded-lg transition-colors uppercase tracking-wide text-sm">
                 View All Articles
               </Link>
             </div>
