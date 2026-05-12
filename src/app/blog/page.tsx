@@ -33,22 +33,6 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* Stats bar */}
-      <div className="bg-[#152438] border-b border-white/10 py-5 px-6">
-        <div className="max-w-7xl mx-auto flex flex-wrap gap-8">
-          {[
-            { num: "29", label: "Articles" },
-            { num: "9", label: "Categories" },
-            { num: "2025", label: "Season" },
-            { num: "ATL", label: "Focus Market" },
-          ].map((s) => (
-            <div key={s.label}>
-              <div className="font-sans text-2xl font-extrabold text-[#4A7FE8]">{s.num}</div>
-              <div className="text-gray-400 text-xs uppercase tracking-widest">{s.label}</div>
-            </div>
-          ))}
-        </div>
-      </div>
 
       {/* Filter bar */}
       <div className="bg-white border-b border-gray-200 px-6 py-4 sticky top-[69px] z-40">
