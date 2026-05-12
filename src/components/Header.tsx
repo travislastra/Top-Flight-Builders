@@ -84,12 +84,15 @@ export default function Header() {
         {/* Desktop nav */}
         <nav className="hidden lg:flex items-center gap-1">
           {navItems.map((item) => (
-            <div key={item.label} className="relative">
+            <div
+              key={item.label}
+              className="relative"
+              onMouseEnter={() => item.children && setOpenDropdown(item.label)}
+              onMouseLeave={() => item.children && setOpenDropdown(null)}
+            >
               {item.children ? (
                 <button
                   className="flex items-center gap-1 px-4 py-2 text-sm font-semibold text-gray-200 hover:text-white hover:bg-white/10 rounded transition-colors uppercase tracking-wide"
-                  onMouseEnter={() => setOpenDropdown(item.label)}
-                  onMouseLeave={() => setOpenDropdown(null)}
                   onClick={() =>
                     setOpenDropdown(
                       openDropdown === item.label ? null : item.label
@@ -120,13 +123,9 @@ export default function Header() {
                 </Link>
               )}
 
-              {/* Dropdown */}
+              {/* Dropdown — no top margin so there's no gap to cross */}
               {item.children && openDropdown === item.label && (
-                <div
-                  className="absolute left-0 top-full mt-1 w-52 bg-white rounded-lg shadow-xl py-1 z-50"
-                  onMouseEnter={() => setOpenDropdown(item.label)}
-                  onMouseLeave={() => setOpenDropdown(null)}
-                >
+                <div className="absolute left-0 top-full w-52 bg-white rounded-lg shadow-xl py-1 z-50">
                   {item.children.map((child) => (
                     <Link
                       key={child.label}
