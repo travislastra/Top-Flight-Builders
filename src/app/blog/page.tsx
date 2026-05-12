@@ -89,7 +89,6 @@ export default function BlogPage() {
                   }`}
                 >
                   <span className="font-sans font-extrabold text-6xl text-white/10 select-none">TFB</span>
-                  <span className="absolute bottom-3 left-4 text-3xl">{post.icon}</span>
                 </div>
 
                 {/* Body */}

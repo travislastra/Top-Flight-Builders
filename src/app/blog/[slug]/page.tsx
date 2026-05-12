@@ -156,7 +156,6 @@ export default async function BlogPostPage({ params }: Props) {
                 <Link key={r.id} href={`/blog/${r.slug}`} className="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
                   <div className="h-24 bg-gradient-to-br from-[#0D1B2E] to-[#1E4FBF] flex items-center justify-center relative">
                     <span className="font-sans font-extrabold text-4xl text-white/10 select-none">TFB</span>
-                    <span className="absolute bottom-2 left-3 text-xl">{r.icon}</span>
                   </div>
                   <div className="p-5">
                     <span className="text-xs text-gray-400">{r.date}</span>
