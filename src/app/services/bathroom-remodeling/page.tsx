@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import Img from "@/components/Img";
 import ContactBanner from "@/components/ContactBanner";
 
 export const metadata = { title: "Bathroom Remodeling | TopFlight Builders" };
@@ -17,10 +17,10 @@ export default function BathroomPage() {
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
           <div className="grid grid-cols-2 gap-3">
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image src="/images/complete-home-remodel-duluth.jpg" alt="Bathroom remodel" fill className="object-cover" />
+              <Img src="/images/complete-home-remodel-duluth.jpg" alt="Bathroom remodel" fill className="object-cover" />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden mt-6">
-              <Image src="/images/bathroom-chamblee-remodel.jpg" alt="Luxury shower" fill className="object-cover" />
+              <Img src="/images/bathroom-chamblee-remodel.jpg" alt="Luxury shower" fill className="object-cover" />
             </div>
           </div>
           <div>

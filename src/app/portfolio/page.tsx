@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Img from "@/components/Img";
 import Link from "next/link";
 import ContactBanner from "@/components/ContactBanner";
 
@@ -29,7 +29,7 @@ export default function PortfolioPage() {
           {projects.map((p) => (
             <div key={p.title} className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-lg transition-shadow">
               <div className="relative aspect-[4/3] overflow-hidden">
-                <Image src={p.image} alt={p.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                <Img src={p.image} alt={p.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
                 <div className="absolute top-3 left-3">
                   <span className="bg-[#1E4FBF] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">{p.tag}</span>
                 </div>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import Img from "@/components/Img";
 import ContactBanner from "@/components/ContactBanner";
 
 export const metadata = { title: "Kitchen Remodeling | TopFlight Builders" };
@@ -34,10 +34,10 @@ export default function KitchenPage() {
           </div>
           <div className="grid grid-cols-2 gap-3">
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Image src="/images/portfolio-kris.jpg" alt="Kitchen remodel" fill className="object-cover" />
+              <Img src="/images/portfolio-kris.jpg" alt="Kitchen remodel" fill className="object-cover" />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden mt-6">
-              <Image src="/images/portfolio-maggie.jpg" alt="Kitchen renovation" fill className="object-cover" />
+              <Img src="/images/portfolio-maggie.jpg" alt="Kitchen renovation" fill className="object-cover" />
             </div>
           </div>
         </div>

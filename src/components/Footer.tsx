@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import Img from "@/components/Img";
 
 const services = [
   { label: "Kitchen Remodeling", href: "/services/kitchen-remodeling" },
@@ -49,7 +49,7 @@ export default function Footer() {
         {/* Brand column */}
         <div>
           <Link href="/">
-            <Image
+            <Img
               src="/logo.png"
               alt="TopFlight Builders"
               width={160}

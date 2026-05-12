@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import Img from "@/components/Img";
 
 export default function OurWork() {
   return (
@@ -30,7 +30,7 @@ export default function OurWork() {
         {/* Image grid */}
         <div className="grid grid-cols-2 gap-3">
           <div className="relative aspect-[3/4] rounded-xl overflow-hidden">
-            <Image
+            <Img
               src="/images/complete-home-remodel-duluth.jpg"
               alt="Bathroom remodel — frameless glass shower"
               fill
@@ -38,7 +38,7 @@ export default function OurWork() {
             />
           </div>
           <div className="relative aspect-[3/4] rounded-xl overflow-hidden mt-8">
-            <Image
+            <Img
               src="/images/portfolio-kris.jpg"
               alt="Kitchen remodel — dark shaker cabinets"
               fill

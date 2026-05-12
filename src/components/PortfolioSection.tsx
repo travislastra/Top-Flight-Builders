@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import Img from "@/components/Img";
 
 const projects = [
   {
@@ -48,7 +48,7 @@ export default function PortfolioSection() {
           {projects.map((p) => (
             <div key={p.title} className="group rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-lg transition-shadow">
               <div className="relative aspect-[4/5] overflow-hidden">
-                <Image
+                <Img
                   src={p.image}
                   alt={p.title}
                   fill
