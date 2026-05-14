@@ -4,7 +4,7 @@ import OurWork from "@/components/OurWork";
 import OurCore from "@/components/OurCore";
 import ServicesGrid from "@/components/ServicesGrid";
 import TeamContact from "@/components/TeamContact";
-import Testimonials from "@/components/Testimonials";
+import ReviewsSlider from "@/components/ReviewsSlider";
 import OurDifference from "@/components/OurDifference";
 import PortfolioSection from "@/components/PortfolioSection";
 import PartnersSlider from "@/components/PartnersSlider";
@@ -20,7 +20,7 @@ export default function Home() {
       <OurCore />
       <ServicesGrid />
       <TeamContact />
-      <Testimonials />
+      <ReviewsSlider />
       <OurDifference />
       <PortfolioSection />
       <PartnersSlider />
