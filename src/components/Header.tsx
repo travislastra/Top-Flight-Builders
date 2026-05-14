@@ -10,7 +10,6 @@ const navItems = [
     label: "About",
     href: "/about",
     children: [
-      { label: "Our Team", href: "/about/our-team" },
       { label: "Financing", href: "/about/financing" },
     ],
   },
