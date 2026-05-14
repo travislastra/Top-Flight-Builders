@@ -11,7 +11,6 @@ const navItems = [
     label: "Services",
     href: "/services",
     children: [
-      { label: "All Services", href: "/services" },
       { label: "Kitchen Remodeling", href: "/services/kitchen-remodeling" },
       { label: "Bathroom Remodeling", href: "/services/bathroom-remodeling" },
       { label: "Full Home Remodeling", href: "/services/full-home-remodeling" },
@@ -87,13 +86,9 @@ export default function Header() {
               onMouseLeave={() => item.children && setOpenDropdown(null)}
             >
               {item.children ? (
-                <button
+                <Link
+                  href={item.href}
                   className="flex items-center gap-1 px-4 py-2 text-sm font-semibold text-gray-200 hover:text-white hover:bg-white/10 rounded transition-colors uppercase tracking-wide"
-                  onClick={() =>
-                    setOpenDropdown(
-                      openDropdown === item.label ? null : item.label
-                    )
-                  }
                 >
                   {item.label}
                   <svg
@@ -109,7 +104,7 @@ export default function Header() {
                       d="M19 9l-7 7-7-7"
                     />
                   </svg>
-                </button>
+                </Link>
               ) : (
                 <Link
                   href={item.href}
