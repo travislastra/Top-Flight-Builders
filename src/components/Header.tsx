@@ -73,7 +73,7 @@ export default function Header() {
             alt="TopFlight Builders"
             width={180}
             height={60}
-            className="h-14 w-auto brightness-0 invert"
+            className="h-24 w-auto brightness-0 invert"
             priority
           />
         </Link>
