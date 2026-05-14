@@ -17,6 +17,8 @@ const navItems = [
       { label: "Full Home Remodeling", href: "/services/full-home-remodeling" },
       { label: "Restoration", href: "/services/restoration" },
       { label: "Basements & Additions", href: "/services" },
+      { label: "Commercial", href: "/services/commercial" },
+      { label: "Flooring & Finishes", href: "/services" },
     ],
   },
   { label: "Portfolio", href: "/portfolio" },
