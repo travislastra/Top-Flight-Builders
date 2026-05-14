@@ -26,15 +26,9 @@ const services = [
     href: "/services/full-home-remodeling",
   },
   {
-    icon: "🏢",
-    title: "Commercial",
-    description: "Professional commercial renovation and build-out services for businesses across the Greater Atlanta area.",
-    href: "/services/commercial",
-  },
-  {
-    icon: "🪵",
-    title: "Flooring & Finishes",
-    description: "Premium flooring installation — hardwood, tile, LVP, and more — with expert finishing touches throughout.",
+    icon: "🏗️",
+    title: "Basements & Additions",
+    description: "Expand your living space with a fully finished basement or home addition — designed and built to seamlessly match your existing home.",
     href: "/services",
   },
 ];
