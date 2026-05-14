@@ -15,8 +15,8 @@ export default function Home() {
   return (
     <>
       <HeroPlaceholder />
-      <QuoteBar />
       <PartnersSlider />
+      <QuoteBar />
       <OurWork />
       <OurCore />
       <ServicesGrid />
