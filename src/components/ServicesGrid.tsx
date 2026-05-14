@@ -31,6 +31,12 @@ const services = [
     description: "Expand your living space with a fully finished basement or home addition — designed and built to seamlessly match your existing home.",
     href: "/services",
   },
+  {
+    icon: "♿",
+    title: "Age in Place Remodeling",
+    description: "ADA-compliant modifications that let you stay in your home safely and independently — grab bars, zero-threshold showers, wider doorways, and more.",
+    href: "/services/age-in-place",
+  },
 ];
 
 export default function ServicesGrid() {
