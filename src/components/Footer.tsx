@@ -52,7 +52,7 @@ export default function Footer() {
               alt="TopFlight Builders"
               width={160}
               height={54}
-              className="h-12 w-auto mb-4 brightness-0 invert"
+              className="h-20 w-auto mb-4 brightness-0 invert"
             />
           </Link>
           <p className="text-sm text-gray-400 leading-relaxed mb-4">
