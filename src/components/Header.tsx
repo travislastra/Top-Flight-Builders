@@ -6,13 +6,7 @@ import Img from "@/components/Img";
 
 const navItems = [
   { label: "Home", href: "/" },
-  {
-    label: "About",
-    href: "/about",
-    children: [
-      { label: "Financing", href: "/about/financing" },
-    ],
-  },
+  { label: "About", href: "/about" },
   {
     label: "Services",
     href: "/services",

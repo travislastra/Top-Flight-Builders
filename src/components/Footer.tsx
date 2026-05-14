@@ -11,7 +11,6 @@ const services = [
 
 const company = [
   { label: "About Us", href: "/about" },
-  { label: "Financing", href: "/about/financing" },
   { label: "Portfolio", href: "/portfolio" },
   { label: "Testimonials", href: "/testimonials" },
   { label: "Blog", href: "/blog" },

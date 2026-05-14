@@ -84,17 +84,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Sub-page links */}
-      <section className="py-14 px-6 bg-white">
-        <div className="max-w-3xl mx-auto grid md:grid-cols-1 gap-5">
-          <Link href="/about/financing" className="group bg-[#F7F8FA] rounded-2xl p-7 border border-gray-100 hover:border-[#1E4FBF]/30 hover:shadow-md transition-all">
-            <h3 className="font-sans font-bold text-[#0D1B2E] text-lg mb-2 group-hover:text-[#1E4FBF] transition-colors">Financing →</h3>
-            <p className="text-gray-500 text-sm">Flexible financing options to fit your budget.</p>
-          </Link>
-        </div>
-      </section>
-
-      <ContactBanner />
+<ContactBanner />
     </>
   );
 }
