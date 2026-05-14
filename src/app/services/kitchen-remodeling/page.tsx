@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Img from "@/components/Img";
 import ContactBanner from "@/components/ContactBanner";
+import ProjectCard from "@/components/ProjectCard";
+import { getProjectsByService } from "@/lib/projects";
 
 export const metadata = {
   title: "Kitchen Remodeling Atlanta GA | TopFlight Builders",
@@ -8,6 +10,8 @@ export const metadata = {
 };
 
 export default function KitchenPage() {
+  const kitchenProjects = getProjectsByService("kitchen");
+
   return (
     <>
       <section className="bg-[#0D1B2E] py-20 px-6 text-center">
@@ -42,6 +46,26 @@ export default function KitchenPage() {
             <div className="relative aspect-square rounded-xl overflow-hidden mt-6">
               <Img src="/images/portfolio-maggie.jpg" alt="Kitchen renovation" fill className="object-cover" />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Recent Projects */}
+      <section className="py-16 px-6 bg-[#F7F8FA]">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-10">
+            <p className="text-[#1E4FBF] font-semibold text-sm uppercase tracking-widest mb-3">Our Work</p>
+            <h2 className="font-sans text-3xl font-extrabold text-[#0D1B2E]">Recent Kitchen Projects</h2>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {kitchenProjects.map((project) => (
+              <ProjectCard key={project.slug} project={project} />
+            ))}
+          </div>
+          <div className="mt-10 text-center">
+            <Link href="/portfolio" className="inline-block border-2 border-[#1E4FBF] text-[#1E4FBF] hover:bg-[#1E4FBF] hover:text-white font-bold px-8 py-3 rounded-lg transition-colors uppercase tracking-wide text-sm">
+              View Full Portfolio
+            </Link>
           </div>
         </div>
       </section>
