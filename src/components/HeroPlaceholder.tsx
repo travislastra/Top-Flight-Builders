@@ -1,35 +1,71 @@
+"use client";
+
+import { useEffect, useRef } from "react";
 import Link from "next/link";
 
+const BASE = "/Top-Flight-Builders";
+
 export default function HeroPlaceholder() {
+  const bgLogoRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!bgLogoRef.current) return;
+      const scrollY = window.scrollY;
+      // Parallax: logo moves up at 35% of scroll speed (slower = deeper feel)
+      const translateY = scrollY * 0.35;
+      // Fade: starts at 0.13 opacity, fades out as hero leaves view
+      const opacity = Math.max(0, 0.13 - scrollY * 0.00025);
+      bgLogoRef.current.style.transform = `translateY(${translateY}px) translateX(-50%)`;
+      bgLogoRef.current.style.opacity = String(opacity);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <section className="relative w-full min-h-[90vh] bg-[#0D1B2E] flex flex-col items-center justify-center overflow-hidden">
-      {/* Animated placeholder box */}
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div className="w-full h-full bg-gradient-to-br from-[#0D1B2E] via-[#152438] to-[#0D1B2E] hero-placeholder" />
-      </div>
 
-      {/* Placeholder label */}
-      <div className="absolute top-6 left-6 bg-[#1E4FBF]/80 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-widest z-10">
-        Primary Animation — Placeholder
-      </div>
+      {/* Subtle gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#0D1B2E] via-[#152438] to-[#0D1B2E]" />
 
       {/* Animated grid overlay */}
       <div
-        className="absolute inset-0 opacity-10"
+        className="absolute inset-0 opacity-[0.07]"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(30,79,191,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(30,79,191,0.4) 1px, transparent 1px)",
+            "linear-gradient(rgba(30,79,191,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(30,79,191,0.5) 1px, transparent 1px)",
           backgroundSize: "60px 60px",
         }}
       />
 
-      {/* Floating brand accent */}
-      <div className="absolute top-1/4 right-12 w-64 h-64 bg-[#1E4FBF]/20 rounded-full blur-3xl hero-placeholder" style={{ animationDelay: "1s" }} />
-      <div className="absolute bottom-1/4 left-12 w-48 h-48 bg-[#1E4FBF]/15 rounded-full blur-3xl hero-placeholder" style={{ animationDelay: "2s" }} />
+      {/* Large background logo — parallax + fade on scroll */}
+      <div
+        ref={bgLogoRef}
+        className="absolute top-1/2 left-1/2 pointer-events-none select-none"
+        style={{
+          opacity: 0.13,
+          transform: "translateY(-50%) translateX(-50%)",
+          width: "min(90vw, 900px)",
+        }}
+        aria-hidden="true"
+      >
+        <img
+          src={`${BASE}/logo.png`}
+          alt=""
+          className="w-full brightness-0 invert"
+          draggable={false}
+        />
+      </div>
+
+      {/* Floating accent glows */}
+      <div className="absolute top-1/4 right-16 w-72 h-72 bg-[#1E4FBF]/15 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-1/4 left-16 w-56 h-56 bg-[#1E4FBF]/10 rounded-full blur-3xl pointer-events-none" />
 
       {/* Hero content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <p className="text-[#1E4FBF] font-semibold text-sm uppercase tracking-widest mb-4">
+        <p className="text-[#4A7FE8] font-semibold text-sm uppercase tracking-widest mb-4">
           Greater Atlanta&apos;s Construction Experts
         </p>
         <h1 className="font-sans text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">
