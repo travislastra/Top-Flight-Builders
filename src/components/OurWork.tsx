@@ -37,7 +37,7 @@ export default function OurWork() {
               className="object-cover"
             />
           </div>
-          <div className="relative aspect-[3/4] rounded-xl overflow-hidden mt-8">
+          <div className="relative aspect-[3/4] rounded-xl overflow-hidden lg:mt-8">
             <Img
               src="/images/portfolio-kris.jpg"
               alt="Kitchen remodel — dark shaker cabinets"
