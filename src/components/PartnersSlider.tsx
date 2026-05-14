@@ -1,42 +1,20 @@
-"use client";
-
-import { useState } from "react";
-
 const partners = [
-  { name: "Home Depot",         domain: "homedepot.com" },
-  { name: "Lowe's",             domain: "lowes.com" },
-  { name: "Sherwin-Williams",   domain: "sherwin-williams.com" },
-  { name: "Floor & Decor",      domain: "flooranddecor.com" },
-  { name: "Ferguson",           domain: "ferguson.com" },
-  { name: "Mohawk",             domain: "mohawkflooring.com" },
-  { name: "MSI",                domain: "msisurfaces.com" },
-  { name: "Daltile",            domain: "daltile.com" },
-  { name: "Life Art Cabinetry", domain: "lifeartcabinetry.com" },
-  { name: "ROC Cabinetry",      domain: "roccabinetry.com" },
-  { name: "The Tile Shop",      domain: "tileshop.com" },
-  { name: "Schluter Systems",   domain: "schluter.com" },
-  { name: "Benjamin Moore",     domain: "benjaminmoore.com" },
+  { name: "Home Depot",         logo: "/images/partners/home-depot.png" },
+  { name: "Lowe's",             logo: "/images/partners/lowes.png" },
+  { name: "Sherwin-Williams",   logo: "/images/partners/sherwin-williams.png" },
+  { name: "Floor & Decor",      logo: "/images/partners/floor-and-decor.png" },
+  { name: "Ferguson",           logo: "/images/partners/ferguson.png" },
+  { name: "Mohawk",             logo: "/images/partners/mohawk.png" },
+  { name: "MSI",                logo: "/images/partners/msi.png" },
+  { name: "Daltile",            logo: "/images/partners/daltile.png" },
+  { name: "Life Art Cabinetry", logo: "/images/partners/lifeart.png" },
+  { name: "ROC Cabinetry",      logo: "/images/partners/roc-cabinetry.png" },
+  { name: "The Tile Shop",      logo: "/images/partners/the-tile-shop.png" },
+  { name: "Schluter Systems",   logo: "/images/partners/schluter.png" },
+  { name: "Benjamin Moore",     logo: "/images/partners/benjamin-moore.svg" },
 ];
 
-function PartnerCard({ name, domain }: { name: string; domain: string }) {
-  const [imgFailed, setImgFailed] = useState(false);
-
-  return (
-    <div className="bg-white border border-gray-200 rounded-xl px-6 py-4 shadow-sm hover:shadow-md hover:border-[#1E4FBF]/30 transition-all flex flex-col items-center justify-center gap-2 min-w-[140px] h-[88px]">
-      {!imgFailed && (
-        <img
-          src={`https://logo.clearbit.com/${domain}`}
-          alt={`${name} logo`}
-          className="h-7 w-auto max-w-[100px] object-contain"
-          onError={() => setImgFailed(true)}
-        />
-      )}
-      <span className={`font-sans font-bold text-[#0D1B2E] text-xs whitespace-nowrap ${!imgFailed ? "text-gray-500 font-normal" : ""}`}>
-        {name}
-      </span>
-    </div>
-  );
-}
+const BASE = "/Top-Flight-Builders";
 
 export default function PartnersSlider() {
   return (
@@ -56,8 +34,15 @@ export default function PartnersSlider() {
 
         <div className="marquee-track">
           {[...partners, ...partners].map((p, i) => (
-            <div key={`${p.name}-${i}`} className="mx-4 shrink-0">
-              <PartnerCard name={p.name} domain={p.domain} />
+            <div
+              key={`${p.name}-${i}`}
+              className="mx-5 shrink-0 flex items-center justify-center bg-white border border-gray-200 rounded-xl px-6 py-4 shadow-sm hover:shadow-md hover:border-[#1E4FBF]/30 transition-all h-20 w-40"
+            >
+              <img
+                src={`${BASE}${p.logo}`}
+                alt={p.name}
+                className="max-h-10 max-w-[120px] w-auto object-contain"
+              />
             </div>
           ))}
         </div>
