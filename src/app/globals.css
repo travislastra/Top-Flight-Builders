@@ -45,6 +45,10 @@ h1, h2, h3, h4, h5 {
   animation-play-state: paused;
 }
 
+.marquee-track--no-pause:hover {
+  animation-play-state: running;
+}
+
 /* Hero pulse placeholder */
 @keyframes hero-pulse {
   0%, 100% { opacity: 0.6; }

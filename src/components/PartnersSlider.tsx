@@ -32,7 +32,7 @@ export default function PartnersSlider() {
         <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#F7F8FA] to-transparent z-10 pointer-events-none" />
         <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#F7F8FA] to-transparent z-10 pointer-events-none" />
 
-        <div className="marquee-track">
+        <div className="marquee-track marquee-track--no-pause">
           {[...partners, ...partners].map((p, i) => (
             <div
               key={`${p.name}-${i}`}
