@@ -64,7 +64,7 @@ export default function Header() {
       </div>
 
       {/* Main nav — 3-column grid so nav links are truly centered */}
-      <div className="grid grid-cols-3 items-center px-6 lg:px-10 py-2">
+      <div className="grid grid-cols-3 items-center px-6 lg:px-10 py-1">
 
         {/* Col 1: Logo */}
         <Link href="/" className="flex items-center">
@@ -73,7 +73,7 @@ export default function Header() {
             alt="TopFlight Builders"
             width={180}
             height={60}
-            className="h-40 w-auto brightness-0 invert"
+            className="h-14 w-auto brightness-0 invert"
             priority
           />
         </Link>
