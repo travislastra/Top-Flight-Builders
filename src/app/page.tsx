@@ -16,6 +16,7 @@ export default function Home() {
     <>
       <HeroPlaceholder />
       <QuoteBar />
+      <PartnersSlider />
       <OurWork />
       <OurCore />
       <ServicesGrid />
@@ -23,7 +24,6 @@ export default function Home() {
       <ReviewsSlider />
       <OurDifference />
       <PortfolioSection />
-      <PartnersSlider />
       <GetStarted />
       <ContactBanner />
     </>
