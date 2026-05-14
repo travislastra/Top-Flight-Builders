@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function HeroPlaceholder() {
   return (
     <section className="relative w-full min-h-[90vh] bg-[#0D1B2E] flex flex-col items-center justify-center overflow-hidden">
@@ -38,18 +40,18 @@ export default function HeroPlaceholder() {
           Experience a faster, smoother, and genuine remodeling process — from design to finish. Quality · Reliability · Value.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a
+          <Link
             href="/services"
             className="bg-[#1E4FBF] hover:bg-[#163A99] text-white font-bold px-8 py-4 rounded-lg transition-colors uppercase tracking-wide text-sm w-full sm:w-auto text-center"
           >
             Our Services
-          </a>
-          <a
+          </Link>
+          <Link
             href="/contact"
             className="bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold px-8 py-4 rounded-lg transition-colors uppercase tracking-wide text-sm w-full sm:w-auto text-center"
           >
             Get Started
-          </a>
+          </Link>
         </div>
       </div>
 
