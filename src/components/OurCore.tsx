@@ -7,10 +7,10 @@ export default function OurCore() {
         {/* Stats */}
         <div className="grid grid-cols-2 gap-6">
           {[
-            { value: "20+", label: "Years Combined Experience" },
+            { value: "5★", label: "5 Star Google Rating" },
             { value: "500+", label: "Projects Completed" },
-            { value: "100%", label: "Client Satisfaction Focus" },
-            { value: "ATL", label: "Greater Atlanta Proud" },
+            { value: "Local", label: "Locally Owned & Operated" },
+            { value: "ATL", label: "Serving Greater Atlanta" },
           ].map((stat) => (
             <div
               key={stat.label}
