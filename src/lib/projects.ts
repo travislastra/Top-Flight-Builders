@@ -10,7 +10,7 @@ export interface Project {
   community?: string;
   budget: string;
   year: number;
-  service: "kitchen" | "bathroom" | "restoration" | "full-home" | "basements";
+  service: "kitchen" | "bathroom" | "restoration" | "full-home" | "basements" | "age-in-place";
   categories: string[];
   tags: string[];
   hero: string;
@@ -299,6 +299,52 @@ export const projects: Project[] = [
       },
     ],
     outcome: "A completely unused space converted into the family's favorite hangout. The wet bar and home theater zone transformed the basement into a fully functional extension of the home.",
+  },
+  {
+    slug: "age-in-place-remodel-roswell",
+    title: "Age in Place Remodel — Roswell",
+    location: "Roswell, GA",
+    community: "Horseshoe Bend",
+    budget: "$22,800",
+    year: 2025,
+    service: "age-in-place",
+    categories: ["Age in Place", "Featured"],
+    tags: ["Grab Bars", "Zero-Threshold Shower", "Wider Doorways", "ADA", "Bathroom", "Safety"],
+    hero: "/images/bathroom-chamblee-remodel.jpg",
+    gallery: ["/images/bathroom-chamblee-remodel.jpg", "/images/complete-home-remodel-duluth.jpg"],
+    excerpt: "A full age-in-place conversion for a Roswell homeowner — zero-threshold shower, grab bars, widened doorways, and a safer, fully accessible bathroom.",
+    description: "This Horseshoe Bend homeowner wanted to stay in their home long-term without sacrificing independence or style. TopFlight Builders completed a full age-in-place conversion of the master bathroom and key entry points throughout the home. Every modification was made to be functional and safe while maintaining a clean, modern aesthetic — nothing institutional about it.",
+    tasks: [
+      {
+        area: "Bathroom Conversion",
+        items: [
+          "Removed tub and installed zero-threshold walk-in shower with fold-down bench",
+          "Installed ADA-compliant grab bars at shower, toilet, and vanity",
+          "Replaced standard toilet with comfort-height model",
+          "Installed handheld shower head on adjustable slide bar",
+          "Non-slip porcelain tile floor throughout bathroom",
+          "Replaced vanity with roll-under accessible model",
+        ],
+      },
+      {
+        area: "Doorway & Hallway Widening",
+        items: [
+          "Widened master bath doorway from 28\" to 36\" for wheelchair/walker clearance",
+          "Widened bedroom doorway to 32\"",
+          "Removed threshold transitions throughout main living areas",
+        ],
+      },
+      {
+        area: "Entry & Safety",
+        items: [
+          "Installed no-step entry ramp at front door with matching stone finish",
+          "Added handrails on both sides of front steps",
+          "Upgraded all interior door hardware to lever-style handles",
+          "Improved lighting in hallways and bathroom with motion-sensor switches",
+        ],
+      },
+    ],
+    outcome: "The homeowners now have a home they can age in confidently. Every modification blends with the existing design — guests wouldn't know it was an accessibility remodel unless told.",
   },
 ];
 

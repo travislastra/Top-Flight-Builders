@@ -57,6 +57,16 @@ const services = [
       </svg>
     ),
   },
+  {
+    title: "Age in Place Remodeling",
+    href: "/services/age-in-place",
+    desc: "ADA-compliant modifications that let you stay in your home safely and independently — grab bars, zero-threshold showers, wider doorways, and more.",
+    icon: (
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+      </svg>
+    ),
+  },
 ];
 
 export default function ServicesPage() {
