@@ -4,6 +4,9 @@ import ContactBanner from "@/components/ContactBanner";
 export const metadata = {
   title: "About Us | TopFlight Builders",
   description: "Learn about TopFlight Builders — Greater Atlanta's trusted remodeling experts with 20+ years of combined experience.",
+  alternates: {
+    canonical: "https://travislastra.github.io/Top-Flight-Builders/about",
+  },
 };
 
 export default function AboutPage() {

@@ -6,6 +6,9 @@ import { getProjectsByService } from "@/lib/projects";
 export const metadata = {
   title: "Age in Place Remodeling Atlanta GA | TopFlight Builders",
   description: "ADA-compliant age in place remodeling in Greater Atlanta. Grab bars, zero-threshold showers, wider doorways, ramps, and accessible kitchen modifications. Call (404) 369-7129.",
+  alternates: {
+    canonical: "https://travislastra.github.io/Top-Flight-Builders/services/age-in-place",
+  },
 };
 
 const modifications = [

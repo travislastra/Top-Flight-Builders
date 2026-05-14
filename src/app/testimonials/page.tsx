@@ -5,6 +5,9 @@ import { reviews } from "@/lib/reviews";
 export const metadata = {
   title: "Testimonials | TopFlight Builders",
   description: "See what Greater Atlanta homeowners say about TopFlight Builders — 32 five-star Google reviews.",
+  alternates: {
+    canonical: "https://travislastra.github.io/Top-Flight-Builders/testimonials",
+  },
 };
 
 function Stars() {

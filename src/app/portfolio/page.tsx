@@ -5,6 +5,9 @@ import ContactBanner from "@/components/ContactBanner";
 export const metadata = {
   title: "Portfolio | TopFlight Builders",
   description: "Browse TopFlight Builders' portfolio of kitchen, bathroom, and home remodeling projects across Greater Atlanta.",
+  alternates: {
+    canonical: "https://travislastra.github.io/Top-Flight-Builders/portfolio",
+  },
 };
 
 const projects = [

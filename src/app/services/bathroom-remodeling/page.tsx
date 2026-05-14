@@ -7,6 +7,9 @@ import { getProjectsByService } from "@/lib/projects";
 export const metadata = {
   title: "Bathroom Remodeling Atlanta GA | TopFlight Builders",
   description: "Expert bathroom remodeling in Atlanta, GA. Custom showers, tile work, vanities, and full bath renovations. Serving Marietta, Duluth, Alpharetta. Call (404) 369-7129.",
+  alternates: {
+    canonical: "https://travislastra.github.io/Top-Flight-Builders/services/bathroom-remodeling",
+  },
 };
 
 export default function BathroomPage() {

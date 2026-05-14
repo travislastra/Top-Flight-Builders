@@ -1,6 +1,9 @@
 export const metadata = {
   title: "Contact | TopFlight Builders",
   description: "Get a free estimate from TopFlight Builders. Call (404) 369-7129 or fill out our contact form.",
+  alternates: {
+    canonical: "https://travislastra.github.io/Top-Flight-Builders/contact",
+  },
 };
 
 export default function ContactPage() {

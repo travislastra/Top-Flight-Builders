@@ -4,6 +4,9 @@ import ContactBanner from "@/components/ContactBanner";
 export const metadata = {
   title: "Services | TopFlight Builders",
   description: "Kitchen remodeling, bathroom renovations, full home remodeling, restoration, and basements & additions across Greater Atlanta. Free estimates. Call (404) 369-7129.",
+  alternates: {
+    canonical: "https://travislastra.github.io/Top-Flight-Builders/services",
+  },
 };
 
 const services = [

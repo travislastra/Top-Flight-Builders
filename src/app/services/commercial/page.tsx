@@ -4,6 +4,9 @@ import ContactBanner from "@/components/ContactBanner";
 export const metadata = {
   title: "Commercial Renovation Atlanta GA | TopFlight Builders",
   description: "Commercial remodeling and build-out services in Atlanta, GA. Office renovations, retail spaces, investment properties. Licensed & insured. Call (404) 369-7129.",
+  alternates: {
+    canonical: "https://travislastra.github.io/Top-Flight-Builders/services/commercial",
+  },
 };
 
 export default function CommercialPage() {

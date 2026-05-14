@@ -6,6 +6,9 @@ import { getProjectsByService } from "@/lib/projects";
 export const metadata = {
   title: "Full Home Remodeling Atlanta GA | TopFlight Builders",
   description: "Complete home renovations in Atlanta, GA. From design to finish — kitchens, bathrooms, additions, and whole-house remodels. Free estimates. Call (404) 369-7129.",
+  alternates: {
+    canonical: "https://travislastra.github.io/Top-Flight-Builders/services/full-home-remodeling",
+  },
 };
 
 export default function FullHomePage() {

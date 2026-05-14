@@ -7,6 +7,9 @@ import { getProjectsByService } from "@/lib/projects";
 export const metadata = {
   title: "Kitchen Remodeling Atlanta GA | TopFlight Builders",
   description: "Custom kitchen remodeling in Atlanta, GA. Cabinets, countertops, layout redesign, and full renovation. Free estimates from Marietta's trusted contractors. Call (404) 369-7129.",
+  alternates: {
+    canonical: "https://travislastra.github.io/Top-Flight-Builders/services/kitchen-remodeling",
+  },
 };
 
 export default function KitchenPage() {
