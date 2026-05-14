@@ -43,7 +43,7 @@ export default function ContactPage() {
 
             <div className="bg-white rounded-2xl p-6 border border-gray-100">
               <p className="font-sans font-bold text-[#0D1B2E] mb-2">Service Area</p>
-              <p className="text-gray-500 text-sm leading-relaxed">We serve homeowners and businesses throughout the Greater Atlanta area including Marietta, Duluth, Chamblee, Alpharetta, Smyrna, Sandy Springs, Kennesaw, Roswell, and surrounding communities.</p>
+              <p className="text-gray-500 text-sm leading-relaxed">We serve homeowners throughout the Greater Atlanta area including Atlanta, Decatur, Marietta, Dunwoody, Alpharetta, Canton, Kennesaw, Smyrna, Sandy Springs, Woodstock, Roswell, Tucker, Buckhead, Vinings, Brookhaven, Mableton, Acworth, Norcross, Duluth, and the surrounding areas.</p>
             </div>
           </div>
 
