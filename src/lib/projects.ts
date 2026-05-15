@@ -81,7 +81,7 @@ export const projects: Project[] = [
     service: "bathroom",
     categories: ["Bathrooms", "Featured"],
     tags: ["Tile", "Shower", "Vanity", "Modern", "Plumbing"],
-    hero: "/images/projects/bathroom-brookhaven/01.jpg",
+    hero: "/images/projects/bathroom-brookhaven/08.jpg",
     gallery: ["/images/projects/bathroom-brookhaven/01.jpg", "/images/projects/bathroom-brookhaven/02.jpg", "/images/projects/bathroom-brookhaven/03.jpg", "/images/projects/bathroom-brookhaven/04.jpg", "/images/projects/bathroom-brookhaven/05.jpg", "/images/projects/bathroom-brookhaven/06.jpg", "/images/projects/bathroom-brookhaven/07.jpg", "/images/projects/bathroom-brookhaven/08.jpg"],
     excerpt: "A full bathroom remodel in Brookhaven featuring custom tile work, a new walk-in shower, and a modern double vanity.",
     description: "This Brookhaven bathroom remodel replaced an outdated space with a fully custom renovation. TopFlight Builders built a new walk-in shower with detailed tile work, installed a modern double vanity, and updated all fixtures and lighting throughout.",
