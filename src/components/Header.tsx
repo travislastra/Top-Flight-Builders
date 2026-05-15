@@ -51,12 +51,12 @@ export default function Header() {
     >
       {/* Top bar */}
       <div className="hidden lg:flex justify-end items-center px-8 py-2 bg-[#091523] text-sm text-white gap-6 font-bold">
-        <a href="tel:4043697129" className="hover:text-white transition-colors">
+        <a href="tel:4043697129" className="text-white hover:text-blue-200 transition-colors">
           (404) 369-7129
         </a>
         <a
           href="mailto:Admin@TopFlightBuilders.net"
-          className="hover:text-white transition-colors"
+          className="text-white hover:text-blue-200 transition-colors"
         >
           Admin@TopFlightBuilders.net
         </a>
