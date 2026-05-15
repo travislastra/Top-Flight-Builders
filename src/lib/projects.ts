@@ -310,8 +310,8 @@ export const projects: Project[] = [
     service: "age-in-place",
     categories: ["Age in Place", "Featured"],
     tags: ["Grab Bars", "Zero-Threshold Shower", "Wider Doorways", "ADA", "Bathroom", "Safety"],
-    hero: "/images/bathroom-chamblee-remodel.jpg",
-    gallery: ["/images/bathroom-chamblee-remodel.jpg", "/images/home-run-1.jpg"],
+    hero: "/images/ada1.jpg",
+    gallery: ["/images/ada1.jpg", "/images/ada2.jpg"],
     excerpt: "A full age-in-place conversion for a Roswell homeowner — zero-threshold shower, grab bars, widened doorways, and a safer, fully accessible bathroom.",
     description: "This Horseshoe Bend homeowner wanted to stay in their home long-term without sacrificing independence or style. TopFlight Builders completed a full age-in-place conversion of the master bathroom and key entry points throughout the home. Every modification was made to be functional and safe while maintaining a clean, modern aesthetic — nothing institutional about it.",
     tasks: [
