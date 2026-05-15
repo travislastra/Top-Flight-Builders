@@ -9,11 +9,14 @@ export const metadata = {
   },
 };
 
+const BASE = "/Top-Flight-Builders";
+
 const services = [
   {
     title: "Kitchen Remodeling",
     href: "/services/kitchen-remodeling",
     desc: "Custom cabinetry, countertops, layout redesign, islands, and full kitchen transformations.",
+    photo: "/images/projects/kitchen-laundry-east-cobb/02.jpg",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 10h18M3 14h18M10 3v18M6 3v2m4-2v2m4-2v2M6 19v2m4-2v2m4-2v2" />
@@ -24,6 +27,7 @@ const services = [
     title: "Bathroom Remodeling",
     href: "/services/bathroom-remodeling",
     desc: "Spa-inspired showers, frameless glass, custom tile work, vanities, and premium fixtures.",
+    photo: "/images/projects/bathroom-buckhead/02.jpg",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 10h18v4a6 6 0 01-6 6H9a6 6 0 01-6-6v-4zm5-7v7M8 3a2 2 0 012-2h4a2 2 0 012 2v7" />
@@ -34,6 +38,7 @@ const services = [
     title: "Full Home Remodeling",
     href: "/services/full-home-remodeling",
     desc: "Complete home renovations — cohesive design, coordinated trades, and flawless execution from start to finish.",
+    photo: "/images/projects/whole-home-east-cobb/03.jpg",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
@@ -44,6 +49,7 @@ const services = [
     title: "Restoration",
     href: "/services/restoration",
     desc: "Water damage, fire damage, structural repairs, and full property recovery — fast response, expert crews.",
+    photo: "/images/home-run-1.jpg",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
@@ -54,6 +60,7 @@ const services = [
     title: "Basements & Additions",
     href: "/services",
     desc: "Transform unused basement space or add square footage with a home addition — designed and built to match your home.",
+    photo: "/images/projects/basement-east-cobb/05.jpg",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
@@ -64,6 +71,7 @@ const services = [
     title: "Age in Place Remodeling",
     href: "/services/age-in-place",
     desc: "ADA-compliant modifications that let you stay in your home safely and independently — grab bars, zero-threshold showers, wider doorways, and more.",
+    photo: "/images/ada2.jpg",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -87,21 +95,38 @@ export default function ServicesPage() {
             <Link
               key={s.title}
               href={s.href}
-              className="group bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-lg hover:border-[#1E4FBF]/20 transition-all"
+              className="group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all min-h-[280px] flex flex-col"
             >
-              <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-[#F7F8FA] text-[#1E4FBF] mb-5 group-hover:bg-[#1E4FBF] group-hover:text-white transition-colors">
-                {s.icon}
+              {/* Background photo */}
+              <img
+                src={`${BASE}${s.photo}`}
+                alt=""
+                aria-hidden="true"
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+              {/* Dark overlay — lighter at top for icon, heavier at bottom for text */}
+              <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/60 to-black/80" />
+
+              {/* Content */}
+              <div className="relative p-8 flex flex-col h-full min-h-[280px]">
+                {/* Icon box */}
+                <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-white/15 text-white mb-auto group-hover:bg-[#1E4FBF] transition-colors duration-300">
+                  {s.icon}
+                </div>
+                {/* Text pushed to bottom */}
+                <div className="mt-auto pt-6">
+                  <h2 className="font-sans font-bold text-xl text-white mb-3">
+                    {s.title}
+                  </h2>
+                  <p className="text-gray-200 text-sm leading-relaxed mb-5">{s.desc}</p>
+                  <span className="text-white font-semibold text-sm inline-flex items-center gap-1 group-hover:gap-2 group-hover:text-[#4A7FE8] transition-all">
+                    Learn More
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </span>
+                </div>
               </div>
-              <h2 className="font-sans font-bold text-xl text-[#0D1B2E] mb-3 group-hover:text-[#1E4FBF] transition-colors">
-                {s.title}
-              </h2>
-              <p className="text-gray-500 text-sm leading-relaxed mb-5">{s.desc}</p>
-              <span className="text-[#1E4FBF] font-semibold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
-                Learn More
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </span>
             </Link>
           ))}
         </div>
