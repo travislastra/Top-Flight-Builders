@@ -50,7 +50,7 @@ export default function Header() {
       className="sticky top-0 z-50 bg-[#0D1B2E] shadow-lg"
     >
       {/* Top bar */}
-      <div className="hidden lg:flex justify-end items-center px-8 py-2 bg-[#091523] text-sm text-gray-300 gap-6 font-bold">
+      <div className="hidden lg:flex justify-end items-center px-8 py-2 bg-[#091523] text-sm text-white gap-6 font-bold">
         <a href="tel:4043697129" className="hover:text-white transition-colors">
           (404) 369-7129
         </a>
