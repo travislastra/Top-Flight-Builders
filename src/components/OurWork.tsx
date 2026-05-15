@@ -14,10 +14,10 @@ export default function OurWork() {
             Make your dream a reality
           </h2>
           <p className="text-gray-600 text-lg leading-relaxed mb-4">
-            We transform your vision into beautifully crafted spaces. From custom kitchens and spa-inspired bathrooms to complete home renovations — our team brings over 20 years of combined experience to every project.
+            At TopFlight Builders, we take pride in creating beautiful, functional spaces that are built to last. From full home renovations to custom kitchens, bathrooms, basements, and additions, every project is completed with attention to detail, quality craftsmanship, and clear communication from start to finish. We work closely with our clients to bring their vision to life while making the remodeling process as smooth and stress-free as possible.
           </p>
           <p className="text-gray-600 leading-relaxed mb-8">
-            Serving homeowners and businesses across the Greater Atlanta area, we deliver quality craftsmanship that stands the test of time.
+            Our team is committed to delivering high-end results that not only improve the look of a home, but also increase comfort, functionality, and value. Whether it&apos;s a modern kitchen transformation or a complete home remodel, we approach every project with professionalism, reliability, and a passion for great work.
           </p>
           <Link
             href="/portfolio"
