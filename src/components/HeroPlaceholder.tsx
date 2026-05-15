@@ -1,25 +1,44 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 
 const BASE = "/Top-Flight-Builders";
 
+// Curated selection spread across the More From Us set
+const SLIDES = [
+  "/images/projects/more-from-us/01.jpg",
+  "/images/projects/more-from-us/04.jpg",
+  "/images/projects/more-from-us/08.jpg",
+  "/images/projects/more-from-us/12.jpg",
+  "/images/projects/more-from-us/16.jpg",
+  "/images/projects/more-from-us/20.jpg",
+  "/images/projects/more-from-us/24.jpg",
+  "/images/projects/more-from-us/28.jpg",
+  "/images/projects/more-from-us/32.jpg",
+  "/images/projects/more-from-us/35.jpg",
+];
+
 export default function HeroPlaceholder() {
+  const [active, setActive] = useState(0);
   const bgLogoRef = useRef<HTMLDivElement>(null);
 
+  // Advance slide every 5s
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActive((i) => (i + 1) % SLIDES.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
+  // Logo parallax + fade on scroll
   useEffect(() => {
     const handleScroll = () => {
       if (!bgLogoRef.current) return;
       const scrollY = window.scrollY;
-      // Parallax: logo moves up at 35% of scroll speed (slower = deeper feel)
-      const translateY = scrollY * 0.35;
-      // Fade: starts at 0.13 opacity, fades out as hero leaves view
-      const opacity = Math.max(0, 0.13 - scrollY * 0.00025);
-      bgLogoRef.current.style.transform = `translateY(${translateY}px) translateX(-50%)`;
-      bgLogoRef.current.style.opacity = String(opacity);
+      bgLogoRef.current.style.transform = `translateY(${scrollY * 0.35}px) translateX(-50%)`;
+      bgLogoRef.current.style.opacity = String(Math.max(0, 0.07 - scrollY * 0.00015));
     };
-
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -27,12 +46,25 @@ export default function HeroPlaceholder() {
   return (
     <section className="relative w-full min-h-[90vh] bg-[#0D1B2E] flex flex-col items-center justify-center overflow-hidden">
 
-      {/* Subtle gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#0D1B2E] via-[#152438] to-[#0D1B2E]" />
+      {/* Slideshow — all images in DOM, only active one is visible, CSS handles crossfade */}
+      {SLIDES.map((src, i) => (
+        <img
+          key={src}
+          src={`${BASE}${src}`}
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover transition-opacity duration-[1800ms] ease-in-out"
+          style={{ opacity: i === active ? 0.28 : 0 }}
+          loading={i === 0 ? "eager" : "lazy"}
+        />
+      ))}
 
-      {/* Animated grid overlay */}
+      {/* Dark gradient overlay — keeps text crisp over any photo */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0D1B2E]/80 via-[#0D1B2E]/65 to-[#0D1B2E]/85 pointer-events-none" />
+
+      {/* Subtle grid texture */}
       <div
-        className="absolute inset-0 opacity-[0.07]"
+        className="absolute inset-0 opacity-[0.05] pointer-events-none"
         style={{
           backgroundImage:
             "linear-gradient(rgba(30,79,191,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(30,79,191,0.5) 1px, transparent 1px)",
@@ -40,12 +72,12 @@ export default function HeroPlaceholder() {
         }}
       />
 
-      {/* Large background logo — parallax + fade on scroll */}
+      {/* Logo watermark — parallax */}
       <div
         ref={bgLogoRef}
         className="absolute top-1/2 left-1/2 pointer-events-none select-none"
         style={{
-          opacity: 0.13,
+          opacity: 0.07,
           transform: "translateY(-50%) translateX(-50%)",
           width: "min(90vw, 900px)",
         }}
@@ -59,9 +91,18 @@ export default function HeroPlaceholder() {
         />
       </div>
 
-      {/* Floating accent glows */}
-      <div className="absolute top-1/4 right-16 w-72 h-72 bg-[#1E4FBF]/15 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-1/4 left-16 w-56 h-56 bg-[#1E4FBF]/10 rounded-full blur-3xl pointer-events-none" />
+      {/* Slide indicator dots */}
+      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+        {SLIDES.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setActive(i)}
+            aria-label={`Go to slide ${i + 1}`}
+            className="w-1.5 h-1.5 rounded-full transition-all duration-300"
+            style={{ backgroundColor: i === active ? "white" : "rgba(255,255,255,0.35)", transform: i === active ? "scale(1.4)" : "scale(1)" }}
+          />
+        ))}
+      </div>
 
       {/* Hero content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
