@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Img from "@/components/Img";
 import ContactBanner from "@/components/ContactBanner";
 import ProjectCard from "@/components/ProjectCard";
 import { getProjectsByService } from "@/lib/projects";
@@ -118,26 +119,13 @@ export default function AgeInPlacePage() {
               Schedule a Walkthrough
             </Link>
           </div>
-          <div className="bg-[#F7F8FA] rounded-2xl p-8 border border-gray-100">
-            <h3 className="font-sans font-bold text-[#0D1B2E] text-lg mb-6">Why Plan Ahead?</h3>
-            <ul className="space-y-4">
-              {[
-                { heading: "Stay in your home longer", body: "90% of adults 65+ want to age in their current home. The right modifications make that possible." },
-                { heading: "Prevent costly accidents", body: "Falls are the leading cause of injury in older adults. Grab bars, better lighting, and threshold removal dramatically reduce risk." },
-                { heading: "Increase home value", body: "Accessibility features are increasingly sought after by buyers of all ages — they're a smart investment." },
-                { heading: "Style doesn't have to suffer", body: "Modern age-in-place design looks just like any other high-end renovation. We don't compromise on aesthetics." },
-              ].map((item) => (
-                <li key={item.heading} className="flex gap-3">
-                  <svg className="w-5 h-5 text-[#1E4FBF] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <div>
-                    <span className="font-semibold text-[#0D1B2E] text-sm">{item.heading} — </span>
-                    <span className="text-gray-500 text-sm">{item.body}</span>
-                  </div>
-                </li>
-              ))}
-            </ul>
+          <div className="grid grid-cols-2 gap-4">
+            <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-md">
+              <Img src="/images/ada1.jpg" alt="Age in place bathroom modification — accessible shower" fill className="object-cover" />
+            </div>
+            <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-md lg:mt-10">
+              <Img src="/images/ada2.jpg" alt="Age in place remodel — grab bars and accessible design" fill className="object-cover" />
+            </div>
           </div>
         </div>
       </section>
