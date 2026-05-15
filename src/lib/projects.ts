@@ -56,7 +56,7 @@ export const projects: Project[] = [
     service: "full-home",
     categories: ["Full Home", "Featured"],
     tags: ["Kitchen", "Bathrooms", "Flooring", "Paint", "Modern"],
-    hero: "/images/projects/whole-home-east-cobb/10.jpg",
+    hero: "/images/projects/whole-home-east-cobb/02.jpg",
     gallery: ["/images/projects/whole-home-east-cobb/01.jpg", "/images/projects/whole-home-east-cobb/02.jpg", "/images/projects/whole-home-east-cobb/03.jpg", "/images/projects/whole-home-east-cobb/04.jpg", "/images/projects/whole-home-east-cobb/05.jpg", "/images/projects/whole-home-east-cobb/06.jpg", "/images/projects/whole-home-east-cobb/07.jpg", "/images/projects/whole-home-east-cobb/08.jpg", "/images/projects/whole-home-east-cobb/09.jpg", "/images/projects/whole-home-east-cobb/10.jpg", "/images/projects/whole-home-east-cobb/11.jpg", "/images/projects/whole-home-east-cobb/12.jpg", "/images/projects/whole-home-east-cobb/13.jpg", "/images/projects/whole-home-east-cobb/14.jpg", "/images/projects/whole-home-east-cobb/15.jpg"],
     excerpt: "A top-to-bottom whole-home renovation in East Cobb covering kitchen, bathrooms, flooring, and full interior updates.",
     description: "This East Cobb whole-home renovation gave the property a complete refresh from the ground up. TopFlight Builders coordinated all trades across multiple rooms simultaneously, delivering a cohesive finished product that transformed the entire home.",
