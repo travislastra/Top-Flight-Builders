@@ -4,7 +4,7 @@ import { reviews } from "@/lib/reviews";
 
 export const metadata = {
   title: "Testimonials | TopFlight Builders",
-  description: "See what Greater Atlanta homeowners say about TopFlight Builders — 32 five-star Google reviews.",
+  description: "See what Greater Atlanta homeowners say about TopFlight Builders — 50+ five-star Google reviews.",
   alternates: {
     canonical: "https://travislastra.github.io/Top-Flight-Builders/testimonials",
   },
@@ -48,7 +48,7 @@ export default function TestimonialsPage() {
             ))}
           </div>
           <span className="text-white font-bold text-2xl">5.0</span>
-          <span className="text-gray-400">· {reviews.length} Google Reviews</span>
+          <span className="text-gray-400">· 50+ Google Reviews</span>
         </div>
         <p className="text-gray-400 text-sm">Real reviews from real Greater Atlanta homeowners.</p>
       </section>

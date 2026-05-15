@@ -45,7 +45,7 @@ export default function ReviewsSlider() {
             ))}
           </div>
           <span className="text-white font-bold text-lg">5.0</span>
-          <span className="text-gray-400 text-sm">· {reviews.length} reviews</span>
+          <span className="text-gray-400 text-sm">· 50+ reviews</span>
         </div>
       </div>
 
