@@ -3,7 +3,7 @@ import Img from "@/components/Img";
 
 const projects = [
   {
-    image: "/images/complete-home-remodel-duluth.jpg",
+    image: "/images/home-run-1.jpg",
     title: "Master Bathroom Renovation",
     location: "Duluth, GA",
     tag: "Bathroom",
@@ -15,7 +15,7 @@ const projects = [
     tag: "Bathroom",
   },
   {
-    image: "/images/portfolio-kris.jpg",
+    image: "/images/home-run-2.jpg",
     title: "Custom Kitchen Remodel",
     location: "Marietta, GA",
     tag: "Kitchen",

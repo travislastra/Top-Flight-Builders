@@ -47,7 +47,7 @@ export const metadata: Metadata = {
       "Greater Atlanta's trusted remodeling experts. Kitchens, bathrooms, full home renovations. 20+ years combined experience. Free estimates — (404) 369-7129.",
     images: [
       {
-        url: BASE_URL + "/images/complete-home-remodel-duluth.jpg",
+        url: BASE_URL + "/images/home-run-1.jpg",
         width: 1200,
         height: 630,
         alt: "TopFlight Builders — Atlanta remodeling experts",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     title: "Kitchen & Bathroom Remodeling Atlanta GA | TopFlight Builders",
     description:
       "Greater Atlanta's trusted remodeling experts. Free estimates — (404) 369-7129.",
-    images: [BASE_URL + "/images/complete-home-remodel-duluth.jpg"],
+    images: [BASE_URL + "/images/home-run-1.jpg"],
   },
 };
 
@@ -69,7 +69,7 @@ const localBusinessSchema = {
   name: "TopFlight Builders LLC",
   url: BASE_URL,
   logo: BASE_URL + "/logo.png",
-  image: BASE_URL + "/images/complete-home-remodel-duluth.jpg",
+  image: BASE_URL + "/images/home-run-1.jpg",
   description:
     "Greater Atlanta's trusted remodeling experts specializing in kitchen remodeling, bathroom renovation, full home remodels, and restoration services.",
   telephone: "+1-404-369-7129",

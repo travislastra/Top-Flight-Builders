@@ -31,7 +31,7 @@ export default function OurWork() {
         <div className="grid grid-cols-2 gap-3">
           <div className="relative aspect-[3/4] rounded-xl overflow-hidden">
             <Img
-              src="/images/complete-home-remodel-duluth.jpg"
+              src="/images/home-run-1.jpg"
               alt="Bathroom remodel — frameless glass shower"
               fill
               className="object-cover"
@@ -39,7 +39,7 @@ export default function OurWork() {
           </div>
           <div className="relative aspect-[3/4] rounded-xl overflow-hidden lg:mt-8">
             <Img
-              src="/images/portfolio-kris.jpg"
+              src="/images/home-run-2.jpg"
               alt="Kitchen remodel — dark shaker cabinets"
               fill
               className="object-cover"

@@ -11,9 +11,9 @@ export const metadata = {
 };
 
 const projects = [
-  { image: "/images/complete-home-remodel-duluth.jpg", title: "Master Bathroom Renovation", location: "Duluth, GA", tag: "Bathroom" },
+  { image: "/images/home-run-1.jpg", title: "Master Bathroom Renovation", location: "Duluth, GA", tag: "Bathroom" },
   { image: "/images/bathroom-chamblee-remodel.jpg", title: "Luxury Shower Transformation", location: "Chamblee, GA", tag: "Bathroom" },
-  { image: "/images/portfolio-kris.jpg", title: "Custom Kitchen Remodel", location: "Marietta, GA", tag: "Kitchen" },
+  { image: "/images/home-run-2.jpg", title: "Custom Kitchen Remodel", location: "Marietta, GA", tag: "Kitchen" },
   { image: "/images/portfolio-maggie.jpg", title: "Open-Concept Kitchen Renovation", location: "Atlanta, GA", tag: "Kitchen" },
   { image: "/images/portfolio-magi.jpg", title: "Modern Kitchen with Accent Wall", location: "Smyrna, GA", tag: "Kitchen" },
 ];

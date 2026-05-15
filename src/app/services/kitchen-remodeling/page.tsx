@@ -44,7 +44,7 @@ export default function KitchenPage() {
           </div>
           <div className="grid grid-cols-2 gap-3">
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Img src="/images/portfolio-kris.jpg" alt="Kitchen remodel" fill className="object-cover" />
+              <Img src="/images/home-run-2.jpg" alt="Kitchen remodel" fill className="object-cover" />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden mt-6">
               <Img src="/images/portfolio-maggie.jpg" alt="Kitchen renovation" fill className="object-cover" />

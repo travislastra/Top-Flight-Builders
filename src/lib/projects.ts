@@ -32,8 +32,8 @@ export const projects: Project[] = [
     service: "kitchen",
     categories: ["Kitchens", "Featured"],
     tags: ["Cabinets", "Countertops", "Tile", "Lighting", "Islands"],
-    hero: "/images/portfolio-kris.jpg",
-    gallery: ["/images/portfolio-kris.jpg", "/images/portfolio-maggie.jpg", "/images/portfolio-magi.jpg"],
+    hero: "/images/home-run-2.jpg",
+    gallery: ["/images/home-run-2.jpg", "/images/portfolio-maggie.jpg", "/images/portfolio-magi.jpg"],
     excerpt: "A complete kitchen overhaul featuring dark shaker cabinetry, granite countertops, and a custom brick-faced island.",
     description: "This Dunwoody homeowner wanted a kitchen that blended sophistication with everyday function. The existing layout was outdated and lacked adequate storage and counter space. TopFlight Builders redesigned the space from the ground up, incorporating dark shaker cabinetry, granite countertops, and a statement island with a brick-faced base that became the centerpiece of the open-concept living area.",
     tasks: [
@@ -63,7 +63,7 @@ export const projects: Project[] = [
     categories: ["Kitchens"],
     tags: ["Cabinets", "Countertops", "Lighting", "Pass-Through", "Modern"],
     hero: "/images/portfolio-maggie.jpg",
-    gallery: ["/images/portfolio-maggie.jpg", "/images/portfolio-kris.jpg"],
+    gallery: ["/images/portfolio-maggie.jpg", "/images/home-run-2.jpg"],
     excerpt: "White shaker cabinets, brass pendant lighting, and a new pass-through opening create an airy, modern kitchen in this East Cobb home.",
     description: "This East Cobb kitchen refresh brought new life to a cramped, dated layout. The homeowners wanted a bright, open feel and a connection to the dining room that didn't exist before. TopFlight Builders created a pass-through opening, installed white shaker cabinetry with quartz countertops, and added warm brass pendant lighting to give the space a modern yet timeless feel.",
     tasks: [
@@ -121,7 +121,7 @@ export const projects: Project[] = [
     categories: ["Bathrooms", "Featured"],
     tags: ["Tile", "Shower", "Vanity", "Plumbing", "Modern"],
     hero: "/images/bathroom-chamblee-remodel.jpg",
-    gallery: ["/images/bathroom-chamblee-remodel.jpg", "/images/complete-home-remodel-duluth.jpg"],
+    gallery: ["/images/bathroom-chamblee-remodel.jpg", "/images/home-run-1.jpg"],
     excerpt: "A full master bath gut-and-rebuild featuring blue subway tile, a rainfall shower head, and custom double vanity.",
     description: "This Chamblee master bathroom was completely gutted and rebuilt from scratch. The homeowners wanted a spa-like retreat — and that's exactly what they got. TopFlight Builders designed and installed a walk-in shower with floor-to-ceiling blue subway tile, a rainfall shower head, and a custom double vanity with warm-toned lighting to create a bathroom that feels like a luxury hotel every single morning.",
     tasks: [
@@ -150,8 +150,8 @@ export const projects: Project[] = [
     service: "bathroom",
     categories: ["Bathrooms"],
     tags: ["Frameless Glass", "Tile", "Soaking Tub", "Heated Floor", "Luxury"],
-    hero: "/images/complete-home-remodel-duluth.jpg",
-    gallery: ["/images/complete-home-remodel-duluth.jpg", "/images/bathroom-chamblee-remodel.jpg"],
+    hero: "/images/home-run-1.jpg",
+    gallery: ["/images/home-run-1.jpg", "/images/bathroom-chamblee-remodel.jpg"],
     excerpt: "Frameless glass shower, freestanding soaking tub, heated pebble tile floors — a full luxury spa experience built in Sandy Springs.",
     description: "This Sandy Springs homeowner had one requirement: a bathroom that felt like a five-star hotel. TopFlight Builders delivered a frameless glass shower enclosure with pebble tile flooring, a freestanding soaking tub, and heated floors throughout. The result is a master bathroom that functions as a true retreat at the end of every day.",
     tasks: [
@@ -180,8 +180,8 @@ export const projects: Project[] = [
     service: "full-home",
     categories: ["Full Home", "Featured"],
     tags: ["Kitchen", "Bathrooms", "Flooring", "Cabinets", "Tile", "Modern"],
-    hero: "/images/complete-home-remodel-duluth.jpg",
-    gallery: ["/images/complete-home-remodel-duluth.jpg", "/images/portfolio-kris.jpg", "/images/bathroom-chamblee-remodel.jpg", "/images/portfolio-maggie.jpg"],
+    hero: "/images/home-run-1.jpg",
+    gallery: ["/images/home-run-1.jpg", "/images/home-run-2.jpg", "/images/bathroom-chamblee-remodel.jpg", "/images/portfolio-maggie.jpg"],
     excerpt: "A top-to-bottom home renovation covering kitchen, two bathrooms, new flooring throughout, and a complete interior repaint.",
     description: "This Sugarloaf Country Club home needed a complete refresh to match the standard of the neighborhood and the lifestyle of its new owners. TopFlight Builders managed a multi-phase renovation covering the kitchen, master bath, guest bath, and all flooring throughout the home. Every phase was coordinated to minimize disruption and deliver a cohesive, move-in-ready result.",
     tasks: [
@@ -213,8 +213,8 @@ export const projects: Project[] = [
     service: "full-home",
     categories: ["Full Home"],
     tags: ["Kitchen", "Bathrooms", "Flooring", "Modern", "Open Concept"],
-    hero: "/images/portfolio-kris.jpg",
-    gallery: ["/images/portfolio-kris.jpg", "/images/portfolio-magi.jpg", "/images/bathroom-chamblee-remodel.jpg"],
+    hero: "/images/home-run-2.jpg",
+    gallery: ["/images/home-run-2.jpg", "/images/portfolio-magi.jpg", "/images/bathroom-chamblee-remodel.jpg"],
     excerpt: "Open-concept conversion, kitchen remodel, two bath updates, and new flooring throughout — a complete Smyrna home transformation.",
     description: "The Smyrna homeowners purchased a dated 1990s home with the intention of modernizing it completely before moving in. TopFlight Builders removed a load-bearing wall to open the kitchen to the living area, remodeled the kitchen with dark shaker cabinetry and granite, updated both bathrooms, and installed new flooring throughout. The project was completed in 8 weeks.",
     tasks: [
@@ -247,7 +247,7 @@ export const projects: Project[] = [
     categories: ["Restoration"],
     tags: ["Water Damage", "Drywall", "Flooring", "Mold Remediation", "Plumbing"],
     hero: "/images/bathroom-chamblee-remodel.jpg",
-    gallery: ["/images/bathroom-chamblee-remodel.jpg", "/images/complete-home-remodel-duluth.jpg"],
+    gallery: ["/images/bathroom-chamblee-remodel.jpg", "/images/home-run-1.jpg"],
     excerpt: "Emergency water damage restoration following a plumbing failure — remediation, structural drying, drywall, flooring, and full finish work.",
     description: "A supply line failure caused significant water damage to this Marietta home's kitchen and adjacent hallway. TopFlight Builders responded quickly, coordinated drying and remediation, and handled all rebuild work from drywall to finished flooring. The homeowners were back to normal within 3 weeks from the date of the incident.",
     tasks: [
@@ -277,7 +277,7 @@ export const projects: Project[] = [
     categories: ["Basements & Additions", "Featured"],
     tags: ["Basement", "Wet Bar", "LVP Flooring", "Accent Wall", "Entertainment"],
     hero: "/images/portfolio-magi.jpg",
-    gallery: ["/images/portfolio-magi.jpg", "/images/portfolio-maggie.jpg", "/images/portfolio-kris.jpg"],
+    gallery: ["/images/portfolio-magi.jpg", "/images/portfolio-maggie.jpg", "/images/home-run-2.jpg"],
     excerpt: "Unfinished basement converted to a full entertainment suite with wet bar, accent wall, LVP flooring, and a dedicated home theater area.",
     description: "This Windward homeowner had an unfinished basement sitting empty for years. TopFlight Builders designed and built a complete entertainment suite — open main area, dedicated home theater zone, a wet bar with custom cabinetry, and a bold accent wall that anchors the space. The basement now gets more use than any other room in the home.",
     tasks: [
@@ -311,7 +311,7 @@ export const projects: Project[] = [
     categories: ["Age in Place", "Featured"],
     tags: ["Grab Bars", "Zero-Threshold Shower", "Wider Doorways", "ADA", "Bathroom", "Safety"],
     hero: "/images/bathroom-chamblee-remodel.jpg",
-    gallery: ["/images/bathroom-chamblee-remodel.jpg", "/images/complete-home-remodel-duluth.jpg"],
+    gallery: ["/images/bathroom-chamblee-remodel.jpg", "/images/home-run-1.jpg"],
     excerpt: "A full age-in-place conversion for a Roswell homeowner — zero-threshold shower, grab bars, widened doorways, and a safer, fully accessible bathroom.",
     description: "This Horseshoe Bend homeowner wanted to stay in their home long-term without sacrificing independence or style. TopFlight Builders completed a full age-in-place conversion of the master bathroom and key entry points throughout the home. Every modification was made to be functional and safe while maintaining a clean, modern aesthetic — nothing institutional about it.",
     tasks: [
