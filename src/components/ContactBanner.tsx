@@ -10,7 +10,7 @@ export default function ContactBanner() {
           </div>
           <div>
             <p className="text-blue-200 text-xs uppercase tracking-widest mb-1">Call Us</p>
-            <a href="tel:4043697129" className="text-white font-semibold hover:text-blue-100 transition-colors">
+            <a href="tel:4043697129" className="font-semibold hover:text-blue-100 transition-colors" style={{color: 'white'}}>
               (404) 369-7129
             </a>
           </div>
