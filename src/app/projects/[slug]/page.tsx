@@ -4,6 +4,7 @@ import Link from "next/link";
 import Img from "@/components/Img";
 import ContactBanner from "@/components/ContactBanner";
 import ProjectCard from "@/components/ProjectCard";
+import GalleryLightbox from "@/components/GalleryLightbox";
 import { projects, getRelatedProjects } from "@/lib/projects";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -172,13 +173,7 @@ export default async function ProjectPage({ params }: Props) {
         <section className="py-12 px-6 bg-[#F7F8FA]">
           <div className="max-w-5xl mx-auto">
             <h2 className="font-sans text-2xl font-extrabold text-[#0D1B2E] mb-8">Project Gallery</h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-              {project.gallery.map((img, i) => (
-                <div key={i} className="relative aspect-square rounded-xl overflow-hidden">
-                  <Img src={img} alt={`${project.title} — photo ${i + 1}`} fill className="object-cover hover:scale-105 transition-transform duration-500" />
-                </div>
-              ))}
-            </div>
+            <GalleryLightbox images={project.gallery} title={project.title} />
           </div>
         </section>
       )}
