@@ -36,7 +36,13 @@ export default async function ProjectPage({ params }: Props) {
       <section className="bg-[#0D1B2E] py-20 px-6">
         <div className="max-w-5xl mx-auto">
           <Link
-            href={`/services/${project.service === "full-home" ? "full-home-remodeling" : project.service === "basements" ? "services" : project.service + "-remodeling"}`}
+            href={
+              project.service === "full-home" ? "/services/full-home-remodeling" :
+              project.service === "basements" ? "/services" :
+              project.service === "age-in-place" ? "/services/age-in-place" :
+              project.service === "restoration" ? "/services/restoration" :
+              `/services/${project.service}-remodeling`
+            }
             className="inline-flex items-center gap-1 text-[#4A7FE8] text-sm font-semibold mb-6 hover:text-white transition-colors"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
