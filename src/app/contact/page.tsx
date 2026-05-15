@@ -1,8 +1,8 @@
 import LogoWatermark from "@/components/LogoWatermark";
 
 export const metadata = {
-  title: "Contact | TopFlight Builders",
-  description: "Get a free estimate from TopFlight Builders. Call (404) 369-7129 or fill out our contact form.",
+  title: "Contact a Remodeling Contractor in Atlanta | TopFlight Builders",
+  description: "Request a free estimate from TopFlight Builders — Greater Atlanta's trusted remodeling contractor. Call (404) 369-7129 or fill out our contact form. Serving Marietta, GA and surrounding areas.",
   alternates: {
     canonical: "https://travislastra.github.io/Top-Flight-Builders/contact",
   },

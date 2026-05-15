@@ -4,8 +4,8 @@ import { projects } from "@/lib/projects";
 import LogoWatermark from "@/components/LogoWatermark";
 
 export const metadata = {
-  title: "Portfolio | TopFlight Builders",
-  description: "Browse TopFlight Builders' portfolio of kitchen, bathroom, and home remodeling projects across Greater Atlanta.",
+  title: "Remodeling Portfolio Atlanta GA | Kitchen, Bath & Home Projects",
+  description: "Browse completed kitchen remodels, bathroom renovations, basement finishes, and full home projects by TopFlight Builders across Greater Atlanta — real photos from real jobs.",
   alternates: {
     canonical: "https://travislastra.github.io/Top-Flight-Builders/portfolio",
   },

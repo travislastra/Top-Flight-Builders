@@ -109,6 +109,13 @@ const localBusinessSchema = {
     "Duluth, GA",
   ],
   priceRange: "$$",
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "5.0",
+    reviewCount: "50",
+    bestRating: "5",
+    worstRating: "1",
+  },
   openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",
     dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],

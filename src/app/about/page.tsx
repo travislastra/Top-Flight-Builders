@@ -3,8 +3,8 @@ import ContactBanner from "@/components/ContactBanner";
 import LogoWatermark from "@/components/LogoWatermark";
 
 export const metadata = {
-  title: "About Us | TopFlight Builders",
-  description: "Learn about TopFlight Builders — Greater Atlanta's trusted remodeling experts with 20+ years of combined experience.",
+  title: "About TopFlight Builders | Atlanta Remodeling Contractor",
+  description: "TopFlight Builders is a locally owned general contractor serving Greater Atlanta. 20+ years of combined experience in kitchen, bathroom, and full home remodeling. Marietta, GA.",
   alternates: {
     canonical: "https://travislastra.github.io/Top-Flight-Builders/about",
   },

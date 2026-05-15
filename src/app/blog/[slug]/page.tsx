@@ -13,6 +13,8 @@ export async function generateStaticParams() {
   return posts.map((p) => ({ slug: p.slug }));
 }
 
+const BASE_URL = "https://travislastra.github.io/Top-Flight-Builders";
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = posts.find((p) => p.slug === slug);
@@ -20,6 +22,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${post.title} | TopFlight Builders`,
     description: post.excerpt,
+    alternates: {
+      canonical: `${BASE_URL}/blog/${slug}`,
+    },
   };
 }
 

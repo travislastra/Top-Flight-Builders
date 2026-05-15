@@ -4,8 +4,8 @@ import { reviews } from "@/lib/reviews";
 import LogoWatermark from "@/components/LogoWatermark";
 
 export const metadata = {
-  title: "Testimonials | TopFlight Builders",
-  description: "See what Greater Atlanta homeowners say about TopFlight Builders — 50+ five-star Google reviews.",
+  title: "5-Star Reviews | Atlanta Remodeling Contractor | TopFlight Builders",
+  description: "Read 50+ five-star Google reviews from Greater Atlanta homeowners. TopFlight Builders delivers kitchen remodels, bathroom renovations, and full home projects on time and on budget.",
   alternates: {
     canonical: "https://travislastra.github.io/Top-Flight-Builders/testimonials",
   },

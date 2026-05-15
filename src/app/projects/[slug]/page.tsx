@@ -14,6 +14,8 @@ export async function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
 }
 
+const BASE_URL = "https://travislastra.github.io/Top-Flight-Builders";
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const project = projects.find((p) => p.slug === slug);
@@ -21,6 +23,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${project.title} | TopFlight Builders`,
     description: project.excerpt,
+    alternates: {
+      canonical: `${BASE_URL}/projects/${slug}`,
+    },
   };
 }
 
