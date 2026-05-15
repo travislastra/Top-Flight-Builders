@@ -31,13 +31,13 @@ export default function HeroPlaceholder() {
     return () => clearInterval(timer);
   }, []);
 
-  // Logo parallax + fade on scroll
+  // Logo parallax — drifts down as user scrolls
   useEffect(() => {
     const handleScroll = () => {
       if (!bgLogoRef.current) return;
       const scrollY = window.scrollY;
-      bgLogoRef.current.style.transform = `translateY(${scrollY * 0.35}px) translateX(-50%)`;
-      bgLogoRef.current.style.opacity = String(Math.max(0, 0.07 - scrollY * 0.00015));
+      bgLogoRef.current.style.transform = `translateX(-50%) translateY(${scrollY * 0.45}px)`;
+      bgLogoRef.current.style.opacity = String(Math.max(0, 0.08 - scrollY * 0.00018));
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
@@ -72,13 +72,13 @@ export default function HeroPlaceholder() {
         }}
       />
 
-      {/* Logo watermark — parallax */}
+      {/* Logo watermark — starts above text, drifts down on scroll */}
       <div
         ref={bgLogoRef}
-        className="absolute top-1/2 left-1/2 pointer-events-none select-none"
+        className="absolute top-[8%] left-1/2 pointer-events-none select-none"
         style={{
-          opacity: 0.07,
-          transform: "translateY(-50%) translateX(-50%)",
+          opacity: 0.08,
+          transform: "translateX(-50%)",
           width: "min(90vw, 900px)",
         }}
         aria-hidden="true"
