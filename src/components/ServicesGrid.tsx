@@ -4,7 +4,7 @@ const BASE = "/Top-Flight-Builders";
 
 const services = [
   {
-    photo: "/images/projects/kitchen-laundry-east-cobb/03.jpg",
+    photo: "/images/kitchen-thumb.jpg",
     title: "Kitchen Remodeling",
     description: "Transform your kitchen into a stylish, functional space with custom cabinetry, countertops, and layout design.",
     href: "/services/kitchen-remodeling",

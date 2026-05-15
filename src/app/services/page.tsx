@@ -17,7 +17,7 @@ const services = [
     title: "Kitchen Remodeling",
     href: "/services/kitchen-remodeling",
     desc: "Custom cabinetry, countertops, layout redesign, islands, and full kitchen transformations.",
-    photo: "/images/projects/kitchen-laundry-east-cobb/02.jpg",
+    photo: "/images/kitchen-thumb.jpg",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 10h18M3 14h18M10 3v18M6 3v2m4-2v2m4-2v2M6 19v2m4-2v2m4-2v2" />
