@@ -31,7 +31,7 @@ export const projects: Project[] = [
     service: "kitchen",
     categories: ["Kitchens", "Featured"],
     tags: ["Cabinets", "Countertops", "Laundry Room", "Tile", "Modern"],
-    hero: "/images/projects/kitchen-laundry-east-cobb/01.jpg",
+    hero: "/images/projects/kitchen-laundry-east-cobb/09.jpg",
     gallery: ["/images/projects/kitchen-laundry-east-cobb/01.jpg", "/images/projects/kitchen-laundry-east-cobb/02.jpg", "/images/projects/kitchen-laundry-east-cobb/03.jpg", "/images/projects/kitchen-laundry-east-cobb/04.jpg", "/images/projects/kitchen-laundry-east-cobb/05.jpg", "/images/projects/kitchen-laundry-east-cobb/06.jpg", "/images/projects/kitchen-laundry-east-cobb/07.jpg", "/images/projects/kitchen-laundry-east-cobb/08.jpg", "/images/projects/kitchen-laundry-east-cobb/09.jpg", "/images/projects/kitchen-laundry-east-cobb/10.jpg", "/images/projects/kitchen-laundry-east-cobb/11.jpg", "/images/projects/kitchen-laundry-east-cobb/12.jpg", "/images/projects/kitchen-laundry-east-cobb/13.jpg", "/images/projects/kitchen-laundry-east-cobb/14.jpg", "/images/projects/kitchen-laundry-east-cobb/15.jpg", "/images/projects/kitchen-laundry-east-cobb/16.jpg"],
     excerpt: "Full kitchen and laundry room remodel in East Cobb — new cabinetry, countertops, tile, and a completely refreshed laundry space.",
     description: "This East Cobb homeowner wanted a comprehensive update to both their kitchen and laundry room. TopFlight Builders handled every detail of both spaces — from cabinet demolition to final finish work — delivering a cohesive, modern result throughout.",
