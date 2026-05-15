@@ -27,10 +27,9 @@ const getStarted = [
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden bg-[#0D1B2E] text-gray-300">
-      <LogoWatermark />
+    <footer className="bg-[#0D1B2E] text-gray-300">
       {/* Start Your Project strip */}
-      <div className="relative z-10 bg-[#1E4FBF] py-10 px-6 text-center">
+      <div className="bg-[#1E4FBF] py-10 px-6 text-center">
         <h3 className="font-sans text-2xl font-bold text-white mb-3">
           Ready to Start Your Project?
         </h3>
@@ -44,6 +43,10 @@ export default function Footer() {
           Start Your Project
         </Link>
       </div>
+
+      {/* Dark section — watermark scoped here so it centers in the dark area only */}
+      <div className="relative overflow-hidden">
+        <LogoWatermark />
 
       {/* Main footer */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 items-start">
@@ -161,6 +164,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      </div>{/* end dark watermark wrapper */}
     </footer>
   );
 }
