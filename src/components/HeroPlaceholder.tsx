@@ -31,13 +31,15 @@ export default function HeroPlaceholder() {
     return () => clearInterval(timer);
   }, []);
 
-  // Logo parallax — drifts down as user scrolls
+  // Logo parallax — travels top to bottom of hero section as user scrolls
   useEffect(() => {
     const handleScroll = () => {
       if (!bgLogoRef.current) return;
       const scrollY = window.scrollY;
-      bgLogoRef.current.style.transform = `translateX(-50%) translateY(${scrollY * 0.45}px)`;
-      bgLogoRef.current.style.opacity = String(Math.max(0, 0.08 - scrollY * 0.00018));
+      // Speed ~0.8 carries the logo from -6% top to near the section bottom
+      bgLogoRef.current.style.transform = `translateX(-50%) translateY(${scrollY * 0.8}px)`;
+      // Hold full opacity through most of the section, fade only in the final stretch
+      bgLogoRef.current.style.opacity = String(Math.max(0, 0.08 - Math.max(0, scrollY - 600) * 0.0004));
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
