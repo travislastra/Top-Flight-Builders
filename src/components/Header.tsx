@@ -142,6 +142,11 @@ export default function Header() {
                 <path d="M12 0L0 6.93v10.14L12 24l12-6.93V6.93L12 0zm-1.5 17.25V13.5H7.5v3.75H6V6.75l6-3.46 6 3.46v10.5h-1.5V13.5h-3v3.75h-1.5z"/>
               </svg>
             </a>
+            <a href="https://www.tiktok.com/@topflightbuildersatl" target="_blank" rel="noopener noreferrer" aria-label="TikTok" className="text-gray-400 hover:text-white transition-colors">
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.2 8.2 0 004.79 1.53V6.77a4.85 4.85 0 01-1.02-.08z"/>
+              </svg>
+            </a>
           </div>
           <Link
             href="/contact"
@@ -243,6 +248,11 @@ export default function Header() {
               <a href="https://www.houzz.com/professionals/general-contractors/topflight-builders-llc-pfvwus-pf~726210190" target="_blank" rel="noopener noreferrer" aria-label="Houzz" className="text-gray-400 hover:text-white transition-colors">
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 0L0 6.93v10.14L12 24l12-6.93V6.93L12 0zm-1.5 17.25V13.5H7.5v3.75H6V6.75l6-3.46 6 3.46v10.5h-1.5V13.5h-3v3.75h-1.5z"/>
+                </svg>
+              </a>
+              <a href="https://www.tiktok.com/@topflightbuildersatl" target="_blank" rel="noopener noreferrer" aria-label="TikTok" className="text-gray-400 hover:text-white transition-colors">
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.45a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.2 8.2 0 004.79 1.53V6.77a4.85 4.85 0 01-1.02-.08z"/>
                 </svg>
               </a>
             </div>

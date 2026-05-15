@@ -126,6 +126,7 @@ const localBusinessSchema = {
     "https://www.facebook.com/TopFlightBuildersLLC",
     "https://www.instagram.com/topflightbuildersllc/",
     "https://www.houzz.com/professionals/general-contractors/topflight-builders-llc-pfvwus-pf~726210190",
+    "https://www.tiktok.com/@topflightbuildersatl",
   ],
 };
 
