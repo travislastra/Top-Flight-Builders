@@ -1,38 +1,40 @@
 import Link from "next/link";
 
+const BASE = "/Top-Flight-Builders";
+
 const services = [
   {
-    icon: "🍳",
+    photo: "/images/projects/kitchen-laundry-east-cobb/03.jpg",
     title: "Kitchen Remodeling",
     description: "Transform your kitchen into a stylish, functional space with custom cabinetry, countertops, and layout design.",
     href: "/services/kitchen-remodeling",
   },
   {
-    icon: "🚿",
+    photo: "/images/projects/bathroom-brookhaven/02.jpg",
     title: "Bathroom Remodeling",
     description: "Create a personal sanctuary with spa-inspired features, custom tile work, and premium fixtures.",
     href: "/services/bathroom-remodeling",
   },
   {
-    icon: "🔧",
+    photo: "/images/home-run-1.jpg",
     title: "Restoration",
     description: "Expert restoration services to bring your home back to life — water damage, structural repairs, and more.",
     href: "/services/restoration",
   },
   {
-    icon: "🏠",
+    photo: "/images/projects/whole-home-east-cobb/04.jpg",
     title: "Full Home Remodeling",
     description: "Reimagine your entire home from top to bottom with a cohesive design and flawless execution.",
     href: "/services/full-home-remodeling",
   },
   {
-    icon: "🏗️",
+    photo: "/images/projects/basement-east-cobb/03.jpg",
     title: "Basements & Additions",
     description: "Expand your living space with a fully finished basement or home addition — designed and built to seamlessly match your existing home.",
     href: "/services",
   },
   {
-    icon: "♿",
+    photo: "/images/ada1.jpg",
     title: "Age in Place Remodeling",
     description: "ADA-compliant modifications that let you stay in your home safely and independently — grab bars, zero-threshold showers, wider doorways, and more.",
     href: "/services/age-in-place",
@@ -59,24 +61,36 @@ export default function ServicesGrid() {
           {services.map((service) => (
             <div
               key={service.title}
-              className="bg-white rounded-2xl p-7 shadow-sm border border-gray-100 hover:shadow-md hover:border-[#1E4FBF]/20 transition-all group"
+              className="relative rounded-2xl overflow-hidden shadow-sm group min-h-[240px]"
             >
-              <div className="text-3xl mb-4">{service.icon}</div>
-              <h3 className="font-sans text-lg font-bold text-[#0D1B2E] mb-2 group-hover:text-[#1E4FBF] transition-colors">
-                {service.title}
-              </h3>
-              <p className="text-gray-500 text-sm leading-relaxed mb-5">
-                {service.description}
-              </p>
-              <Link
-                href={service.href}
-                className="text-[#1E4FBF] font-semibold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all"
-              >
-                Learn More
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
+              {/* Background photo */}
+              <img
+                src={`${BASE}${service.photo}`}
+                alt=""
+                aria-hidden="true"
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+              {/* Overlay — heavier at bottom for text legibility */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/25" />
+
+              {/* Content */}
+              <div className="relative p-7 flex flex-col justify-end h-full min-h-[240px]">
+                <h3 className="font-sans text-xl font-bold text-white mb-2">
+                  {service.title}
+                </h3>
+                <p className="text-gray-200 text-sm leading-relaxed mb-5">
+                  {service.description}
+                </p>
+                <Link
+                  href={service.href}
+                  className="text-white font-semibold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all group-hover:text-[#4A7FE8]"
+                >
+                  Learn More
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
             </div>
           ))}
         </div>
