@@ -44,9 +44,9 @@ export default function Footer() {
       </div>
 
       {/* Main footer */}
-      <div className="max-w-7xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+      <div className="max-w-7xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 items-start">
         {/* Brand column */}
-        <div className="lg:col-span-1">
+        <div className="lg:col-span-2">
           <Link href="/">
             <Img
               src="/logo.png"
