@@ -75,8 +75,9 @@ export default function HeroPlaceholder() {
       {/* Logo watermark — starts above text, drifts down on scroll */}
       <div
         ref={bgLogoRef}
-        className="absolute top-[8%] left-1/2 pointer-events-none select-none"
+        className="absolute left-1/2 pointer-events-none select-none"
         style={{
+          top: "-6%",
           opacity: 0.08,
           transform: "translateX(-50%)",
           width: "min(90vw, 900px)",
