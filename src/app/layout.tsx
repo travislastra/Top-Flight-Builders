@@ -73,7 +73,7 @@ const localBusinessSchema = {
   description:
     "Greater Atlanta's trusted remodeling experts specializing in kitchen remodeling, bathroom renovation, full home remodels, and restoration services.",
   telephone: "+1-404-369-7129",
-  email: "admin@topflightbuilders.net",
+  email: "Admin@TopFlightBuilders.net",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Marietta",

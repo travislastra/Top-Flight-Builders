@@ -24,8 +24,8 @@ export default function ContactBanner() {
           </div>
           <div>
             <p className="text-blue-200 text-xs uppercase tracking-widest mb-1">Email Us</p>
-            <a href="mailto:admin@topflightbuilders.net" className="text-white font-semibold hover:text-blue-100 transition-colors text-sm">
-              admin@topflightbuilders.net
+            <a href="mailto:Admin@TopFlightBuilders.net" className="text-white font-semibold hover:text-blue-100 transition-colors text-sm">
+              Admin@TopFlightBuilders.net
             </a>
           </div>
         </div>

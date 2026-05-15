@@ -13,7 +13,7 @@ export default function TermsPage() {
           <h2 className="font-sans font-bold text-[#0D1B2E] text-xl mt-8 mb-3">Limitation of Liability</h2>
           <p>TopFlight Builders LLC shall not be liable for any indirect, incidental, or consequential damages arising from use of this website.</p>
           <h2 className="font-sans font-bold text-[#0D1B2E] text-xl mt-8 mb-3">Contact</h2>
-          <p>Questions? Reach us at <a href="mailto:admin@topflightbuilders.net" className="text-[#1E4FBF] hover:underline">admin@topflightbuilders.net</a>.</p>
+          <p>Questions? Reach us at <a href="mailto:Admin@TopFlightBuilders.net" className="text-[#1E4FBF] hover:underline">Admin@TopFlightBuilders.net</a>.</p>
         </div>
       </div>
     </section>

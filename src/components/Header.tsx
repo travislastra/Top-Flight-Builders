@@ -55,10 +55,10 @@ export default function Header() {
           (404) 369-7129
         </a>
         <a
-          href="mailto:admin@topflightbuilders.net"
+          href="mailto:Admin@TopFlightBuilders.net"
           className="hover:text-white transition-colors"
         >
-          admin@topflightbuilders.net
+          Admin@TopFlightBuilders.net
         </a>
         <span>Marietta, GA 30066</span>
       </div>
