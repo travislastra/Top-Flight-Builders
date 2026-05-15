@@ -1,5 +1,16 @@
 import Link from "next/link";
 
+const BASE = "/Top-Flight-Builders";
+
+const photos = [
+  "/images/projects/more-from-us/05.jpg",
+  "/images/projects/more-from-us/11.jpg",
+  "/images/projects/more-from-us/17.jpg",
+  "/images/projects/more-from-us/23.jpg",
+  "/images/projects/more-from-us/29.jpg",
+  "/images/projects/more-from-us/33.jpg",
+];
+
 export default function TeamContact() {
   return (
     <section className="py-20 px-6 bg-white">
@@ -16,7 +27,7 @@ export default function TeamContact() {
         <p className="text-gray-400 leading-relaxed mb-10 max-w-xl mx-auto">
           We offer free estimates and a no-pressure consultation process. Let&apos;s talk about what&apos;s possible for your space.
         </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
           <Link
             href="/contact"
             className="bg-[#1E4FBF] hover:bg-[#163A99] text-white font-bold px-8 py-4 rounded-lg transition-colors uppercase tracking-wide text-sm w-full sm:w-auto text-center"
@@ -30,6 +41,19 @@ export default function TeamContact() {
             (404) 369-7129
           </a>
         </div>
+      </div>
+
+      {/* Photo strip */}
+      <div className="max-w-7xl mx-auto grid grid-cols-3 md:grid-cols-6 gap-3 rounded-2xl overflow-hidden">
+        {photos.map((src, i) => (
+          <div key={i} className="relative aspect-square rounded-xl overflow-hidden">
+            <img
+              src={`${BASE}${src}`}
+              alt={`TopFlight Builders project ${i + 1}`}
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+        ))}
       </div>
     </section>
   );

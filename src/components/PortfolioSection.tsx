@@ -1,32 +1,10 @@
 import Link from "next/link";
-import Img from "@/components/Img";
+import { projects } from "@/lib/projects";
 
-const projects = [
-  {
-    image: "/images/home-run-1.jpg",
-    title: "Master Bathroom Renovation",
-    location: "Duluth, GA",
-    tag: "Bathroom",
-  },
-  {
-    image: "/images/bathroom-chamblee-remodel.jpg",
-    title: "Luxury Shower Transformation",
-    location: "Chamblee, GA",
-    tag: "Bathroom",
-  },
-  {
-    image: "/images/home-run-2.jpg",
-    title: "Custom Kitchen Remodel",
-    location: "Marietta, GA",
-    tag: "Kitchen",
-  },
-  {
-    image: "/images/portfolio-maggie.jpg",
-    title: "Open-Concept Kitchen Renovation",
-    location: "Atlanta, GA",
-    tag: "Kitchen",
-  },
-];
+const BASE = "/Top-Flight-Builders";
+
+// Show the 6 real projects (most recently added = end of array)
+const featured = [...projects].reverse().slice(0, 6);
 
 export default function PortfolioSection() {
   return (
@@ -44,36 +22,36 @@ export default function PortfolioSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
-          {projects.map((p) => (
-            <div key={p.title} className="group rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-lg transition-shadow">
-              <div className="relative aspect-[4/5] overflow-hidden">
-                <Img
-                  src={p.image}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
+          {featured.map((p) => (
+            <Link
+              key={p.slug}
+              href={`/projects/${p.slug}`}
+              className="group rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl transition-all bg-white"
+            >
+              <div className="relative aspect-[4/3] overflow-hidden">
+                <img
+                  src={`${BASE}${p.hero}`}
                   alt={p.title}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute top-3 left-3">
                   <span className="bg-[#1E4FBF] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
-                    {p.tag}
+                    {p.categories[0]}
                   </span>
                 </div>
               </div>
               <div className="p-4">
-                <h3 className="font-sans font-bold text-[#0D1B2E] text-sm mb-1">{p.title}</h3>
+                <h3 className="font-sans font-bold text-[#0D1B2E] text-sm mb-1 group-hover:text-[#1E4FBF] transition-colors">{p.title}</h3>
                 <p className="text-gray-400 text-xs mb-3">{p.location}</p>
-                <Link
-                  href="/portfolio"
-                  className="text-[#1E4FBF] font-semibold text-xs inline-flex items-center gap-1 hover:gap-2 transition-all"
-                >
+                <span className="text-[#1E4FBF] font-semibold text-xs inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                   View Project
                   <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
-                </Link>
+                </span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
