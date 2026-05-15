@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import GalleryLightbox from "@/components/GalleryLightbox";
 import ContactBanner from "@/components/ContactBanner";
+import LogoWatermark from "@/components/LogoWatermark";
 
 export const metadata: Metadata = {
   title: "More From Us | TopFlight Builders",
@@ -16,12 +17,15 @@ const images = ["/images/projects/more-from-us/01.jpg", "/images/projects/more-f
 export default function MoreFromUsPage() {
   return (
     <>
-      <section className="bg-[#0D1B2E] py-20 px-6 text-center">
-        <p className="text-[#4A7FE8] font-semibold text-sm uppercase tracking-widest mb-3">Our Work</p>
-        <h1 className="font-sans text-5xl font-extrabold text-white mb-5">More From Us</h1>
-        <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-          A look at more of our work across Greater Atlanta — kitchens, bathrooms, additions, renovations, and everything in between.
-        </p>
+      <section className="relative overflow-hidden bg-[#0D1B2E] py-20 px-6 text-center">
+        <LogoWatermark />
+        <div className="relative z-10">
+          <p className="text-[#4A7FE8] font-semibold text-sm uppercase tracking-widest mb-3">Our Work</p>
+          <h1 className="font-sans text-5xl font-extrabold text-white mb-5">More From Us</h1>
+          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+            A look at more of our work across Greater Atlanta — kitchens, bathrooms, additions, renovations, and everything in between.
+          </p>
+        </div>
       </section>
 
       <section className="py-16 px-6 bg-[#F7F8FA]">

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import LogoWatermark from "@/components/LogoWatermark";
 
 const BASE = "/Top-Flight-Builders";
 
@@ -47,8 +48,9 @@ const differentiators = [
 
 export default function OurDifference() {
   return (
-    <section className="py-20 px-6 bg-[#0D1B2E]">
-      <div className="max-w-7xl mx-auto">
+    <section className="relative overflow-hidden py-20 px-6 bg-[#0D1B2E]">
+      <LogoWatermark />
+      <div className="relative z-10 max-w-7xl mx-auto">
         <div className="text-center mb-14">
           <p className="text-[#4A7FE8] font-semibold text-sm uppercase tracking-widest mb-3">
             Why TopFlight

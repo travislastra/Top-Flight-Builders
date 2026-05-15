@@ -1,9 +1,11 @@
 import Link from "next/link";
+import LogoWatermark from "@/components/LogoWatermark";
 
 export default function OurCore() {
   return (
-    <section className="py-20 px-6 bg-[#0D1B2E]">
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+    <section className="relative overflow-hidden py-20 px-6 bg-[#0D1B2E]">
+      <LogoWatermark />
+      <div className="relative z-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
         {/* Stats */}
         <div className="grid grid-cols-2 gap-6">
           {[
@@ -51,3 +53,4 @@ export default function OurCore() {
     </section>
   );
 }
+

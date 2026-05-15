@@ -1,6 +1,7 @@
 import Link from "next/link";
 import ContactBanner from "@/components/ContactBanner";
 import { reviews } from "@/lib/reviews";
+import LogoWatermark from "@/components/LogoWatermark";
 
 export const metadata = {
   title: "Testimonials | TopFlight Builders",
@@ -36,7 +37,9 @@ function GoogleIcon() {
 export default function TestimonialsPage() {
   return (
     <>
-      <section className="bg-[#0D1B2E] py-20 px-6 text-center">
+      <section className="relative overflow-hidden bg-[#0D1B2E] py-20 px-6 text-center">
+        <LogoWatermark />
+        <div className="relative z-10">
         <p className="text-[#4A7FE8] font-semibold text-sm uppercase tracking-widest mb-3">Google Reviews</p>
         <h1 className="font-sans text-5xl font-extrabold text-white mb-5">What Our Customers Say</h1>
         <div className="flex items-center justify-center gap-2 mb-4">
@@ -51,6 +54,7 @@ export default function TestimonialsPage() {
           <span className="text-gray-400">· 50+ Google Reviews</span>
         </div>
         <p className="text-gray-400 text-sm">Real reviews from real Greater Atlanta homeowners.</p>
+        </div>
       </section>
 
       <section className="py-20 px-6 bg-[#F7F8FA]">

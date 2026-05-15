@@ -1,3 +1,5 @@
+import LogoWatermark from "@/components/LogoWatermark";
+
 export const metadata = {
   title: "Contact | TopFlight Builders",
   description: "Get a free estimate from TopFlight Builders. Call (404) 369-7129 or fill out our contact form.",
@@ -9,10 +11,13 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <>
-      <section className="bg-[#0D1B2E] py-20 px-6 text-center">
-        <p className="text-[#4A7FE8] font-semibold text-sm uppercase tracking-widest mb-3">Let&apos;s Talk</p>
-        <h1 className="font-sans text-5xl font-extrabold text-white mb-5">Contact Us</h1>
-        <p className="text-gray-300 text-lg max-w-xl mx-auto">Ready to start your project? Get in touch for a free, no-obligation estimate.</p>
+      <section className="relative overflow-hidden bg-[#0D1B2E] py-20 px-6 text-center">
+        <LogoWatermark />
+        <div className="relative z-10">
+          <p className="text-[#4A7FE8] font-semibold text-sm uppercase tracking-widest mb-3">Let&apos;s Talk</p>
+          <h1 className="font-sans text-5xl font-extrabold text-white mb-5">Contact Us</h1>
+          <p className="text-gray-300 text-lg max-w-xl mx-auto">Ready to start your project? Get in touch for a free, no-obligation estimate.</p>
+        </div>
       </section>
 
       <section className="py-20 px-6 bg-[#F7F8FA]">

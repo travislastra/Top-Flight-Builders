@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { posts, tagColors } from "@/lib/blog-posts";
 import ContactBanner from "@/components/ContactBanner";
+import LogoWatermark from "@/components/LogoWatermark";
 
 const categories = [
   { key: "all", label: "All" },
@@ -25,8 +26,9 @@ export default function BlogPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#0D1B2E] py-20 px-6">
-        <div className="max-w-4xl mx-auto">
+      <section className="relative overflow-hidden bg-[#0D1B2E] py-20 px-6">
+        <LogoWatermark />
+        <div className="relative z-10 max-w-4xl mx-auto">
           <p className="text-[#4A7FE8] font-semibold text-sm uppercase tracking-widest mb-3">Resources & Insights</p>
           <h1 className="font-sans text-5xl font-extrabold text-white mb-4 leading-tight">TFB Remodeling Blog</h1>
           <p className="text-gray-300 text-lg max-w-xl">Expert guides for Atlanta homeowners — kitchens, bathrooms, full-home remodels, and beyond.</p>

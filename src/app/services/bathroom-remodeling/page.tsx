@@ -3,6 +3,7 @@ import Img from "@/components/Img";
 import ContactBanner from "@/components/ContactBanner";
 import ProjectCard from "@/components/ProjectCard";
 import { getProjectsByService } from "@/lib/projects";
+import LogoWatermark from "@/components/LogoWatermark";
 
 export const metadata = {
   title: "Bathroom Remodeling Atlanta GA | TopFlight Builders",
@@ -17,10 +18,13 @@ export default function BathroomPage() {
 
   return (
     <>
-      <section className="bg-[#0D1B2E] py-20 px-6 text-center">
-        <p className="text-[#4A7FE8] font-semibold text-sm uppercase tracking-widest mb-3">Bathroom Remodeling</p>
-        <h1 className="font-sans text-5xl font-extrabold text-white mb-5">Bathroom Remodeling in Atlanta, GA</h1>
-        <p className="text-gray-300 text-lg max-w-xl mx-auto">Spa-inspired bathrooms with premium tile, custom showers, and expert craftsmanship.</p>
+      <section className="relative overflow-hidden bg-[#0D1B2E] py-20 px-6 text-center">
+        <LogoWatermark />
+        <div className="relative z-10">
+          <p className="text-[#4A7FE8] font-semibold text-sm uppercase tracking-widest mb-3">Bathroom Remodeling</p>
+          <h1 className="font-sans text-5xl font-extrabold text-white mb-5">Bathroom Remodeling in Atlanta, GA</h1>
+          <p className="text-gray-300 text-lg max-w-xl mx-auto">Spa-inspired bathrooms with premium tile, custom showers, and expert craftsmanship.</p>
+        </div>
       </section>
 
       <section className="py-20 px-6 bg-white">

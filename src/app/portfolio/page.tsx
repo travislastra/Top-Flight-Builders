@@ -1,6 +1,7 @@
 import Link from "next/link";
 import ContactBanner from "@/components/ContactBanner";
 import { projects } from "@/lib/projects";
+import LogoWatermark from "@/components/LogoWatermark";
 
 export const metadata = {
   title: "Portfolio | TopFlight Builders",
@@ -38,10 +39,13 @@ const ordered = [...projects].reverse();
 export default function PortfolioPage() {
   return (
     <>
-      <section className="bg-[#0D1B2E] py-20 px-6 text-center">
-        <p className="text-[#4A7FE8] font-semibold text-sm uppercase tracking-widest mb-3">Our Work</p>
-        <h1 className="font-sans text-5xl font-extrabold text-white mb-5">Portfolio</h1>
-        <p className="text-gray-300 text-lg max-w-xl mx-auto">A showcase of renovations we&apos;re proud to have delivered across Greater Atlanta.</p>
+      <section className="relative overflow-hidden bg-[#0D1B2E] py-20 px-6 text-center">
+        <LogoWatermark />
+        <div className="relative z-10">
+          <p className="text-[#4A7FE8] font-semibold text-sm uppercase tracking-widest mb-3">Our Work</p>
+          <h1 className="font-sans text-5xl font-extrabold text-white mb-5">Portfolio</h1>
+          <p className="text-gray-300 text-lg max-w-xl mx-auto">A showcase of renovations we&apos;re proud to have delivered across Greater Atlanta.</p>
+        </div>
       </section>
 
       {/* All Projects */}

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ContactBanner from "@/components/ContactBanner";
+import LogoWatermark from "@/components/LogoWatermark";
 
 export const metadata = {
   title: "About Us | TopFlight Builders",
@@ -13,8 +14,9 @@ export default function AboutPage() {
   return (
     <>
       {/* Page hero */}
-      <section className="bg-[#0D1B2E] py-20 px-6">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="relative overflow-hidden bg-[#0D1B2E] py-20 px-6">
+        <LogoWatermark />
+        <div className="relative z-10 max-w-4xl mx-auto text-center">
           <p className="text-[#4A7FE8] font-semibold text-sm uppercase tracking-widest mb-3">About TopFlight</p>
           <h1 className="font-sans text-5xl font-extrabold text-white mb-5">Who We Are</h1>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">

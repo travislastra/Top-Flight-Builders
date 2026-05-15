@@ -6,6 +6,7 @@ import ContactBanner from "@/components/ContactBanner";
 import ProjectCard from "@/components/ProjectCard";
 import GalleryLightbox from "@/components/GalleryLightbox";
 import { projects, getRelatedProjects } from "@/lib/projects";
+import LogoWatermark from "@/components/LogoWatermark";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -33,8 +34,9 @@ export default async function ProjectPage({ params }: Props) {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#0D1B2E] py-20 px-6">
-        <div className="max-w-5xl mx-auto">
+      <section className="relative overflow-hidden bg-[#0D1B2E] py-20 px-6">
+        <LogoWatermark />
+        <div className="relative z-10 max-w-5xl mx-auto">
           <Link
             href={
               project.service === "full-home" ? "/services/full-home-remodeling" :

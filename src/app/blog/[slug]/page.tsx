@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { posts, tagColors } from "@/lib/blog-posts";
 import ContactBanner from "@/components/ContactBanner";
+import LogoWatermark from "@/components/LogoWatermark";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -34,8 +35,9 @@ export default async function BlogPostPage({ params }: Props) {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#0D1B2E] py-16 px-6">
-        <div className="max-w-4xl mx-auto">
+      <section className="relative overflow-hidden bg-[#0D1B2E] py-16 px-6">
+        <LogoWatermark />
+        <div className="relative z-10 max-w-4xl mx-auto">
           <Link
             href="/blog"
             className="inline-flex items-center gap-2 text-[#4A7FE8] text-sm font-semibold hover:text-white transition-colors mb-6"
