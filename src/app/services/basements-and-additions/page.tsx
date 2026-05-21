@@ -6,8 +6,8 @@ import { getProjectsByService } from "@/lib/projects";
 import LogoWatermark from "@/components/LogoWatermark";
 
 export const metadata = {
-  title: "Basements & Additions Atlanta GA | TopFlight Builders",
-  description: "Basement finishing and home additions in Greater Atlanta. Transform unused space or expand your footprint — framing, drywall, flooring, and full finish work. Call (404) 369-7129.",
+  title: "Basements and Home Additions in Marietta GA | TopFlight Builders",
+  description: "Basement finishing and home additions in Marietta and Canton, GA by TopFlight Builders. Full build-out from framing to final finish. Licensed, insured, 50+ five-star reviews. Free estimate: (404) 369-7129.",
   alternates: {
     canonical: "https://travislastra.github.io/Top-Flight-Builders/services/basements-and-additions",
   },

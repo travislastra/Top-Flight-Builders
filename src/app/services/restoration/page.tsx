@@ -5,8 +5,8 @@ import { getProjectsByService } from "@/lib/projects";
 import LogoWatermark from "@/components/LogoWatermark";
 
 export const metadata = {
-  title: "Home Restoration Services Atlanta GA | TopFlight Builders",
-  description: "Water damage restoration, fire damage repair, and structural restoration in Atlanta, GA. Fast response, expert crews. Call TopFlight Builders at (404) 369-7129.",
+  title: "Storm, Water and Fire Restoration in Marietta GA | TopFlight Builders",
+  description: "Storm, water, and fire restoration in Marietta and Canton, GA by TopFlight Builders. Fast response, expert crews, full rebuild. Licensed, insured, 50+ five-star reviews. Free estimate: (404) 369-7129.",
   alternates: {
     canonical: "https://travislastra.github.io/Top-Flight-Builders/services/restoration",
   },

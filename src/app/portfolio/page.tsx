@@ -4,8 +4,8 @@ import { projects } from "@/lib/projects";
 import LogoWatermark from "@/components/LogoWatermark";
 
 export const metadata = {
-  title: "Remodeling Portfolio Atlanta GA | Kitchen, Bath & Home Projects",
-  description: "Browse completed kitchen remodels, bathroom renovations, basement finishes, and full home projects by TopFlight Builders across Greater Atlanta — real photos from real jobs.",
+  title: "Remodeling Portfolio | Marietta and Canton GA | TopFlight Builders",
+  description: "Browse completed remodeling projects by TopFlight Builders in Marietta and Canton, GA. Kitchens, bathrooms, full homes, basements, and more. Licensed, insured, 50+ five-star reviews.",
   alternates: {
     canonical: "https://travislastra.github.io/Top-Flight-Builders/portfolio",
   },

@@ -5,8 +5,8 @@ import ContactBanner from "@/components/ContactBanner";
 import LogoWatermark from "@/components/LogoWatermark";
 
 export const metadata: Metadata = {
-  title: "More From Us | TopFlight Builders",
-  description: "A look at more of our work across Greater Atlanta — kitchens, bathrooms, additions, renovations, and everything in between.",
+  title: "More Projects | Marietta and Canton Remodeling | TopFlight Builders",
+  description: "More remodeling work by TopFlight Builders across Marietta and Canton, GA. Kitchens, bathrooms, additions, and everything in between. Licensed, insured, 50+ five-star reviews. (404) 369-7129.",
   alternates: {
     canonical: "https://travislastra.github.io/Top-Flight-Builders/more-from-us",
   },

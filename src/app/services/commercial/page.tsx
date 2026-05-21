@@ -3,8 +3,8 @@ import ContactBanner from "@/components/ContactBanner";
 import LogoWatermark from "@/components/LogoWatermark";
 
 export const metadata = {
-  title: "Commercial Renovation Atlanta GA | TopFlight Builders",
-  description: "Commercial remodeling and build-out services in Atlanta, GA. Office renovations, retail spaces, investment properties. Licensed & insured. Call (404) 369-7129.",
+  title: "Commercial Construction and TI in Marietta GA | TopFlight Builders",
+  description: "Commercial construction and tenant improvements in Marietta and Canton, GA by TopFlight Builders. Office, retail, and investment properties. Licensed, insured, 50+ five-star reviews. (404) 369-7129.",
   alternates: {
     canonical: "https://travislastra.github.io/Top-Flight-Builders/services/commercial",
   },

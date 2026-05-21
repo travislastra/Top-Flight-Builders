@@ -5,8 +5,8 @@ import { getProjectsByService } from "@/lib/projects";
 import LogoWatermark from "@/components/LogoWatermark";
 
 export const metadata = {
-  title: "Full Home Remodeling Atlanta GA | TopFlight Builders",
-  description: "Complete home renovations in Atlanta, GA. From design to finish — kitchens, bathrooms, additions, and whole-house remodels. Free estimates. Call (404) 369-7129.",
+  title: "Whole Home Remodeling in Marietta and East Cobb | TopFlight Builders",
+  description: "Whole home remodeling in Marietta and Canton, GA by TopFlight Builders. Coordinated kitchens, baths, flooring, and full interior updates. Licensed, insured, 50+ five-star reviews. (404) 369-7129.",
   alternates: {
     canonical: "https://travislastra.github.io/Top-Flight-Builders/services/full-home-remodeling",
   },

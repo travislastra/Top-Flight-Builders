@@ -6,8 +6,8 @@ import { getProjectsByService } from "@/lib/projects";
 import LogoWatermark from "@/components/LogoWatermark";
 
 export const metadata = {
-  title: "Bathroom Remodeling Atlanta GA | TopFlight Builders",
-  description: "Expert bathroom remodeling in Atlanta, GA. Custom showers, tile work, vanities, and full bath renovations. Serving Marietta, Duluth, Alpharetta. Call (404) 369-7129.",
+  title: "Bathroom Remodeling in Marietta and Canton GA | TopFlight Builders",
+  description: "Bathroom remodeling in Marietta and Canton, GA by TopFlight Builders. Spa showers, frameless glass, custom tile, and vanities. Licensed, insured, 50+ five-star reviews. Free estimate: (404) 369-7129.",
   alternates: {
     canonical: "https://travislastra.github.io/Top-Flight-Builders/services/bathroom-remodeling",
   },

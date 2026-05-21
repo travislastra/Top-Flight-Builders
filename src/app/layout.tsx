@@ -21,11 +21,11 @@ const BASE_URL = "https://travislastra.github.io/Top-Flight-Builders";
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "Kitchen & Bathroom Remodeling Atlanta GA | TopFlight Builders",
+    default: "Remodeling and Restoration Contractor | Marietta and Canton GA | TopFlight Builders",
     template: "%s | TopFlight Builders",
   },
   description:
-    "TopFlight Builders — Greater Atlanta's trusted remodeling experts. Kitchen remodeling, bathroom renovation, full home remodels, and restoration. Marietta, GA. Call (404) 369-7129.",
+    "Remodeling and restoration in Marietta and Canton, GA by TopFlight Builders. Kitchen, bath, and full-home experts. Licensed, insured, 50+ five-star reviews. Free estimate: (404) 369-7129.",
   keywords: [
     "kitchen remodeling Atlanta",
     "bathroom remodeling Atlanta",
@@ -42,9 +42,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: BASE_URL + "/",
     siteName: "TopFlight Builders",
-    title: "Kitchen & Bathroom Remodeling Atlanta GA | TopFlight Builders",
+    title: "Remodeling and Restoration Contractor | Marietta and Canton GA | TopFlight Builders",
     description:
-      "Greater Atlanta's trusted remodeling experts. Kitchens, bathrooms, full home renovations. 20+ years combined experience. Free estimates — (404) 369-7129.",
+      "Remodeling and restoration in Marietta and Canton, GA by TopFlight Builders. Kitchen, bath, and full-home experts. Licensed, insured, 50+ five-star reviews. Free estimate: (404) 369-7129.",
     images: [
       {
         url: BASE_URL + "/images/home-run-1.jpg",
@@ -56,9 +56,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kitchen & Bathroom Remodeling Atlanta GA | TopFlight Builders",
+    title: "Remodeling and Restoration Contractor | Marietta and Canton GA | TopFlight Builders",
     description:
-      "Greater Atlanta's trusted remodeling experts. Free estimates — (404) 369-7129.",
+      "Remodeling and restoration in Marietta and Canton, GA by TopFlight Builders. Kitchen, bath, and full-home experts. Licensed, insured, 50+ five-star reviews. Free estimate: (404) 369-7129.",
     images: [BASE_URL + "/images/home-run-1.jpg"],
   },
 };
