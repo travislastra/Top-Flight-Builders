@@ -16,7 +16,7 @@ const services = [
     href: "/services/bathroom-remodeling",
   },
   {
-    photo: "/images/home-run-1.jpg",
+    photo: "/images/tree-on-house.jpg",
     title: "Restoration",
     description: "Expert restoration services to bring your home back to life — water damage, structural repairs, and more.",
     href: "/services/restoration",
