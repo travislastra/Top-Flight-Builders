@@ -181,11 +181,21 @@ export default async function ProjectPage({ params }: Props) {
         </div>
       </section>
 
-      {/* Gallery */}
-      {project.gallery.length > 1 && (
+      {/* Before Photos */}
+      {project.beforePhotos && project.beforePhotos.length > 0 && (
         <section className="py-12 px-6 bg-[#F7F8FA]">
           <div className="max-w-5xl mx-auto">
-            <h2 className="font-sans text-2xl font-extrabold text-[#0D1B2E] mb-8">Project Gallery</h2>
+            <h2 className="font-sans text-2xl font-extrabold text-[#0D1B2E] mb-8">Before</h2>
+            <GalleryLightbox images={project.beforePhotos} title={`${project.title} — Before`} />
+          </div>
+        </section>
+      )}
+
+      {/* After Gallery */}
+      {project.gallery.length > 0 && (
+        <section className="py-12 px-6 bg-[#F7F8FA]">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="font-sans text-2xl font-extrabold text-[#0D1B2E] mb-8">After</h2>
             <GalleryLightbox images={project.gallery} title={project.title} />
           </div>
         </section>

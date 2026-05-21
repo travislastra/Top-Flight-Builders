@@ -14,6 +14,7 @@ export interface Project {
   categories: string[];
   tags: string[];
   hero: string;
+  beforePhotos?: string[];
   gallery: string[];
   excerpt: string;
   description: string;
@@ -171,6 +172,178 @@ export const projects: Project[] = [
       },
     ],
     outcome: "A completely finished basement that added significant usable square footage to the home.",
+  },
+  {
+    slug: "bathroom-remodel-duluth",
+    title: "Bathroom Remodel — Duluth",
+    location: "Duluth, GA",
+    budget: "Contact for Pricing",
+    year: 2026,
+    service: "bathroom",
+    categories: ["Bathrooms"],
+    tags: ["Tile", "Shower", "Vanity", "Modern", "Plumbing"],
+    hero: "/images/projects/bathroom-remodel-duluth/01.jpg",
+    beforePhotos: ["/images/projects/bathroom-remodel-duluth/before-01.jpg", "/images/projects/bathroom-remodel-duluth/before-02.jpg"],
+    gallery: ["/images/projects/bathroom-remodel-duluth/01.jpg", "/images/projects/bathroom-remodel-duluth/02.jpg", "/images/projects/bathroom-remodel-duluth/03.jpg", "/images/projects/bathroom-remodel-duluth/04.jpg", "/images/projects/bathroom-remodel-duluth/05.jpg", "/images/projects/bathroom-remodel-duluth/06.jpg", "/images/projects/bathroom-remodel-duluth/07.jpg", "/images/projects/bathroom-remodel-duluth/08.jpg", "/images/projects/bathroom-remodel-duluth/09.jpg"],
+    excerpt: "A full bathroom remodel in Duluth — new tile, updated shower, modern vanity, and refreshed fixtures throughout.",
+    description: "This Duluth homeowner wanted to fully transform their dated bathroom into a clean, modern space. TopFlight Builders gutted the existing bathroom and rebuilt it from the ground up — custom tile work, a new shower enclosure, updated vanity, and all-new fixtures and lighting.",
+    tasks: [
+      {
+        area: "Demo & Waterproofing",
+        items: ["Full demolition of existing bathroom", "Waterproofing system installed in shower area"],
+      },
+      {
+        area: "Tile & Shower",
+        items: ["Custom tile shower with new enclosure", "Tile flooring throughout", "Niche and bench built into shower"],
+      },
+      {
+        area: "Vanity & Fixtures",
+        items: ["New vanity with updated countertop", "All-new plumbing fixtures and hardware", "Refreshed lighting and mirrors"],
+      },
+    ],
+    outcome: "A completely updated bathroom that the homeowners say feels like a different home.",
+  },
+  {
+    slug: "kitchen-remodel-marietta",
+    title: "Kitchen Remodel — Marietta",
+    location: "Marietta, GA",
+    budget: "Contact for Pricing",
+    year: 2026,
+    service: "kitchen",
+    categories: ["Kitchens"],
+    tags: ["Cabinets", "Countertops", "Backsplash", "Modern", "Fixtures"],
+    hero: "/images/projects/kitchen-remodel-marietta/01.jpg",
+    beforePhotos: ["/images/projects/kitchen-remodel-marietta/before-01.jpg", "/images/projects/kitchen-remodel-marietta/before-02.jpg"],
+    gallery: ["/images/projects/kitchen-remodel-marietta/01.jpg", "/images/projects/kitchen-remodel-marietta/02.jpg", "/images/projects/kitchen-remodel-marietta/03.jpg", "/images/projects/kitchen-remodel-marietta/04.jpg"],
+    excerpt: "A complete kitchen remodel in Marietta — new cabinetry, countertops, backsplash, and modernized fixtures.",
+    description: "This Marietta homeowner needed a kitchen that matched the quality of the rest of their home. TopFlight Builders delivered a full kitchen transformation — removing the existing cabinets and layout and replacing everything with new shaker cabinetry, quartz countertops, tile backsplash, and updated lighting.",
+    tasks: [
+      {
+        area: "Cabinets & Layout",
+        items: ["Removed existing cabinetry and appliances", "Installed new shaker-style cabinetry with soft-close hardware", "Optimized layout for improved workflow"],
+      },
+      {
+        area: "Countertops & Backsplash",
+        items: ["Quartz countertop installation", "Custom tile backsplash", "Updated sink and plumbing fixtures"],
+      },
+      {
+        area: "Lighting & Finish",
+        items: ["Recessed lighting throughout", "Under-cabinet lighting added", "Paint and trim refreshed"],
+      },
+    ],
+    outcome: "A modern kitchen remodel that significantly improved both the function and feel of the home.",
+  },
+  {
+    slug: "kitchen-flooring-bathroom",
+    title: "Kitchen, Flooring & Bathroom Remodel",
+    location: "Greater Atlanta, GA",
+    budget: "Contact for Pricing",
+    year: 2026,
+    service: "full-home",
+    categories: ["Full Home"],
+    tags: ["Kitchen", "Bathroom", "Flooring", "LVP", "Tile", "Modern"],
+    hero: "/images/projects/kitchen-flooring-bathroom/01.jpg",
+    beforePhotos: ["/images/projects/kitchen-flooring-bathroom/before-01.jpg", "/images/projects/kitchen-flooring-bathroom/before-02.jpg", "/images/projects/kitchen-flooring-bathroom/before-03.jpg"],
+    gallery: ["/images/projects/kitchen-flooring-bathroom/01.jpg", "/images/projects/kitchen-flooring-bathroom/02.jpg", "/images/projects/kitchen-flooring-bathroom/03.jpg", "/images/projects/kitchen-flooring-bathroom/04.jpg", "/images/projects/kitchen-flooring-bathroom/05.jpg", "/images/projects/kitchen-flooring-bathroom/06.jpg", "/images/projects/kitchen-flooring-bathroom/07.jpg", "/images/projects/kitchen-flooring-bathroom/08.jpg", "/images/projects/kitchen-flooring-bathroom/09.jpg", "/images/projects/kitchen-flooring-bathroom/10.jpg"],
+    excerpt: "A multi-room renovation covering kitchen, bathroom, and full flooring replacement throughout the home.",
+    description: "This homeowner tackled multiple major updates at once — a full kitchen remodel, bathroom renovation, and new flooring throughout. TopFlight Builders coordinated all three scopes simultaneously, minimizing disruption and delivering a cohesive finished result across every room.",
+    tasks: [
+      {
+        area: "Kitchen",
+        items: ["New cabinetry and countertops", "Tile backsplash and updated fixtures", "Lighting and hardware refresh"],
+      },
+      {
+        area: "Bathroom",
+        items: ["Full bathroom gut and rebuild", "Custom tile shower and flooring", "New vanity and fixtures"],
+      },
+      {
+        area: "Flooring",
+        items: ["LVP flooring installed throughout all living areas", "Transitions and trim work completed", "Existing subfloor prepped and leveled"],
+      },
+    ],
+    outcome: "Three major scopes completed under one contract — the homeowner got a fully refreshed home without juggling multiple contractors.",
+  },
+  {
+    slug: "kitchen-bathroom-feature-wall",
+    title: "Kitchen, Bathroom & Feature Wall",
+    location: "Greater Atlanta, GA",
+    budget: "Contact for Pricing",
+    year: 2026,
+    service: "full-home",
+    categories: ["Full Home"],
+    tags: ["Kitchen", "Bathroom", "Feature Wall", "Tile", "Modern", "Accent"],
+    hero: "/images/projects/kitchen-bathroom-feature-wall/01.jpg",
+    beforePhotos: ["/images/projects/kitchen-bathroom-feature-wall/before-01.jpg", "/images/projects/kitchen-bathroom-feature-wall/before-02.jpg"],
+    gallery: ["/images/projects/kitchen-bathroom-feature-wall/01.jpg", "/images/projects/kitchen-bathroom-feature-wall/02.jpg", "/images/projects/kitchen-bathroom-feature-wall/03.jpg", "/images/projects/kitchen-bathroom-feature-wall/04.jpg", "/images/projects/kitchen-bathroom-feature-wall/05.jpg", "/images/projects/kitchen-bathroom-feature-wall/06.jpg", "/images/projects/kitchen-bathroom-feature-wall/07.jpg", "/images/projects/kitchen-bathroom-feature-wall/08.jpg", "/images/projects/kitchen-bathroom-feature-wall/09.jpg", "/images/projects/kitchen-bathroom-feature-wall/10.jpg", "/images/projects/kitchen-bathroom-feature-wall/11.jpg"],
+    excerpt: "Kitchen and bathroom remodel paired with a custom feature wall — a multi-room update with a bold design statement.",
+    description: "This project combined a full kitchen remodel and bathroom renovation with a standout custom feature wall. TopFlight Builders handled all three scopes — delivering functional upgrades throughout the home while adding a dramatic design element that became the focal point of the main living space.",
+    tasks: [
+      {
+        area: "Kitchen",
+        items: ["New cabinetry, countertops, and backsplash", "Updated sink, fixtures, and lighting", "Appliance and hardware installation"],
+      },
+      {
+        area: "Bathroom",
+        items: ["Full tile shower rebuild", "New vanity and plumbing fixtures", "Tile flooring and updated lighting"],
+      },
+      {
+        area: "Feature Wall",
+        items: ["Custom feature wall design and build", "Tile or shiplap accent treatment", "Integrated lighting for visual impact"],
+      },
+    ],
+    outcome: "A home that functions better and looks dramatically different — the feature wall alone transformed the feel of the entire living area.",
+  },
+  {
+    slug: "kitchen-deck-east-cobb",
+    title: "Kitchen & Deck Remodel — East Cobb",
+    location: "East Cobb, GA",
+    budget: "Contact for Pricing",
+    year: 2026,
+    service: "kitchen",
+    categories: ["Kitchens"],
+    tags: ["Kitchen", "Deck", "Outdoor", "Cabinets", "Countertops", "Modern"],
+    hero: "/images/projects/kitchen-deck-east-cobb/01.jpg",
+    beforePhotos: ["/images/projects/kitchen-deck-east-cobb/before-01.jpg", "/images/projects/kitchen-deck-east-cobb/before-02.jpg"],
+    gallery: ["/images/projects/kitchen-deck-east-cobb/01.jpg", "/images/projects/kitchen-deck-east-cobb/02.jpg", "/images/projects/kitchen-deck-east-cobb/03.jpg", "/images/projects/kitchen-deck-east-cobb/04.jpg", "/images/projects/kitchen-deck-east-cobb/05.jpg", "/images/projects/kitchen-deck-east-cobb/06.jpg", "/images/projects/kitchen-deck-east-cobb/07.jpg", "/images/projects/kitchen-deck-east-cobb/08.jpg", "/images/projects/kitchen-deck-east-cobb/09.jpg", "/images/projects/kitchen-deck-east-cobb/10.jpg", "/images/projects/kitchen-deck-east-cobb/11.jpg", "/images/projects/kitchen-deck-east-cobb/12.jpg"],
+    excerpt: "Kitchen remodel and deck rebuild in East Cobb — updated interior and a refreshed outdoor living space.",
+    description: "This East Cobb homeowner wanted to upgrade both the kitchen and their outdoor space at the same time. TopFlight Builders delivered a full kitchen remodel with new cabinetry and countertops alongside a full deck rebuild — extending the livable space both inside and out.",
+    tasks: [
+      {
+        area: "Kitchen",
+        items: ["Removed existing cabinetry and replaced with new shaker cabinets", "Quartz countertops and tile backsplash", "Updated sink, fixtures, and recessed lighting"],
+      },
+      {
+        area: "Deck",
+        items: ["Demolished existing deck structure", "New deck framing, decking, and railings", "Stairs and landing rebuilt to code"],
+      },
+    ],
+    outcome: "A fully updated kitchen and a brand-new outdoor deck — two major upgrades completed under one project.",
+  },
+  {
+    slug: "fallen-tree-remodel",
+    title: "Fallen Tree Restoration — Marietta",
+    location: "Marietta, GA",
+    budget: "Contact for Pricing",
+    year: 2026,
+    service: "restoration",
+    categories: ["Restoration"],
+    tags: ["Storm Damage", "Restoration", "Roofing", "Drywall", "Structural"],
+    hero: "/images/projects/fallen-tree-remodel/01.jpg",
+    beforePhotos: ["/images/projects/fallen-tree-remodel/before-01.jpg", "/images/projects/fallen-tree-remodel/before-02.jpg", "/images/projects/fallen-tree-remodel/before-03.jpg", "/images/projects/fallen-tree-remodel/before-04.jpg", "/images/projects/fallen-tree-remodel/before-05.jpg", "/images/projects/fallen-tree-remodel/before-06.jpg"],
+    gallery: ["/images/projects/fallen-tree-remodel/01.jpg", "/images/projects/fallen-tree-remodel/02.jpg", "/images/projects/fallen-tree-remodel/03.jpg", "/images/projects/fallen-tree-remodel/04.jpg", "/images/projects/fallen-tree-remodel/05.jpg", "/images/projects/fallen-tree-remodel/06.jpg", "/images/projects/fallen-tree-remodel/07.jpg", "/images/projects/fallen-tree-remodel/08.jpg", "/images/projects/fallen-tree-remodel/09.jpg"],
+    excerpt: "Full storm damage restoration in Marietta after a fallen tree caused structural damage — from debris removal to finished interior.",
+    description: "When a fallen tree caused significant damage to this Marietta home, the homeowners needed a contractor who could handle the entire scope — from emergency stabilization to full interior restoration. TopFlight Builders managed the complete project: structural repairs, roofing, exterior work, and finished interior rebuild.",
+    tasks: [
+      {
+        area: "Structural & Exterior",
+        items: ["Emergency tarping and site stabilization", "Structural framing repairs", "Roofing replacement in affected areas", "Exterior siding and trim restored"],
+      },
+      {
+        area: "Interior Restoration",
+        items: ["Drywall removal and replacement throughout damaged areas", "Insulation replaced", "Paint, trim, and finish work to match existing home"],
+      },
+    ],
+    outcome: "The home was fully restored to pre-damage condition — structurally sound, finished throughout, and ready for the family to move back in.",
   },
 ];
 
