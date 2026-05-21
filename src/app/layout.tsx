@@ -121,7 +121,7 @@ const localBusinessSchema = {
     "https://www.tiktok.com/@topflightbuildersatl",
     "https://www.yelp.com/biz/topflight-builders-marietta-2",
     "https://www.bbb.org/us/ga/marietta/profile/construction-services/topflight-builders-llc-0443-28183084",
-    // TODO: add Google Business Profile URL when available
+    "https://maps.app.goo.gl/G4ZZUXj5a9LV4m8TA",
   ],
 };
 
