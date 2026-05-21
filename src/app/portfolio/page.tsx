@@ -2,6 +2,7 @@ import Link from "next/link";
 import ContactBanner from "@/components/ContactBanner";
 import { projects } from "@/lib/projects";
 import LogoWatermark from "@/components/LogoWatermark";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata = {
   title: "Remodeling Portfolio | Marietta and Canton GA | TopFlight Builders",
@@ -39,6 +40,10 @@ const ordered = [...projects].reverse();
 export default function PortfolioPage() {
   return (
     <>
+      <BreadcrumbSchema crumbs={[
+        { name: "Home", href: "/" },
+        { name: "Portfolio", href: "/portfolio" },
+      ]} />
       <section className="relative overflow-hidden bg-[#0D1B2E] py-20 px-6 text-center">
         <LogoWatermark />
         <div className="relative z-10">

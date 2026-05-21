@@ -4,6 +4,8 @@ import ContactBanner from "@/components/ContactBanner";
 import ProjectCard from "@/components/ProjectCard";
 import { getProjectsByService } from "@/lib/projects";
 import LogoWatermark from "@/components/LogoWatermark";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import ServiceSchema from "@/components/ServiceSchema";
 
 export const metadata = {
   title: "Kitchen Remodeling in Marietta GA | TopFlight Builders",
@@ -18,6 +20,15 @@ export default function KitchenPage() {
 
   return (
     <>
+      <BreadcrumbSchema crumbs={[
+        { name: "Home", href: "/" },
+        { name: "Services", href: "/services" },
+        { name: "Kitchen Remodeling", href: "/services/kitchen-remodeling" },
+      ]} />
+      <ServiceSchema
+        serviceType="Kitchen Remodeling"
+        description="Full kitchen remodels in Marietta and Canton, GA including custom cabinetry, countertops, tile, flooring, lighting, and plumbing."
+      />
       <section className="relative overflow-hidden bg-[#0D1B2E] py-20 px-6 text-center">
         <LogoWatermark />
         <div className="relative z-10">

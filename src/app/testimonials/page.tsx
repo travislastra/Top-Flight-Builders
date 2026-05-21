@@ -2,6 +2,7 @@ import Link from "next/link";
 import ContactBanner from "@/components/ContactBanner";
 import { reviews } from "@/lib/reviews";
 import LogoWatermark from "@/components/LogoWatermark";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata = {
   title: "5-Star Reviews | Marietta Remodeling Contractor | TopFlight Builders",
@@ -37,6 +38,10 @@ function GoogleIcon() {
 export default function TestimonialsPage() {
   return (
     <>
+      <BreadcrumbSchema crumbs={[
+        { name: "Home", href: "/" },
+        { name: "Testimonials", href: "/testimonials" },
+      ]} />
       <section className="relative overflow-hidden bg-[#0D1B2E] py-20 px-6 text-center">
         <LogoWatermark />
         <div className="relative z-10">

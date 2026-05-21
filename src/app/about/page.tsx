@@ -1,6 +1,7 @@
 import Link from "next/link";
 import ContactBanner from "@/components/ContactBanner";
 import LogoWatermark from "@/components/LogoWatermark";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata = {
   title: "About TopFlight Builders | Marietta and Canton GA Remodeling",
@@ -13,6 +14,21 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <>
+      <BreadcrumbSchema crumbs={[
+        { name: "Home", href: "/" },
+        { name: "About", href: "/about" },
+      ]} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Ilian Bogdanov",
+          "jobTitle": "Owner",
+          "worksFor": { "@id": "https://topflightbuilders.net/#business" },
+          "url": "https://topflightbuilders.net/about",
+        }) }}
+      />
       {/* Page hero */}
       <section className="relative overflow-hidden bg-[#0D1B2E] py-20 px-6">
         <LogoWatermark />

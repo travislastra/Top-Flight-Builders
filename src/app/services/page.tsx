@@ -1,6 +1,7 @@
 import Link from "next/link";
 import ContactBanner from "@/components/ContactBanner";
 import LogoWatermark from "@/components/LogoWatermark";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata = {
   title: "Remodeling Services in Marietta, Canton and North Atlanta | TopFlight Builders",
@@ -84,6 +85,10 @@ const services = [
 export default function ServicesPage() {
   return (
     <>
+      <BreadcrumbSchema crumbs={[
+        { name: "Home", href: "/" },
+        { name: "Services", href: "/services" },
+      ]} />
       <section className="relative overflow-hidden bg-[#0D1B2E] py-20 px-6 text-center">
         <LogoWatermark />
         <div className="relative z-10">

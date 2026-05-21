@@ -1,4 +1,5 @@
 import LogoWatermark from "@/components/LogoWatermark";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata = {
   title: "Contact a Remodeling Contractor | Marietta and Canton GA | TopFlight Builders",
@@ -11,6 +12,10 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <>
+      <BreadcrumbSchema crumbs={[
+        { name: "Home", href: "/" },
+        { name: "Contact", href: "/contact" },
+      ]} />
       <section className="relative overflow-hidden bg-[#0D1B2E] py-20 px-6 text-center">
         <LogoWatermark />
         <div className="relative z-10">

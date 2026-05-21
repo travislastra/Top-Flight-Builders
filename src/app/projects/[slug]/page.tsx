@@ -7,6 +7,7 @@ import ProjectCard from "@/components/ProjectCard";
 import GalleryLightbox from "@/components/GalleryLightbox";
 import { projects, getRelatedProjects } from "@/lib/projects";
 import LogoWatermark from "@/components/LogoWatermark";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -38,6 +39,11 @@ export default async function ProjectPage({ params }: Props) {
 
   return (
     <>
+      <BreadcrumbSchema crumbs={[
+        { name: "Home", href: "/" },
+        { name: "Portfolio", href: "/portfolio" },
+        { name: project.title, href: `/projects/${project.slug}` },
+      ]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-[#0D1B2E] py-20 px-6">
         <LogoWatermark />

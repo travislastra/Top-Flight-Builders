@@ -3,6 +3,8 @@ import ContactBanner from "@/components/ContactBanner";
 import ProjectCard from "@/components/ProjectCard";
 import { getProjectsByService } from "@/lib/projects";
 import LogoWatermark from "@/components/LogoWatermark";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import ServiceSchema from "@/components/ServiceSchema";
 
 export const metadata = {
   title: "Storm, Water and Fire Restoration in Marietta GA | TopFlight Builders",
@@ -17,6 +19,15 @@ export default function RestorationPage() {
 
   return (
     <>
+      <BreadcrumbSchema crumbs={[
+        { name: "Home", href: "/" },
+        { name: "Services", href: "/services" },
+        { name: "Restoration", href: "/services/restoration" },
+      ]} />
+      <ServiceSchema
+        serviceType="Storm, Water, and Fire Restoration"
+        description="Storm, water, and fire damage restoration in Marietta and Canton, GA including emergency response, structural drying, mold remediation, and full rebuild."
+      />
       <section className="relative overflow-hidden bg-[#0D1B2E] py-20 px-6 text-center">
         <LogoWatermark />
         <div className="relative z-10">

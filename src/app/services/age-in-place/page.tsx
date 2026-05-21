@@ -4,6 +4,8 @@ import ContactBanner from "@/components/ContactBanner";
 import ProjectCard from "@/components/ProjectCard";
 import { getProjectsByService } from "@/lib/projects";
 import LogoWatermark from "@/components/LogoWatermark";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import ServiceSchema from "@/components/ServiceSchema";
 
 export const metadata = {
   title: "ADA and Aging in Place Remodeling in Marietta GA | TopFlight Builders",
@@ -83,6 +85,15 @@ export default function AgeInPlacePage() {
 
   return (
     <>
+      <BreadcrumbSchema crumbs={[
+        { name: "Home", href: "/" },
+        { name: "Services", href: "/services" },
+        { name: "Age in Place Remodeling", href: "/services/age-in-place" },
+      ]} />
+      <ServiceSchema
+        serviceType="Age in Place Remodeling"
+        description="ADA-compliant age in place remodeling in Marietta and Canton, GA including grab bars, zero-threshold showers, wider doorways, ramps, and accessible modifications."
+      />
       {/* Hero */}
       <section className="relative overflow-hidden bg-[#0D1B2E] py-20 px-6 text-center">
         <LogoWatermark />

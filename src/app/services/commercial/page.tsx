@@ -1,6 +1,8 @@
 import Link from "next/link";
 import ContactBanner from "@/components/ContactBanner";
 import LogoWatermark from "@/components/LogoWatermark";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import ServiceSchema from "@/components/ServiceSchema";
 
 export const metadata = {
   title: "Commercial Construction and TI in Marietta GA | TopFlight Builders",
@@ -13,6 +15,15 @@ export const metadata = {
 export default function CommercialPage() {
   return (
     <>
+      <BreadcrumbSchema crumbs={[
+        { name: "Home", href: "/" },
+        { name: "Services", href: "/services" },
+        { name: "Commercial", href: "/services/commercial" },
+      ]} />
+      <ServiceSchema
+        serviceType="Commercial Construction and Tenant Improvements"
+        description="Commercial construction and tenant improvements in Marietta and Canton, GA including office renovations, retail build-outs, and investment property upgrades."
+      />
       <section className="relative overflow-hidden bg-[#0D1B2E] py-20 px-6 text-center">
         <LogoWatermark />
         <div className="relative z-10">

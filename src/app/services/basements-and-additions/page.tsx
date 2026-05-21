@@ -4,6 +4,8 @@ import ContactBanner from "@/components/ContactBanner";
 import ProjectCard from "@/components/ProjectCard";
 import { getProjectsByService } from "@/lib/projects";
 import LogoWatermark from "@/components/LogoWatermark";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import ServiceSchema from "@/components/ServiceSchema";
 
 export const metadata = {
   title: "Basements and Home Additions in Marietta GA | TopFlight Builders",
@@ -18,6 +20,15 @@ export default function BasementsPage() {
 
   return (
     <>
+      <BreadcrumbSchema crumbs={[
+        { name: "Home", href: "/" },
+        { name: "Services", href: "/services" },
+        { name: "Basements & Additions", href: "/services/basements-and-additions" },
+      ]} />
+      <ServiceSchema
+        serviceType="Basement Finishing and Home Additions"
+        description="Basement finishing and home additions in Marietta and Canton, GA including framing, insulation, drywall, flooring, lighting, and full build-out."
+      />
       <section className="relative overflow-hidden bg-[#0D1B2E] py-20 px-6 text-center">
         <LogoWatermark />
         <div className="relative z-10">

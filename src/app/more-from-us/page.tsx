@@ -3,6 +3,7 @@ import Link from "next/link";
 import GalleryLightbox from "@/components/GalleryLightbox";
 import ContactBanner from "@/components/ContactBanner";
 import LogoWatermark from "@/components/LogoWatermark";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "More Projects | Marietta and Canton Remodeling | TopFlight Builders",
@@ -17,6 +18,10 @@ const images = ["/images/projects/more-from-us/01.jpg", "/images/projects/more-f
 export default function MoreFromUsPage() {
   return (
     <>
+      <BreadcrumbSchema crumbs={[
+        { name: "Home", href: "/" },
+        { name: "More From Us", href: "/more-from-us" },
+      ]} />
       <section className="relative overflow-hidden bg-[#0D1B2E] py-20 px-6 text-center">
         <LogoWatermark />
         <div className="relative z-10">

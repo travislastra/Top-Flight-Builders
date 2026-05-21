@@ -3,6 +3,8 @@ import ContactBanner from "@/components/ContactBanner";
 import ProjectCard from "@/components/ProjectCard";
 import { getProjectsByService } from "@/lib/projects";
 import LogoWatermark from "@/components/LogoWatermark";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import ServiceSchema from "@/components/ServiceSchema";
 
 export const metadata = {
   title: "Whole Home Remodeling in Marietta and East Cobb | TopFlight Builders",
@@ -17,6 +19,15 @@ export default function FullHomePage() {
 
   return (
     <>
+      <BreadcrumbSchema crumbs={[
+        { name: "Home", href: "/" },
+        { name: "Services", href: "/services" },
+        { name: "Full Home Remodeling", href: "/services/full-home-remodeling" },
+      ]} />
+      <ServiceSchema
+        serviceType="Full Home Remodeling"
+        description="Whole home renovations in Marietta and Canton, GA coordinating kitchens, bathrooms, flooring, painting, and full interior updates under one team."
+      />
       <section className="relative overflow-hidden bg-[#0D1B2E] py-20 px-6 text-center">
         <LogoWatermark />
         <div className="relative z-10">

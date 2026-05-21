@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { posts, tagColors } from "@/lib/blog-posts";
 import ContactBanner from "@/components/ContactBanner";
 import LogoWatermark from "@/components/LogoWatermark";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -39,6 +40,11 @@ export default async function BlogPostPage({ params }: Props) {
 
   return (
     <>
+      <BreadcrumbSchema crumbs={[
+        { name: "Home", href: "/" },
+        { name: "Blog", href: "/blog" },
+        { name: post.title, href: `/blog/${post.slug}` },
+      ]} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-[#0D1B2E] py-16 px-6">
         <LogoWatermark />

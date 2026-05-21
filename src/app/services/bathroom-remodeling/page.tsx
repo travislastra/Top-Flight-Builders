@@ -4,6 +4,8 @@ import ContactBanner from "@/components/ContactBanner";
 import ProjectCard from "@/components/ProjectCard";
 import { getProjectsByService } from "@/lib/projects";
 import LogoWatermark from "@/components/LogoWatermark";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import ServiceSchema from "@/components/ServiceSchema";
 
 export const metadata = {
   title: "Bathroom Remodeling in Marietta and Canton GA | TopFlight Builders",
@@ -18,6 +20,15 @@ export default function BathroomPage() {
 
   return (
     <>
+      <BreadcrumbSchema crumbs={[
+        { name: "Home", href: "/" },
+        { name: "Services", href: "/services" },
+        { name: "Bathroom Remodeling", href: "/services/bathroom-remodeling" },
+      ]} />
+      <ServiceSchema
+        serviceType="Bathroom Remodeling"
+        description="Full bathroom remodels in Marietta and Canton, GA including custom showers, frameless glass, tile work, vanities, and premium fixture installation."
+      />
       <section className="relative overflow-hidden bg-[#0D1B2E] py-20 px-6 text-center">
         <LogoWatermark />
         <div className="relative z-10">
