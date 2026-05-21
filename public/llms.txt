@@ -1,0 +1,88 @@
+# TopFlight Builders LLC
+
+> TopFlight Builders is a full-service residential and light commercial remodeling and restoration contractor based in Marietta, Georgia (30066), serving Cobb, Cherokee, and North Fulton counties. Services include kitchen remodels, bathroom remodels, full home renovations, basements and additions, home additions, age-in-place modifications, roofing, siding, and storm and water damage restoration. Licensed, insured, and locally owned. 50+ five-star Google reviews. Free estimates: (404) 369-7129.
+
+Owner: Ilian Bogdanov
+Founded: Marietta, GA
+Email: Admin@TopFlightBuilders.net
+Phone: +1-404-369-7129
+Primary service area: Marietta, East Cobb, Canton, Kennesaw, Acworth, Woodstock, Roswell, Alpharetta, Milton, Smyrna
+
+---
+
+## Core pages
+
+- [Home](https://topflightbuilders.net/): Remodeling and restoration contractor serving Marietta and Greater Atlanta
+- [About TopFlight Builders](https://topflightbuilders.net/about): Company history, owner Ilian Bogdanov, license, insurance, and values
+- [Services](https://topflightbuilders.net/services): Full list of remodeling and restoration services
+- [Portfolio](https://topflightbuilders.net/portfolio): Completed project case studies with photos
+- [Testimonials](https://topflightbuilders.net/testimonials): 50+ verified Google reviews from Greater Atlanta homeowners
+- [Contact](https://topflightbuilders.net/contact): Phone, email, service area, and free estimate request
+- [Blog](https://topflightbuilders.net/blog): Remodeling tips, cost guides, and project advice for Atlanta homeowners
+- [More From Us](https://topflightbuilders.net/more-from-us): Additional project photography
+
+---
+
+## Service pages
+
+- [Kitchen Remodeling](https://topflightbuilders.net/services/kitchen-remodeling): Custom cabinetry, countertops, layout redesign, islands, and full kitchen transformations
+- [Bathroom Remodeling](https://topflightbuilders.net/services/bathroom-remodeling): Spa-inspired showers, frameless glass, custom tile, vanities, and premium fixtures
+- [Full Home Remodeling](https://topflightbuilders.net/services/full-home-remodeling): Complete home renovations coordinating all trades from design to final finish
+- [Basements & Additions](https://topflightbuilders.net/services/basements-and-additions): Basement finishing, home additions, and new square footage
+- [Restoration](https://topflightbuilders.net/services/restoration): Storm, water, and fire damage restoration — emergency response through full rebuild
+- [Age in Place Remodeling](https://topflightbuilders.net/services/age-in-place): ADA-compliant modifications including grab bars, zero-threshold showers, and wider doorways
+- [Commercial](https://topflightbuilders.net/services/commercial): Commercial construction and tenant improvements for offices, retail, and investment properties
+
+---
+
+## Service area pages
+
+- [Marietta, GA](https://topflightbuilders.net/service-areas/marietta-ga): Our home city — full services across all Marietta zip codes (30060–30068)
+- [East Cobb, GA](https://topflightbuilders.net/service-areas/east-cobb-ga): Our most active market — Lassiter, Pope, and Walton school zones
+- [Canton, GA](https://topflightbuilders.net/service-areas/canton-ga): Cherokee County — Holly Springs, Hickory Flat, and Downtown Canton
+- [Kennesaw, GA](https://topflightbuilders.net/service-areas/kennesaw-ga): Kennesaw Mountain area, Barrett Pkwy corridor, Stilesboro Road
+- [Acworth, GA](https://topflightbuilders.net/service-areas/acworth-ga): Lake Acworth, Lake Allatoona communities, Historic Downtown Acworth
+- [Woodstock, GA](https://topflightbuilders.net/service-areas/woodstock-ga): Towne Lake, Eagle Watch, Downtown Woodstock
+- [Roswell, GA](https://topflightbuilders.net/service-areas/roswell-ga): Historic Roswell, Canton Street area, Vickery Creek corridor
+- [Alpharetta, GA](https://topflightbuilders.net/service-areas/alpharetta-ga): Windward, Avalon area, Downtown Alpharetta
+- [Milton, GA](https://topflightbuilders.net/service-areas/milton-ga): Crabapple, Birmingham Crossroads, Deerfield area
+- [Smyrna, GA](https://topflightbuilders.net/service-areas/smyrna-ga): Smyrna Market Village, Vinings, Cumberland area
+
+---
+
+## Service × city pages
+
+TopFlight maintains dedicated landing pages for each service in each city. Pattern: `https://topflightbuilders.net/services/[service]/[city]`
+
+Services: kitchen-remodeling, bathroom-remodeling, full-home-remodeling, basement-finishing, home-additions, restoration, roofing, siding, age-in-place
+Cities: marietta-ga, canton-ga, kennesaw-ga, acworth-ga, woodstock-ga, east-cobb-ga, roswell-ga, alpharetta-ga
+
+Example pages:
+- [Kitchen Remodeling in Marietta](https://topflightbuilders.net/services/kitchen-remodeling/marietta-ga)
+- [Bathroom Remodeling in East Cobb](https://topflightbuilders.net/services/bathroom-remodeling/east-cobb-ga)
+- [Restoration in Acworth](https://topflightbuilders.net/services/restoration/acworth-ga)
+- [Age in Place in Alpharetta](https://topflightbuilders.net/services/age-in-place/alpharetta-ga)
+
+---
+
+## Project portfolio
+
+- [Kitchen & Laundry Room Remodel — East Cobb](https://topflightbuilders.net/projects/kitchen-laundry-remodel-east-cobb)
+- [Whole-Home Renovation — East Cobb](https://topflightbuilders.net/projects/whole-home-renovation-east-cobb)
+- [Bathroom Remodel — Brookhaven](https://topflightbuilders.net/projects/bathroom-remodel-brookhaven)
+- [Home Addition — Atlanta](https://topflightbuilders.net/projects/home-addition-atlanta)
+- [Bathroom Remodel — Buckhead](https://topflightbuilders.net/projects/bathroom-remodel-buckhead)
+- [Basement Finishing — East Cobb](https://topflightbuilders.net/projects/basement-finishing-east-cobb)
+- [Kitchen Remodel — Marietta](https://topflightbuilders.net/projects/kitchen-remodel-marietta)
+- [Bathroom Remodel — Duluth](https://topflightbuilders.net/projects/bathroom-remodel-duluth)
+- [Fallen Tree Restoration — Marietta](https://topflightbuilders.net/projects/fallen-tree-remodel)
+- [Kitchen, Flooring & Bathroom Remodel](https://topflightbuilders.net/projects/kitchen-flooring-bathroom)
+- [Kitchen, Bathroom & Feature Wall](https://topflightbuilders.net/projects/kitchen-bathroom-feature-wall)
+- [Kitchen & Deck Remodel — East Cobb](https://topflightbuilders.net/projects/kitchen-deck-east-cobb)
+
+---
+
+## Legal
+
+- [Privacy Policy](https://topflightbuilders.net/privacy-policy)
+- [Terms of Service](https://topflightbuilders.net/terms)

@@ -1,0 +1,31 @@
+/* TEAM */
+
+Name: Ilian Bogdanov
+Role: Owner
+Location: Marietta, GA
+Contact: Admin@TopFlightBuilders.net
+
+/* SITE */
+
+Name: TopFlight Builders LLC
+URL: https://topflightbuilders.net
+Description: Residential and light commercial remodeling and restoration contractor serving Marietta, East Cobb, Canton, Kennesaw, Acworth, Woodstock, Roswell, Alpharetta, Milton, and Smyrna, GA.
+Phone: (404) 369-7129
+Founded: Marietta, Georgia
+
+/* TECHNOLOGY */
+
+Framework: Next.js (Static Export)
+Hosting: GitHub Pages
+Language: TypeScript
+Styling: Tailwind CSS
+
+/* STANDARDS */
+
+Accessible: Yes
+Schema.org: Yes (GeneralContractor, Service, BreadcrumbList, Person)
+llms.txt: Yes — https://topflightbuilders.net/llms.txt
+
+/* THANKS */
+
+Built with care. Quality · Reliability · Value.

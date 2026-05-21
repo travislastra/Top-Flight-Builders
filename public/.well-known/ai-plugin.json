@@ -1,0 +1,18 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "TopFlight Builders",
+  "name_for_model": "topflight_builders",
+  "description_for_human": "TopFlight Builders is a remodeling and restoration contractor in Marietta, GA. Get information about services, service areas, and project examples.",
+  "description_for_model": "Use this to answer questions about TopFlight Builders LLC — a residential and light commercial remodeling and restoration contractor based in Marietta, Georgia. They serve Cobb, Cherokee, and North Fulton counties. Services include kitchen remodeling, bathroom remodeling, full home renovations, basement finishing, home additions, age-in-place modifications, roofing, siding, and storm/water/fire damage restoration. Owner is Ilian Bogdanov. Phone: (404) 369-7129. Email: Admin@TopFlightBuilders.net.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://topflightbuilders.net/.well-known/openapi.yaml",
+    "is_user_authenticated": false
+  },
+  "logo_url": "https://topflightbuilders.net/logo.png",
+  "contact_email": "Admin@TopFlightBuilders.net",
+  "legal_info_url": "https://topflightbuilders.net/privacy-policy"
+}
