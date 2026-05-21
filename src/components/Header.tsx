@@ -17,8 +17,6 @@ const navItems = [
       { label: "Restoration", href: "/services/restoration" },
       { label: "Basements & Additions", href: "/services" },
       { label: "Age in Place", href: "/services/age-in-place" },
-      { label: "Commercial", href: "/services/commercial" },
-      { label: "Flooring & Finishes", href: "/services" },
     ],
   },
   { label: "Portfolio", href: "/portfolio" },
