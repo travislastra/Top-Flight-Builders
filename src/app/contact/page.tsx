@@ -1,5 +1,6 @@
 import LogoWatermark from "@/components/LogoWatermark";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import ContactForm from "@/components/ContactForm";
 
 export const metadata = {
   title: "Contact a Remodeling Contractor | Marietta and Canton GA | TopFlight Builders",
@@ -20,8 +21,8 @@ export default function ContactPage() {
         <LogoWatermark />
         <div className="relative z-10">
           <p className="text-[#4A7FE8] font-semibold text-sm uppercase tracking-widest mb-3">Let&apos;s Talk</p>
-          <h1 className="font-sans text-5xl font-extrabold text-white mb-5">Contact Us</h1>
-          <p className="text-gray-300 text-lg max-w-xl mx-auto">Ready to start your project? Get in touch for a free, no-obligation estimate.</p>
+          <h1 className="font-sans text-5xl font-extrabold text-white mb-5">Get a Free Estimate</h1>
+          <p className="text-gray-300 text-lg max-w-xl mx-auto">No-obligation, no pressure — just an honest conversation about your project.</p>
         </div>
       </section>
 
@@ -45,7 +46,9 @@ export default function ContactPage() {
                   <div>
                     <p className="text-gray-400 text-xs uppercase tracking-widest mb-1">{item.label}</p>
                     {item.href ? (
-                      <a href={item.href} className="font-semibold text-[#0D1B2E] hover:text-[#1E4FBF] transition-colors">{item.value}</a>
+                      <a href={item.href} className="font-semibold text-[#0D1B2E] hover:text-[#1E4FBF] transition-colors">
+                        {item.value}
+                      </a>
                     ) : (
                       <p className="font-semibold text-[#0D1B2E]">{item.value}</p>
                     )}
@@ -56,52 +59,17 @@ export default function ContactPage() {
 
             <div className="bg-white rounded-2xl p-6 border border-gray-100">
               <p className="font-sans font-bold text-[#0D1B2E] mb-2">Service Area</p>
-              <p className="text-gray-500 text-sm leading-relaxed">We serve homeowners throughout the Greater Atlanta area including Atlanta, Decatur, Marietta, Dunwoody, Alpharetta, Canton, Kennesaw, Smyrna, Sandy Springs, Woodstock, Roswell, Tucker, Buckhead, Vinings, Brookhaven, Mableton, Acworth, Norcross, Duluth, and the surrounding areas.</p>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                We serve homeowners throughout the Greater Atlanta area including Marietta, Alpharetta, Canton,
+                Kennesaw, Smyrna, Sandy Springs, Woodstock, Roswell, East Cobb, Acworth, Milton, and surrounding communities.
+              </p>
             </div>
           </div>
 
           {/* Form */}
           <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
-            <h2 className="font-sans text-2xl font-bold text-[#0D1B2E] mb-6">Send Us a Message</h2>
-            <form className="space-y-5">
-              <div className="grid md:grid-cols-2 gap-5">
-                <div>
-                  <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">First Name</label>
-                  <input type="text" className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#1E4FBF] transition-colors" placeholder="John" />
-                </div>
-                <div>
-                  <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">Last Name</label>
-                  <input type="text" className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#1E4FBF] transition-colors" placeholder="Smith" />
-                </div>
-              </div>
-              <div>
-                <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">Email</label>
-                <input type="email" className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#1E4FBF] transition-colors" placeholder="john@example.com" />
-              </div>
-              <div>
-                <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">Phone</label>
-                <input type="tel" className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#1E4FBF] transition-colors" placeholder="(404) 555-0000" />
-              </div>
-              <div>
-                <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">Service Interested In</label>
-                <select className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#1E4FBF] transition-colors text-gray-600">
-                  <option value="">Select a service...</option>
-                  <option>Kitchen Remodeling</option>
-                  <option>Bathroom Remodeling</option>
-                  <option>Restoration</option>
-                  <option>Full Home Remodeling</option>
-                  <option>Commercial</option>
-                  <option>Other</option>
-                </select>
-              </div>
-              <div>
-                <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">Message</label>
-                <textarea rows={4} className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#1E4FBF] transition-colors resize-none" placeholder="Tell us about your project..." />
-              </div>
-              <button type="submit" className="w-full bg-[#1E4FBF] hover:bg-[#163A99] text-white font-bold py-4 rounded-lg transition-colors uppercase tracking-wide text-sm">
-                Send Message
-              </button>
-            </form>
+            <h2 className="font-sans text-2xl font-bold text-[#0D1B2E] mb-6">Request Your Free Estimate</h2>
+            <ContactForm />
           </div>
         </div>
       </section>

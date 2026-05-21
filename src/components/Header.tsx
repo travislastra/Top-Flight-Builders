@@ -157,7 +157,7 @@ export default function Header() {
         {/* Mobile: hamburger right */}
         <div className="lg:hidden flex justify-end">
           <button
-            className="text-white p-2"
+            className="text-white p-2.5 min-h-[44px] min-w-[44px] flex items-center justify-center"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
           >

@@ -31,6 +31,11 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          # Web3Forms key enables contact form email delivery to Admin@TopFlightBuilders.net
+          # 1. Sign up free at https://web3forms.com (2 min, no credit card)
+          # 2. GitHub → this repo → Settings → Secrets → Actions → New secret → W3F_KEY
+          NEXT_PUBLIC_W3F_KEY: ${{ secrets.W3F_KEY }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

@@ -3,6 +3,8 @@ import { Montserrat, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import MobileCallBar from "@/components/MobileCallBar";
+import FloatingEstimateCta from "@/components/FloatingEstimateCta";
 
 const montserrat = Montserrat({
   variable: "--font-sans",
@@ -141,8 +143,11 @@ export default function RootLayout({
       </head>
       <body className="flex flex-col min-h-screen">
         <Header />
-        <main className="flex-1">{children}</main>
+        {/* pb-[56px] reserves space for the mobile sticky call bar on small screens */}
+        <main className="flex-1 pb-[56px] lg:pb-0">{children}</main>
         <Footer />
+        <MobileCallBar />
+        <FloatingEstimateCta />
       </body>
     </html>
   );
