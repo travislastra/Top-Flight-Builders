@@ -33,6 +33,18 @@
   <url><loc>https://travislastra.github.io/Top-Flight-Builders/projects/fallen-tree-remodel</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://travislastra.github.io/Top-Flight-Builders/more-from-us</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
+  <!-- Service Areas -->
+  <url><loc>https://travislastra.github.io/Top-Flight-Builders/service-areas/marietta-ga</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://travislastra.github.io/Top-Flight-Builders/service-areas/canton-ga</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://travislastra.github.io/Top-Flight-Builders/service-areas/kennesaw-ga</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://travislastra.github.io/Top-Flight-Builders/service-areas/acworth-ga</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://travislastra.github.io/Top-Flight-Builders/service-areas/woodstock-ga</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://travislastra.github.io/Top-Flight-Builders/service-areas/east-cobb-ga</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://travislastra.github.io/Top-Flight-Builders/service-areas/roswell-ga</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://travislastra.github.io/Top-Flight-Builders/service-areas/alpharetta-ga</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://travislastra.github.io/Top-Flight-Builders/service-areas/milton-ga</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://travislastra.github.io/Top-Flight-Builders/service-areas/smyrna-ga</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
   <!-- Blog hub -->
   <url><loc>https://travislastra.github.io/Top-Flight-Builders/blog</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
 
