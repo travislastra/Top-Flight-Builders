@@ -3,6 +3,8 @@ import ContactBanner from "@/components/ContactBanner";
 import LogoWatermark from "@/components/LogoWatermark";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ServiceSchema from "@/components/ServiceSchema";
+import FAQSection from "@/components/FAQSection";
+import { COMMERCIAL_FAQS } from "@/lib/faq-data";
 
 export const metadata = {
   title: "Commercial Construction and TI in Marietta GA | TopFlight Builders",
@@ -52,6 +54,7 @@ export default function CommercialPage() {
         </div>
       </section>
 
+      <FAQSection faqs={COMMERCIAL_FAQS} />
       <ContactBanner />
     </>
   );

@@ -5,6 +5,8 @@ import { getProjectsByService } from "@/lib/projects";
 import LogoWatermark from "@/components/LogoWatermark";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ServiceSchema from "@/components/ServiceSchema";
+import FAQSection from "@/components/FAQSection";
+import { RESTORATION_FAQS } from "@/lib/faq-data";
 
 export const metadata = {
   title: "Storm, Water and Fire Restoration in Marietta GA | TopFlight Builders",
@@ -80,6 +82,7 @@ export default function RestorationPage() {
         </section>
       )}
 
+      <FAQSection faqs={RESTORATION_FAQS} />
       <ContactBanner />
     </>
   );

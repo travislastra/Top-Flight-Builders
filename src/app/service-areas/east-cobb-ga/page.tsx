@@ -1,6 +1,8 @@
 import Link from "next/link";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ContactBanner from "@/components/ContactBanner";
+import FAQSection from "@/components/FAQSection";
+import { EAST_COBB_FAQS } from "@/lib/faq-data";
 import LogoWatermark from "@/components/LogoWatermark";
 import ProjectCard from "@/components/ProjectCard";
 import { projects } from "@/lib/projects";
@@ -229,6 +231,7 @@ export default function EastCobbPage() {
         </div>
       </section>
 
+      <FAQSection faqs={EAST_COBB_FAQS} />
       <ContactBanner />
     </>
   );

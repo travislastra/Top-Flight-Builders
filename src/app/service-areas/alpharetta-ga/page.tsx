@@ -2,6 +2,8 @@ import Link from "next/link";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ContactBanner from "@/components/ContactBanner";
 import LogoWatermark from "@/components/LogoWatermark";
+import FAQSection from "@/components/FAQSection";
+import { ALPHARETTA_FAQS } from "@/lib/faq-data";
 
 export const metadata = {
   title: "Alpharetta GA Remodeling & Restoration Contractor | TopFlight Builders",
@@ -204,6 +206,7 @@ export default function AlpharettaPage() {
         </div>
       </section>
 
+      <FAQSection faqs={ALPHARETTA_FAQS} />
       <ContactBanner />
     </>
   );

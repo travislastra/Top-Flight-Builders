@@ -6,6 +6,8 @@ import { getProjectsByService } from "@/lib/projects";
 import LogoWatermark from "@/components/LogoWatermark";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ServiceSchema from "@/components/ServiceSchema";
+import FAQSection from "@/components/FAQSection";
+import { KITCHEN_FAQS } from "@/lib/faq-data";
 
 export const metadata = {
   title: "Kitchen Remodeling in Marietta GA | TopFlight Builders",
@@ -88,6 +90,7 @@ export default function KitchenPage() {
         </div>
       </section>
 
+      <FAQSection faqs={KITCHEN_FAQS} />
       <ContactBanner />
     </>
   );

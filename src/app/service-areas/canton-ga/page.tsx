@@ -1,6 +1,8 @@
 import Link from "next/link";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ContactBanner from "@/components/ContactBanner";
+import FAQSection from "@/components/FAQSection";
+import { CANTON_FAQS } from "@/lib/faq-data";
 import LogoWatermark from "@/components/LogoWatermark";
 
 export const metadata = {
@@ -204,6 +206,7 @@ export default function CantonPage() {
         </div>
       </section>
 
+      <FAQSection faqs={CANTON_FAQS} />
       <ContactBanner />
     </>
   );

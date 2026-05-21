@@ -1,6 +1,8 @@
 import Link from "next/link";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ContactBanner from "@/components/ContactBanner";
+import FAQSection from "@/components/FAQSection";
+import { MARIETTA_FAQS } from "@/lib/faq-data";
 import LogoWatermark from "@/components/LogoWatermark";
 import ProjectCard from "@/components/ProjectCard";
 import { projects } from "@/lib/projects";
@@ -216,6 +218,7 @@ export default function MariettaPage() {
         </div>
       </section>
 
+      <FAQSection faqs={MARIETTA_FAQS} />
       <ContactBanner />
     </>
   );

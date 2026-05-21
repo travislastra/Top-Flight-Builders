@@ -6,6 +6,8 @@ import { getProjectsByService } from "@/lib/projects";
 import LogoWatermark from "@/components/LogoWatermark";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ServiceSchema from "@/components/ServiceSchema";
+import FAQSection from "@/components/FAQSection";
+import { AGE_IN_PLACE_FAQS } from "@/lib/faq-data";
 
 export const metadata = {
   title: "ADA and Aging in Place Remodeling in Marietta GA | TopFlight Builders",
@@ -191,6 +193,7 @@ export default function AgeInPlacePage() {
         </section>
       )}
 
+      <FAQSection faqs={AGE_IN_PLACE_FAQS} />
       <ContactBanner />
     </>
   );

@@ -6,6 +6,8 @@ import { getProjectsByService } from "@/lib/projects";
 import LogoWatermark from "@/components/LogoWatermark";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ServiceSchema from "@/components/ServiceSchema";
+import FAQSection from "@/components/FAQSection";
+import { BASEMENTS_FAQS } from "@/lib/faq-data";
 
 export const metadata = {
   title: "Basements and Home Additions in Marietta GA | TopFlight Builders",
@@ -97,6 +99,7 @@ export default function BasementsPage() {
         </section>
       )}
 
+      <FAQSection faqs={BASEMENTS_FAQS} />
       <ContactBanner />
     </>
   );
