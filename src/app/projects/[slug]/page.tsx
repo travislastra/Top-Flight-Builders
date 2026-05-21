@@ -45,7 +45,7 @@ export default async function ProjectPage({ params }: Props) {
           <Link
             href={
               project.service === "full-home" ? "/services/full-home-remodeling" :
-              project.service === "basements" ? "/services" :
+              project.service === "basements" ? "/services/basements-and-additions" :
               project.service === "age-in-place" ? "/services/age-in-place" :
               project.service === "restoration" ? "/services/restoration" :
               `/services/${project.service}-remodeling`

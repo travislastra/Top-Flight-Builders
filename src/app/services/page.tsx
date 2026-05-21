@@ -59,7 +59,7 @@ const services = [
   },
   {
     title: "Basements & Additions",
-    href: "/services",
+    href: "/services/basements-and-additions",
     desc: "Transform unused basement space or add square footage with a home addition — designed and built to match your home.",
     photo: "/images/projects/basement-east-cobb/05.jpg",
     icon: (

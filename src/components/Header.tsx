@@ -15,7 +15,7 @@ const navItems = [
       { label: "Bathroom Remodeling", href: "/services/bathroom-remodeling" },
       { label: "Full Home Remodeling", href: "/services/full-home-remodeling" },
       { label: "Restoration", href: "/services/restoration" },
-      { label: "Basements & Additions", href: "/services" },
+      { label: "Basements & Additions", href: "/services/basements-and-additions" },
       { label: "Age in Place", href: "/services/age-in-place" },
     ],
   },
