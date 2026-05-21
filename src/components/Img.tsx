@@ -8,13 +8,14 @@ interface ImgProps {
   fill?: boolean;
   className?: string;
   priority?: boolean;
+  fetchHigh?: boolean; // set only on the page's LCP image
 }
 
 function toWebP(src: string) {
   return src.replace(/\.(jpe?g|png)$/i, ".webp");
 }
 
-export default function Img({ src, alt, fill, className = "", width, height, priority }: ImgProps) {
+export default function Img({ src, alt, fill, className = "", width, height, priority, fetchHigh }: ImgProps) {
   const resolved = src.startsWith("/") ? `${BASE}${src}` : src;
   const webp = toWebP(resolved);
   const loading = priority ? "eager" : "lazy";
@@ -29,6 +30,9 @@ export default function Img({ src, alt, fill, className = "", width, height, pri
           alt={alt}
           className={`absolute inset-0 w-full h-full ${className}`}
           loading={loading}
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+          // @ts-ignore — fetchpriority valid HTML, not yet in React types
+          fetchpriority={fetchHigh ? "high" : undefined}
         />
       </picture>
     );
@@ -45,6 +49,9 @@ export default function Img({ src, alt, fill, className = "", width, height, pri
         height={height}
         className={className}
         loading={loading}
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore — fetchpriority valid HTML, not yet in React types
+        fetchpriority={priority ? "high" : undefined}
       />
     </picture>
   );

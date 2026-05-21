@@ -3,6 +3,10 @@ import { projects } from "@/lib/projects";
 
 const BASE = "/Top-Flight-Builders";
 
+function toWebP(src: string) {
+  return src.replace(/\.(jpe?g|png)$/i, ".webp");
+}
+
 // Show the 6 real projects (most recently added = end of array)
 const featured = [...projects].reverse().slice(0, 6);
 
@@ -30,11 +34,17 @@ export default function PortfolioSection() {
               className="group rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl transition-all bg-white"
             >
               <div className="relative aspect-[4/3] overflow-hidden">
-                <img
-                  src={`${BASE}${p.hero}`}
-                  alt={p.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
+                <picture style={{ display: "contents" }}>
+                  <source srcSet={`${BASE}${toWebP(p.hero)}`} type="image/webp" />
+                  <img
+                    src={`${BASE}${p.hero}`}
+                    alt={p.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                    width={600}
+                    height={450}
+                  />
+                </picture>
                 <div className="absolute top-3 left-3">
                   <span className="bg-[#1E4FBF] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
                     {p.categories[0]}

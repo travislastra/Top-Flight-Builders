@@ -2,6 +2,10 @@ import Link from "next/link";
 
 const BASE = "/Top-Flight-Builders";
 
+function toWebP(src: string) {
+  return src.replace(/\.(jpe?g|png)$/i, ".webp");
+}
+
 const photos = [
   "/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-05.jpg",
   "/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-11.jpg",
@@ -47,11 +51,15 @@ export default function TeamContact() {
       <div className="max-w-7xl mx-auto grid grid-cols-3 md:grid-cols-6 gap-3 rounded-2xl overflow-hidden">
         {photos.map((src, i) => (
           <div key={i} className="relative aspect-square rounded-xl overflow-hidden">
-            <img
-              src={`${BASE}${src}`}
-              alt={`TopFlight Builders project ${i + 1}`}
-              className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-            />
+            <picture style={{ display: "contents" }}>
+              <source srcSet={`${BASE}${toWebP(src)}`} type="image/webp" />
+              <img
+                src={`${BASE}${src}`}
+                alt={`TopFlight Builders remodeling project photo ${i + 1}`}
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              />
+            </picture>
           </div>
         ))}
       </div>

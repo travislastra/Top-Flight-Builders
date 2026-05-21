@@ -63,6 +63,9 @@ export default function HeroPlaceholder() {
             className="absolute inset-0 w-full h-full object-cover transition-opacity duration-[1800ms] ease-in-out"
             style={{ opacity: i === active ? 0.28 : 0 }}
             loading={i === 0 ? "eager" : "lazy"}
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            // @ts-ignore — fetchpriority is valid HTML but not yet in React types
+            fetchpriority={i === 0 ? "high" : undefined}
           />
         </picture>
       ))}

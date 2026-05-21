@@ -16,6 +16,10 @@ const partners = [
 
 const BASE = "/Top-Flight-Builders";
 
+function toWebP(src: string) {
+  return src.replace(/\.(png|jpe?g)$/i, ".webp");
+}
+
 export default function PartnersSlider() {
   return (
     <section className="py-14 px-0 bg-[#F7F8FA] overflow-hidden border-y border-gray-200">
@@ -38,11 +42,19 @@ export default function PartnersSlider() {
               key={`${p.name}-${i}`}
               className="mx-5 shrink-0 flex items-center justify-center bg-white border border-gray-200 rounded-xl px-6 py-4 shadow-sm hover:shadow-md hover:border-[#1E4FBF]/30 transition-all h-20 w-40"
             >
-              <img
-                src={`${BASE}${p.logo}`}
-                alt={p.name}
-                className="max-h-10 max-w-[120px] w-auto object-contain"
-              />
+              <picture style={{ display: "contents" }}>
+                {!/\.svg$/i.test(p.logo) && (
+                  <source srcSet={`${BASE}${toWebP(p.logo)}`} type="image/webp" />
+                )}
+                <img
+                  src={`${BASE}${p.logo}`}
+                  alt={p.name}
+                  className="max-h-10 max-w-[120px] w-auto object-contain"
+                  loading="lazy"
+                  width={120}
+                  height={40}
+                />
+              </picture>
             </div>
           ))}
         </div>
