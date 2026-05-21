@@ -1,4 +1,45 @@
+# TopFlight Builders — robots.txt
+# Site: https://topflightbuilders.net
+# AI context file: https://topflightbuilders.net/llms.txt
+
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /staging/
 
-Sitemap: https://travislastra.github.io/Top-Flight-Builders/sitemap.xml
+Sitemap: https://topflightbuilders.net/sitemap.xml
+
+# AI training and answer-engine crawlers — explicitly opted in
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
