@@ -61,10 +61,10 @@ export default function KitchenPage() {
           </div>
           <div className="grid grid-cols-2 gap-3">
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Img src="/images/kitchen-remodel-dark-shaker-cabinets-marietta-ga.jpg" alt="Kitchen remodel" fill className="object-cover" />
+              <Img src="/images/kitchen-remodel-dark-shaker-cabinets-marietta-ga.jpg" alt="Kitchen remodel" fill priority className="object-cover" />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden mt-6">
-              <Img src="/images/kitchen-renovation-maggie-marietta-ga.jpg" alt="Kitchen renovation" fill className="object-cover" />
+              <Img src="/images/kitchen-renovation-maggie-marietta-ga.jpg" alt="Kitchen renovation" fill priority className="object-cover" />
             </div>
           </div>
         </div>

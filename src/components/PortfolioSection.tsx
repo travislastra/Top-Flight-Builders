@@ -1,11 +1,6 @@
 import Link from "next/link";
 import { projects } from "@/lib/projects";
-
-const BASE = "/Top-Flight-Builders";
-
-function toWebP(src: string) {
-  return src.replace(/\.(jpe?g|png)$/i, ".webp");
-}
+import { resolveImg, toWebP, buildWebPSrcSet } from "@/lib/image-utils";
 
 // Show the 6 real projects (most recently added = end of array)
 const featured = [...projects].reverse().slice(0, 6);
@@ -35,14 +30,15 @@ export default function PortfolioSection() {
             >
               <div className="relative aspect-[4/3] overflow-hidden">
                 <picture style={{ display: "contents" }}>
-                  <source srcSet={`${BASE}${toWebP(p.hero)}`} type="image/webp" />
+                  <source srcSet={buildWebPSrcSet(resolveImg(toWebP(p.hero)))} sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" type="image/webp" />
                   <img
-                    src={`${BASE}${p.hero}`}
+                    src={resolveImg(p.hero)}
                     alt={p.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                     width={600}
                     height={450}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                 </picture>
                 <div className="absolute top-3 left-3">

@@ -44,10 +44,10 @@ export default function BasementsPage() {
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
           <div className="grid grid-cols-2 gap-3">
             <div className="relative aspect-square rounded-xl overflow-hidden">
-              <Img src="/images/projects/basement-east-cobb/basement-finishing-east-cobb-ga-05.jpg" alt="Finished basement" fill className="object-cover" />
+              <Img src="/images/projects/basement-east-cobb/basement-finishing-east-cobb-ga-05.jpg" alt="Finished basement" fill priority className="object-cover" />
             </div>
             <div className="relative aspect-square rounded-xl overflow-hidden mt-6">
-              <Img src="/images/projects/home-addition-atlanta/home-addition-atlanta-ga-13.jpg" alt="Home addition exterior" fill className="object-cover" />
+              <Img src="/images/projects/home-addition-atlanta/home-addition-atlanta-ga-13.jpg" alt="Home addition exterior" fill priority className="object-cover" />
             </div>
           </div>
           <div>

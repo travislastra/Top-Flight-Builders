@@ -1,4 +1,4 @@
-const BASE = "/Top-Flight-Builders";
+import { resolveImg, toWebP, buildWebPSrcSet } from "@/lib/image-utils";
 
 interface ImgProps {
   src: string;
@@ -8,31 +8,48 @@ interface ImgProps {
   fill?: boolean;
   className?: string;
   priority?: boolean;
-  fetchHigh?: boolean; // set only on the page's LCP image
+  fetchHigh?: boolean;
+  sizes?: string;
 }
 
-function toWebP(src: string) {
-  return src.replace(/\.(jpe?g|png)$/i, ".webp");
+function isRaster(src: string) {
+  return /\.(jpe?g|png)$/i.test(src);
 }
 
-export default function Img({ src, alt, fill, className = "", width, height, priority, fetchHigh }: ImgProps) {
-  const resolved = src.startsWith("/") ? `${BASE}${src}` : src;
+export default function Img({
+  src,
+  alt,
+  fill,
+  className = "",
+  width,
+  height,
+  priority,
+  fetchHigh,
+  sizes,
+}: ImgProps) {
+  const resolved = resolveImg(src);
   const webp = toWebP(resolved);
   const loading = priority ? "eager" : "lazy";
+  const fetchPri = fetchHigh ? "high" : undefined;
+  // Default sizes: fill images span the full viewport unless caller overrides
+  const sizesAttr = sizes ?? (fill ? "100vw" : undefined);
+  const raster = isRaster(src);
+  // Priority images are directly preloaded — skip srcset to avoid preload/srcset mismatch
+  const srcSet = raster && !priority && !fetchHigh ? buildWebPSrcSet(webp) : undefined;
 
   if (fill) {
     return (
       <picture style={{ display: "contents" }}>
-        <source srcSet={webp} type="image/webp" />
+        {raster && <source srcSet={srcSet} sizes={sizesAttr} type="image/webp" />}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={resolved}
           alt={alt}
           className={`absolute inset-0 w-full h-full ${className}`}
           loading={loading}
-          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-          // @ts-ignore — fetchpriority valid HTML, not yet in React types
-          fetchpriority={fetchHigh ? "high" : undefined}
+          sizes={sizesAttr}
+          // @ts-ignore — fetchpriority not yet in React types
+          fetchpriority={fetchPri}
         />
       </picture>
     );
@@ -40,7 +57,7 @@ export default function Img({ src, alt, fill, className = "", width, height, pri
 
   return (
     <picture style={{ display: "contents" }}>
-      <source srcSet={webp} type="image/webp" />
+      {raster && <source srcSet={srcSet} sizes={sizesAttr} type="image/webp" />}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={resolved}
@@ -49,9 +66,9 @@ export default function Img({ src, alt, fill, className = "", width, height, pri
         height={height}
         className={className}
         loading={loading}
-        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-        // @ts-ignore — fetchpriority valid HTML, not yet in React types
-        fetchpriority={priority ? "high" : undefined}
+        sizes={sizesAttr}
+        // @ts-ignore — fetchpriority not yet in React types
+        fetchpriority={fetchPri}
       />
     </picture>
   );

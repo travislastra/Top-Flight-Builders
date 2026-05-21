@@ -1,12 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-
-const BASE = "/Top-Flight-Builders";
-
-function toWebP(src: string) {
-  return src.replace(/\.(jpe?g|png)$/i, ".webp");
-}
+import { resolveImg, toWebP, buildWebPSrcSet } from "@/lib/image-utils";
 
 interface Props {
   images: string[];
@@ -46,7 +41,7 @@ export default function GalleryLightbox({ images, title }: Props) {
       {/* Thumbnail grid */}
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         {images.map((img, i) => {
-          const src = img.startsWith("/") ? `${BASE}${img}` : img;
+          const src = resolveImg(img);
           return (
             <button
               key={i}
@@ -55,12 +50,13 @@ export default function GalleryLightbox({ images, title }: Props) {
               aria-label={`Enlarge photo ${i + 1}`}
             >
               <picture style={{ display: "contents" }}>
-                <source srcSet={toWebP(src)} type="image/webp" />
+                <source srcSet={buildWebPSrcSet(toWebP(src))} sizes="(max-width: 768px) 50vw, 33vw" type="image/webp" />
                 <img
                   src={src}
                   alt={`${title} — photo ${i + 1}`}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
+                  sizes="(max-width: 768px) 50vw, 33vw"
                 />
               </picture>
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-colors duration-300 flex items-center justify-center">
@@ -86,11 +82,12 @@ export default function GalleryLightbox({ images, title }: Props) {
           >
             {/* The image — object-contain ensures no distortion */}
             <picture style={{ display: "contents" }}>
-              <source srcSet={toWebP(`${BASE}${images[activeIndex]}`)} type="image/webp" />
+              <source srcSet={buildWebPSrcSet(toWebP(resolveImg(images[activeIndex])))} sizes="90vw" type="image/webp" />
               <img
-                src={`${BASE}${images[activeIndex]}`}
+                src={resolveImg(images[activeIndex])}
                 alt={`${title} — photo ${activeIndex + 1}`}
                 className="max-h-[82vh] max-w-full w-auto object-contain rounded-xl shadow-2xl"
+                sizes="90vw"
               />
             </picture>
 

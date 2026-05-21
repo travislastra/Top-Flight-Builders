@@ -14,11 +14,7 @@ const partners = [
   { name: "Benjamin Moore",     logo: "/images/partners/benjamin-moore.svg" },
 ];
 
-const BASE = "/Top-Flight-Builders";
-
-function toWebP(src: string) {
-  return src.replace(/\.(png|jpe?g)$/i, ".webp");
-}
+import { resolveImg, toWebP } from "@/lib/image-utils";
 
 export default function PartnersSlider() {
   return (
@@ -44,10 +40,10 @@ export default function PartnersSlider() {
             >
               <picture style={{ display: "contents" }}>
                 {!/\.svg$/i.test(p.logo) && (
-                  <source srcSet={`${BASE}${toWebP(p.logo)}`} type="image/webp" />
+                  <source srcSet={resolveImg(toWebP(p.logo))} type="image/webp" />
                 )}
                 <img
-                  src={`${BASE}${p.logo}`}
+                  src={resolveImg(p.logo)}
                   alt={p.name}
                   className="max-h-10 max-w-[120px] w-auto object-contain"
                   loading="lazy"

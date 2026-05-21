@@ -11,16 +11,24 @@ import PartnersSlider from "@/components/PartnersSlider";
 import GetStarted from "@/components/GetStarted";
 import ContactBanner from "@/components/ContactBanner";
 
-// LCP image: first hero slideshow slide — preloaded to maximize LCP score
+// LCP image: first hero slideshow slide
 const BASE = "/Top-Flight-Builders";
-const LCP_WEBP = `${BASE}/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-01.webp`;
-const LCP_JPG  = `${BASE}/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-01.jpg`;
+const LCP_BASE = `${BASE}/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-01`;
+// imagesrcset must match the srcset in HeroPlaceholder exactly so the preload is used
+const LCP_SRCSET = `${LCP_BASE}-480w.webp 480w, ${LCP_BASE}-800w.webp 800w, ${LCP_BASE}-1200w.webp 1200w, ${LCP_BASE}.webp 1920w`;
 
 export default function Home() {
   return (
     <>
-      {/* Preload LCP image (WebP — supported by all modern browsers including Chrome/Lighthouse) */}
-      <link rel="preload" as="image" href={LCP_WEBP} type="image/webp" />
+      {/* Preload LCP image — imagesrcset matches HeroPlaceholder srcset so browser reuses this fetch */}
+      <link
+        rel="preload"
+        as="image"
+        // @ts-ignore — imagesrcset/imagesizes not yet in React's link types
+        imagesrcset={LCP_SRCSET}
+        imagesizes="100vw"
+        type="image/webp"
+      />
       <HeroPlaceholder />
       <PartnersSlider />
       <QuoteBar />

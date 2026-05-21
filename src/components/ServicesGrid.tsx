@@ -1,10 +1,5 @@
 import Link from "next/link";
-
-const BASE = "/Top-Flight-Builders";
-
-function toWebP(src: string) {
-  return src.replace(/\.(jpe?g|png)$/i, ".webp");
-}
+import { resolveImg, toWebP, buildWebPSrcSet } from "@/lib/image-utils";
 
 const services = [
   {
@@ -69,13 +64,14 @@ export default function ServicesGrid() {
             >
               {/* Background photo */}
               <picture style={{ display: "contents" }}>
-                <source srcSet={`${BASE}${toWebP(service.photo)}`} type="image/webp" />
+                <source srcSet={buildWebPSrcSet(resolveImg(toWebP(service.photo)))} sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw" type="image/webp" />
                 <img
-                  src={`${BASE}${service.photo}`}
+                  src={resolveImg(service.photo)}
                   alt=""
                   aria-hidden="true"
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   loading="lazy"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
                 />
               </picture>
               {/* Overlay — heavier at bottom for text legibility */}

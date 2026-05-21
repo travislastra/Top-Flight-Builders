@@ -1,11 +1,6 @@
 import Link from "next/link";
 import LogoWatermark from "@/components/LogoWatermark";
-
-const BASE = "/Top-Flight-Builders";
-
-function toWebP(src: string) {
-  return src.replace(/\.(jpe?g|png)$/i, ".webp");
-}
+import { resolveImg, toWebP, buildWebPSrcSet } from "@/lib/image-utils";
 
 const differentiators = [
   {
@@ -75,13 +70,14 @@ export default function OurDifference() {
             >
               {/* Photo background */}
               <picture style={{ display: "contents" }}>
-                <source srcSet={`${BASE}${toWebP(d.photo)}`} type="image/webp" />
+                <source srcSet={buildWebPSrcSet(resolveImg(toWebP(d.photo)))} sizes="(max-width: 768px) 100vw, 25vw" type="image/webp" />
                 <img
-                  src={`${BASE}${d.photo}`}
+                  src={resolveImg(d.photo)}
                   alt=""
                   aria-hidden="true"
                   className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-30 transition-opacity duration-500"
                   loading="lazy"
+                  sizes="(max-width: 768px) 100vw, 25vw"
                 />
               </picture>
               {/* Dark overlay */}
@@ -101,8 +97,8 @@ export default function OurDifference() {
           {["/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-04.jpg", "/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-10.jpg", "/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-16.jpg", "/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-22.jpg", "/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-28.jpg"].map((src, i) => (
             <div key={i} className="relative overflow-hidden">
               <picture style={{ display: "contents" }}>
-                <source srcSet={`${BASE}${toWebP(src)}`} type="image/webp" />
-                <img src={`${BASE}${src}`} alt="" aria-hidden="true" className="w-full h-full object-cover opacity-40 hover:opacity-60 transition-opacity duration-300" loading="lazy" />
+                <source srcSet={buildWebPSrcSet(resolveImg(toWebP(src)))} sizes="20vw" type="image/webp" />
+                <img src={resolveImg(src)} alt="" aria-hidden="true" className="w-full h-full object-cover opacity-40 hover:opacity-60 transition-opacity duration-300" loading="lazy" sizes="20vw" />
               </picture>
             </div>
           ))}
