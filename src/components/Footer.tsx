@@ -3,11 +3,26 @@ import Img from "@/components/Img";
 import LogoWatermark from "@/components/LogoWatermark";
 
 const services = [
-  { label: "Kitchen Remodeling", href: "/services/kitchen-remodeling" },
-  { label: "Bathroom Remodeling", href: "/services/bathroom-remodeling" },
-  { label: "Restoration", href: "/services/restoration" },
-  { label: "Full Home Remodeling", href: "/services/full-home-remodeling" },
-  { label: "Commercial", href: "/services/commercial" },
+  { label: "Kitchen Remodeling",    href: "/services/kitchen-remodeling" },
+  { label: "Bathroom Remodeling",   href: "/services/bathroom-remodeling" },
+  { label: "Full Home Remodeling",  href: "/services/full-home-remodeling" },
+  { label: "Basements & Additions", href: "/services/basements-and-additions" },
+  { label: "Restoration",           href: "/services/restoration" },
+  { label: "Age in Place",          href: "/services/age-in-place" },
+  { label: "Commercial",            href: "/services/commercial" },
+];
+
+const serviceAreas = [
+  { label: "Marietta, GA",   href: "/service-areas/marietta-ga" },
+  { label: "East Cobb, GA",  href: "/service-areas/east-cobb-ga" },
+  { label: "Canton, GA",     href: "/service-areas/canton-ga" },
+  { label: "Kennesaw, GA",   href: "/service-areas/kennesaw-ga" },
+  { label: "Acworth, GA",    href: "/service-areas/acworth-ga" },
+  { label: "Woodstock, GA",  href: "/service-areas/woodstock-ga" },
+  { label: "Roswell, GA",    href: "/service-areas/roswell-ga" },
+  { label: "Alpharetta, GA", href: "/service-areas/alpharetta-ga" },
+  { label: "Milton, GA",     href: "/service-areas/milton-ga" },
+  { label: "Smyrna, GA",     href: "/service-areas/smyrna-ga" },
 ];
 
 const company = [
@@ -16,13 +31,6 @@ const company = [
   { label: "More From Us", href: "/more-from-us" },
   { label: "Testimonials", href: "/testimonials" },
   { label: "Blog", href: "/blog" },
-];
-
-const getStarted = [
-  { label: "Contact Us", href: "/contact" },
-  { label: "Get a Quote", href: "/contact" },
-  { label: "Our Services", href: "/services" },
-  { label: "View Portfolio", href: "/portfolio" },
 ];
 
 export default function Footer() {
@@ -95,14 +103,14 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Get Started */}
+        {/* Service Areas */}
         <div>
-          <h4 className="font-sans font-bold text-white uppercase tracking-wider text-xs mb-4">Get Started</h4>
+          <h4 className="font-sans font-bold text-white uppercase tracking-wider text-xs mb-4">Service Areas</h4>
           <ul className="space-y-2">
-            {getStarted.map((g) => (
-              <li key={g.label}>
-                <Link href={g.href} className="text-sm text-gray-400 hover:text-white transition-colors">
-                  {g.label}
+            {serviceAreas.map((a) => (
+              <li key={a.label}>
+                <Link href={a.href} className="text-sm text-gray-400 hover:text-white transition-colors">
+                  {a.label}
                 </Link>
               </li>
             ))}

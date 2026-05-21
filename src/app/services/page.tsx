@@ -2,6 +2,7 @@ import Link from "next/link";
 import ContactBanner from "@/components/ContactBanner";
 import LogoWatermark from "@/components/LogoWatermark";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import ServiceAreaLinks from "@/components/ServiceAreaLinks";
 
 export const metadata = {
   title: "Remodeling Services in Marietta, Canton and North Atlanta | TopFlight Builders",
@@ -141,6 +142,8 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      <ServiceAreaLinks matrixSlug="roofing" serviceName="Roofing" />
+      <ServiceAreaLinks matrixSlug="siding" serviceName="Siding" />
       <ContactBanner />
     </>
   );

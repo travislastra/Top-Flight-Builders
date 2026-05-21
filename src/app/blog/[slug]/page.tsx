@@ -6,6 +6,20 @@ import ContactBanner from "@/components/ContactBanner";
 import LogoWatermark from "@/components/LogoWatermark";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
+const BLOG_SERVICE_LINKS: Record<string, { href: string; label: string }[]> = {
+  kitchen:     [{ href: "/services/kitchen-remodeling", label: "Kitchen Remodeling in Marietta" }, { href: "/services/full-home-remodeling", label: "Full Home Remodeling" }],
+  bathroom:    [{ href: "/services/bathroom-remodeling", label: "Bathroom Remodeling Services" }, { href: "/services/age-in-place", label: "Age in Place Remodeling" }],
+  restoration: [{ href: "/services/restoration", label: "Storm & Water Damage Restoration" }, { href: "/services/full-home-remodeling", label: "Full Home Remodeling" }],
+  fullhome:    [{ href: "/services/full-home-remodeling", label: "Full Home Remodeling" }, { href: "/services/basements-and-additions", label: "Basements & Additions" }],
+  flooring:    [{ href: "/services/full-home-remodeling", label: "Full Home Remodeling" }, { href: "/services/basements-and-additions", label: "Basements & Additions" }],
+  outdoor:     [{ href: "/services/basements-and-additions", label: "Basements & Additions" }, { href: "/services/full-home-remodeling", label: "Full Home Remodeling" }],
+  basement:    [{ href: "/services/basements-and-additions", label: "Basements & Additions" }, { href: "/services/full-home-remodeling", label: "Full Home Remodeling" }],
+  electrical:  [{ href: "/services/full-home-remodeling", label: "Full Home Remodeling" }, { href: "/services/basements-and-additions", label: "Basements & Additions" }],
+  roofing:     [{ href: "/services/restoration", label: "Storm & Roof Damage Restoration" }, { href: "/services/full-home-remodeling", label: "Full Home Remodeling" }],
+  ageinplace:  [{ href: "/services/age-in-place", label: "Age in Place Remodeling" }, { href: "/services/bathroom-remodeling", label: "Bathroom Remodeling" }],
+  siding:      [{ href: "/services/restoration", label: "Storm & Exterior Restoration" }, { href: "/services/full-home-remodeling", label: "Full Home Remodeling" }],
+};
+
 interface Props {
   params: Promise<{ slug: string }>;
 }
@@ -125,6 +139,29 @@ export default async function BlogPostPage({ params }: Props) {
                   </a>
                 </div>
               </div>
+
+              {/* Services card */}
+              {(BLOG_SERVICE_LINKS[post.cat] ?? []).length > 0 && (
+                <div className="bg-[#F7F8FA] rounded-2xl p-6 border border-gray-100">
+                  <h3 className="font-sans font-bold text-[#0D1B2E] text-sm uppercase tracking-wider mb-4">
+                    Our Services
+                  </h3>
+                  <div className="space-y-2">
+                    {(BLOG_SERVICE_LINKS[post.cat] ?? []).map((s) => (
+                      <Link
+                        key={s.href}
+                        href={s.href}
+                        className="flex items-center gap-2 text-sm text-[#1E4FBF] font-semibold hover:underline"
+                      >
+                        <svg className="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                        {s.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
 
               {related.length > 0 && (
                 <div className="bg-[#F7F8FA] rounded-2xl p-6 border border-gray-100">

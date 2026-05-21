@@ -8,6 +8,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ServiceSchema from "@/components/ServiceSchema";
 import FAQSection from "@/components/FAQSection";
 import { BATHROOM_FAQS } from "@/lib/faq-data";
+import ServiceAreaLinks from "@/components/ServiceAreaLinks";
 
 export const metadata = {
   title: "Bathroom Remodeling in Marietta and Canton GA | TopFlight Builders",
@@ -91,6 +92,7 @@ export default function BathroomPage() {
       </section>
 
       <FAQSection faqs={BATHROOM_FAQS} />
+      <ServiceAreaLinks matrixSlug="bathroom-remodeling" serviceName="Bathroom Remodeling" />
       <ContactBanner />
     </>
   );

@@ -8,6 +8,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ServiceSchema from "@/components/ServiceSchema";
 import FAQSection from "@/components/FAQSection";
 import { BASEMENTS_FAQS } from "@/lib/faq-data";
+import ServiceAreaLinks from "@/components/ServiceAreaLinks";
 
 export const metadata = {
   title: "Basements and Home Additions in Marietta GA | TopFlight Builders",
@@ -100,6 +101,8 @@ export default function BasementsPage() {
       )}
 
       <FAQSection faqs={BASEMENTS_FAQS} />
+      <ServiceAreaLinks matrixSlug="basement-finishing" serviceName="Basement Finishing" />
+      <ServiceAreaLinks matrixSlug="home-additions" serviceName="Home Additions" />
       <ContactBanner />
     </>
   );

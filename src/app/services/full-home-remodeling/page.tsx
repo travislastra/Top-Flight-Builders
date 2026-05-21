@@ -7,6 +7,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ServiceSchema from "@/components/ServiceSchema";
 import FAQSection from "@/components/FAQSection";
 import { FULL_HOME_FAQS } from "@/lib/faq-data";
+import ServiceAreaLinks from "@/components/ServiceAreaLinks";
 
 export const metadata = {
   title: "Whole Home Remodeling in Marietta and East Cobb | TopFlight Builders",
@@ -82,6 +83,7 @@ export default function FullHomePage() {
       </section>
 
       <FAQSection faqs={FULL_HOME_FAQS} />
+      <ServiceAreaLinks matrixSlug="full-home-remodeling" serviceName="Full Home Remodeling" />
       <ContactBanner />
     </>
   );

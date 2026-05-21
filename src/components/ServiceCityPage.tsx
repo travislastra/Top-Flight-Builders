@@ -157,6 +157,32 @@ export default function ServiceCityPage({ citySlug, serviceSlug }: Props) {
         </div>
       </section>
 
+      {/* ── PARENT NAV PILLS ──────────────────────────────────────────────── */}
+      <div className="bg-white border-b border-gray-100 px-6 py-3">
+        <div className="max-w-4xl mx-auto flex flex-wrap gap-3 text-sm">
+          <Link
+            href={service.parentPageUrl}
+            className="inline-flex items-center gap-1.5 text-[#1E4FBF] font-semibold hover:underline"
+          >
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+            All {service.name}
+          </Link>
+          <span className="text-gray-300">·</span>
+          <Link
+            href={`/service-areas/${citySlug}`}
+            className="inline-flex items-center gap-1.5 text-[#1E4FBF] font-semibold hover:underline"
+          >
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            All Services in {city.name}
+          </Link>
+        </div>
+      </div>
+
       {/* ── UNIQUE CONTENT ────────────────────────────────────────────────── */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
