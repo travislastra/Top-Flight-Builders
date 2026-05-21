@@ -24,14 +24,14 @@ const serviceLabel: Record<string, string> = {
 };
 
 const moreFromUsPreview = [
-  "/images/projects/more-from-us/01.jpg",
-  "/images/projects/more-from-us/03.jpg",
-  "/images/projects/more-from-us/06.jpg",
-  "/images/projects/more-from-us/09.jpg",
-  "/images/projects/more-from-us/12.jpg",
-  "/images/projects/more-from-us/15.jpg",
-  "/images/projects/more-from-us/18.jpg",
-  "/images/projects/more-from-us/21.jpg",
+  "/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-01.jpg",
+  "/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-03.jpg",
+  "/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-06.jpg",
+  "/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-09.jpg",
+  "/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-12.jpg",
+  "/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-15.jpg",
+  "/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-18.jpg",
+  "/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-21.jpg",
 ];
 
 // Real projects first, then placeholders

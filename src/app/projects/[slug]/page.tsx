@@ -16,6 +16,7 @@ export async function generateStaticParams() {
 }
 
 const BASE_URL = "https://travislastra.github.io/Top-Flight-Builders";
+const DOMAIN = "https://topflightbuilders.net";
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
@@ -37,8 +38,22 @@ export default async function ProjectPage({ params }: Props) {
 
   const related = getRelatedProjects(slug, project.service);
 
+  const allImages = [
+    { url: project.hero, desc: `${project.title} — completed work by TopFlight Builders, ${project.location}` },
+    ...project.gallery.map((url, i) => ({ url, desc: `${project.title} — after photo ${i + 1}, ${project.location}` })),
+    ...(project.beforePhotos ?? []).map((url, i) => ({ url, desc: `${project.title} — before photo ${i + 1}, ${project.location}` })),
+  ];
+  const imageSchema = allImages.map(({ url, desc }) => ({
+    "@context": "https://schema.org",
+    "@type": "ImageObject",
+    contentUrl: `${DOMAIN}${url}`,
+    description: desc,
+    creator: { "@type": "Organization", name: "TopFlight Builders LLC", "@id": `${DOMAIN}/#organization` },
+  }));
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(imageSchema) }} />
       <BreadcrumbSchema crumbs={[
         { name: "Home", href: "/" },
         { name: "Portfolio", href: "/portfolio" },

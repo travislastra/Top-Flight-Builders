@@ -5,18 +5,22 @@ import Link from "next/link";
 
 const BASE = "/Top-Flight-Builders";
 
+function toWebP(src: string) {
+  return src.replace(/\.(jpe?g|png)$/i, ".webp");
+}
+
 // Curated selection spread across the More From Us set
 const SLIDES = [
-  "/images/projects/more-from-us/01.jpg",
-  "/images/projects/more-from-us/04.jpg",
-  "/images/projects/more-from-us/08.jpg",
-  "/images/projects/more-from-us/12.jpg",
-  "/images/projects/more-from-us/16.jpg",
-  "/images/projects/more-from-us/20.jpg",
-  "/images/projects/more-from-us/24.jpg",
-  "/images/projects/more-from-us/28.jpg",
-  "/images/projects/more-from-us/32.jpg",
-  "/images/projects/more-from-us/35.jpg",
+  "/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-01.jpg",
+  "/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-04.jpg",
+  "/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-08.jpg",
+  "/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-12.jpg",
+  "/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-16.jpg",
+  "/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-20.jpg",
+  "/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-24.jpg",
+  "/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-28.jpg",
+  "/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-32.jpg",
+  "/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-35.jpg",
 ];
 
 export default function HeroPlaceholder() {
@@ -50,15 +54,17 @@ export default function HeroPlaceholder() {
 
       {/* Slideshow — all images in DOM, only active one is visible, CSS handles crossfade */}
       {SLIDES.map((src, i) => (
-        <img
-          key={src}
-          src={`${BASE}${src}`}
-          alt=""
-          aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover transition-opacity duration-[1800ms] ease-in-out"
-          style={{ opacity: i === active ? 0.28 : 0 }}
-          loading={i === 0 ? "eager" : "lazy"}
-        />
+        <picture key={src} style={{ display: "contents" }}>
+          <source srcSet={`${BASE}${toWebP(src)}`} type="image/webp" />
+          <img
+            src={`${BASE}${src}`}
+            alt=""
+            aria-hidden="true"
+            className="absolute inset-0 w-full h-full object-cover transition-opacity duration-[1800ms] ease-in-out"
+            style={{ opacity: i === active ? 0.28 : 0 }}
+            loading={i === 0 ? "eager" : "lazy"}
+          />
+        </picture>
       ))}
 
       {/* Dark gradient overlay — keeps text crisp over any photo */}

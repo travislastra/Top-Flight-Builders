@@ -3,12 +3,12 @@ import Link from "next/link";
 const BASE = "/Top-Flight-Builders";
 
 const photos = [
-  "/images/projects/more-from-us/05.jpg",
-  "/images/projects/more-from-us/11.jpg",
-  "/images/projects/more-from-us/17.jpg",
-  "/images/projects/more-from-us/23.jpg",
-  "/images/projects/more-from-us/29.jpg",
-  "/images/projects/more-from-us/33.jpg",
+  "/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-05.jpg",
+  "/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-11.jpg",
+  "/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-17.jpg",
+  "/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-23.jpg",
+  "/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-29.jpg",
+  "/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-33.jpg",
 ];
 
 export default function TeamContact() {

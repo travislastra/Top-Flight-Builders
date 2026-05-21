@@ -4,37 +4,37 @@ const BASE = "/Top-Flight-Builders";
 
 const services = [
   {
-    photo: "/images/kitchen-thumb.jpg",
+    photo: "/images/kitchen-remodeling-custom-cabinetry-marietta-ga.jpg",
     title: "Kitchen Remodeling",
     description: "Transform your kitchen into a stylish, functional space with custom cabinetry, countertops, and layout design.",
     href: "/services/kitchen-remodeling",
   },
   {
-    photo: "/images/projects/bathroom-brookhaven/02.jpg",
+    photo: "/images/projects/bathroom-brookhaven/bathroom-remodel-brookhaven-ga-02.jpg",
     title: "Bathroom Remodeling",
     description: "Create a personal sanctuary with spa-inspired features, custom tile work, and premium fixtures.",
     href: "/services/bathroom-remodeling",
   },
   {
-    photo: "/images/tree-on-house.jpg",
+    photo: "/images/storm-damage-restoration-fallen-tree-marietta-ga.jpg",
     title: "Restoration",
     description: "Expert restoration services to bring your home back to life — water damage, structural repairs, and more.",
     href: "/services/restoration",
   },
   {
-    photo: "/images/projects/whole-home-east-cobb/04.jpg",
+    photo: "/images/projects/whole-home-east-cobb/whole-home-renovation-east-cobb-ga-04.jpg",
     title: "Full Home Remodeling",
     description: "Reimagine your entire home from top to bottom with a cohesive design and flawless execution.",
     href: "/services/full-home-remodeling",
   },
   {
-    photo: "/images/projects/basement-east-cobb/03.jpg",
+    photo: "/images/projects/basement-east-cobb/basement-finishing-east-cobb-ga-03.jpg",
     title: "Basements & Additions",
     description: "Expand your living space with a fully finished basement or home addition — designed and built to seamlessly match your existing home.",
     href: "/services",
   },
   {
-    photo: "/images/ada1.jpg",
+    photo: "/images/age-in-place-accessible-shower-marietta-ga.jpg",
     title: "Age in Place Remodeling",
     description: "ADA-compliant modifications that let you stay in your home safely and independently — grab bars, zero-threshold showers, wider doorways, and more.",
     href: "/services/age-in-place",

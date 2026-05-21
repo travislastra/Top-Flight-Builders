@@ -138,10 +138,10 @@ export default function AgeInPlacePage() {
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-md">
-              <Img src="/images/ada1.jpg" alt="Age in place bathroom modification — accessible shower" fill className="object-cover" />
+              <Img src="/images/age-in-place-accessible-shower-marietta-ga.jpg" alt="Age in place bathroom modification — accessible shower" fill className="object-cover" />
             </div>
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-md lg:mt-10">
-              <Img src="/images/ada2.jpg" alt="Age in place remodel — grab bars and accessible design" fill className="object-cover" />
+              <Img src="/images/age-in-place-grab-bars-accessible-bathroom-marietta-ga.jpg" alt="Age in place remodel — grab bars and accessible design" fill className="object-cover" />
             </div>
           </div>
         </div>

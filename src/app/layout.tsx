@@ -47,7 +47,7 @@ export const metadata: Metadata = {
       "Remodeling and restoration in Marietta and Canton, GA by TopFlight Builders. Kitchen, bath, and full-home experts. Licensed, insured, 50+ five-star reviews. Free estimate: (404) 369-7129.",
     images: [
       {
-        url: BASE_URL + "/images/home-run-1.jpg",
+        url: BASE_URL + "/images/bathroom-remodel-frameless-glass-shower-marietta-ga.jpg",
         width: 1200,
         height: 630,
         alt: "TopFlight Builders — Atlanta remodeling experts",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     title: "Remodeling and Restoration Contractor | Marietta and Canton GA | TopFlight Builders",
     description:
       "Remodeling and restoration in Marietta and Canton, GA by TopFlight Builders. Kitchen, bath, and full-home experts. Licensed, insured, 50+ five-star reviews. Free estimate: (404) 369-7129.",
-    images: [BASE_URL + "/images/home-run-1.jpg"],
+    images: [BASE_URL + "/images/bathroom-remodel-frameless-glass-shower-marietta-ga.jpg"],
   },
 };
 
@@ -73,7 +73,7 @@ const localBusinessSchema = {
   "alternateName": "TopFlight Builders",
   "url": DOMAIN,
   "logo": `${DOMAIN}/logo.png`,
-  "image": `${DOMAIN}/images/home-run-1.jpg`,
+  "image": `${DOMAIN}/images/bathroom-remodel-frameless-glass-shower-marietta-ga.jpg`,
   "telephone": "+1-404-369-7129",
   "email": "Admin@TopFlightBuilders.net",
   "priceRange": "$$-$$$",
