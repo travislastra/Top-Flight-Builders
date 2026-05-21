@@ -85,12 +85,15 @@ export default function RoswellPage() {
           </h3>
           <ul className="space-y-2 mb-8">
             {[
-              { label: "Kitchen Remodeling", href: "/services/kitchen-remodeling" },
-              { label: "Bathroom Remodeling", href: "/services/bathroom-remodeling" },
-              { label: "Full Home Remodeling", href: "/services/full-home-remodeling" },
-              { label: "Basements &amp; Additions", href: "/services/basements-and-additions" },
-              { label: "Restoration", href: "/services/restoration" },
-              { label: "Age in Place", href: "/services/age-in-place" },
+              { label: "Kitchen Remodeling in Roswell", href: "/services/kitchen-remodeling/roswell-ga" },
+              { label: "Bathroom Remodeling in Roswell", href: "/services/bathroom-remodeling/roswell-ga" },
+              { label: "Full Home Remodeling in Roswell", href: "/services/full-home-remodeling/roswell-ga" },
+              { label: "Basement Finishing in Roswell", href: "/services/basement-finishing/roswell-ga" },
+              { label: "Home Additions in Roswell", href: "/services/home-additions/roswell-ga" },
+              { label: "Restoration in Roswell", href: "/services/restoration/roswell-ga" },
+              { label: "Roofing in Roswell", href: "/services/roofing/roswell-ga" },
+              { label: "Siding in Roswell", href: "/services/siding/roswell-ga" },
+              { label: "Age in Place Remodeling in Roswell", href: "/services/age-in-place/roswell-ga" },
             ].map((s) => (
               <li key={s.href} className="flex items-center gap-3">
                 <svg className="w-5 h-5 text-[#1E4FBF] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">

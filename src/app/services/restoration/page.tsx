@@ -8,6 +8,7 @@ import ServiceSchema from "@/components/ServiceSchema";
 import FAQSection from "@/components/FAQSection";
 import { RESTORATION_FAQS } from "@/lib/faq-data";
 import ServiceAreaLinks from "@/components/ServiceAreaLinks";
+import ServiceBlogLinks from "@/components/ServiceBlogLinks";
 
 export const metadata = {
   title: "Storm, Water and Fire Restoration in Marietta GA | TopFlight Builders",
@@ -85,6 +86,7 @@ export default function RestorationPage() {
 
       <FAQSection faqs={RESTORATION_FAQS} />
       <ServiceAreaLinks matrixSlug="restoration" serviceName="Restoration" />
+      <ServiceBlogLinks cat="restoration" heading="Restoration &amp; Damage Recovery Guides" />
       <ContactBanner />
     </>
   );

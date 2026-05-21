@@ -237,6 +237,60 @@ export const BASEMENTS_FAQS: FAQ[] = [
   },
 ];
 
+export const ROOFING_FAQS: FAQ[] = [
+  {
+    q: "When does a roof need full replacement versus a repair?",
+    a: "Repairs make sense for isolated damage — a few missing shingles, a single flashing leak, localized hail hits on an otherwise sound roof under 15 years old. Full replacement makes sense when the roof is 20+ years old, when granule loss is widespread, when decking shows soft spots, or when storm damage affects more than 30% of the surface. Insurance adjusters often have specific percentage thresholds. We document the condition and give you an honest assessment — not every roof inspection ends with a replacement recommendation.",
+  },
+  {
+    q: "What roofing materials do you install?",
+    a: "Primarily GAF and Owens Corning architectural shingles — the most cost-effective option for Greater Atlanta's climate, with 30-year manufacturer warranties and strong wind ratings. For premium projects we install GAF Timberline HDZ and similar high-definition shingles. We also do metal roofing (standing seam and exposed fastener panels), flat/low-slope membrane roofing for additions or commercial sections, and roof repairs in all of these systems.",
+  },
+  {
+    q: "How long does a full roof replacement take?",
+    a: "For a standard 2,000–3,000 sq ft home, one to two days for tear-off and installation under normal conditions. Larger homes, steep pitches, or complex roof geometry (multiple valleys, dormers, hip sections) take longer. We typically schedule a two-day window so weather delays don't create a half-finished situation. You'll have a watertight roof by the end of each work day regardless.",
+  },
+  {
+    q: "Do you help with insurance claims for storm damage?",
+    a: "Yes — we document storm damage with photos and written scope, and can be present during the adjuster's inspection to walk through what we're seeing. We don't chase storms or inflate claims. What we do is make sure legitimate damage is properly documented before the adjuster's visit rather than after — that's the step most homeowners skip. We've found that complete documentation upfront gets claims settled faster than incomplete documentation followed by supplements.",
+  },
+  {
+    q: "What are the signs that my roof may be failing?",
+    a: "Granule accumulation in gutters and at downspout outlets (granule loss accelerates as shingles age), curling or cupping shingle edges, visible daylight in the attic, dark staining on attic sheathing, soft spots when walking the roof, or water stains on interior ceilings that don't trace to a plumbing source. Any one of these warrants an inspection. Most roofs give 2–5 years of warning signs before catastrophic failure — catching them early keeps repair options open.",
+  },
+  {
+    q: "Does a new roof affect my homeowner's insurance premium?",
+    a: "Often yes, favorably. Most insurers discount premiums for newer roofs and specifically for roofs installed with impact-resistant (Class 4) shingles, which qualify for discounts with several carriers writing policies in Georgia. We note the shingle class on the permit and installation documentation — bring this to your insurance agent after installation. The discount varies by carrier and coverage but can offset a meaningful portion of the roof cost over time.",
+  },
+];
+
+export const SIDING_FAQS: FAQ[] = [
+  {
+    q: "What siding materials do you install?",
+    a: "James Hardie fiber cement board is our primary recommendation for Greater Atlanta — it handles the humidity, doesn't rot, holds paint well, and carries a 30-year warranty. LP SmartSide engineered wood is a solid mid-range option with good impact resistance. Premium vinyl (not builder-grade) works in applications where moisture is managed well. We don't install builder-grade vinyl on full replacements — it warps and fades within a decade and you end up replacing it again.",
+  },
+  {
+    q: "Hardie board versus vinyl — how do I decide?",
+    a: "Hardie board costs more upfront ($3–5/sq ft more installed) but lasts longer, holds paint 15–20 years versus 5–7 for repainted vinyl, resists impact and fire, and holds value better at resale. Vinyl costs less upfront but the premium versions perform well enough that cost difference narrows at the quality end. If you're planning to sell within 5 years, vinyl can be the right economic choice. If you're staying 10+ years, Hardie almost always wins on total cost of ownership.",
+  },
+  {
+    q: "How do I know if my siding needs to be replaced versus repaired?",
+    a: "Spot repairs make sense when damage is limited to a few boards and the surrounding material is structurally sound. Full replacement makes sense when you see widespread cracking or splitting, when moisture has gotten behind the siding and caused sheathing or framing damage, when paint is peeling on entire elevations rather than isolated areas, or when sections have warped enough that they're no longer keeping water out. We probe suspicious areas during assessment — soft framing behind solid-looking siding is a red flag we don't ignore.",
+  },
+  {
+    q: "How long does siding replacement take?",
+    a: "Most single-family homes take 3–5 days for a full re-side depending on size, complexity, and how many elevations have additional trim work. Homes with multiple gables, extensive window casing, or wrap-around porches take longer. We work in sections so the home is never left with open exterior for more than a day.",
+  },
+  {
+    q: "Will you find rot under the old siding?",
+    a: "Sometimes. We can't know the condition of sheathing or framing until the old siding is off. This is a standard disclosure we make before any siding project — hidden rot is the most common source of scope additions. When we find it, we stop, document, show you, and provide a written change order before proceeding. The good news: rot that's caught during a siding replacement is far cheaper to fix than rot discovered during a full renovation or home inspection.",
+  },
+  {
+    q: "Does new siding improve energy efficiency?",
+    a: "Meaningfully, yes — particularly when we install house wrap or rigid foam insulation behind the new siding, which we include by default. A proper moisture barrier also prevents the air infiltration that accounts for a significant share of HVAC load in older homes. Homes with deteriorated siding and no house wrap often see noticeable utility cost reductions after a full re-side. The improvement is less dramatic than replacing windows, but the ROI case is strong when combined with the maintenance and aesthetic benefits.",
+  },
+];
+
 // ── Service-area city FAQs ──────────────────────────────────────────────────
 
 export const MARIETTA_FAQS: FAQ[] = [

@@ -85,12 +85,15 @@ export default function AlpharettaPage() {
           </h3>
           <ul className="space-y-2 mb-8">
             {[
-              { label: "Kitchen Remodeling", href: "/services/kitchen-remodeling" },
-              { label: "Bathroom Remodeling", href: "/services/bathroom-remodeling" },
-              { label: "Full Home Remodeling", href: "/services/full-home-remodeling" },
-              { label: "Basements &amp; Additions", href: "/services/basements-and-additions" },
-              { label: "Restoration", href: "/services/restoration" },
-              { label: "Age in Place", href: "/services/age-in-place" },
+              { label: "Kitchen Remodeling in Alpharetta", href: "/services/kitchen-remodeling/alpharetta-ga" },
+              { label: "Bathroom Remodeling in Alpharetta", href: "/services/bathroom-remodeling/alpharetta-ga" },
+              { label: "Full Home Remodeling in Alpharetta", href: "/services/full-home-remodeling/alpharetta-ga" },
+              { label: "Basement Finishing in Alpharetta", href: "/services/basement-finishing/alpharetta-ga" },
+              { label: "Home Additions in Alpharetta", href: "/services/home-additions/alpharetta-ga" },
+              { label: "Restoration in Alpharetta", href: "/services/restoration/alpharetta-ga" },
+              { label: "Roofing in Alpharetta", href: "/services/roofing/alpharetta-ga" },
+              { label: "Siding in Alpharetta", href: "/services/siding/alpharetta-ga" },
+              { label: "Age in Place Remodeling in Alpharetta", href: "/services/age-in-place/alpharetta-ga" },
             ].map((s) => (
               <li key={s.href} className="flex items-center gap-3">
                 <svg className="w-5 h-5 text-[#1E4FBF] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">

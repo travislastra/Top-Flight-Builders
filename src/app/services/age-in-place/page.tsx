@@ -9,6 +9,7 @@ import ServiceSchema from "@/components/ServiceSchema";
 import FAQSection from "@/components/FAQSection";
 import { AGE_IN_PLACE_FAQS } from "@/lib/faq-data";
 import ServiceAreaLinks from "@/components/ServiceAreaLinks";
+import ServiceBlogLinks from "@/components/ServiceBlogLinks";
 
 export const metadata = {
   title: "ADA and Aging in Place Remodeling in Marietta GA | TopFlight Builders",
@@ -196,6 +197,7 @@ export default function AgeInPlacePage() {
 
       <FAQSection faqs={AGE_IN_PLACE_FAQS} />
       <ServiceAreaLinks matrixSlug="age-in-place" serviceName="Age in Place Remodeling" />
+      <ServiceBlogLinks cat="bathroom" heading="Accessible Bathroom &amp; Aging in Place Guides" />
       <ContactBanner />
     </>
   );

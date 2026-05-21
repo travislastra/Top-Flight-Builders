@@ -85,12 +85,15 @@ export default function KennesawPage() {
           </h3>
           <ul className="space-y-2 mb-8">
             {[
-              { label: "Kitchen Remodeling", href: "/services/kitchen-remodeling" },
-              { label: "Bathroom Remodeling", href: "/services/bathroom-remodeling" },
-              { label: "Full Home Remodeling", href: "/services/full-home-remodeling" },
-              { label: "Basements &amp; Additions", href: "/services/basements-and-additions" },
-              { label: "Restoration", href: "/services/restoration" },
-              { label: "Age in Place", href: "/services/age-in-place" },
+              { label: "Kitchen Remodeling in Kennesaw", href: "/services/kitchen-remodeling/kennesaw-ga" },
+              { label: "Bathroom Remodeling in Kennesaw", href: "/services/bathroom-remodeling/kennesaw-ga" },
+              { label: "Full Home Remodeling in Kennesaw", href: "/services/full-home-remodeling/kennesaw-ga" },
+              { label: "Basement Finishing in Kennesaw", href: "/services/basement-finishing/kennesaw-ga" },
+              { label: "Home Additions in Kennesaw", href: "/services/home-additions/kennesaw-ga" },
+              { label: "Restoration in Kennesaw", href: "/services/restoration/kennesaw-ga" },
+              { label: "Roofing in Kennesaw", href: "/services/roofing/kennesaw-ga" },
+              { label: "Siding in Kennesaw", href: "/services/siding/kennesaw-ga" },
+              { label: "Age in Place Remodeling in Kennesaw", href: "/services/age-in-place/kennesaw-ga" },
             ].map((s) => (
               <li key={s.href} className="flex items-center gap-3">
                 <svg className="w-5 h-5 text-[#1E4FBF] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -91,12 +91,15 @@ export default function MariettaPage() {
           </h3>
           <ul className="space-y-2 mb-8">
             {[
-              { label: "Kitchen Remodeling", href: "/services/kitchen-remodeling" },
-              { label: "Bathroom Remodeling", href: "/services/bathroom-remodeling" },
-              { label: "Full Home Remodeling", href: "/services/full-home-remodeling" },
-              { label: "Basements &amp; Additions", href: "/services/basements-and-additions" },
-              { label: "Restoration", href: "/services/restoration" },
-              { label: "Age in Place", href: "/services/age-in-place" },
+              { label: "Kitchen Remodeling in Marietta", href: "/services/kitchen-remodeling/marietta-ga" },
+              { label: "Bathroom Remodeling in Marietta", href: "/services/bathroom-remodeling/marietta-ga" },
+              { label: "Full Home Remodeling in Marietta", href: "/services/full-home-remodeling/marietta-ga" },
+              { label: "Basement Finishing in Marietta", href: "/services/basement-finishing/marietta-ga" },
+              { label: "Home Additions in Marietta", href: "/services/home-additions/marietta-ga" },
+              { label: "Restoration in Marietta", href: "/services/restoration/marietta-ga" },
+              { label: "Roofing in Marietta", href: "/services/roofing/marietta-ga" },
+              { label: "Siding in Marietta", href: "/services/siding/marietta-ga" },
+              { label: "Age in Place Remodeling in Marietta", href: "/services/age-in-place/marietta-ga" },
             ].map((s) => (
               <li key={s.href} className="flex items-center gap-3">
                 <svg className="w-5 h-5 text-[#1E4FBF] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">

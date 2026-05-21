@@ -5,6 +5,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ServiceSchema from "@/components/ServiceSchema";
 import FAQSection from "@/components/FAQSection";
 import { COMMERCIAL_FAQS } from "@/lib/faq-data";
+import ServiceBlogLinks from "@/components/ServiceBlogLinks";
 
 export const metadata = {
   title: "Commercial Construction and TI in Marietta GA | TopFlight Builders",
@@ -55,6 +56,7 @@ export default function CommercialPage() {
       </section>
 
       <FAQSection faqs={COMMERCIAL_FAQS} />
+      <ServiceBlogLinks cat="fullhome" heading="Renovation Planning Guides" />
       <ContactBanner />
     </>
   );

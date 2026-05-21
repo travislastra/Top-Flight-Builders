@@ -96,12 +96,15 @@ export default function EastCobbPage() {
           </h3>
           <ul className="space-y-2 mb-8">
             {[
-              { label: "Kitchen Remodeling", href: "/services/kitchen-remodeling" },
-              { label: "Bathroom Remodeling", href: "/services/bathroom-remodeling" },
-              { label: "Full Home Remodeling", href: "/services/full-home-remodeling" },
-              { label: "Basements &amp; Additions", href: "/services/basements-and-additions" },
-              { label: "Restoration", href: "/services/restoration" },
-              { label: "Age in Place", href: "/services/age-in-place" },
+              { label: "Kitchen Remodeling in East Cobb", href: "/services/kitchen-remodeling/east-cobb-ga" },
+              { label: "Bathroom Remodeling in East Cobb", href: "/services/bathroom-remodeling/east-cobb-ga" },
+              { label: "Full Home Remodeling in East Cobb", href: "/services/full-home-remodeling/east-cobb-ga" },
+              { label: "Basement Finishing in East Cobb", href: "/services/basement-finishing/east-cobb-ga" },
+              { label: "Home Additions in East Cobb", href: "/services/home-additions/east-cobb-ga" },
+              { label: "Restoration in East Cobb", href: "/services/restoration/east-cobb-ga" },
+              { label: "Roofing in East Cobb", href: "/services/roofing/east-cobb-ga" },
+              { label: "Siding in East Cobb", href: "/services/siding/east-cobb-ga" },
+              { label: "Age in Place Remodeling in East Cobb", href: "/services/age-in-place/east-cobb-ga" },
             ].map((s) => (
               <li key={s.href} className="flex items-center gap-3">
                 <svg className="w-5 h-5 text-[#1E4FBF] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">

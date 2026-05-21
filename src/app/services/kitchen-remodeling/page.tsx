@@ -9,6 +9,7 @@ import ServiceSchema from "@/components/ServiceSchema";
 import FAQSection from "@/components/FAQSection";
 import { KITCHEN_FAQS } from "@/lib/faq-data";
 import ServiceAreaLinks from "@/components/ServiceAreaLinks";
+import ServiceBlogLinks from "@/components/ServiceBlogLinks";
 
 export const metadata = {
   title: "Kitchen Remodeling in Marietta GA | TopFlight Builders",
@@ -93,6 +94,7 @@ export default function KitchenPage() {
 
       <FAQSection faqs={KITCHEN_FAQS} />
       <ServiceAreaLinks matrixSlug="kitchen-remodeling" serviceName="Kitchen Remodeling" />
+      <ServiceBlogLinks cat="kitchen" heading="Kitchen Remodeling Guides" />
       <ContactBanner />
     </>
   );

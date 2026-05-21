@@ -9,6 +9,8 @@ const services = [
   { label: "Basements & Additions", href: "/services/basements-and-additions" },
   { label: "Restoration",           href: "/services/restoration" },
   { label: "Age in Place",          href: "/services/age-in-place" },
+  { label: "Roofing",               href: "/services/roofing" },
+  { label: "Siding",                href: "/services/siding" },
   { label: "Commercial",            href: "/services/commercial" },
 ];
 

@@ -85,12 +85,15 @@ export default function AcworthPage() {
           </h3>
           <ul className="space-y-2 mb-8">
             {[
-              { label: "Kitchen Remodeling", href: "/services/kitchen-remodeling" },
-              { label: "Bathroom Remodeling", href: "/services/bathroom-remodeling" },
-              { label: "Full Home Remodeling", href: "/services/full-home-remodeling" },
-              { label: "Basements &amp; Additions", href: "/services/basements-and-additions" },
-              { label: "Restoration", href: "/services/restoration" },
-              { label: "Age in Place", href: "/services/age-in-place" },
+              { label: "Kitchen Remodeling in Acworth", href: "/services/kitchen-remodeling/acworth-ga" },
+              { label: "Bathroom Remodeling in Acworth", href: "/services/bathroom-remodeling/acworth-ga" },
+              { label: "Full Home Remodeling in Acworth", href: "/services/full-home-remodeling/acworth-ga" },
+              { label: "Basement Finishing in Acworth", href: "/services/basement-finishing/acworth-ga" },
+              { label: "Home Additions in Acworth", href: "/services/home-additions/acworth-ga" },
+              { label: "Restoration in Acworth", href: "/services/restoration/acworth-ga" },
+              { label: "Roofing in Acworth", href: "/services/roofing/acworth-ga" },
+              { label: "Siding in Acworth", href: "/services/siding/acworth-ga" },
+              { label: "Age in Place Remodeling in Acworth", href: "/services/age-in-place/acworth-ga" },
             ].map((s) => (
               <li key={s.href} className="flex items-center gap-3">
                 <svg className="w-5 h-5 text-[#1E4FBF] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">

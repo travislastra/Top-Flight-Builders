@@ -85,12 +85,15 @@ export default function WoodstockPage() {
           </h3>
           <ul className="space-y-2 mb-8">
             {[
-              { label: "Kitchen Remodeling", href: "/services/kitchen-remodeling" },
-              { label: "Bathroom Remodeling", href: "/services/bathroom-remodeling" },
-              { label: "Full Home Remodeling", href: "/services/full-home-remodeling" },
-              { label: "Basements &amp; Additions", href: "/services/basements-and-additions" },
-              { label: "Restoration", href: "/services/restoration" },
-              { label: "Age in Place", href: "/services/age-in-place" },
+              { label: "Kitchen Remodeling in Woodstock", href: "/services/kitchen-remodeling/woodstock-ga" },
+              { label: "Bathroom Remodeling in Woodstock", href: "/services/bathroom-remodeling/woodstock-ga" },
+              { label: "Full Home Remodeling in Woodstock", href: "/services/full-home-remodeling/woodstock-ga" },
+              { label: "Basement Finishing in Woodstock", href: "/services/basement-finishing/woodstock-ga" },
+              { label: "Home Additions in Woodstock", href: "/services/home-additions/woodstock-ga" },
+              { label: "Restoration in Woodstock", href: "/services/restoration/woodstock-ga" },
+              { label: "Roofing in Woodstock", href: "/services/roofing/woodstock-ga" },
+              { label: "Siding in Woodstock", href: "/services/siding/woodstock-ga" },
+              { label: "Age in Place Remodeling in Woodstock", href: "/services/age-in-place/woodstock-ga" },
             ].map((s) => (
               <li key={s.href} className="flex items-center gap-3">
                 <svg className="w-5 h-5 text-[#1E4FBF] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -85,12 +85,15 @@ export default function CantonPage() {
           </h3>
           <ul className="space-y-2 mb-8">
             {[
-              { label: "Kitchen Remodeling", href: "/services/kitchen-remodeling" },
-              { label: "Bathroom Remodeling", href: "/services/bathroom-remodeling" },
-              { label: "Full Home Remodeling", href: "/services/full-home-remodeling" },
-              { label: "Basements &amp; Additions", href: "/services/basements-and-additions" },
-              { label: "Restoration", href: "/services/restoration" },
-              { label: "Age in Place", href: "/services/age-in-place" },
+              { label: "Kitchen Remodeling in Canton", href: "/services/kitchen-remodeling/canton-ga" },
+              { label: "Bathroom Remodeling in Canton", href: "/services/bathroom-remodeling/canton-ga" },
+              { label: "Full Home Remodeling in Canton", href: "/services/full-home-remodeling/canton-ga" },
+              { label: "Basement Finishing in Canton", href: "/services/basement-finishing/canton-ga" },
+              { label: "Home Additions in Canton", href: "/services/home-additions/canton-ga" },
+              { label: "Restoration in Canton", href: "/services/restoration/canton-ga" },
+              { label: "Roofing in Canton", href: "/services/roofing/canton-ga" },
+              { label: "Siding in Canton", href: "/services/siding/canton-ga" },
+              { label: "Age in Place Remodeling in Canton", href: "/services/age-in-place/canton-ga" },
             ].map((s) => (
               <li key={s.href} className="flex items-center gap-3">
                 <svg className="w-5 h-5 text-[#1E4FBF] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
