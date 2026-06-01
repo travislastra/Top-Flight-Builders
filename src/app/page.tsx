@@ -1,5 +1,4 @@
 import HeroPlaceholder from "@/components/HeroPlaceholder";
-import QuoteBar from "@/components/QuoteBar";
 import OurWork from "@/components/OurWork";
 import ServicesGrid from "@/components/ServicesGrid";
 import TeamContact from "@/components/TeamContact";
@@ -29,7 +28,6 @@ export default function Home() {
       />
       <HeroPlaceholder />
       <PartnersSlider />
-      <QuoteBar />
       <OurWork />
       <ServicesGrid />
       <OurDifference />
