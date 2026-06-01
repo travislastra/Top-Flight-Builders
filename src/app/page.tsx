@@ -30,8 +30,8 @@ export default function Home() {
       <PartnersSlider />
       <OurWork />
       <ServicesGrid />
-      <OurDifference />
       <TeamContact />
+      <OurDifference />
       <ReviewsSlider />
       <PortfolioSection />
       <ContactBanner />
