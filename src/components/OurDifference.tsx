@@ -62,6 +62,21 @@ export default function OurDifference() {
           </p>
         </div>
 
+        {/* Stats row */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-14">
+          {[
+            { value: "5★", label: "Google Rating" },
+            { value: "500+", label: "Projects Completed" },
+            { value: "Local", label: "Locally Owned & Operated" },
+            { value: "ATL", label: "Serving Greater Atlanta" },
+          ].map((stat) => (
+            <div key={stat.label} className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
+              <div className="font-sans text-4xl font-extrabold text-[#4A7FE8] mb-2">{stat.value}</div>
+              <div className="text-gray-400 text-sm leading-snug">{stat.label}</div>
+            </div>
+          ))}
+        </div>
+
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {differentiators.map((d) => (
             <div

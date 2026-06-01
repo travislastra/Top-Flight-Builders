@@ -49,7 +49,7 @@ export default function ServicesGrid() {
             What We Do
           </p>
           <h2 className="font-sans text-4xl md:text-5xl font-extrabold text-[#0D1B2E] mb-4">
-            A Few of Our Services
+            Our Services
           </h2>
           <p className="text-gray-500 max-w-xl mx-auto">
             From single-room renovations to complete home transformations — we handle it all.
