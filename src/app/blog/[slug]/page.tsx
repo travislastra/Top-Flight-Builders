@@ -30,6 +30,10 @@ export async function generateStaticParams() {
 
 const BASE_URL = "https://travislastra.github.io/Top-Flight-Builders";
 
+function toIsoDate(dateStr: string) {
+  return new Date(dateStr).toISOString().split("T")[0];
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = posts.find((p) => p.slug === slug);
@@ -52,6 +56,34 @@ export default async function BlogPostPage({ params }: Props) {
     .filter((p) => p.cat === post.cat && p.id !== post.id)
     .slice(0, 3);
 
+  const isoDate = toIsoDate(post.date);
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: isoDate,
+    dateModified: isoDate,
+    author: {
+      "@type": "Person",
+      name: "Ilian Bogdanov",
+      url: `${BASE_URL}/about`,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "TopFlight Builders",
+      url: BASE_URL,
+      logo: {
+        "@type": "ImageObject",
+        url: `${BASE_URL}/logo.png`,
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${BASE_URL}/blog/${post.slug}`,
+    },
+  };
+
   return (
     <>
       <BreadcrumbSchema crumbs={[
@@ -59,6 +91,10 @@ export default async function BlogPostPage({ params }: Props) {
         { name: "Blog", href: "/blog" },
         { name: post.title, href: `/blog/${post.slug}` },
       ]} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       {/* Hero */}
       <section className="relative overflow-hidden bg-[#0D1B2E] py-16 px-6">
         <LogoWatermark />
@@ -76,11 +112,14 @@ export default async function BlogPostPage({ params }: Props) {
             <span className={`text-xs font-bold uppercase tracking-wide px-2.5 py-1 rounded-full border ${tagColors[post.cat] ?? ""}`}>
               {post.catLabel}
             </span>
-            <span className="text-gray-400 text-sm">{post.date}</span>
+            <time dateTime={isoDate} className="text-gray-400 text-sm">{post.date}</time>
           </div>
           <h1 className="font-sans text-3xl md:text-5xl font-extrabold text-white leading-tight">
             {post.title}
           </h1>
+          <p className="mt-4 text-sm text-gray-400">
+            By <span className="text-gray-200 font-semibold">Ilian Bogdanov</span>, TopFlight Builders
+          </p>
         </div>
       </section>
 
