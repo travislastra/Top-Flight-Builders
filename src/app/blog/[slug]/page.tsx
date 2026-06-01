@@ -64,11 +64,18 @@ export default async function BlogPostPage({ params }: Props) {
     description: post.excerpt,
     datePublished: isoDate,
     dateModified: isoDate,
-    author: {
-      "@type": "Person",
-      name: "Ilian Bogdanov",
-      url: `${BASE_URL}/about`,
-    },
+    author: [
+      {
+        "@type": "Organization",
+        name: "Top Flight Builders Editorial Team",
+        url: BASE_URL,
+      },
+      {
+        "@type": "Person",
+        name: "Ilian Bogdanov",
+        url: `${BASE_URL}/about`,
+      },
+    ],
     publisher: {
       "@type": "Organization",
       name: "TopFlight Builders",
@@ -118,7 +125,7 @@ export default async function BlogPostPage({ params }: Props) {
             {post.title}
           </h1>
           <p className="mt-4 text-sm text-gray-400">
-            By <span className="text-gray-200 font-semibold">Ilian Bogdanov</span>, TopFlight Builders
+            By <span className="text-gray-200 font-semibold">Top Flight Builders Editorial Team</span> · Reviewed by <span className="text-gray-200 font-semibold">Ilian Bogdanov</span>
           </p>
         </div>
       </section>
