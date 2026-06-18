@@ -98,7 +98,7 @@ export default function MariettaPage() {
               { label: "Home Additions in Marietta", href: "/services/home-additions/marietta-ga" },
               { label: "Restoration in Marietta", href: "/services/restoration/marietta-ga" },
               { label: "Roofing in Marietta", href: "/services/roofing/marietta-ga" },
-              { label: "Siding in Marietta", href: "/services/siding/marietta-ga" },
+              { label: "Decks in Marietta", href: "/services/decks/marietta-ga" },
               { label: "Age in Place Remodeling in Marietta", href: "/services/age-in-place/marietta-ga" },
             ].map((s) => (
               <li key={s.href} className="flex items-center gap-3">

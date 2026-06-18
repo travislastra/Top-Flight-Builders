@@ -92,7 +92,7 @@ export default function CantonPage() {
               { label: "Home Additions in Canton", href: "/services/home-additions/canton-ga" },
               { label: "Restoration in Canton", href: "/services/restoration/canton-ga" },
               { label: "Roofing in Canton", href: "/services/roofing/canton-ga" },
-              { label: "Siding in Canton", href: "/services/siding/canton-ga" },
+              { label: "Decks in Canton", href: "/services/decks/canton-ga" },
               { label: "Age in Place Remodeling in Canton", href: "/services/age-in-place/canton-ga" },
             ].map((s) => (
               <li key={s.href} className="flex items-center gap-3">

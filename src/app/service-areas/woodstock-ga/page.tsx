@@ -92,7 +92,7 @@ export default function WoodstockPage() {
               { label: "Home Additions in Woodstock", href: "/services/home-additions/woodstock-ga" },
               { label: "Restoration in Woodstock", href: "/services/restoration/woodstock-ga" },
               { label: "Roofing in Woodstock", href: "/services/roofing/woodstock-ga" },
-              { label: "Siding in Woodstock", href: "/services/siding/woodstock-ga" },
+              { label: "Decks in Woodstock", href: "/services/decks/woodstock-ga" },
               { label: "Age in Place Remodeling in Woodstock", href: "/services/age-in-place/woodstock-ga" },
             ].map((s) => (
               <li key={s.href} className="flex items-center gap-3">

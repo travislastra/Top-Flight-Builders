@@ -92,7 +92,7 @@ export default function AlpharettaPage() {
               { label: "Home Additions in Alpharetta", href: "/services/home-additions/alpharetta-ga" },
               { label: "Restoration in Alpharetta", href: "/services/restoration/alpharetta-ga" },
               { label: "Roofing in Alpharetta", href: "/services/roofing/alpharetta-ga" },
-              { label: "Siding in Alpharetta", href: "/services/siding/alpharetta-ga" },
+              { label: "Decks in Alpharetta", href: "/services/decks/alpharetta-ga" },
               { label: "Age in Place Remodeling in Alpharetta", href: "/services/age-in-place/alpharetta-ga" },
             ].map((s) => (
               <li key={s.href} className="flex items-center gap-3">

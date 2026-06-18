@@ -264,30 +264,30 @@ export const ROOFING_FAQS: FAQ[] = [
   },
 ];
 
-export const SIDING_FAQS: FAQ[] = [
+export const DECK_FAQS: FAQ[] = [
   {
-    q: "What siding materials do you install?",
-    a: "James Hardie fiber cement board is our primary recommendation for Greater Atlanta — it handles the humidity, doesn't rot, holds paint well, and carries a 30-year warranty. LP SmartSide engineered wood is a solid mid-range option with good impact resistance. Premium vinyl (not builder-grade) works in applications where moisture is managed well. We don't install builder-grade vinyl on full replacements — it warps and fades within a decade and you end up replacing it again.",
+    q: "What decking materials do you build with?",
+    a: "We build with composite decking — primarily Trex, TimberTech, and Fiberon — as our first recommendation for most homeowners. Composite eliminates the annual maintenance cycle of sanding and staining, carries 25-year warranties, and performs far better in Georgia's humidity than pressure-treated wood over the long term. Pressure-treated lumber is our default for framing and structural members (it's code-compliant and cost-effective), but for the surface you walk on, composite is the right call for most homeowners who plan to stay in the home more than 5 years.",
   },
   {
-    q: "Hardie board versus vinyl — how do I decide?",
-    a: "Hardie board costs more upfront ($3–5/sq ft more installed) but lasts longer, holds paint 15–20 years versus 5–7 for repainted vinyl, resists impact and fire, and holds value better at resale. Vinyl costs less upfront but the premium versions perform well enough that cost difference narrows at the quality end. If you're planning to sell within 5 years, vinyl can be the right economic choice. If you're staying 10+ years, Hardie almost always wins on total cost of ownership.",
+    q: "Composite versus pressure-treated decking — how do I decide?",
+    a: "Pressure-treated decking costs less upfront but requires annual or biennial maintenance — sanding, staining, or sealing — to prevent graying, cracking, and splintering. In Georgia's humidity, untreated pressure-treated decks deteriorate faster than in drier climates. Composite costs more upfront but requires only soap-and-water cleaning, holds its color for decades, and doesn't splinter. If you're planning to sell within 3 years and budget is the primary driver, pressure-treated can make sense. If you're staying 10+ years, composite wins on total cost of ownership.",
   },
   {
-    q: "How do I know if my siding needs to be replaced versus repaired?",
-    a: "Spot repairs make sense when damage is limited to a few boards and the surrounding material is structurally sound. Full replacement makes sense when you see widespread cracking or splitting, when moisture has gotten behind the siding and caused sheathing or framing damage, when paint is peeling on entire elevations rather than isolated areas, or when sections have warped enough that they're no longer keeping water out. We probe suspicious areas during assessment — soft framing behind solid-looking siding is a red flag we don't ignore.",
+    q: "Do I need a permit for a deck in Georgia?",
+    a: "Yes — any attached deck over 200 square feet, and most structural replacements, require a permit in Cobb, Cherokee, and Fulton counties. We pull every permit required, every time. Permitted decks have inspected structural connections, which matters for insurance and resale. Decks built without permits can create title issues, insurance claim denials, and liability exposure if someone is injured on a structure that was never inspected.",
   },
   {
-    q: "How long does siding replacement take?",
-    a: "Most single-family homes take 3–5 days for a full re-side depending on size, complexity, and how many elevations have additional trim work. Homes with multiple gables, extensive window casing, or wrap-around porches take longer. We work in sections so the home is never left with open exterior for more than a day.",
+    q: "How long does a deck build or replacement take?",
+    a: "A standard 400–600 square foot deck replacement typically takes 3–5 days once materials are on-site. New builds with pergolas, stairs, and custom railing run 1–2 weeks depending on complexity. Permit approval in Cobb County typically adds 1–2 weeks to the start date — we factor that into the schedule from the beginning so it doesn't catch you off guard.",
   },
   {
-    q: "Will you find rot under the old siding?",
-    a: "Sometimes. We can't know the condition of sheathing or framing until the old siding is off. This is a standard disclosure we make before any siding project — hidden rot is the most common source of scope additions. When we find it, we stop, document, show you, and provide a written change order before proceeding. The good news: rot that's caught during a siding replacement is far cheaper to fix than rot discovered during a full renovation or home inspection.",
+    q: "My deck feels spongy or bouncy — is that a structural problem?",
+    a: "Almost always, yes. Soft or springy feel underfoot typically indicates rot in the joists, blocking, or ledger board — the structural members underneath the surface you walk on. The decking surface itself can look fine while the framing beneath it has deteriorated significantly. We assess the full structure before recommending repair versus replacement, because patching surface boards over deteriorated framing is neither safe nor cost-effective.",
   },
   {
-    q: "Does new siding improve energy efficiency?",
-    a: "Meaningfully, yes — particularly when we install house wrap or rigid foam insulation behind the new siding, which we include by default. A proper moisture barrier also prevents the air infiltration that accounts for a significant share of HVAC load in older homes. Homes with deteriorated siding and no house wrap often see noticeable utility cost reductions after a full re-side. The improvement is less dramatic than replacing windows, but the ROI case is strong when combined with the maintenance and aesthetic benefits.",
+    q: "What HOA approval do I need for a deck?",
+    a: "Most HOA communities in Cobb and Cherokee counties require architectural review board approval before a deck permit can be submitted. Requirements vary — material specifications, color restrictions, railing design, and maximum square footage are common constraints. We work with homeowners to prepare and submit HOA applications as part of the project planning phase so the approval and permit processes run in parallel rather than sequentially.",
   },
 ];
 

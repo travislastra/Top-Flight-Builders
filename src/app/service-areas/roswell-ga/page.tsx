@@ -92,7 +92,7 @@ export default function RoswellPage() {
               { label: "Home Additions in Roswell", href: "/services/home-additions/roswell-ga" },
               { label: "Restoration in Roswell", href: "/services/restoration/roswell-ga" },
               { label: "Roofing in Roswell", href: "/services/roofing/roswell-ga" },
-              { label: "Siding in Roswell", href: "/services/siding/roswell-ga" },
+              { label: "Decks in Roswell", href: "/services/decks/roswell-ga" },
               { label: "Age in Place Remodeling in Roswell", href: "/services/age-in-place/roswell-ga" },
             ].map((s) => (
               <li key={s.href} className="flex items-center gap-3">

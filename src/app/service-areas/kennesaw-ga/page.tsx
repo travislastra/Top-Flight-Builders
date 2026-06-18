@@ -92,7 +92,7 @@ export default function KennesawPage() {
               { label: "Home Additions in Kennesaw", href: "/services/home-additions/kennesaw-ga" },
               { label: "Restoration in Kennesaw", href: "/services/restoration/kennesaw-ga" },
               { label: "Roofing in Kennesaw", href: "/services/roofing/kennesaw-ga" },
-              { label: "Siding in Kennesaw", href: "/services/siding/kennesaw-ga" },
+              { label: "Decks in Kennesaw", href: "/services/decks/kennesaw-ga" },
               { label: "Age in Place Remodeling in Kennesaw", href: "/services/age-in-place/kennesaw-ga" },
             ].map((s) => (
               <li key={s.href} className="flex items-center gap-3">

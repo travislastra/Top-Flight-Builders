@@ -312,27 +312,27 @@ export const SERVICES: ServiceData[] = [
     urgencyNote: "Storm-damaged roofs should be inspected and documented within 30 days of the event — most insurance claims have time limitations",
   },
   {
-    slug: "siding",
-    name: "Siding",
-    shortName: "Siding",
+    slug: "decks",
+    name: "Deck Building & Replacement",
+    shortName: "Decks",
     parentPageUrl: "/services",
     processSteps: [
-      "Siding inspection and moisture damage assessment",
-      "Removal of existing siding",
-      "House wrap and moisture barrier installation",
-      "New siding installation",
-      "Trim, corner boards, and window casing",
-      "Caulk, prime, and final paint if needed",
+      "Design consultation and material selection",
+      "Permit application and approval",
+      "Demo of existing deck structure (if applicable)",
+      "Post setting, footing, and structural framing",
+      "Decking installation and railing system",
+      "Stairs, trim, and final inspection",
     ],
-    typicalRange: "Siding replacement in Greater Atlanta typically ranges from $12,000 for a standard vinyl job to $35,000+ for full Hardie board (fiber cement) on a larger home",
+    typicalRange: "Deck projects in Greater Atlanta typically range from $12,000 for a basic pressure-treated replacement to $45,000+ for a large composite deck with pergola, built-in seating, and premium railing",
     keyMaterials: [
-      "James Hardie fiber cement board",
-      "LP SmartSide engineered wood",
-      "Premium vinyl siding systems",
-      "Zip System house wrap",
-      "Painted aluminum trim",
+      "Trex and TimberTech composite decking",
+      "Pressure-treated lumber framing",
+      "Aluminum and cable railing systems",
+      "Hidden fastener systems",
+      "Concrete footings and helical piers",
     ],
-    urgencyNote: "Rotting or damaged siding creates pathways for moisture intrusion — delaying replacement often leads to structural wood rot behind the walls",
+    urgencyNote: "Decks with soft or spongy boards typically have rotted joists or a deteriorated ledger connection — a structural safety issue that needs assessment before the next season",
   },
   {
     slug: "age-in-place",
@@ -405,9 +405,9 @@ export const UNIQUE_HOOKS: Record<string, UniqueHook> = {
     localContext: "As a Marietta-based company, we're available for fast inspections after storm events and we understand how Cobb County processes insurance-related roofing permits.",
   },
 
-  "marietta-ga-siding": {
-    openingHook: "Marietta's 1980s vinyl siding installations are reaching the end of their functional life — the original vinyl on homes built during the building boom along the US-41 and Barrett Pkwy corridors is fading, cracking, and in some cases allowing moisture behind the cladding. Upgrading to James Hardie fiber cement in Marietta's climate makes sense given the exposure to Georgia's humidity and summer heat cycles.",
-    localContext: "We've replaced siding on ranches in the 30060 area and colonials in the 30066 and 30067 corridors — the framing conditions and moisture situations differ between eras, and we've seen both.",
+  "marietta-ga-decks": {
+    openingHook: "Marietta's tree-heavy neighborhoods and generous lots are ideal deck territory — but the mature canopy that makes East Cobb and West Cobb desirable also creates decades of shade moisture, leaf accumulation, and organic debris that accelerate wood deterioration. Decks built in the 1990s throughout Marietta are now 25–30 years old, and structural issues in ledger connections and post footings are increasingly common even when the surface boards still look passable.",
+    localContext: "Cobb County requires permits for new decks and structural replacements — we handle the application, coordinate inspections, and know the county's review process, which keeps your project on schedule rather than stalled in a permit queue.",
   },
 
   "marietta-ga-age-in-place": {
@@ -452,9 +452,9 @@ export const UNIQUE_HOOKS: Record<string, UniqueHook> = {
     localContext: "We pull roofing permits through Cherokee County and coordinate inspections efficiently — the county's building department has a reliable review process that we've navigated many times.",
   },
 
-  "canton-ga-siding": {
-    openingHook: "The vinyl siding installed on Canton's early 2000s subdivisions is showing its age — chalking, fading, and in some cases warping from years of direct south-facing sun exposure in Georgia's climate. Upgrading to James Hardie board offers significantly better longevity and a more substantial look that matches the investment Canton homeowners have made in the rest of their properties.",
-    localContext: "Canton's subdivision HOAs often have exterior color and material standards — we work with homeowners to select products that meet HOA requirements while achieving the upgrade they're after.",
+  "canton-ga-decks": {
+    openingHook: "Canton's early 2000s subdivisions were built with standard pressure-treated decks that are now 20+ years old. Pressure-treated lumber from that era has been exposed to decades of Georgia humidity, and the fasteners and connectors corrode significantly in this climate — many Canton homeowners are at the point where repair is less cost-effective than a full replacement with composite decking that won't require the same maintenance cycle going forward.",
+    localContext: "We build and replace decks throughout Cherokee County and understand the HOA material and design standards common in Towne Lake, Bridgemill, and Eagle Watch — getting HOA approval in parallel with the permit application keeps the project from stalling.",
   },
 
   "canton-ga-age-in-place": {
@@ -499,9 +499,9 @@ export const UNIQUE_HOOKS: Record<string, UniqueHook> = {
     localContext: "Kennesaw roofing permits are handled through Cobb County Building Inspections — we're well-versed in the county's documentation requirements and inspection scheduling process.",
   },
 
-  "kennesaw-ga-siding": {
-    openingHook: "Many of Kennesaw's 1980s homes were built with T1-11 or early vinyl siding products that have now been exposed to 35–40 years of Georgia's humidity, freeze-thaw cycles, and UV degradation. Replacing failing siding before it allows moisture into the wall cavity is significantly less expensive than dealing with the structural wood rot that follows.",
-    localContext: "We've replaced siding on dozens of homes in the Kennesaw market and understand the framing conditions common to that construction era — which lets us give accurate estimates rather than discovering additional scope mid-project.",
+  "kennesaw-ga-decks": {
+    openingHook: "Kennesaw's 1980s and 1990s construction era produced homes with decks that are now 30–40 years old — and original pressure-treated framing from that era has passed its useful life in many cases. The combination of Georgia humidity, seasonal moisture cycling, and the heavy leaf debris from Kennesaw Mountain's mature tree cover means structural deterioration accelerates here, often invisibly beneath surface boards that still look intact.",
+    localContext: "Cobb County handles Kennesaw deck permits, and we're experienced with the county's structural inspection requirements for both new builds and replacement projects — we coordinate the inspection schedule so work doesn't sit waiting on a single visit.",
   },
 
   "kennesaw-ga-age-in-place": {
@@ -546,9 +546,9 @@ export const UNIQUE_HOOKS: Record<string, UniqueHook> = {
     localContext: "We include a thorough gutter and flashing inspection on every Acworth roofing job — in lake-adjacent neighborhoods, clogged gutters and compromised flashing are primary culprits for the hidden water infiltration we find regularly.",
   },
 
-  "acworth-ga-siding": {
-    openingHook: "Acworth's lake-area humidity is particularly hard on siding — vinyl that would last 30 years in a drier climate shows accelerated fading, warping, and moisture intrusion in the lake communities. When we remove siding in these neighborhoods, finding wet or rotting OSB behind the cladding is common — which is why we assess the wall assembly before pricing your project.",
-    localContext: "James Hardie fiber cement is our most frequent recommendation in Acworth's lakeside neighborhoods — its resistance to moisture, insects, and rot makes it significantly more durable in this environment than vinyl or engineered wood alternatives.",
+  "acworth-ga-decks": {
+    openingHook: "Acworth's lakeside neighborhoods create an unusually demanding environment for decks — the combination of lake humidity, proximity to water, and the organic debris common in tree-heavy lake communities accelerates wood deterioration significantly faster than in landlocked neighborhoods. Decks in the Lake Acworth and Lake Allatoona areas often have structural problems that aren't visible on the surface: rot in the ledger board, deteriorated post bases, and joist hangers that have lost structural integrity.",
+    localContext: "We build composite decks in Acworth's lake communities specifically because pressure-treated lumber's longevity is significantly reduced in these moisture conditions — the upfront cost difference is offset by maintenance savings and a significantly longer service life.",
   },
 
   "acworth-ga-age-in-place": {
@@ -593,9 +593,9 @@ export const UNIQUE_HOOKS: Record<string, UniqueHook> = {
     localContext: "We assess roof condition honestly — if a repair will extend the roof another 5 years without risk, we'll tell you. If it's past its service life, we'll show you the evidence and explain why replacement is the better investment.",
   },
 
-  "woodstock-ga-siding": {
-    openingHook: "The vinyl siding installed on Woodstock's early 2000s subdivisions is now 20+ years old and starting to show it — particularly on south and west-facing elevations that absorb the most direct sun. Fading, chalking, and hairline cracking are cosmetic issues that become structural problems when the siding's seal against water infiltration begins to fail.",
-    localContext: "Towne Lake and Eagle Watch HOAs have exterior material standards that we review before specifying replacement products — we make sure the material and color selection is HOA-compliant before any work begins.",
+  "woodstock-ga-decks": {
+    openingHook: "Woodstock homeowners who moved here for the lot size and outdoor living potential are investing in decks that match that vision — whether that's replacing the builder-grade pressure-treated deck that came with an early 2000s purchase or building from scratch on a newer property. The community's HOA landscape means material and design expectations are specific, and getting that right upfront avoids the approval delays that derail timelines.",
+    localContext: "Cherokee County handles Woodstock deck permits, and HOA communities like Towne Lake and Eagle Watch require material and design approval before permit submission — we manage both processes in parallel so your project doesn't sit waiting on administrative steps.",
   },
 
   "woodstock-ga-age-in-place": {
@@ -640,9 +640,9 @@ export const UNIQUE_HOOKS: Record<string, UniqueHook> = {
     localContext: "East Cobb homeowners typically select mid-to-high-grade shingles from GAF's Timberline series or Owens Corning's Duration line — products with stronger warranty coverage and better visual profile than standard builder-grade options.",
   },
 
-  "east-cobb-ga-siding": {
-    openingHook: "East Cobb homes that are still carrying their original 1980s vinyl siding are increasingly conspicuous in a market where surrounding properties have been updated. James Hardie fiber cement board — properly installed over Zip System house wrap — is the most popular upgrade choice in East Cobb because it holds paint longer, resists impact and moisture better, and reads as a premium material that matches the neighborhood's character.",
-    localContext: "We've replaced siding on homes throughout the Johnson Ferry and Sewell Mill corridors — the 30-year-old framing on these colonials is generally solid, but we always assess for moisture intrusion and rot before closing the wall up with new material.",
+  "east-cobb-ga-decks": {
+    openingHook: "East Cobb homeowners invest seriously in their properties and expect exterior improvements to match the quality standard of the rest of the home. Composite decking — Trex, TimberTech, or Fiberon — has become the dominant choice in East Cobb because it eliminates the annual maintenance cycle of sanding and staining and carries 25-year warranties that align with how long East Cobb homeowners actually stay in their homes. Cable railings and built-in seating are increasingly standard requests in this market.",
+    localContext: "We've built decks throughout the Johnson Ferry and Sewell Mill corridors and understand the HOA standards and setback requirements common in East Cobb neighborhoods — permit applications run through Cobb County, and we handle the full process.",
   },
 
   "east-cobb-ga-age-in-place": {
@@ -687,9 +687,9 @@ export const UNIQUE_HOOKS: Record<string, UniqueHook> = {
     localContext: "Fulton County handles roofing permits for Roswell, and we're experienced with the county's inspection process — including the additional coordination required for work on properties in historic districts.",
   },
 
-  "roswell-ga-siding": {
-    openingHook: "Roswell's 1990s suburbs in the 30075 and 30076 zip codes carry aging vinyl siding that's approaching or past its service life — and the historic core has older wood siding that requires careful assessment before replacement or repair. We approach siding projects in Roswell with an eye toward material matching and historic appropriateness, not just replacement-in-kind.",
-    localContext: "For Roswell homes in or near the historic district, we consult with homeowners on siding materials that meet historic preservation guidelines — fiber cement can be appropriate where the profile and finish match original wood siding characteristics.",
+  "roswell-ga-decks": {
+    openingHook: "Roswell's older homes — particularly those in the historic district and the established neighborhoods along the Chattahoochee corridor — frequently have decks that were added after original construction and may not have been properly permitted or inspected. We assess existing Roswell decks for structural integrity before any work begins and pull proper permits on every project, including structures that were originally built without them.",
+    localContext: "Fulton County handles deck permits for Roswell, and properties in or near the historic district may have design review requirements for rear additions and exterior structures. We coordinate with the city's preservation staff when applicable so the approval process doesn't derail the project schedule.",
   },
 
   "roswell-ga-age-in-place": {
@@ -734,9 +734,9 @@ export const UNIQUE_HOOKS: Record<string, UniqueHook> = {
     localContext: "Windward and the Haynes Bridge corridor neighborhoods have HOA requirements for roofing materials and colors — we confirm compliance before specifying replacement products, and we provide the documentation HOA architectural review committees typically require.",
   },
 
-  "alpharetta-ga-siding": {
-    openingHook: "Alpharetta's premium housing market means siding replacement here is almost always an upgrade decision — homeowners are moving from aging vinyl to James Hardie fiber cement or LP SmartSide, both of which hold paint longer, resist moisture better, and carry a visual weight that vinyl simply doesn't. In a neighborhood where curb appeal drives meaningful value, the choice of siding material matters.",
-    localContext: "We've replaced siding on homes in Windward and throughout the GA-400 corridor, and we understand the HOA approval process, the permit requirements through Fulton County, and the material expectations in this market.",
+  "alpharetta-ga-decks": {
+    openingHook: "Alpharetta's premium housing market has driven adoption of composite and hardwood decking faster than most of Greater Atlanta — Windward and the surrounding neighborhoods are full of Trex and TimberTech builds that reflect homeowners' investment in their properties. Custom pergolas, built-in seating, cable railings, and outdoor kitchen rough-in are increasingly standard requests in this market, and we build to that specification.",
+    localContext: "Alpharetta's HOA communities have specific requirements for deck materials, railing designs, and structural approaches — we're familiar with Windward HOA standards and Fulton County's permit process, and we handle both before any materials are ordered.",
   },
 
   "alpharetta-ga-age-in-place": {

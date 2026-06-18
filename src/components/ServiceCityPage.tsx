@@ -21,7 +21,7 @@ function getTimeline(serviceSlug: string): string {
     "home-additions": "Home additions typically take 4–6 months from permit approval to final inspection. Permit and plan review in Cobb and Cherokee counties adds 6–10 weeks before construction begins — we factor this into the overall timeline from day one.",
     "restoration": "Restoration timelines depend heavily on damage scope. Water extraction and drying takes 3–5 days. Structural and finish repair follows — a moderate water intrusion event typically resolves in 3–6 weeks. Larger fire or structural damage scopes can run 2–4 months.",
     "roofing": "Most residential roof replacements take 1–3 days for the physical installation. Permit and inspection scheduling adds a few days on either end. Insurance-related projects may take longer depending on adjuster scheduling.",
-    "siding": "Siding replacement on a standard home takes 5–10 days for installation. Larger homes or those requiring significant moisture remediation behind the existing cladding can run 2–3 weeks. We inspect before committing to a final timeline.",
+    "decks": "A standard deck replacement typically takes 3–5 days once materials are on-site. New builds with pergolas, stairs, and custom railing run 1–2 weeks. Permit approval adds 1–2 weeks to the start date — we factor that into the schedule upfront.",
     "age-in-place": "Targeted modifications like a bathroom conversion take 1–2 weeks. Comprehensive whole-home accessibility projects — doorway widening, ramp construction, full bathroom conversion — typically run 4–6 weeks.",
   };
   return timelines[serviceSlug] ?? "Timeline varies by scope — we provide a detailed project schedule during the estimate process.";

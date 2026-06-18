@@ -143,7 +143,7 @@ export default function ServicesPage() {
       </section>
 
       <ServiceAreaLinks matrixSlug="roofing" serviceName="Roofing" />
-      <ServiceAreaLinks matrixSlug="siding" serviceName="Siding" />
+      <ServiceAreaLinks matrixSlug="decks" serviceName="Decks" />
       <ContactBanner />
     </>
   );

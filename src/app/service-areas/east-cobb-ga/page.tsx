@@ -103,7 +103,7 @@ export default function EastCobbPage() {
               { label: "Home Additions in East Cobb", href: "/services/home-additions/east-cobb-ga" },
               { label: "Restoration in East Cobb", href: "/services/restoration/east-cobb-ga" },
               { label: "Roofing in East Cobb", href: "/services/roofing/east-cobb-ga" },
-              { label: "Siding in East Cobb", href: "/services/siding/east-cobb-ga" },
+              { label: "Decks in East Cobb", href: "/services/decks/east-cobb-ga" },
               { label: "Age in Place Remodeling in East Cobb", href: "/services/age-in-place/east-cobb-ga" },
             ].map((s) => (
               <li key={s.href} className="flex items-center gap-3">

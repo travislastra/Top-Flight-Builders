@@ -92,7 +92,7 @@ export default function AcworthPage() {
               { label: "Home Additions in Acworth", href: "/services/home-additions/acworth-ga" },
               { label: "Restoration in Acworth", href: "/services/restoration/acworth-ga" },
               { label: "Roofing in Acworth", href: "/services/roofing/acworth-ga" },
-              { label: "Siding in Acworth", href: "/services/siding/acworth-ga" },
+              { label: "Decks in Acworth", href: "/services/decks/acworth-ga" },
               { label: "Age in Place Remodeling in Acworth", href: "/services/age-in-place/acworth-ga" },
             ].map((s) => (
               <li key={s.href} className="flex items-center gap-3">
