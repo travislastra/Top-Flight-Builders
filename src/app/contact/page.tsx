@@ -68,8 +68,7 @@ export default function ContactPage() {
           </div>
 
           {/* Form */}
-          <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
-            <h2 className="font-sans text-2xl font-bold text-[#0D1B2E] mb-6">Request Your Free Estimate</h2>
+          <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
             <ContactForm />
           </div>
         </div>
