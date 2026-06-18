@@ -3,7 +3,7 @@ import type { FAQ } from "@/components/FAQSection";
 export const KITCHEN_FAQS: FAQ[] = [
   {
     q: "How long does a typical kitchen remodel take in Cobb County?",
-    a: "A cosmetic refresh — refaced cabinets, new countertops, tile backsplash — typically runs 2–3 weeks. A full gut renovation with new cabinetry, plumbing moves, and layout changes usually takes 6–10 weeks from demolition to final punch list. The most common delay is cabinet lead time: 6–12 weeks before construction even starts. Order early — this single decision controls your move-in date more than anything else.",
+    a: "A cosmetic refresh — refaced cabinets, new countertops, tile backsplash — typically runs 2–3 weeks. A full gut renovation with new cabinetry, plumbing moves, and layout changes usually takes 6–10 weeks from demolition to final punch list. The most common delay is cabinet lead time: 2–5 weeks before construction even starts. Order early — this single decision controls your move-in date more than anything else.",
   },
   {
     q: "What does a kitchen remodel cost in the Greater Atlanta market?",

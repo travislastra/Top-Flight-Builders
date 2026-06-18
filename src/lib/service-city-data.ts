@@ -157,7 +157,7 @@ export const SERVICES: ServiceData[] = [
     parentPageUrl: "/services/kitchen-remodeling",
     processSteps: [
       "Design consultation and layout planning",
-      "Cabinet selection and ordering (6–12 week lead time)",
+      "Cabinet selection and ordering (2–5 week lead time)",
       "Demolition and rough-in (plumbing, electrical, gas)",
       "Cabinet installation and countertop templating",
       "Tile backsplash, flooring, and fixture installation",
@@ -171,7 +171,7 @@ export const SERVICES: ServiceData[] = [
       "Under-cabinet LED lighting",
       "Premium appliances",
     ],
-    urgencyNote: "Cabinet lead times of 6–12 weeks mean early planning matters — delaying the start pushes your completion date significantly",
+    urgencyNote: "Cabinet lead times of 2–5 weeks mean early planning matters — delaying the start pushes your completion date significantly",
   },
   {
     slug: "bathroom-remodeling",
