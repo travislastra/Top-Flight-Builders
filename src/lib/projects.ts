@@ -270,36 +270,6 @@ export const projects: Project[] = [
     outcome: "Three major scopes completed under one contract — the homeowner got a fully refreshed home without juggling multiple contractors.",
   },
   {
-    slug: "kitchen-bathroom-feature-wall",
-    title: "Kitchen, Bathroom & Feature Wall",
-    location: "Greater Atlanta, GA",
-    budget: "Contact for Pricing",
-    year: 2026,
-    service: "full-home",
-    categories: ["Full Home"],
-    tags: ["Kitchen", "Bathroom", "Feature Wall", "Tile", "Modern", "Accent"],
-    hero: "/images/projects/kitchen-bathroom-feature-wall/kitchen-bathroom-feature-wall-remodel-marietta-ga-01.jpg",
-    beforePhotos: ["/images/projects/kitchen-bathroom-feature-wall/kitchen-bathroom-feature-wall-remodel-marietta-ga-before-01.jpg", "/images/projects/kitchen-bathroom-feature-wall/kitchen-bathroom-feature-wall-remodel-marietta-ga-before-02.jpg"],
-    gallery: ["/images/projects/kitchen-bathroom-feature-wall/kitchen-bathroom-feature-wall-remodel-marietta-ga-01.jpg", "/images/projects/kitchen-bathroom-feature-wall/kitchen-bathroom-feature-wall-remodel-marietta-ga-02.jpg", "/images/projects/kitchen-bathroom-feature-wall/kitchen-bathroom-feature-wall-remodel-marietta-ga-03.jpg", "/images/projects/kitchen-bathroom-feature-wall/kitchen-bathroom-feature-wall-remodel-marietta-ga-04.jpg", "/images/projects/kitchen-bathroom-feature-wall/kitchen-bathroom-feature-wall-remodel-marietta-ga-05.jpg", "/images/projects/kitchen-bathroom-feature-wall/kitchen-bathroom-feature-wall-remodel-marietta-ga-06.jpg", "/images/projects/kitchen-bathroom-feature-wall/kitchen-bathroom-feature-wall-remodel-marietta-ga-07.jpg", "/images/projects/kitchen-bathroom-feature-wall/kitchen-bathroom-feature-wall-remodel-marietta-ga-08.jpg", "/images/projects/kitchen-bathroom-feature-wall/kitchen-bathroom-feature-wall-remodel-marietta-ga-09.jpg", "/images/projects/kitchen-bathroom-feature-wall/kitchen-bathroom-feature-wall-remodel-marietta-ga-10.jpg", "/images/projects/kitchen-bathroom-feature-wall/kitchen-bathroom-feature-wall-remodel-marietta-ga-11.jpg"],
-    excerpt: "Kitchen and bathroom remodel paired with a custom feature wall — a multi-room update with a bold design statement.",
-    description: "This project combined a full kitchen remodel and bathroom renovation with a standout custom feature wall. TopFlight Builders handled all three scopes — delivering functional upgrades throughout the home while adding a dramatic design element that became the focal point of the main living space.",
-    tasks: [
-      {
-        area: "Kitchen",
-        items: ["New cabinetry, countertops, and backsplash", "Updated sink, fixtures, and lighting", "Appliance and hardware installation"],
-      },
-      {
-        area: "Bathroom",
-        items: ["Full tile shower rebuild", "New vanity and plumbing fixtures", "Tile flooring and updated lighting"],
-      },
-      {
-        area: "Feature Wall",
-        items: ["Custom feature wall design and build", "Tile or shiplap accent treatment", "Integrated lighting for visual impact"],
-      },
-    ],
-    outcome: "A home that functions better and looks dramatically different — the feature wall alone transformed the feel of the entire living area.",
-  },
-  {
     slug: "kitchen-deck-east-cobb",
     title: "Kitchen & Deck Remodel — East Cobb",
     location: "East Cobb, GA",
