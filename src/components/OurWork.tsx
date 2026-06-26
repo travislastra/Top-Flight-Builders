@@ -39,8 +39,8 @@ export default function OurWork() {
           </div>
           <div className="relative aspect-[3/4] rounded-xl overflow-hidden lg:mt-8">
             <Img
-              src="/images/kitchen-remodel-dark-shaker-cabinets-marietta-ga.jpg"
-              alt="Kitchen remodel — dark shaker cabinets"
+              src="/images/kitchen-portfolio-cover-homepage-ga.jpg"
+              alt="Kitchen remodel — custom cabinetry and countertops"
               fill
               className="object-cover"
             />
