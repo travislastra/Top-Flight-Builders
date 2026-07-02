@@ -11,7 +11,7 @@ export const metadata = {
     "Kitchen, bathroom, and home remodeling in Acworth, GA by TopFlight Builders. Serving Lake Acworth and Lake Allatoona communities. Licensed, insured, 50+ reviews. (404) 369-7129.",
   alternates: {
     canonical:
-      "https://travislastra.github.io/Top-Flight-Builders/service-areas/acworth-ga",
+      "https://topflightbuilders.net/service-areas/acworth-ga",
   },
 };
 

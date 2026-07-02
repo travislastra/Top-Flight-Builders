@@ -28,7 +28,7 @@ export async function generateStaticParams() {
   return posts.map((p) => ({ slug: p.slug }));
 }
 
-const BASE_URL = "https://travislastra.github.io/Top-Flight-Builders";
+const BASE_URL = "https://topflightbuilders.net";
 
 function toIsoDate(dateStr: string) {
   return new Date(dateStr).toISOString().split("T")[0];

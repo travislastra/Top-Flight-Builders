@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "More Projects | Marietta and Canton Remodeling | TopFlight Builders",
   description: "More remodeling work by TopFlight Builders across Marietta and Canton, GA. Kitchens, bathrooms, additions, and everything in between. Licensed, insured, 50+ five-star reviews. (404) 369-7129.",
   alternates: {
-    canonical: "https://travislastra.github.io/Top-Flight-Builders/more-from-us",
+    canonical: "https://topflightbuilders.net/more-from-us",
   },
 };
 

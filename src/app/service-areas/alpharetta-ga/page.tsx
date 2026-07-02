@@ -11,7 +11,7 @@ export const metadata = {
     "Kitchen, bathroom, and high-end home remodeling in Alpharetta, GA by TopFlight Builders. Serving Avalon area and surrounding Fulton County communities. Licensed, insured. (404) 369-7129.",
   alternates: {
     canonical:
-      "https://travislastra.github.io/Top-Flight-Builders/service-areas/alpharetta-ga",
+      "https://topflightbuilders.net/service-areas/alpharetta-ga",
   },
 };
 

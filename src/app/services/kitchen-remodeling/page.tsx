@@ -15,7 +15,7 @@ export const metadata = {
   title: "Kitchen Remodeling in Marietta GA | TopFlight Builders",
   description: "Kitchen remodeling in Marietta and Canton, GA by TopFlight Builders. Custom cabinetry, countertops, and layout redesign. Licensed, insured, 50+ five-star reviews. Free estimate: (404) 369-7129.",
   alternates: {
-    canonical: "https://travislastra.github.io/Top-Flight-Builders/services/kitchen-remodeling",
+    canonical: "https://topflightbuilders.net/services/kitchen-remodeling",
   },
 };
 

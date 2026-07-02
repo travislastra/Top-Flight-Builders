@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${service.name} in ${cityData.name}, GA | TopFlight Builders`,
     description: `${service.name} in ${cityData.name} and ${cityData.county} County, GA by TopFlight Builders. ${service.typicalRange.split(".")[0]}. Licensed, insured, 50+ five-star reviews. (404) 369-7129.`,
     alternates: {
-      canonical: `https://travislastra.github.io/Top-Flight-Builders/services/${SERVICE_SLUG}/${city}`,
+      canonical: `https://topflightbuilders.net/services/${SERVICE_SLUG}/${city}`,
     },
   };
 }

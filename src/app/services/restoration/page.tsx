@@ -14,7 +14,7 @@ export const metadata = {
   title: "Storm, Water and Fire Restoration in Marietta GA | TopFlight Builders",
   description: "Storm, water, and fire restoration in Marietta and Canton, GA by TopFlight Builders. Fast response, expert crews, full rebuild. Licensed, insured, 50+ five-star reviews. Free estimate: (404) 369-7129.",
   alternates: {
-    canonical: "https://travislastra.github.io/Top-Flight-Builders/services/restoration",
+    canonical: "https://topflightbuilders.net/services/restoration",
   },
 };
 

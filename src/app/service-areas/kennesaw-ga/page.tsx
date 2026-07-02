@@ -11,7 +11,7 @@ export const metadata = {
     "Kitchen, bathroom, and home remodeling in Kennesaw, GA by TopFlight Builders. Serving Cobb County homeowners near Kennesaw Mountain. Licensed, insured, 50+ five-star reviews. (404) 369-7129.",
   alternates: {
     canonical:
-      "https://travislastra.github.io/Top-Flight-Builders/service-areas/kennesaw-ga",
+      "https://topflightbuilders.net/service-areas/kennesaw-ga",
   },
 };
 

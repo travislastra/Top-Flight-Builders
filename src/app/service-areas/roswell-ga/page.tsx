@@ -11,7 +11,7 @@ export const metadata = {
     "Kitchen, bathroom, and whole-home remodeling in Roswell, GA by TopFlight Builders. Serving Historic Roswell and surrounding Fulton County communities. Licensed, insured. (404) 369-7129.",
   alternates: {
     canonical:
-      "https://travislastra.github.io/Top-Flight-Builders/service-areas/roswell-ga",
+      "https://topflightbuilders.net/service-areas/roswell-ga",
   },
 };
 

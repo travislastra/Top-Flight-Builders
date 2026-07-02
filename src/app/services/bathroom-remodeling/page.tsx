@@ -15,7 +15,7 @@ export const metadata = {
   title: "Bathroom Remodeling in Marietta and Canton GA | TopFlight Builders",
   description: "Bathroom remodeling in Marietta and Canton, GA by TopFlight Builders. Spa showers, frameless glass, custom tile, and vanities. Licensed, insured, 50+ five-star reviews. Free estimate: (404) 369-7129.",
   alternates: {
-    canonical: "https://travislastra.github.io/Top-Flight-Builders/services/bathroom-remodeling",
+    canonical: "https://topflightbuilders.net/services/bathroom-remodeling",
   },
 };
 

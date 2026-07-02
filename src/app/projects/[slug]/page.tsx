@@ -15,7 +15,7 @@ export async function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
 }
 
-const BASE_URL = "https://travislastra.github.io/Top-Flight-Builders";
+const BASE_URL = "https://topflightbuilders.net";
 const DOMAIN = "https://topflightbuilders.net";
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

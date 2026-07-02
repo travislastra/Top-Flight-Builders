@@ -12,7 +12,7 @@ export const metadata = {
   title: "Roofing Replacement & Repair in Marietta GA | TopFlight Builders",
   description: "Roof replacement and storm damage repair in Marietta and Greater Atlanta, GA by TopFlight Builders. GAF and Owens Corning shingles, insurance claim support. Licensed, insured. Free estimate: (404) 369-7129.",
   alternates: {
-    canonical: "https://travislastra.github.io/Top-Flight-Builders/services/roofing",
+    canonical: "https://topflightbuilders.net/services/roofing",
   },
 };
 

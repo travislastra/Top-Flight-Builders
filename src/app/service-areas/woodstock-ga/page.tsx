@@ -11,7 +11,7 @@ export const metadata = {
     "Kitchen, bathroom, and whole-home remodeling in Woodstock, GA by TopFlight Builders. Serving Cherokee County families. Licensed, insured, 50+ five-star reviews. (404) 369-7129.",
   alternates: {
     canonical:
-      "https://travislastra.github.io/Top-Flight-Builders/service-areas/woodstock-ga",
+      "https://topflightbuilders.net/service-areas/woodstock-ga",
   },
 };
 

@@ -20,7 +20,7 @@ const inter = Inter({
   weight: ["400", "500", "600"],
 });
 
-const BASE_URL = "https://travislastra.github.io/Top-Flight-Builders";
+const BASE_URL = "https://topflightbuilders.net";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),

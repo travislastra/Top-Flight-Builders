@@ -11,7 +11,7 @@ export const metadata = {
     "Kitchen, bathroom, and whole-home remodeling in Smyrna, GA by TopFlight Builders. Serving Smyrna Village, Vinings, and Cumberland communities. Licensed, insured. (404) 369-7129.",
   alternates: {
     canonical:
-      "https://travislastra.github.io/Top-Flight-Builders/service-areas/smyrna-ga",
+      "https://topflightbuilders.net/service-areas/smyrna-ga",
   },
 };
 

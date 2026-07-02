@@ -8,7 +8,7 @@ export const metadata = {
   title: "Remodeling Services in Marietta, Canton and North Atlanta | TopFlight Builders",
   description: "Remodeling services in Marietta and Canton, GA by TopFlight Builders. Kitchen, bath, full home, basements, and restoration. Licensed, insured, 50+ five-star reviews. (404) 369-7129.",
   alternates: {
-    canonical: "https://travislastra.github.io/Top-Flight-Builders/services",
+    canonical: "https://topflightbuilders.net/services",
   },
 };
 

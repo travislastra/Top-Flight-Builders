@@ -11,7 +11,7 @@ export const metadata = {
     "Kitchen, bathroom, and luxury home remodeling in Milton, GA by TopFlight Builders. Serving Crabapple and Birmingham Crossroads communities. Licensed, insured. (404) 369-7129.",
   alternates: {
     canonical:
-      "https://travislastra.github.io/Top-Flight-Builders/service-areas/milton-ga",
+      "https://topflightbuilders.net/service-areas/milton-ga",
   },
 };
 

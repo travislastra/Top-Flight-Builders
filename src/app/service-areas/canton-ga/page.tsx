@@ -11,7 +11,7 @@ export const metadata = {
     "Kitchen, bathroom, and whole-home remodeling in Canton, GA by TopFlight Builders. Serving Cherokee County homeowners. Licensed, insured, 50+ five-star reviews. (404) 369-7129.",
   alternates: {
     canonical:
-      "https://travislastra.github.io/Top-Flight-Builders/service-areas/canton-ga",
+      "https://topflightbuilders.net/service-areas/canton-ga",
   },
 };
 

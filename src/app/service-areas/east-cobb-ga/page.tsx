@@ -13,7 +13,7 @@ export const metadata = {
     "Kitchen, bathroom, and whole-home remodeling in East Cobb, GA by TopFlight Builders. Serving Lassiter, Pope, and Walton school zones. Licensed, insured, 50+ reviews. (404) 369-7129.",
   alternates: {
     canonical:
-      "https://travislastra.github.io/Top-Flight-Builders/service-areas/east-cobb-ga",
+      "https://topflightbuilders.net/service-areas/east-cobb-ga",
   },
 };
 

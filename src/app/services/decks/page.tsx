@@ -12,7 +12,7 @@ export const metadata = {
   title: "Deck Building & Replacement in Marietta GA | TopFlight Builders",
   description: "Deck building and replacement in Marietta and Greater Atlanta, GA by TopFlight Builders. Composite and pressure-treated decks, pergolas, and custom railings. Licensed, insured. Free estimate: (404) 369-7129.",
   alternates: {
-    canonical: "https://travislastra.github.io/Top-Flight-Builders/services/decks",
+    canonical: "https://topflightbuilders.net/services/decks",
   },
 };
 

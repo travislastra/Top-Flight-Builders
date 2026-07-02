@@ -14,7 +14,7 @@ export const metadata = {
   title: "Whole Home Remodeling in Marietta and East Cobb | TopFlight Builders",
   description: "Whole home remodeling in Marietta and Canton, GA by TopFlight Builders. Coordinated kitchens, baths, flooring, and full interior updates. Licensed, insured, 50+ five-star reviews. (404) 369-7129.",
   alternates: {
-    canonical: "https://travislastra.github.io/Top-Flight-Builders/services/full-home-remodeling",
+    canonical: "https://topflightbuilders.net/services/full-home-remodeling",
   },
 };
 
