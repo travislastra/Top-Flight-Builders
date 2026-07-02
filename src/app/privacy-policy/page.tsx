@@ -59,12 +59,19 @@ export default function PrivacyPolicyPage() {
             Like all websites, our hosting infrastructure may automatically record standard server log data when you visit the Site. This can include your IP address, browser type, operating system, referring URL, pages visited, and the date and time of your visit. We do not actively collect or analyze this data; it is a standard function of web hosting.
           </P>
 
-          <H3>Information we do NOT collect</H3>
+          <H3>Information collected through analytics (with your consent)</H3>
+          <P>
+            If you accept analytics cookies via the consent banner, we use Google Analytics 4 to collect anonymized data about how visitors use the Site — including pages visited, time on page, general geographic region (city/state level), device type, and traffic source. Google Analytics does not collect your name, email address, or phone number, and we have not enabled any advertising features.
+          </P>
+          <P>
+            Google Analytics sets cookies named <code className="text-sm bg-gray-100 px-1 rounded">_ga</code> and <code className="text-sm bg-gray-100 px-1 rounded">_ga_XXXXXXXXXX</code> (replace with your stream suffix) that persist for up to 2 years. If you decline the consent banner, these cookies are never set and no analytics data is transmitted. You can change your choice at any time via the &ldquo;Cookie Settings&rdquo; link in the site footer.
+          </P>
+
+          <H3>What we do NOT collect</H3>
           <P>
             We want to be direct about what is not happening on this Site:
           </P>
           <UL>
-            <li>We do <strong>not</strong> use analytics software (such as Google Analytics) to track visitor behavior. <em>Note: we may add analytics in the future, at which time this policy will be updated and a consent mechanism will be implemented.</em></li>
             <li>We do <strong>not</strong> use session replay or screen-recording tools (such as Hotjar, FullStory, or Microsoft Clarity) that record mouse movements, keystrokes, or page interactions.</li>
             <li>We do <strong>not</strong> use advertising pixels or tracking beacons (such as the Meta/Facebook Pixel or Google Ads conversion tags).</li>
             <li>We do <strong>not</strong> use live chat or messaging widgets that transmit the content of your on-site activity to a third party in real time.</li>
@@ -75,6 +82,13 @@ export default function PrivacyPolicyPage() {
           <H2>2. Third-Party Services on This Site</H2>
           <P>
             Two third-party services load content on this Site. We disclose them here in full.
+          </P>
+
+          <H3>Google Analytics 4 (with consent)</H3>
+          <P>
+            When you accept analytics via the consent banner, Google Analytics 4 is loaded from <code className="text-sm bg-gray-100 px-1 rounded">googletagmanager.com</code>. Google may process your data in accordance with{" "}
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-[#1E4FBF] hover:underline">Google&apos;s Privacy Policy</a>.
+            We have not enabled Google Signals, advertising personalization, or remarketing features. If you decline, no request is ever made to Google&apos;s analytics servers from this Site.
           </P>
 
           <H3>Google Maps (service area pages)</H3>
@@ -94,10 +108,15 @@ export default function PrivacyPolicyPage() {
           {/* ── 3. COOKIES ── */}
           <H2>3. Cookies</H2>
           <P>
-            TopFlight Builders does not set any cookies of our own on your browser. The only cookies that may be set when you visit this Site are those placed by Google Maps (on service area pages) or Houzz (on the Contact page) as described in Section 2.
+            TopFlight Builders does not set any first-party cookies of our own. The following third-party cookies may be set depending on your choices:
           </P>
+          <UL>
+            <li><strong>Google Analytics</strong> — <code className="text-sm bg-gray-100 px-1 rounded">_ga</code> and <code className="text-sm bg-gray-100 px-1 rounded">_ga_*</code> cookies (2-year expiry) are set <em>only</em> if you accept analytics via the consent banner.</li>
+            <li><strong>Google Maps</strong> — cookies may be set when you visit a service area page containing an embedded map.</li>
+            <li><strong>Houzz</strong> — cookies may be set when you visit the Contact page containing the embedded estimate form.</li>
+          </UL>
           <P>
-            You can manage or block cookies through your browser settings. Blocking third-party cookies may prevent the Google Maps embeds from functioning but will not affect any other part of this Site.
+            You can withdraw analytics consent at any time via the &ldquo;Cookie Settings&rdquo; link in the site footer. You can also manage or block cookies through your browser settings.
           </P>
 
           {/* ── 4. CALIFORNIA — CIPA ── */}
@@ -117,7 +136,7 @@ export default function PrivacyPolicyPage() {
             The third-party services described in Section 2 (Google Maps, Houzz form) receive standard technical data (such as IP address and HTTP request headers) as a result of your browser loading their content, as is true for any third-party embed on any website. This is disclosed above and is not a form of communication interception within the meaning of CIPA.
           </P>
           <P>
-            If and when we add analytics tools in the future, we will update this policy, implement a consent banner, and ensure that no such tool fires before you are given the opportunity to consent. We take CIPA seriously and are committed to not running tools that would constitute unauthorized wiretapping of visitor interactions.
+            We use Google Analytics 4 on this Site. It is gated behind a consent banner: the GA4 script does not load, and no data is transmitted to Google, unless you affirmatively click &ldquo;Accept Analytics.&rdquo; Google Consent Mode v2 is configured with all consent types defaulting to <code className="text-sm bg-gray-100 px-1 rounded">denied</code> on every page load. GA4 does not receive keystroke-level, field-level, or session-replay data — it receives only standard aggregated metrics (pages visited, session duration, referrer, device type).
           </P>
 
           {/* ── 5. HOW WE USE YOUR INFORMATION ── */}
@@ -182,7 +201,7 @@ export default function PrivacyPolicyPage() {
             We will update this policy when our data practices change — including when analytics or other tracking tools are added. The effective date at the top of this page will reflect the most recent revision. We encourage you to review this policy periodically.
           </P>
           <P>
-            <strong>Specifically, if we add Google Analytics or any other analytics or tracking tool in the future, we will update this policy and implement a consent mechanism before that tool is activated.</strong>
+            If we add additional analytics or tracking tools in the future, we will update this policy and ensure a consent mechanism is in place before that tool is activated.
           </P>
 
           {/* ── 11. CONTACT ── */}

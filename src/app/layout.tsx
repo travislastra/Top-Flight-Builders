@@ -5,6 +5,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import MobileCallBar from "@/components/MobileCallBar";
 import FloatingEstimateCta from "@/components/FloatingEstimateCta";
+import ConsentBanner from "@/components/ConsentBanner";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 const montserrat = Montserrat({
   variable: "--font-sans",
@@ -133,6 +135,23 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${montserrat.variable} ${inter.variable}`}>
       <head>
+        {/*
+          Consent Mode v2 defaults — MUST be synchronous and first in <head>
+          so defaults are set before any analytics script can initialize.
+          GA4 is NOT loaded here; GoogleAnalytics component injects it only
+          after the visitor grants consent via the ConsentBanner.
+        */}
+        <script dangerouslySetInnerHTML={{ __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('consent', 'default', {
+            analytics_storage: 'denied',
+            ad_storage: 'denied',
+            ad_user_data: 'denied',
+            ad_personalization: 'denied',
+            wait_for_update: 500
+          });
+        `}} />
         {/* Preconnect to Google Maps for service-area pages with map embeds */}
         <link rel="preconnect" href="https://maps.google.com" />
         <link rel="preconnect" href="https://maps.gstatic.com" crossOrigin="anonymous" />
@@ -148,6 +167,8 @@ export default function RootLayout({
         <Footer />
         <MobileCallBar />
         <FloatingEstimateCta />
+        <ConsentBanner />
+        <GoogleAnalytics />
       </body>
     </html>
   );

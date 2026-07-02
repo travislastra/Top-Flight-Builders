@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Img from "@/components/Img";
 import LogoWatermark from "@/components/LogoWatermark";
+import CookieSettingsButton from "@/components/CookieSettingsButton";
 
 const services = [
   { label: "Kitchen Remodeling",    href: "/services/kitchen-remodeling" },
@@ -176,6 +177,7 @@ export default function Footer() {
           <div className="flex gap-4">
             <Link href="/privacy-policy" className="hover:text-gray-300 transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-gray-300 transition-colors">Terms of Service</Link>
+            <CookieSettingsButton />
           </div>
         </div>
       </div>
