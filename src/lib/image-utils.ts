@@ -1,7 +1,5 @@
-const BASE = "/Top-Flight-Builders";
-
 export function resolveImg(src: string): string {
-  return src.startsWith("/") ? `${BASE}${src}` : src;
+  return src;
 }
 
 export function toWebP(src: string): string {
