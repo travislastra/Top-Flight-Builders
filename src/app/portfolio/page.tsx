@@ -12,7 +12,7 @@ export const metadata = {
   },
 };
 
-const BASE = "/Top-Flight-Builders";
+const BASE = "";
 
 const serviceLabel: Record<string, string> = {
   kitchen: "Kitchen",

@@ -1,4 +1,4 @@
-const BASE = "/Top-Flight-Builders";
+const BASE = "";
 
 export default function LogoWatermark() {
   return (

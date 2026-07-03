@@ -9,7 +9,7 @@ import PartnersSlider from "@/components/PartnersSlider";
 import ContactBanner from "@/components/ContactBanner";
 
 // LCP image: first hero slideshow slide
-const BASE = "/Top-Flight-Builders";
+const BASE = "";
 const LCP_BASE = `${BASE}/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-01`;
 // imagesrcset must match the srcset in HeroPlaceholder exactly so the preload is used
 const LCP_SRCSET = `${LCP_BASE}-480w.webp 480w, ${LCP_BASE}-800w.webp 800w, ${LCP_BASE}-1200w.webp 1200w, ${LCP_BASE}.webp 1920w`;

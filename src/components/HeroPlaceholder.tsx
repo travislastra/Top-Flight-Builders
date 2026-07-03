@@ -86,7 +86,7 @@ export default function HeroPlaceholder() {
         aria-hidden="true"
       >
         <img
-          src="/Top-Flight-Builders/logo.png"
+          src="/logo.png"
           alt=""
           className="w-full brightness-0 invert"
           draggable={false}

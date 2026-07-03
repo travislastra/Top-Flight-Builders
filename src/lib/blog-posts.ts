@@ -1,4 +1,4 @@
-const B = "/Top-Flight-Builders/blog";
+const B = "/blog";
 
 export interface BlogPost {
   id: number;
