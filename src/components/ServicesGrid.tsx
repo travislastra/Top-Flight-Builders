@@ -58,9 +58,10 @@ export default function ServicesGrid() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service) => (
-            <div
+            <Link
               key={service.title}
-              className="relative rounded-2xl overflow-hidden shadow-sm group min-h-[240px]"
+              href={service.href}
+              className="relative rounded-2xl overflow-hidden shadow-sm group min-h-[240px] block"
             >
               {/* Background photo */}
               <picture style={{ display: "contents" }}>
@@ -95,7 +96,7 @@ export default function ServicesGrid() {
                   </svg>
                 </Link>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
