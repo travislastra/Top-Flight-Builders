@@ -40,7 +40,7 @@ export default function RoofingPage() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <p className="text-gray-600 text-lg leading-relaxed mb-10 text-center">
-            Greater Atlanta's weather is hard on roofs. Hail, high winds, and persistent humidity break down shingles faster here than in drier climates. TopFlight Builders handles everything from emergency tarping and insurance documentation to full tear-off and reinstallation using GAF and Owens Corning architectural shingles.
+            Roof replacement means removing a damaged or worn roof system — shingles, underlayment, and often decking — and installing new materials to protect the home&apos;s structure from water intrusion and weather damage. TopFlight Builders handles residential and commercial roof replacements throughout Greater Atlanta using GAF and Owens Corning architectural shingles, managing everything from insurance documentation to final inspection.
           </p>
           <div className="grid md:grid-cols-2 gap-6 mb-10">
             {[

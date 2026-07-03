@@ -54,7 +54,7 @@ export default function BasementsPage() {
           </div>
           <div>
             <h2 className="font-sans text-3xl font-extrabold text-[#0D1B2E] mb-5">More space, more value</h2>
-            <p className="text-gray-600 leading-relaxed mb-4">Whether you want to unlock an unfinished basement or add a full room to your home, TopFlight Builders handles every phase — from permits and framing through flooring and final finishes. We design the space to flow with your existing home seamlessly.</p>
+            <p className="text-gray-600 leading-relaxed mb-4">Basement finishing converts an unfinished basement into usable living space by adding insulation, framed walls, drywall, flooring, lighting, and often a bathroom or wet bar. Home additions expand the home&apos;s footprint with new framing, roofline, and finish work tied into the existing structure. TopFlight Builders handles both throughout Greater Atlanta — from permits and framing through flooring and final finishes, designed to flow with your existing home.</p>
             <ul className="space-y-3 mb-8">
               {[
                 "Basement finishing & build-out",

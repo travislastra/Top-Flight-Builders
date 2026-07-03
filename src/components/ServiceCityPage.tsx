@@ -3,6 +3,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ContactBanner from "@/components/ContactBanner";
 import LogoWatermark from "@/components/LogoWatermark";
 import ProjectCard from "@/components/ProjectCard";
+import FAQSection from "@/components/FAQSection";
 import { CITIES, SERVICES, UNIQUE_HOOKS } from "@/lib/service-city-data";
 import { projects } from "@/lib/projects";
 
@@ -331,39 +332,17 @@ export default function ServiceCityPage({ citySlug, serviceSlug }: Props) {
       {/* ── FAQ ───────────────────────────────────────────────────────────── */}
       <section className="py-16 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-sans text-2xl font-extrabold text-[#0D1B2E] mb-10">
-            Frequently Asked Questions
-          </h2>
-          <div className="space-y-8">
-            {/* Q1: Timeline */}
-            <div className="border-b border-gray-100 pb-8">
-              <h3 className="font-sans font-bold text-[#0D1B2E] text-lg mb-3">
-                How long does a {service.shortName.toLowerCase()} project take in {city.name}?
-              </h3>
-              <p className="text-gray-600 leading-relaxed">{timeline}</p>
-            </div>
-
-            {/* Q2: City-specific */}
-            <div className="border-b border-gray-100 pb-8">
-              <h3 className="font-sans font-bold text-[#0D1B2E] text-lg mb-3">
-                {cityQuestion.q}
-              </h3>
-              <p className="text-gray-600 leading-relaxed">{cityQuestion.a}</p>
-            </div>
-
-            {/* Q3: Permits */}
-            <div>
-              <h3 className="font-sans font-bold text-[#0D1B2E] text-lg mb-3">
-                Do you pull permits in {city.county} County?
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                Yes — we handle all permitting for projects in {city.county} County. We prepare the
-                documentation, submit the application, schedule all required inspections, and keep
-                you informed at each stage. You don't need to manage the permit process — that's
-                part of what you're hiring us to do.
-              </p>
-            </div>
-          </div>
+          <FAQSection faqs={[
+            {
+              q: `How long does a ${service.shortName.toLowerCase()} project take in ${city.name}?`,
+              a: timeline,
+            },
+            cityQuestion,
+            {
+              q: `Do you pull permits in ${city.county} County?`,
+              a: `Yes — we handle all permitting for projects in ${city.county} County. We prepare the documentation, submit the application, schedule all required inspections, and keep you informed at each stage. You don't need to manage the permit process — that's part of what you're hiring us to do.`,
+            },
+          ]} />
         </div>
       </section>
 

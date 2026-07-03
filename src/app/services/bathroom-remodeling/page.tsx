@@ -54,7 +54,7 @@ export default function BathroomPage() {
           </div>
           <div>
             <h2 className="font-sans text-3xl font-extrabold text-[#0D1B2E] mb-5">Bathrooms built to impress</h2>
-            <p className="text-gray-600 leading-relaxed mb-4">From a simple refresh to a complete master bath overhaul, we design and build bathrooms that combine beauty with function. Every tile, every fixture, every finish is selected with care.</p>
+            <p className="text-gray-600 leading-relaxed mb-4">Bathroom remodeling is the process of updating a bathroom&apos;s shower, tub, tile, vanity, flooring, and fixtures to improve comfort, appearance, and home value. TopFlight Builders handles bathroom renovations throughout Greater Atlanta — from targeted walk-in shower conversions to full master bath overhauls with frameless glass enclosures. Every tile, every fixture, every finish is selected with care.</p>
             <ul className="space-y-3 mb-8">
               {["Custom shower & tub surrounds", "Frameless glass enclosures", "Tile floors & walls", "Vanity & storage design", "Premium fixture installation", "Lighting & ventilation upgrades"].map((item) => (
                 <li key={item} className="flex items-center gap-3 text-gray-600 text-sm">

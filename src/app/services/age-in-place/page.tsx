@@ -116,7 +116,7 @@ export default function AgeInPlacePage() {
           <div>
             <h2 className="font-sans text-3xl font-extrabold text-[#0D1B2E] mb-5">Your home. Your independence.</h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              Age in place remodeling is about designing your home to support you as your needs change over time — without having to leave the neighborhood, the memories, or the life you've built. The goal is always a home that feels normal, not institutional.
+              Age-in-place remodeling means modifying a home&apos;s accessibility features — widening doorways, converting tubs to roll-in showers, adding grab bars, installing ramp access, and raising outlets — so residents can remain safely in their home as mobility needs change. TopFlight Builders installs ADA-compliant modifications throughout Greater Atlanta, designing for function without the institutional feel.
             </p>
             <p className="text-gray-600 leading-relaxed mb-8">
               TopFlight Builders specializes in modifications that improve safety, accessibility, and comfort. Every project is tailored to the specific homeowner — we start with a thorough walkthrough and build a plan that fits both your current needs and future ones.

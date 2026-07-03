@@ -43,7 +43,7 @@ export default function RestorationPage() {
 
       <section className="py-20 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
-          <p className="text-gray-600 text-lg leading-relaxed mb-10 text-center">When the unexpected happens, TopFlight Builders is here to help restore your property to its original condition — or better. We work quickly, efficiently, and with the same quality standards as our renovation projects.</p>
+          <p className="text-gray-600 text-lg leading-relaxed mb-10 text-center">Property restoration means repairing a home after structural damage from water, fire, storm, or fallen trees — stabilizing the structure and rebuilding interior and exterior elements to return the home to its original condition or better. TopFlight Builders handles the full scope of restoration work across Greater Atlanta, from emergency response and damage documentation through complete interior rebuild. We work quickly, efficiently, and with the same quality standards as our renovation projects.</p>
           <div className="grid md:grid-cols-2 gap-6 mb-10">
             {["Water damage restoration", "Fire & smoke damage repair", "Structural repairs", "Drywall & plaster restoration", "Flooring replacement", "Complete property recovery"].map((item) => (
               <div key={item} className="flex items-center gap-3 bg-[#F7F8FA] rounded-xl p-5 border border-gray-100">

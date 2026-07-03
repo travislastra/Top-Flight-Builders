@@ -40,7 +40,7 @@ export default function DecksPage() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <p className="text-gray-600 text-lg leading-relaxed mb-10 text-center">
-            Your deck should extend your living space, not become a maintenance project. TopFlight Builders builds and replaces decks throughout Greater Atlanta — from composite Trex and TimberTech builds with 25-year warranties to pressure-treated replacements that get the job done within budget. Every deck we build is permitted, inspected, and structurally sound from footings to railing.
+            Deck construction and replacement means building or rebuilding an outdoor platform attached to the home — including concrete footings, framing, decking boards, railing, and stairs — to create usable outdoor living space. TopFlight Builders installs and replaces decks across Greater Atlanta using composite materials like Trex and TimberTech or pressure-treated lumber, with every project permitted and inspected from footings to railing.
           </p>
           <div className="grid md:grid-cols-2 gap-6 mb-10">
             {[

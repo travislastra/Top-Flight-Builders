@@ -46,7 +46,7 @@ export default function KitchenPage() {
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="font-sans text-3xl font-extrabold text-[#0D1B2E] mb-5">A kitchen that fits your life</h2>
-            <p className="text-gray-600 leading-relaxed mb-4">Whether you want a sleek modern kitchen or a warm, traditional space, our team works with you from concept to completion. We handle everything — design, demolition, installation, and finish work.</p>
+            <p className="text-gray-600 leading-relaxed mb-4">Kitchen remodeling is the process of updating a kitchen&apos;s cabinetry, countertops, flooring, appliances, and layout to improve both function and appearance. TopFlight Builders handles complete kitchen remodels across Greater Atlanta — from custom cabinetry and quartz countertops through finish work and final punch-list. Whether you want a sleek modern kitchen or a warm, traditional space, our team works with you from concept to completion.</p>
             <ul className="space-y-3 mb-8">
               {["Custom cabinetry & storage", "Granite, quartz & marble countertops", "Backsplash tile installation", "New flooring & lighting", "Appliance coordination", "Island & peninsula additions"].map((item) => (
                 <li key={item} className="flex items-center gap-3 text-gray-600 text-sm">

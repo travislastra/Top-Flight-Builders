@@ -38,7 +38,7 @@ export default function CommercialPage() {
 
       <section className="py-20 px-6 bg-white">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-gray-600 text-lg leading-relaxed mb-10">From office renovations to retail build-outs and property management projects, TopFlight Builders delivers commercial-grade results on time and within budget.</p>
+          <p className="text-gray-600 text-lg leading-relaxed mb-10">Commercial remodeling means renovating or building out commercial spaces — office environments, retail locations, investment properties, and multi-unit buildings — to meet operational, aesthetic, or code requirements. TopFlight Builders handles commercial projects throughout Greater Atlanta, from office renovations and retail build-outs to property management upgrades and investment property work, on time and within budget.</p>
           <div className="grid md:grid-cols-2 gap-5 mb-10">
             {["Office renovations & build-outs", "Retail space remodeling", "Property management projects", "Investment property renovations", "Multi-unit upgrades", "Commercial restoration"].map((item) => (
               <div key={item} className="flex items-center gap-3 bg-[#F7F8FA] rounded-xl p-5 border border-gray-100">

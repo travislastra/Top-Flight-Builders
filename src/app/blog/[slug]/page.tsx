@@ -5,6 +5,7 @@ import { posts, tagColors } from "@/lib/blog-posts";
 import ContactBanner from "@/components/ContactBanner";
 import LogoWatermark from "@/components/LogoWatermark";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import FAQSection from "@/components/FAQSection";
 
 const BLOG_SERVICE_LINKS: Record<string, { href: string; label: string }[]> = {
   kitchen:     [{ href: "/services/kitchen-remodeling", label: "Kitchen Remodeling in Marietta" }, { href: "/services/full-home-remodeling", label: "Full Home Remodeling" }],
@@ -67,7 +68,7 @@ export default async function BlogPostPage({ params }: Props) {
     author: [
       {
         "@type": "Organization",
-        name: "Top Flight Builders Editorial Team",
+        name: "TopFlight Builders",
         url: BASE_URL,
       },
       {
@@ -125,7 +126,7 @@ export default async function BlogPostPage({ params }: Props) {
             {post.title}
           </h1>
           <p className="mt-4 text-sm text-gray-400">
-            By <span className="text-gray-200 font-semibold">Top Flight Builders Editorial Team</span> · Reviewed by <span className="text-gray-200 font-semibold">Ilian Bogdanov</span>
+            By <span className="text-gray-200 font-semibold">TopFlight Builders</span> · Reviewed by <span className="text-gray-200 font-semibold">Ilian Bogdanov</span>
           </p>
         </div>
       </section>
@@ -146,6 +147,12 @@ export default async function BlogPostPage({ params }: Props) {
                   [&_a]:text-[#1E4FBF] [&_a]:font-semibold [&_a]:underline [&_a]:decoration-[#1E4FBF]/30 [&_a:hover]:decoration-[#1E4FBF]"
                 dangerouslySetInnerHTML={{ __html: post.content }}
               />
+
+              {post.faqs && post.faqs.length > 0 && (
+                <div className="mt-10">
+                  <FAQSection faqs={post.faqs} />
+                </div>
+              )}
 
               {/* CTA */}
               <div className="mt-12 bg-[#F7F8FA] rounded-2xl p-8 border border-gray-100 text-center">

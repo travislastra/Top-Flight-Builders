@@ -43,7 +43,7 @@ export default function FullHomePage() {
 
       <section className="py-20 px-6 bg-white">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-gray-600 text-lg leading-relaxed mb-10">A full home remodel is the ultimate investment in your property and your lifestyle. Our team manages every phase — from initial design through final walkthrough — so you can enjoy the journey, not just the result.</p>
+          <p className="text-gray-600 text-lg leading-relaxed mb-10">A full home remodel is a coordinated renovation of multiple rooms and systems throughout an entire house — kitchen, bathrooms, flooring, paint, and often plumbing or electrical — managed as a single planned project. TopFlight Builders oversees every phase, from initial design and permitting through final walkthrough, so nothing falls through the cracks between trades.</p>
           <div className="grid md:grid-cols-3 gap-5 mb-10">
             {[
               { step: "01", title: "Design Consultation", desc: "We meet, listen, and develop a plan that reflects your vision and budget." },

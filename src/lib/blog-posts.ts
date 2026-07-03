@@ -1,5 +1,10 @@
 const B = "/blog";
 
+export interface FAQ {
+  q: string;
+  a: string;
+}
+
 export interface BlogPost {
   id: number;
   slug: string;
@@ -11,6 +16,7 @@ export interface BlogPost {
   title: string;
   excerpt: string;
   content: string;
+  faqs?: FAQ[];
 }
 
 export const posts: BlogPost[] = [
@@ -26,6 +32,11 @@ export const posts: BlogPost[] = [
 <p><strong>4. Hidden Storage Everything</strong> — Pull-out pantries, appliance garages, and drawer organizers are no longer optional. Storage planning is now a top priority even before aesthetics in our client consultations.</p>
 <p><strong>5. Integrated Ventilation</strong> — Down-draft systems and ceiling-integrated hoods are replacing the chunky range hood. They require structural planning early — something our team addresses in <a href="${B}/full-home-remodel-week-by-week-guide">What to Expect During a Full Home Remodel: A Week-by-Week Guide</a>.</p>
 <p>Ready to start planning? Understanding <a href="${B}/how-to-choose-right-tile-bathroom-renovation">How to Choose the Right Tile for Your Bathroom Renovation</a> is also worth a read if you're updating adjacent spaces at the same time — bundling projects saves significantly on labor.</p>`,
+    faqs: [
+      { q: "What are the top kitchen remodeling trends in Atlanta for 2025?", a: "The leading trends in Atlanta for 2025 include waterfall quartz islands, two-tone cabinetry with dark lower and light upper cabinets, Wi-Fi-enabled smart appliances, integrated hidden storage systems (pull-out pantries, appliance garages), and ceiling-integrated ventilation hoods. These trends add lasting value and appeal to today's buyers." },
+      { q: "How much do trending kitchen upgrades add to resale value in Atlanta?", a: "Waterfall islands, quartz countertops, and smart appliances typically return 60–80% of their cost in added home value in the Atlanta market. Kitchens in the $60,000–$100,000 renovation range tend to see the strongest ROI in Cobb and Cherokee counties." },
+      { q: "Should I follow trends or stick with timeless design for my kitchen remodel?", a: "Focus timeless choices on structural elements — cabinet layout, quality countertop material, and appliance placement. Use trends for replaceable elements like hardware, backsplash tile, and pendant lighting. That way your kitchen looks current now without becoming dated in five years." },
+    ],
   },
   {
     id: 2, slug: "how-to-choose-right-tile-bathroom-renovation",
@@ -38,6 +49,11 @@ export const posts: BlogPost[] = [
 <p><strong>Mosaic Tiles:</strong> Best reserved for shower niches, floor accents, or feature walls. Full mosaic floors are beautiful but high-maintenance in grout cleaning.</p>
 <p><strong>Slip Resistance:</strong> The COF (coefficient of friction) rating matters on floors. Aim for 0.60+ for wet areas. Textured tiles and mosaics naturally rate higher.</p>
 <p><strong>Budgeting Tip:</strong> Material cost is only half the story. Large format tiles require more labor and substrate prep. A tile that costs $4/sq ft might require $12/sq ft in installation. Cross-reference with <a href="${B}/true-cost-kitchen-remodel-atlanta-2025">The True Cost of a Kitchen Remodel in Atlanta (2025 Guide)</a> for how labor scales across projects.</p>`,
+    faqs: [
+      { q: "What is the best tile for a shower in Atlanta?", a: "Porcelain tile is the best choice for shower walls and floors in Atlanta. It is denser and absorbs far less moisture than ceramic, which matters in Georgia's humid climate. Large format porcelain (24×48 or larger) is the current dominant choice because fewer grout lines mean easier cleaning and a more luxurious appearance." },
+      { q: "What does COF rating mean for bathroom tile?", a: "COF stands for Coefficient of Friction — a measure of how slip-resistant a tile surface is when wet. The ADA recommends a wet COF of 0.60 or higher for floor tile. Textured tiles and mosaic tiles naturally rate higher due to more surface texture. Smooth, polished tiles often fall below this threshold and should be avoided on shower floors." },
+      { q: "How much more does large format tile installation cost compared to standard tile?", a: "Large format tile (18×18 and larger) costs $3–$6 more per square foot to install than standard tile because it requires a flatter substrate, more precise leveling, and larger format clips during installation. A tile costing $4 per square foot may require $10–$14 per square foot in labor — budget for both when comparing options." },
+    ],
   },
   {
     id: 3, slug: "true-cost-kitchen-remodel-atlanta-2025",
@@ -49,6 +65,11 @@ export const posts: BlogPost[] = [
 <p><strong>Mid-Range Remodel ($35,000–$75,000):</strong> Semi-custom cabinetry, quartz countertops, new flooring, tile backsplash, updated lighting and fixtures, and possibly minor layout changes. This is the sweet spot for most Sandy Springs and Alpharetta homes. Explore <a href="${B}/5-kitchen-remodeling-trends-atlanta-2025">5 Kitchen Remodeling Trends Dominating Atlanta Homes in 2025</a> to see where this budget tier shines.</p>
 <p><strong>High-End Remodel ($75,000–$150,000+):</strong> Full custom cabinetry, premium stone, smart appliances, structural changes, and full electrical/plumbing upgrades. This range also often includes adjacent spaces — see <a href="${B}/full-home-remodel-week-by-week-guide">What to Expect During a Full Home Remodel: A Week-by-Week Guide</a> to understand the timeline implications.</p>
 <p><strong>Hidden Costs to Watch:</strong> Permit fees ($800–$2,500 in Fulton County), dumpster rental ($350–$600), and the near-universal discovery of outdated wiring or plumbing once walls open up. Budget 10–15% for contingency.</p>`,
+    faqs: [
+      { q: "How much does a kitchen remodel cost in Atlanta in 2025?", a: "Kitchen remodel costs in Atlanta range from $15,000–$35,000 for a budget renovation (refaced cabinets, entry-level countertops, cosmetic updates) to $35,000–$75,000 for a mid-range remodel with semi-custom cabinetry and quartz, up to $75,000–$150,000+ for a full custom gut renovation. These figures reflect current 2025 labor and material costs in the Greater Atlanta market." },
+      { q: "What is the most expensive part of a kitchen remodel?", a: "Custom cabinetry is typically the largest single cost, often accounting for 30–40% of the total project budget. Semi-custom cabinetry reduces this to 20–25%. Countertops, appliances, and labor are the next largest categories. Structural changes — moving plumbing or electrical — can add $5,000–$20,000 depending on scope." },
+      { q: "How long does a kitchen remodel take in Atlanta?", a: "A standard kitchen remodel in Atlanta takes 6–12 weeks from demolition through final punch-list. Custom cabinetry is the most common cause of schedule extension — lead times run 8–12 weeks from order to delivery. Ordering all materials before demo begins is the most effective way to keep the project on schedule." },
+    ],
   },
   {
     id: 4, slug: "water-damage-restoration-pro-vs-diy",
@@ -61,6 +82,11 @@ export const posts: BlogPost[] = [
 <p><strong>Call a Pro Immediately (Category 3 — Black Water):</strong> Sewage backup, flooding from rivers or storm drains, or any standing water over 24 hours old. This is a biohazard situation. Do not DIY.</p>
 <p><strong>The Hidden Danger:</strong> Atlanta's humidity means mold can begin colonizing wet drywall in 24–72 hours — faster than most homeowners realize. If you're unsure, get a moisture meter reading from a professional before assuming it's dry. This issue often appears during <a href="${B}/full-home-remodel-week-by-week-guide">What to Expect During a Full Home Remodel: A Week-by-Week Guide</a> — renovation opening walls frequently reveals old, untreated water damage.</p>
 <p>If structural damage has occurred, the repairs often overlap with kitchen and bathroom work — a good reason to bundle restoration and renovation under one contractor. See also: <a href="${B}/mold-remediation-atlanta">Mold Remediation in Atlanta Homes: What Homeowners Must Know</a>.</p>`,
+    faqs: [
+      { q: "When should I call a professional for water damage restoration instead of handling it myself?", a: "Call a professional immediately if water has been present for more than 24–48 hours, if the water source is contaminated (sewage, flooding, or gray water from appliances), if you suspect mold growth, or if structural materials like subfloor, drywall, or framing are saturated. DIY cleanup is only appropriate for small, clean-water spills caught within a few hours." },
+      { q: "How long does water damage restoration take?", a: "Professional water extraction and structural drying typically takes 3–5 days. Full restoration — drywall replacement, flooring, and paint — depends on the scope of damage and can range from 2 weeks for a contained area to 2–3 months for extensive structural damage. The faster you call a professional, the shorter and less expensive the remediation." },
+      { q: "Does homeowner's insurance cover water damage restoration in Atlanta?", a: "Most homeowner's insurance policies cover sudden and accidental water damage (burst pipe, appliance failure) but exclude flooding, gradual leaks, and neglected maintenance. Document all damage thoroughly with photos and video before cleanup begins and contact your insurer before starting any work. Restoration contractors can assist with insurance documentation and adjuster coordination." },
+    ],
   },
   {
     id: 5, slug: "full-home-remodel-week-by-week-guide",
@@ -73,6 +99,11 @@ export const posts: BlogPost[] = [
 <p><strong>Weeks 6–9 — Drywall, Flooring & Tile:</strong> The transformation becomes visible. Flooring sequence matters — tile before hardwood, and hardwood before cabinets. If you're choosing tile, <a href="${B}/how-to-choose-right-tile-bathroom-renovation">How to Choose the Right Tile for Your Bathroom Renovation</a> applies directly to this phase.</p>
 <p><strong>Weeks 10–13 — Cabinets, Countertops & Fixtures:</strong> Kitchen cabinets arrive (lead time is 2–5 weeks — order early). Countertop templates are made after cabinets are set. Budget breakdown by tier is in <a href="${B}/true-cost-kitchen-remodel-atlanta-2025">The True Cost of a Kitchen Remodel in Atlanta (2025 Guide)</a>.</p>
 <p><strong>Weeks 14–16 — Trim, Paint & Punch List:</strong> Finish work, touch-ups, and punch list items. Plan for 2–3 weeks of punch list work on a full home. Move-in ready typically means 1–2 remaining minor items, not zero.</p>`,
+    faqs: [
+      { q: "How long does a full home remodel take in Atlanta?", a: "A full home remodel in Atlanta typically takes 3–6 months depending on scope. A whole-house renovation touching the kitchen, multiple bathrooms, flooring, and paint in a 2,500 sq ft home generally runs 4–5 months from demolition through punch-list completion. Scope additions, material delays, and permit timing are the most common causes of schedule extension." },
+      { q: "Do I need to move out during a full home remodel?", a: "It depends on scope and sequencing. If the kitchen and primary bathroom are being renovated simultaneously, most homeowners find living in the home impractical. For phased renovations that keep one bathroom and access to the kitchen functional at all times, staying is manageable. Discuss the project sequence with your contractor before demo begins to plan accordingly." },
+      { q: "What is the biggest budget risk during a full home remodel?", a: "Scope creep and hidden conditions discovered during demolition are the two most common budget risks. Outdated electrical panels, old plumbing, subfloor rot, and water damage are frequently found once walls open. Budget a 10–15% contingency on top of your contract price and establish a clear change order process with your contractor before work begins." },
+    ],
   },
   {
     id: 6, slug: "open-shelving-vs-upper-cabinets-atlanta",
@@ -152,6 +183,11 @@ export const posts: BlogPost[] = [
 <p><strong>Wood Deck:</strong> Better for homes with grade changes or elevated foundations. Pressure-treated pine starts at $20–$35/sq ft. Composite decking (Trex, TimberTech) runs $45–$70/sq ft but is essentially maintenance-free in Atlanta's rain and humidity.</p>
 <p><strong>Patio (Concrete, Pavers, or Flagstone):</strong> Better for flat lots and intown homes. Paver patios ($18–$30/sq ft) offer the best combination of cost, durability, and curb appeal. Concrete is cheaper but cracks more in Georgia's clay soil movement.</p>
 <p><strong>ROI Comparison:</strong> A well-built outdoor living space returns 60–80% of cost at sale. A covered structure (pergola or screened porch) adds an additional 10–15% return. See <a href="${B}/screened-porch-addition-atlanta">Screened Porch Addition: Everything Atlanta Homeowners Need to Know</a> for the full screened porch breakdown.</p>`,
+    faqs: [
+      { q: "Does a deck or patio add more value to a home in Atlanta?", a: "In most Atlanta submarkets, a quality deck adds more resale value than a patio because it creates elevated outdoor living space that photographs well in listings and appeals to buyers. Composite decks return approximately 60–65% of cost at sale. A well-constructed paver patio returns 50–60%. Both substantially outperform homes with no outdoor living space." },
+      { q: "How much does a deck cost in Atlanta in 2025?", a: "A pressure-treated deck in Atlanta costs $20–$35 per square foot for a standard 300–500 sq ft build. Composite decks using Trex or TimberTech run $45–$70 per square foot for the same size. Custom features like pergolas, built-in seating, and cable railing add $3,000–$10,000. All deck projects require permits in Cobb and Cherokee counties." },
+      { q: "Which lasts longer — a composite deck or a concrete patio?", a: "A properly installed concrete paver patio can last 25–30+ years with minimal maintenance. A composite deck (Trex, TimberTech) carries a 25-year fade and stain warranty and requires no staining or sealing. Pressure-treated lumber decks require staining or sealing every 2–3 years and major maintenance or replacement after 10–15 years in Atlanta's climate." },
+    ],
   },
   {
     id: 13, slug: "screened-porch-addition-atlanta",
@@ -172,6 +208,11 @@ export const posts: BlogPost[] = [
 <p><strong>Moisture First — Always:</strong> Before one stud wall goes up, verify the basement is dry year-round. See <a href="${B}/water-damage-restoration-pro-vs-diy">Water Damage Restoration: When to Call a Pro vs. DIY</a> for warning signs that require remediation before finishing. Also see <a href="${B}/basement-waterproofing-atlanta">Basement Waterproofing in Atlanta: Interior vs. Exterior Systems Explained</a>.</p>
 <p><strong>Flooring:</strong> LVP is the clear winner for below-grade spaces — waterproof core handles any moisture intrusion. Full breakdown in <a href="${B}/hardwood-vs-lvp-flooring-atlanta">Hardwood vs. LVP Flooring: Which Is Right for Your Atlanta Home?</a></p>
 <p><strong>ROI:</strong> Finished basements in Atlanta typically return 65–75% of cost. Adding a bathroom increases that to 70–80%. Egress windows (required for legal bedrooms) add $2,500–$4,500 each.</p>`,
+    faqs: [
+      { q: "How much does it cost to finish a basement in Atlanta?", a: "Finishing a basement in Atlanta costs $55–$95 per square foot for standard finishes including drywall, LVP flooring, basic lighting, and electrical. A 1,000 sq ft unfinished basement typically runs $55,000–$95,000 fully finished. Adding a full bathroom adds $10,000–$20,000. Custom bars, home theaters, or premium finishes push toward the higher end of the range." },
+      { q: "Do you need a permit to finish a basement in Georgia?", a: "Yes — finishing a basement in Georgia requires a building permit from your county covering structural, electrical, plumbing, and HVAC work. Unpermitted basement finishes create serious problems at resale, can result in liens, and may require tearing out work to bring into compliance. A licensed contractor handles the full permitting process including inspections." },
+      { q: "How long does it take to finish a basement in Atlanta?", a: "A standard basement finishing project in Atlanta takes 8–14 weeks from permit approval through final inspection. Projects that include a bathroom, wet bar, or egress window installation add 2–4 weeks. Permit approval in Cobb County averages 4–8 weeks and should be factored into the overall timeline from the start." },
+    ],
   },
   {
     id: 15, slug: "basement-waterproofing-atlanta",
@@ -215,6 +256,11 @@ export const posts: BlogPost[] = [
 <p><strong>Metal Roofing:</strong> Standing seam metal is gaining momentum in Atlanta. 50+ year lifespan, excellent heat reflection, and superior hail resistance. Cost: $18,000–$35,000+.</p>
 <p><strong>Insurance Considerations:</strong> File a claim after significant hail events — many Atlanta homeowners don't know that hail damage warrants an insurance-covered replacement. A roof replacement discovered during a full home renovation changes the project timeline — see <a href="${B}/full-home-remodel-week-by-week-guide">What to Expect During a Full Home Remodel: A Week-by-Week Guide</a>.</p>
 <p>Also see: <a href="${B}/hidden-roof-damage-signs-atlanta">Signs Your Atlanta Home Has Hidden Roof Damage</a></p>`,
+    faqs: [
+      { q: "How much does a roof replacement cost in Atlanta in 2025?", a: "Roof replacement in Atlanta costs $5,500–$9,500 for a standard 2,000 sq ft home using 30-year architectural shingles. Impact-resistant Class 4 shingles cost $1,000–$3,000 more but qualify for a 20–30% insurance premium discount with most carriers. Metal roofing runs $18,000–$35,000 but lasts 50+ years. When storm damage is documented, insurance often covers a significant portion." },
+      { q: "How long does a roof last in Atlanta?", a: "Standard 3-tab asphalt shingles last 15–20 years in Atlanta's climate. Architectural (dimensional) shingles last 20–25 years given Greater Atlanta's heat, humidity, and periodic hail exposure. Metal roofing can last 40–70 years. The humid subtropical climate accelerates granule loss and moss growth compared to drier markets, shortening the effective lifespan of asphalt roofing." },
+      { q: "Will homeowner's insurance pay for a roof replacement in Atlanta?", a: "Insurance covers roof replacement when damage is caused by a covered event — hail, wind, fallen trees, or named storm damage. Age-related wear is excluded. After a significant hail event, a licensed contractor's inspection with documented damage photos is the starting point for a claim. TopFlight Builders assists with insurance documentation and adjuster coordination at no additional cost." },
+    ],
   },
   {
     id: 19, slug: "hidden-roof-damage-signs-atlanta",
@@ -237,6 +283,11 @@ export const posts: BlogPost[] = [
 <p><strong>The 3-Bid Myth:</strong> Getting three bids sounds like due diligence, but a $15,000 spread between a high and low bid is a red flag, not a bargaining chip. The low bid typically reflects missing scope or cheap materials.</p>
 <p><strong>Contract Essentials:</strong> Payment schedule tied to milestones (never pay more than 10% upfront), detailed scope of work, specific material specifications, and a lien waiver clause.</p>
 <p>Understanding the full renovation timeline (see <a href="${B}/full-home-remodel-week-by-week-guide">What to Expect During a Full Home Remodel: A Week-by-Week Guide</a>) before your first contractor meeting will make you a dramatically more informed client.</p>`,
+    faqs: [
+      { q: "How do I verify a contractor's license in Georgia?", a: "Georgia requires residential and general contractors to be licensed with the Georgia Secretary of State. You can verify a contractor's license at sos.ga.gov by searching the contractor's name or license number. Always verify before signing a contract — unlicensed contractors cannot legally pull permits in Georgia and create significant liability for homeowners." },
+      { q: "What should be in a contractor contract in Georgia?", a: "A contractor contract in Georgia should include a detailed scope of work with material specifications, a payment schedule tied to project milestones (not arbitrary dates), start and estimated completion dates, a change order process requiring written approval, lien waiver requirements at each payment, and copies of the contractor's license and insurance certificate. Never pay more than 10–30% upfront." },
+      { q: "What are red flags when hiring a contractor in Atlanta?", a: "Major red flags include demanding more than 30% upfront, no verifiable license number or physical business address, pressure to sign immediately without time to review, no written contract or scope of work, asking you to pull your own permits, and offering a price significantly below every other bid. Out-of-state contractors appearing after storms are a documented source of fraud in the Atlanta market." },
+    ],
   },
   {
     id: 21, slug: "home-addition-vs-moving-atlanta",
@@ -247,6 +298,11 @@ export const posts: BlogPost[] = [
 <p><strong>Addition Cost Benchmarks (Atlanta 2025):</strong> First-floor addition: $180–$280/sq ft. Second-floor addition: $250–$380/sq ft. Basement finishing: $55–$95/sq ft (the most cost-efficient expansion option — see <a href="${B}/finishing-atlanta-basement-planning-guide">Finishing Your Atlanta Basement: A Complete Planning Guide</a>).</p>
 <p><strong>When Moving Makes More Sense:</strong> If the cost to achieve your desired square footage exceeds 80% of the cost to buy equivalent square footage in your target neighborhood, consider moving.</p>
 <p><strong>Permits and Timeline:</strong> Additions require architectural plans, engineering stamps in many cases, and full permit review (6–12 weeks in most Atlanta metro jurisdictions). See <a href="${B}/full-home-remodel-week-by-week-guide">What to Expect During a Full Home Remodel: A Week-by-Week Guide</a> for construction phase expectations.</p>`,
+    faqs: [
+      { q: "Is it cheaper to add on to a house or move to a bigger house in Atlanta?", a: "In most Atlanta submarkets, adding on is more cost-effective than moving when the home is in a desirable neighborhood with rising values. Moving involves agent commissions (5–6%), closing costs, moving expenses, and paying the market premium for a larger home nearby. A well-designed addition in East Cobb or Alpharetta can add square footage for $180–$280 per sq ft — often less than the price difference for a comparable home in the same neighborhood." },
+      { q: "How long does a home addition take in Atlanta?", a: "A single-room home addition in Atlanta typically takes 3–5 months from permit approval to completion. A second-story addition or multi-room expansion runs 5–9 months. Permit approval in Cobb County averages 4–8 weeks and should be factored into the total timeline from the start of planning, not from when construction is expected to begin." },
+      { q: "Does a home addition increase property taxes in Georgia?", a: "Yes — adding finished square footage increases the assessed value of your home, which raises annual property taxes. In Cobb County, the residential tax rate is approximately 1.0–1.2% of assessed value. A $100,000 addition would typically add roughly $1,000–$1,200 per year in property taxes. The increase is factored into the ROI calculation for any addition project." },
+    ],
   },
   {
     id: 22, slug: "kitchen-lighting-design-atlanta",
