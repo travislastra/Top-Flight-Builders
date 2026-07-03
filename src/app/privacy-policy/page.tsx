@@ -64,7 +64,7 @@ export default function PrivacyPolicyPage() {
             If you accept analytics cookies via the consent banner, we use Google Analytics 4 to collect anonymized data about how visitors use the Site — including pages visited, time on page, general geographic region (city/state level), device type, and traffic source. Google Analytics does not collect your name, email address, or phone number, and we have not enabled any advertising features.
           </P>
           <P>
-            Google Analytics sets cookies named <code className="text-sm bg-gray-100 px-1 rounded">_ga</code> and <code className="text-sm bg-gray-100 px-1 rounded">_ga_XXXXXXXXXX</code> (replace with your stream suffix) that persist for up to 2 years. If you decline the consent banner, these cookies are never set and no analytics data is transmitted. You can change your choice at any time via the &ldquo;Cookie Settings&rdquo; link in the site footer.
+            Google Analytics sets cookies named <code className="text-sm bg-gray-100 px-1 rounded">_ga</code> and <code className="text-sm bg-gray-100 px-1 rounded">_ga_2LK6KF7J88</code> (replace with your stream suffix) that persist for up to 2 years. If you decline the consent banner, these cookies are never set and no analytics data is transmitted. You can change your choice at any time via the &ldquo;Cookie Settings&rdquo; link in the site footer.
           </P>
 
           <H3>What we do NOT collect</H3>

@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { CONSENT_KEY } from "./ConsentBanner";
 
 // ── SWAP THIS when you have the real Measurement ID ──────────────────────────
-const GA_ID = "G-XXXXXXXXXX";
+const GA_ID = "G-2LK6KF7J88";
 // ─────────────────────────────────────────────────────────────────────────────
 
 declare global {
