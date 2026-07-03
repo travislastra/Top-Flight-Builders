@@ -58,13 +58,14 @@ export default async function BlogPostPage({ params }: Props) {
     .slice(0, 3);
 
   const isoDate = toIsoDate(post.date);
+  const modifiedDate = post.updatedDate ? toIsoDate(post.updatedDate) : isoDate;
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: post.title,
     description: post.excerpt,
     datePublished: isoDate,
-    dateModified: isoDate,
+    dateModified: modifiedDate,
     author: [
       {
         "@type": "Organization",
@@ -151,6 +152,13 @@ export default async function BlogPostPage({ params }: Props) {
               {post.faqs && post.faqs.length > 0 && (
                 <div className="mt-10">
                   <FAQSection faqs={post.faqs} />
+                </div>
+              )}
+
+              {post.bottomLine && (
+                <div className="mt-8 bg-[#F7F8FA] border-l-4 border-[#1E4FBF] rounded-r-xl p-6">
+                  <p className="font-sans font-bold text-[#0D1B2E] mb-2">Bottom Line</p>
+                  <p className="text-gray-600 leading-relaxed">{post.bottomLine}</p>
                 </div>
               )}
 

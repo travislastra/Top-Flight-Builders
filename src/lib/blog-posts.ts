@@ -11,12 +11,14 @@ export interface BlogPost {
   cat: string;
   catLabel: string;
   date: string;
+  updatedDate?: string;
   icon: string;
   featured?: boolean;
   title: string;
   excerpt: string;
   content: string;
   faqs?: FAQ[];
+  bottomLine?: string;
 }
 
 export const posts: BlogPost[] = [
@@ -37,6 +39,8 @@ export const posts: BlogPost[] = [
       { q: "How much do trending kitchen upgrades add to resale value in Atlanta?", a: "Waterfall islands, quartz countertops, and smart appliances typically return 60–80% of their cost in added home value in the Atlanta market. Kitchens in the $60,000–$100,000 renovation range tend to see the strongest ROI in Cobb and Cherokee counties." },
       { q: "Should I follow trends or stick with timeless design for my kitchen remodel?", a: "Focus timeless choices on structural elements — cabinet layout, quality countertop material, and appliance placement. Use trends for replaceable elements like hardware, backsplash tile, and pendant lighting. That way your kitchen looks current now without becoming dated in five years." },
     ],
+    updatedDate: "July 3, 2026",
+    bottomLine: "Follow trends for replaceable elements — hardware, backsplash tile, and pendant lighting — and anchor your budget in quality cabinetry and countertop materials. The five trends here are safe bets with enough runway to add resale value before they peak. A well-executed kitchen using any of them will look current today and hold its appeal through the next listing cycle.",
   },
   {
     id: 2, slug: "how-to-choose-right-tile-bathroom-renovation",
@@ -54,6 +58,8 @@ export const posts: BlogPost[] = [
       { q: "What does COF rating mean for bathroom tile?", a: "COF stands for Coefficient of Friction — a measure of how slip-resistant a tile surface is when wet. The ADA recommends a wet COF of 0.60 or higher for floor tile. Textured tiles and mosaic tiles naturally rate higher due to more surface texture. Smooth, polished tiles often fall below this threshold and should be avoided on shower floors." },
       { q: "How much more does large format tile installation cost compared to standard tile?", a: "Large format tile (18×18 and larger) costs $3–$6 more per square foot to install than standard tile because it requires a flatter substrate, more precise leveling, and larger format clips during installation. A tile costing $4 per square foot may require $10–$14 per square foot in labor — budget for both when comparing options." },
     ],
+    updatedDate: "July 3, 2026",
+    bottomLine: "For any wet area, choose porcelain and target a COF of 0.60 or higher on floors. Budget both material cost and installation cost before comparing options — they're inseparable. Take more time on tile selection than any other single decision in a bathroom renovation. It sets the visual tone for everything else in the space.",
   },
   {
     id: 3, slug: "true-cost-kitchen-remodel-atlanta-2025",
@@ -70,6 +76,8 @@ export const posts: BlogPost[] = [
       { q: "What is the most expensive part of a kitchen remodel?", a: "Custom cabinetry is typically the largest single cost, often accounting for 30–40% of the total project budget. Semi-custom cabinetry reduces this to 20–25%. Countertops, appliances, and labor are the next largest categories. Structural changes — moving plumbing or electrical — can add $5,000–$20,000 depending on scope." },
       { q: "How long does a kitchen remodel take in Atlanta?", a: "A standard kitchen remodel in Atlanta takes 6–12 weeks from demolition through final punch-list. Custom cabinetry is the most common cause of schedule extension — lead times run 8–12 weeks from order to delivery. Ordering all materials before demo begins is the most effective way to keep the project on schedule." },
     ],
+    updatedDate: "July 3, 2026",
+    bottomLine: "The biggest mistake Atlanta homeowners make is underbudgeting by 20–30% and discovering it mid-project. Set a realistic number, add 15% contingency, get a detailed written scope from your contractor, and order materials before demo day. A properly planned kitchen remodel is one of the most reliable investments in the Atlanta housing market.",
   },
   {
     id: 4, slug: "water-damage-restoration-pro-vs-diy",
@@ -87,6 +95,8 @@ export const posts: BlogPost[] = [
       { q: "How long does water damage restoration take?", a: "Professional water extraction and structural drying typically takes 3–5 days. Full restoration — drywall replacement, flooring, and paint — depends on the scope of damage and can range from 2 weeks for a contained area to 2–3 months for extensive structural damage. The faster you call a professional, the shorter and less expensive the remediation." },
       { q: "Does homeowner's insurance cover water damage restoration in Atlanta?", a: "Most homeowner's insurance policies cover sudden and accidental water damage (burst pipe, appliance failure) but exclude flooding, gradual leaks, and neglected maintenance. Document all damage thoroughly with photos and video before cleanup begins and contact your insurer before starting any work. Restoration contractors can assist with insurance documentation and adjuster coordination." },
     ],
+    updatedDate: "July 3, 2026",
+    bottomLine: "When in doubt, call a professional. The cost of remediation caught at 24–48 hours is a fraction of what it costs after two weeks. In Atlanta's humidity, the window for containing water damage without professional intervention is shorter than most homeowners expect. Document everything, contact your insurer before starting work, and fix the moisture source before any repair begins.",
   },
   {
     id: 5, slug: "full-home-remodel-week-by-week-guide",
@@ -104,6 +114,8 @@ export const posts: BlogPost[] = [
       { q: "Do I need to move out during a full home remodel?", a: "It depends on scope and sequencing. If the kitchen and primary bathroom are being renovated simultaneously, most homeowners find living in the home impractical. For phased renovations that keep one bathroom and access to the kitchen functional at all times, staying is manageable. Discuss the project sequence with your contractor before demo begins to plan accordingly." },
       { q: "What is the biggest budget risk during a full home remodel?", a: "Scope creep and hidden conditions discovered during demolition are the two most common budget risks. Outdated electrical panels, old plumbing, subfloor rot, and water damage are frequently found once walls open. Budget a 10–15% contingency on top of your contract price and establish a clear change order process with your contractor before work begins." },
     ],
+    updatedDate: "July 3, 2026",
+    bottomLine: "The most successful full home remodels start before demo begins — with a realistic budget including contingency, a detailed scope, and a contractor who communicates consistently. Expect discovery surprises in weeks 1–2 and plan accordingly. The disruption is real and finite. The result lasts decades.",
   },
   {
     id: 6, slug: "open-shelving-vs-upper-cabinets-atlanta",
@@ -115,6 +127,7 @@ export const posts: BlogPost[] = [
 <p><strong>The Case Against:</strong> Grease film on dishes stored near the stove. Dust accumulation on items not used daily. In our client survey, 62% who chose open shelving said they'd go back to cabinets next time.</p>
 <p><strong>The Hybrid Approach:</strong> One open shelf section flanking the range or window — max 24–36 inches — combined with full upper cabinets everywhere else. Best of both worlds, and it's exactly what we're seeing in <a href="${B}/5-kitchen-remodeling-trends-atlanta-2025">5 Kitchen Remodeling Trends Dominating Atlanta Homes in 2025</a>.</p>
 <p><strong>Cost Comparison:</strong> Open shelves save $800–$2,500 on materials but nothing on labor. Weigh against the total project in <a href="${B}/true-cost-kitchen-remodel-atlanta-2025">The True Cost of a Kitchen Remodel in Atlanta (2025 Guide)</a>.</p>`,
+    bottomLine: "Choose upper cabinets for a home you plan to live in for five or more years. If you love the open shelving aesthetic, limit it to one intentional section — flanking the range or over a coffee station — rather than committing the whole kitchen to it. The hybrid approach gives you the look without the daily maintenance trade-off.",
   },
   {
     id: 7, slug: "best-kitchen-countertop-materials-atlanta",
@@ -127,6 +140,7 @@ export const posts: BlogPost[] = [
 <p><strong>Marble:</strong> Beautiful, high-maintenance. Etches easily from citrus and acidic foods. Humidity isn't the main enemy — your cooking habits are. Best for low-use surfaces or baking stations.</p>
 <p><strong>Butcher Block:</strong> Prone to warping near the sink in Atlanta's humidity if not properly oiled and sealed every 6 months. Works well as an island accent paired with stone perimeter tops.</p>
 <p>Budget for countertops is detailed in <a href="${B}/true-cost-kitchen-remodel-atlanta-2025">The True Cost of a Kitchen Remodel in Atlanta (2025 Guide)</a>. Countertops typically represent 10–15% of the total kitchen renovation budget.</p>`,
+    bottomLine: "For most Atlanta kitchens, quartz is the right call — it handles heat, humidity, and daily use without demanding maintenance. Granite is a close second for buyers who prefer natural stone. Whatever you choose, budget countertops at 10–15% of your total kitchen renovation cost and factor in the professional template and installation timeline before your project start date.",
   },
   {
     id: 8, slug: "master-bathroom-renovation-spa-features",
@@ -139,6 +153,7 @@ export const posts: BlogPost[] = [
 <p><strong>Soaking Tub:</strong> Freestanding tubs photograph beautifully but are used rarely. They add perceived value but require structural floor assessment and 80-gallon water heater capacity.</p>
 <p><strong>Double Vanity:</strong> Consistently the #1 return on investment in master bath renovations. Every buyer wants it. Budget $3,500–$8,000 depending on cabinetry and countertops.</p>
 <p>Timeline for a master bath renovation fits within weeks 6–9 of a broader project, as outlined in <a href="${B}/full-home-remodel-week-by-week-guide">What to Expect During a Full Home Remodel: A Week-by-Week Guide</a>.</p>`,
+    bottomLine: "Heated floors and double vanities consistently deliver the best return in Atlanta master bath renovations. Steam showers add wow factor for high-end buyers but require genuine commitment to maintenance. Prioritize the features you'll use every single day over the ones that photograph well but sit unused — that's the formula for a renovation that pays off in both enjoyment and resale value.",
   },
   {
     id: 9, slug: "small-bathroom-design-strategies-atlanta",
@@ -150,6 +165,7 @@ export const posts: BlogPost[] = [
 <p><strong>Floating Vanity:</strong> Exposes floor space visually. Adds 3–4 inches of perceived width. Requires blocking in the wall during renovation — plan this during rough-in phase (see <a href="${B}/full-home-remodel-week-by-week-guide">What to Expect During a Full Home Remodel: A Week-by-Week Guide</a>).</p>
 <p><strong>Curbless Shower:</strong> Eliminates the visual barrier of a shower curb. Makes the bathroom feel continuous and larger. Requires proper linear drain installation and slope — not a DIY project.</p>
 <p><strong>Large Mirror, Full Wall:</strong> A frameless mirror spanning the full vanity width doubles perceived space. Backlit mirrors add spa ambiance without taking square footage.</p>`,
+    bottomLine: "Constraint forces precision, and the small bathrooms we're most proud of prove it. Floor-to-ceiling tile, a floating vanity, and a curbless shower can make a 45 sq ft bathroom feel luxurious. Don't try to hide what the space is — work with it, and put the budget into execution quality rather than trying to fake more square footage.",
   },
   {
     id: 10, slug: "hardwood-vs-lvp-flooring-atlanta",
@@ -162,6 +178,7 @@ export const posts: BlogPost[] = [
 <p><strong>LVP — Pros:</strong> Waterproof core (critical in Atlanta's humidity), 20–40% less expensive than hardwood, suitable for basements and bathrooms, installs over existing floors in many cases.</p>
 <p><strong>LVP — Cons:</strong> Cannot be refinished — eventually needs full replacement. Some buyers still perceive it as lesser in luxury price ranges.</p>
 <p>Flooring sequencing during a full renovation is covered in <a href="${B}/full-home-remodel-week-by-week-guide">What to Expect During a Full Home Remodel: A Week-by-Week Guide</a>. For basement flooring specifically, see our <a href="${B}/finishing-atlanta-basement-planning-guide">Finishing Your Atlanta Basement: A Complete Planning Guide</a>.</p>`,
+    bottomLine: "For most Atlanta primary floors — especially in areas with kids, pets, or humidity exposure — LVP delivers the better outcome at a lower installed cost. Reserve hardwood for formal spaces where moisture is minimal and the premium look matters most. In either case, subfloor preparation matters as much as the product itself.",
   },
   {
     id: 11, slug: "how-to-prep-subfloor-flooring-installation",
@@ -173,6 +190,7 @@ export const posts: BlogPost[] = [
 <p><strong>Moisture Testing:</strong> In Atlanta, moisture testing is non-negotiable — especially on slabs. Related: <a href="${B}/water-damage-restoration-pro-vs-diy">Water Damage Restoration: When to Call a Pro vs. DIY</a>.</p>
 <p><strong>Squeaks:</strong> Screwing down the subfloor before installation silences squeaks permanently. Any squeak you live with going into a flooring project is a squeak you'll live with for the life of the floor.</p>
 <p>Full scope timing fits in weeks 6–9 of the renovation calendar in <a href="${B}/full-home-remodel-week-by-week-guide">What to Expect During a Full Home Remodel: A Week-by-Week Guide</a>.</p>`,
+    bottomLine: "The subfloor is invisible after installation, which makes it easy to skip preparation steps — and expensive to fix later. Take the time and budget to flatten, dry, and secure the subfloor before any flooring goes down. Every quality flooring failure we've been called in to fix traces back to something that should have been caught at this stage.",
   },
   {
     id: 12, slug: "deck-vs-patio-value-atlanta",
@@ -188,6 +206,8 @@ export const posts: BlogPost[] = [
       { q: "How much does a deck cost in Atlanta in 2025?", a: "A pressure-treated deck in Atlanta costs $20–$35 per square foot for a standard 300–500 sq ft build. Composite decks using Trex or TimberTech run $45–$70 per square foot for the same size. Custom features like pergolas, built-in seating, and cable railing add $3,000–$10,000. All deck projects require permits in Cobb and Cherokee counties." },
       { q: "Which lasts longer — a composite deck or a concrete patio?", a: "A properly installed concrete paver patio can last 25–30+ years with minimal maintenance. A composite deck (Trex, TimberTech) carries a 25-year fade and stain warranty and requires no staining or sealing. Pressure-treated lumber decks require staining or sealing every 2–3 years and major maintenance or replacement after 10–15 years in Atlanta's climate." },
     ],
+    updatedDate: "July 3, 2026",
+    bottomLine: "For most Atlanta lots with any grade change, a deck is the right choice. For flat intown lots, pavers. Regardless of which base you build, the covered structure above it — pergola or screened porch — is what dramatically increases daily use and ROI. Build the uncovered outdoor living space first, then plan the cover as the next phase.",
   },
   {
     id: 13, slug: "screened-porch-addition-atlanta",
@@ -198,6 +218,7 @@ export const posts: BlogPost[] = [
 <p><strong>Attachment Types:</strong> Attached screened porches require roof penetrations and proper flashing — a structural concern worth reviewing alongside <a href="${B}/water-damage-restoration-pro-vs-diy">Water Damage Restoration: When to Call a Pro vs. DIY</a>. Freestanding porches avoid these issues but feel less like an extension of the home.</p>
 <p><strong>Screen Material Options:</strong> Standard fiberglass (least expensive), pet-resistant polyester (recommended for dog owners), and solar screens (reduce UV and heat gain — excellent for south and west exposures in Atlanta).</p>
 <p><strong>Cost Range:</strong> $18,000–$45,000 depending on size, ceiling height, and finish level. Compare ROI with <a href="${B}/deck-vs-patio-value-atlanta">Deck vs. Patio: Which Outdoor Living Addition Adds More Value in Atlanta?</a></p>`,
+    bottomLine: "The screened porch is the outdoor addition that gets used most consistently in Atlanta's climate — through pollen season in April, through the humid August evenings, and into November. If budget forces a choice between a deck and a screened porch, build the screened porch first. The deck can come later.",
   },
   {
     id: 14, slug: "finishing-atlanta-basement-planning-guide",
@@ -213,6 +234,8 @@ export const posts: BlogPost[] = [
       { q: "Do you need a permit to finish a basement in Georgia?", a: "Yes — finishing a basement in Georgia requires a building permit from your county covering structural, electrical, plumbing, and HVAC work. Unpermitted basement finishes create serious problems at resale, can result in liens, and may require tearing out work to bring into compliance. A licensed contractor handles the full permitting process including inspections." },
       { q: "How long does it take to finish a basement in Atlanta?", a: "A standard basement finishing project in Atlanta takes 8–14 weeks from permit approval through final inspection. Projects that include a bathroom, wet bar, or egress window installation add 2–4 weeks. Permit approval in Cobb County averages 4–8 weeks and should be factored into the overall timeline from the start." },
     ],
+    updatedDate: "July 3, 2026",
+    bottomLine: "Start with moisture verification, then plan, then permit, then build — in that order. A finished basement with an unresolved water issue will need to be gutted. Get waterproofing confirmed before framing starts, permit everything so the space counts legally at resale, and plan plumbing rough-in before walls close.",
   },
   {
     id: 15, slug: "basement-waterproofing-atlanta",
@@ -224,6 +247,7 @@ export const posts: BlogPost[] = [
 <p><strong>Exterior Waterproofing (Most Comprehensive):</strong> Excavate down to the footing, apply a waterproof membrane, install drainage board and a footing drain, and backfill. Stops water at the source. Cost: $15,000–$40,000+.</p>
 <p><strong>Interior Sealers (Least Effective):</strong> Crystalline sealers and paint-on products address minor seepage but are not rated for hydrostatic pressure.</p>
 <p>If you've discovered active water damage, see <a href="${B}/water-damage-restoration-pro-vs-diy">Water Damage Restoration: When to Call a Pro vs. DIY</a> before beginning any finishing work. Waterproofing is the mandatory first step before any basement finishing project, as outlined in <a href="${B}/finishing-atlanta-basement-planning-guide">Finishing Your Atlanta Basement: A Complete Planning Guide</a>.</p>`,
+    bottomLine: "Fix the drainage at grade around the foundation before investing in interior or exterior waterproofing systems. Proper gutters, downspout extensions, and grading solve a surprising number of basement moisture issues at a fraction of the cost of a drainage system. Interior drainage handles what remains — exterior waterproofing is the comprehensive solution for active wall cracking or persistent hydrostatic pressure.",
   },
   {
     id: 16, slug: "electrical-panel-upgrade-atlanta",
@@ -234,6 +258,7 @@ export const posts: BlogPost[] = [
 <p><strong>Signs You Need an Upgrade:</strong> Federal Pacific Electric (FPE) Stab-Lok panels or Zinsco panels — both are fire hazards and must be replaced. A 100-amp main in a home over 2,000 sq ft. Breakers that frequently trip.</p>
 <p><strong>200-Amp Panel Upgrade:</strong> The standard for modern homes. Cost in Atlanta: $2,500–$4,500 including permit and inspection. Georgia Power typically needs 1–2 weeks to coordinate. Plan this as step one of your renovation — it affects everything that follows. See <a href="${B}/full-home-remodel-week-by-week-guide">What to Expect During a Full Home Remodel: A Week-by-Week Guide</a>.</p>
 <p><strong>GFCI and AFCI Requirements:</strong> Georgia adopted the 2020 NEC — all kitchen, bathroom, basement, garage, and outdoor circuits now require AFCI protection. Budget for this in any renovation that opens walls.</p>`,
+    bottomLine: "If your home is pre-1990 and you're planning any significant renovation, build the panel upgrade into the project budget upfront. It's cheaper bundled than standalone, and cheaper before renovation than after. Delaying it creates a bottleneck that affects every other trade downstream.",
   },
   {
     id: 17, slug: "ev-charger-installation-atlanta",
@@ -245,6 +270,7 @@ export const posts: BlogPost[] = [
 <p><strong>Electrical Requirements:</strong> A dedicated 50A, 240V circuit from your panel to the garage. If your panel is already at capacity, this triggers the panel upgrade conversation covered in <a href="${B}/electrical-panel-upgrade-atlanta">Electrical Panel Upgrade: Does Your Atlanta Home Need One Before Remodeling?</a></p>
 <p><strong>Cost:</strong> $800–$2,200 for a full installation in Atlanta. Rebates: Georgia Power offers up to $250, and federal tax credits cover 30% of equipment and installation costs.</p>
 <p>Timing this alongside a kitchen renovation is common — see <a href="${B}/true-cost-kitchen-remodel-atlanta-2025">The True Cost of a Kitchen Remodel in Atlanta (2025 Guide)</a> to understand how bundling projects affects labor costs.</p>`,
+    bottomLine: "A Level 2 charger is a two-hour installation if your panel has capacity — and it adds a legitimate selling point to any Atlanta listing with a garage. The federal tax credit covering 30% of equipment and installation cost makes the math even cleaner. Get a panel assessment first to confirm capacity before purchasing the charger unit.",
   },
   {
     id: 18, slug: "atlanta-roof-replacement-guide",
@@ -261,6 +287,8 @@ export const posts: BlogPost[] = [
       { q: "How long does a roof last in Atlanta?", a: "Standard 3-tab asphalt shingles last 15–20 years in Atlanta's climate. Architectural (dimensional) shingles last 20–25 years given Greater Atlanta's heat, humidity, and periodic hail exposure. Metal roofing can last 40–70 years. The humid subtropical climate accelerates granule loss and moss growth compared to drier markets, shortening the effective lifespan of asphalt roofing." },
       { q: "Will homeowner's insurance pay for a roof replacement in Atlanta?", a: "Insurance covers roof replacement when damage is caused by a covered event — hail, wind, fallen trees, or named storm damage. Age-related wear is excluded. After a significant hail event, a licensed contractor's inspection with documented damage photos is the starting point for a claim. TopFlight Builders assists with insurance documentation and adjuster coordination at no additional cost." },
     ],
+    updatedDate: "July 3, 2026",
+    bottomLine: "Document storm damage within 48 hours and contact your insurer before starting any repair work. For Atlanta homes built before 2005, a proactive roofing inspection before policy renewal may reveal damage-related discount opportunities. The difference between a Class 4 impact-resistant shingle and standard architectural is often recouped in the first 2–3 years through insurance premium reduction alone.",
   },
   {
     id: 19, slug: "hidden-roof-damage-signs-atlanta",
@@ -272,6 +300,7 @@ export const posts: BlogPost[] = [
 <p><strong>Granule Loss:</strong> Check your gutters after rain. Shingle granules accumulating there indicates a roof nearing end of life.</p>
 <p><strong>Interior Ceiling Stains:</strong> A brown water stain on your ceiling is almost never where the leak enters — water travels along rafters before dripping. The entry point could be several feet away.</p>
 <p>For full replacement guidance, see <a href="${B}/atlanta-roof-replacement-guide">Atlanta Roof Replacement Guide: Materials, Costs, and What to Expect</a>.</p>`,
+    bottomLine: "Get in the attic after rain twice a year. The hidden water damage we discover during Atlanta renovations — damage that had been accumulating silently for two or three seasons — is consistently more expensive to fix than the roof replacement itself would have been. The attic inspection is the cheapest diagnostic tool available to any homeowner.",
   },
   {
     id: 20, slug: "how-to-find-vet-general-contractor-atlanta",
@@ -288,6 +317,8 @@ export const posts: BlogPost[] = [
       { q: "What should be in a contractor contract in Georgia?", a: "A contractor contract in Georgia should include a detailed scope of work with material specifications, a payment schedule tied to project milestones (not arbitrary dates), start and estimated completion dates, a change order process requiring written approval, lien waiver requirements at each payment, and copies of the contractor's license and insurance certificate. Never pay more than 10–30% upfront." },
       { q: "What are red flags when hiring a contractor in Atlanta?", a: "Major red flags include demanding more than 30% upfront, no verifiable license number or physical business address, pressure to sign immediately without time to review, no written contract or scope of work, asking you to pull your own permits, and offering a price significantly below every other bid. Out-of-state contractors appearing after storms are a documented source of fraud in the Atlanta market." },
     ],
+    updatedDate: "July 3, 2026",
+    bottomLine: "The right contractor is licensed, insured, willing to give you a detailed written scope before asking for a deposit, and transparent about which work is subcontracted. In Atlanta's competitive market, the best contractors book out 4–8 weeks. Start vetting early, and don't let timeline pressure push you toward a contractor you haven't fully vetted.",
   },
   {
     id: 21, slug: "home-addition-vs-moving-atlanta",
@@ -303,6 +334,8 @@ export const posts: BlogPost[] = [
       { q: "How long does a home addition take in Atlanta?", a: "A single-room home addition in Atlanta typically takes 3–5 months from permit approval to completion. A second-story addition or multi-room expansion runs 5–9 months. Permit approval in Cobb County averages 4–8 weeks and should be factored into the total timeline from the start of planning, not from when construction is expected to begin." },
       { q: "Does a home addition increase property taxes in Georgia?", a: "Yes — adding finished square footage increases the assessed value of your home, which raises annual property taxes. In Cobb County, the residential tax rate is approximately 1.0–1.2% of assessed value. A $100,000 addition would typically add roughly $1,000–$1,200 per year in property taxes. The increase is factored into the ROI calculation for any addition project." },
     ],
+    updatedDate: "July 3, 2026",
+    bottomLine: "Run the math specific to your neighborhood before deciding. In Cobb County's top school districts and most of Alpharetta and Dunwoody, a well-designed addition consistently pencils better than moving — on cost, on lifestyle disruption, and on preserving equity in a market you already understand. The decision gets harder in neighborhoods where comparable square footage is priced below what adding costs per square foot.",
   },
   {
     id: 22, slug: "kitchen-lighting-design-atlanta",
@@ -314,6 +347,7 @@ export const posts: BlogPost[] = [
 <p><strong>Layer 2 — Task Lighting:</strong> Under-cabinet LED strips illuminating the countertop work zone. Non-negotiable. Budget: $800–$2,200 depending on linear footage.</p>
 <p><strong>Layer 3 — Accent and Decorative:</strong> Pendant lights over the island, in-cabinet lighting for glass-front uppers, toe-kick lighting. See <a href="${B}/5-kitchen-remodeling-trends-atlanta-2025">5 Kitchen Remodeling Trends Dominating Atlanta Homes in 2025</a> for current pendant styles dominating Atlanta kitchens.</p>
 <p>Electrical rough-in for lighting is timed in weeks 3–5 of a renovation — see <a href="${B}/full-home-remodel-week-by-week-guide">What to Expect During a Full Home Remodel: A Week-by-Week Guide</a>.</p>`,
+    bottomLine: "Plan your three-layer lighting scheme before cabinets go in — once cabinetry is installed, adding circuits economically is no longer an option. Under-cabinet lighting alone transforms how a kitchen functions and feels. Budget the lighting package alongside the cabinetry quote, not as an afterthought at the end of the project.",
   },
   {
     id: 23, slug: "hall-bathroom-renovation-high-traffic",
@@ -324,6 +358,7 @@ export const posts: BlogPost[] = [
 <p><strong>Surface Selections:</strong> Choose porcelain tile over ceramic for floors and shower surrounds. Rectified tile allows tighter grout lines that are harder to dirty. Full tile selection guide: <a href="${B}/how-to-choose-right-tile-bathroom-renovation">How to Choose the Right Tile for Your Bathroom Renovation</a>.</p>
 <p><strong>Storage Priority:</strong> A 36-inch vanity with drawer storage is the minimum. If space allows, a 48-inch vanity with double sinks serves a family far better.</p>
 <p><strong>Ventilation:</strong> An undersized exhaust fan is the most common hall bath mistake. In Georgia's humidity, you want a minimum 110 CFM fan for bathrooms up to 100 sq ft, with a humidity sensor that runs automatically.</p>`,
+    bottomLine: "Prioritize durability over aesthetics in the hall bath — rectified porcelain, an oversized vanity with drawer storage, and a properly sized humidity-sensing exhaust fan will serve the space for 15+ years with almost no maintenance. The hall bathroom takes the most daily abuse of any room in the home. Build it accordingly.",
   },
   {
     id: 24, slug: "tile-trends-atlanta-2025",
@@ -335,6 +370,7 @@ export const posts: BlogPost[] = [
 <p><strong>In: Warm Terrazzo</strong> — The terrazzo revival continues, now leaning warmer (creams, taupes, terracottas) rather than the cool gray version of 2020.</p>
 <p><strong>Out: Cool Gray Everything</strong> — Gray subway tile, gray grout, gray porcelain floors — the look that defined 2016–2022 is now definitively dated in Atlanta renovations.</p>
 <p>For technical selection guidance, see <a href="${B}/how-to-choose-right-tile-bathroom-renovation">How to Choose the Right Tile for Your Bathroom Renovation</a>. For full flooring category decisions, see <a href="${B}/hardwood-vs-lvp-flooring-atlanta">Hardwood vs. LVP Flooring: Which Is Right for Your Atlanta Home?</a></p>`,
+    bottomLine: "Use trends in tile for backsplashes and accent walls — surfaces that are relatively affordable to update. For primary shower surrounds and main floors, choose materials with staying power you won't regret in five years. The best tile decisions feel right for the specific space, not just for the current design moment.",
   },
   {
     id: 25, slug: "outdoor-kitchen-installation-atlanta",
@@ -346,6 +382,7 @@ export const posts: BlogPost[] = [
 <p><strong>Mid-Range ($18,000–$40,000):</strong> Adds a pizza oven or kamado, a sink with hot/cold water, weatherproof cabinetry, and a concrete or stone countertop. Requires permits and a licensed plumber.</p>
 <p><strong>Site Requirements:</strong> Gas line extension from your home (licensed plumber required — $800–$1,800), GFCI-protected outdoor circuits (see <a href="${B}/electrical-panel-upgrade-atlanta">Electrical Panel Upgrade: Does Your Atlanta Home Need One Before Remodeling?</a>), and a stable pad.</p>
 <p>ROI comparison with other outdoor investments: <a href="${B}/deck-vs-patio-value-atlanta">Deck vs. Patio: Which Outdoor Living Addition Adds More Value in Atlanta?</a></p>`,
+    bottomLine: "Build on a proper structural pad, run gas and electrical permitted from the start, and specify weatherproof cabinetry rated for outdoor use. The outdoor kitchens that disappoint are almost always under-built structurally or missing one utility that limits how the space gets used. Both are fixable at the planning stage and expensive to retrofit.",
   },
   {
     id: 26, slug: "galley-kitchen-renovation",
@@ -356,6 +393,7 @@ export const posts: BlogPost[] = [
 <p><strong>Open One End:</strong> If one end of the galley is a wall (not a doorway), opening it creates a visual connection that makes the kitchen feel dramatically larger. See <a href="${B}/full-home-remodel-week-by-week-guide">What to Expect During a Full Home Remodel: A Week-by-Week Guide</a> for how structural changes fit in the renovation timeline.</p>
 <p><strong>Light Strategy:</strong> Under-cabinet lighting (covered in <a href="${B}/kitchen-lighting-design-atlanta">Kitchen Lighting Design: A Room-by-Room Breakdown for Atlanta Homes</a>), a light-colored backsplash, and upper cabinets with glass inserts all help dark galley kitchens.</p>
 <p>Full countertop material breakdown: <a href="${B}/best-kitchen-countertop-materials-atlanta">Best Kitchen Countertop Materials for Atlanta's Heat and Humidity</a>.</p>`,
+    bottomLine: "A well-executed galley kitchen can outperform a poorly planned island kitchen for actual cooking efficiency. Before committing to a more expensive renovation to change the layout, explore what the galley can become with the right cabinetry, lighting strategy, and one opened end. The results often surprise homeowners who came in convinced they needed more space.",
   },
   {
     id: 27, slug: "hvac-replacement-during-remodel",
@@ -367,6 +405,7 @@ export const posts: BlogPost[] = [
 <p><strong>Efficiency Ratings:</strong> In Georgia's climate, a 16–18 SEER2 system is the sweet spot for payback period. Variable-speed air handlers improve humidity control — critical in Atlanta's muggy summers.</p>
 <p><strong>Mini-Split Applications:</strong> Bonus rooms, basement conversions (see <a href="${B}/finishing-atlanta-basement-planning-guide">Finishing Your Atlanta Basement: A Complete Planning Guide</a>), and garage conversions are excellent mini-split applications — flexible installation without ductwork extension.</p>
 <p><strong>Rebates:</strong> Georgia Power and federal tax credits (25C) can cover $1,200–$2,000 of a new high-efficiency system.</p>`,
+    bottomLine: "If your HVAC system is over 10 years old and you're opening walls for a renovation anyway, replace it during the project. The scheduling disruption is absorbed into the renovation timeline at minimal additional cost. Variable-speed systems pay back faster in Atlanta's climate than in most of the country — humidity control makes the comfort improvement immediately obvious.",
   },
   {
     id: 28, slug: "mold-remediation-atlanta",
@@ -377,6 +416,7 @@ export const posts: BlogPost[] = [
 <p><strong>Not All Mold Is Equal:</strong> Surface mold on bathroom grout is a cleaning problem. Mold on framing, drywall, or insulation indicates a moisture intrusion problem. See the root cause discussion in <a href="${B}/water-damage-restoration-pro-vs-diy">Water Damage Restoration: When to Call a Pro vs. DIY</a>.</p>
 <p><strong>When Remediation Is Required:</strong> The EPA standard is 10 square feet as the DIY/professional threshold. Any active growth on structural materials over 10 sq ft warrants a certified remediator.</p>
 <p><strong>Cost:</strong> $1,500–$6,000 for a typical bathroom or crawlspace situation. Attic mold: $3,000–$12,000. Always fix the moisture source — typically related to roofing (see <a href="${B}/hidden-roof-damage-signs-atlanta">Signs Your Atlanta Home Has Hidden Roof Damage</a>) or plumbing before the remediation is considered resolved.</p>`,
+    bottomLine: "Fix the moisture source first — always. Mold remediation without addressing the underlying water intrusion will result in recurrence. A certified remediator will identify and require moisture source correction as a condition of complete remediation. The mold is a symptom; the source is the problem.",
   },
   {
     id: 29, slug: "foundation-crack-repair-atlanta",
@@ -388,6 +428,42 @@ export const posts: BlogPost[] = [
 <p><strong>Diagonal Stair-Step Cracks in Block Foundations:</strong> Indicates differential settlement. Warrants a structural engineer's evaluation if cracks are widening or if doors and windows are sticking.</p>
 <p><strong>Horizontal Cracks in Basement Walls:</strong> This is the red flag. Indicates soil pressure exceeding the wall's design capacity. Immediate engineering evaluation required. Do not begin any basement finishing work (see <a href="${B}/finishing-atlanta-basement-planning-guide">Finishing Your Atlanta Basement: A Complete Planning Guide</a>) until this is resolved.</p>
 <p>Foundation issues discovered during renovation require timeline adjustment — see <a href="${B}/full-home-remodel-week-by-week-guide">What to Expect During a Full Home Remodel: A Week-by-Week Guide</a>.</p>`,
+    bottomLine: "Get a structural engineer's assessment before starting any basement finishing work in a home with cracks, and before any major renovation where doors or windows are sticking. A $500 engineering report is the least expensive thing you'll buy in a renovation — and it tells you exactly what you're dealing with before you commit to a project scope.",
+  },
+  {
+    id: 30, slug: "general-contractor-vs-design-build-atlanta",
+    cat: "fullhome", catLabel: "Full Home", date: "July 3, 2026", icon: "🏠",
+    title: "General Contractor vs. Design-Build Firm in Atlanta: How to Choose",
+    excerpt: "Two different models, one major renovation. Here's how Atlanta homeowners are choosing between them — and what each approach actually means for your project.",
+    content: `<p>When planning a significant renovation in Atlanta, most homeowners eventually face the same question: do I hire a general contractor who works with my plans, or a design-build firm that handles everything under one roof? The answer depends on what you value most — control, convenience, or budget.</p>
+<p><strong>What a General Contractor Does:</strong> A GC manages construction and coordinates all trades. You either bring finished architectural drawings or work with your own designer. The GC executes the build, pulls permits, and manages subcontractors. You maintain direct control over the design and can shop plans to multiple GCs for competitive pricing.</p>
+<p><strong>What a Design-Build Firm Does:</strong> Design-build combines architecture, design, and construction under one contract. You pay one entity for the complete scope. Communication is streamlined and accountability is unified. The trade-off is less design optionality — you're locked into their design team and typically can't bid the construction.</p>
+<p><strong>When GC Makes More Sense:</strong> You already have a designer or architect. You want competitive bids on the construction. Your project is clearly defined in scope. Your budget requires maximum cost control and flexibility to value-engineer after the design phase.</p>
+<p><strong>When Design-Build Makes More Sense:</strong> Your project requires significant design work and you want a seamless handoff. You're willing to pay a premium for single-point accountability. You're making major structural changes where coordination between design and construction is critical.</p>
+<p><strong>Atlanta Market Reality:</strong> The best GCs in Atlanta — including TopFlight Builders — often collaborate with established local architects and interior designers on larger projects. This gives you professional design input and competitive construction pricing without locking into a single design-build contract. For full renovation planning, see <a href="${B}/full-home-remodel-week-by-week-guide">What to Expect During a Full Home Remodel: A Week-by-Week Guide</a>.</p>`,
+    faqs: [
+      { q: "Is a design-build firm more expensive than hiring a general contractor in Atlanta?", a: "Design-build firms typically cost 10–20% more than the GC-only path because they bundle design fees into the contract and control the construction margin. However, they can save money through better coordination between design and construction — fewer change orders, fewer surprises, and faster timelines. For projects where design complexity is high, the premium is often worth it." },
+      { q: "Can I use my own architect with a general contractor in Atlanta?", a: "Yes — and it's a common and effective approach. You hire an architect for design documents, then bid those plans to multiple general contractors. This gives you competitive pricing on the construction and the ability to choose your preferred designer independently. The GC works from your completed drawings and is accountable for the build, not the design." },
+      { q: "What questions should I ask before choosing between a GC and a design-build firm?", a: "Ask: Do I already have plans or a designer? Do I want to bid the construction competitively? How complex is my project structurally? How much of a premium am I willing to pay for single-point accountability? If your plans are clear and your scope is defined, a qualified GC with strong references will almost always deliver better value. If design is still undefined, design-build may save you time and coordination headaches." },
+    ],
+    bottomLine: "For most Atlanta homeowners with a defined scope, a qualified general contractor with verified references will deliver the best value. Design-build earns its premium on projects where design and structural complexity are high and single-point accountability is worth the additional cost. The key is understanding which model serves your specific project — not defaulting to one based on marketing.",
+  },
+  {
+    id: 31, slug: "kitchen-vs-bathroom-remodel-first-atlanta",
+    cat: "kitchen", catLabel: "Kitchen", date: "July 3, 2026", icon: "🍳",
+    title: "Kitchen Remodel vs. Bathroom Remodel: Which Should You Tackle First in Atlanta?",
+    excerpt: "Budget only allows one right now. Here's the ROI, livability, and resale math Atlanta homeowners should use to decide.",
+    content: `<p>The most common renovation dilemma in Atlanta: the kitchen and the primary bathroom both need work, but budget only supports one this year. There's a right answer — and it's different depending on your timeline and goals.</p>
+<p><strong>ROI Comparison in Atlanta:</strong> Kitchen remodels return 60–80% of cost in Atlanta's market, with mid-range projects ($35K–$75K) returning the highest percentage. Primary bathroom remodels return 55–70%. The kitchen wins on raw ROI — but only if it's the actual bottleneck on your listing.</p>
+<p><strong>If You're Selling in 2–3 Years:</strong> Lead with the kitchen. Buyers form their impression of a home primarily in the kitchen. An updated kitchen with quality countertops and cabinetry moves the listing; an updated primary bathroom is expected but rarely the decision point. Exception: if your kitchen is functional but the bathroom is actively embarrassing (cracked tile, outdated fixtures, poor layout), fix the bathroom first.</p>
+<p><strong>If You're Living There for 5+ Years:</strong> Lead with what you use most. If you cook daily, the kitchen. If the bathroom is frustrating you every morning — inadequate storage, poor shower, no double vanity — start there. Livability ROI matters for long-horizon homeowners. For cost breakdown by budget tier, see <a href="${B}/true-cost-kitchen-remodel-atlanta-2025">The True Cost of a Kitchen Remodel in Atlanta (2025 Guide)</a>.</p>
+<p><strong>The Bundling Option:</strong> Both rooms share trades — plumbing, electrical, tile, and flooring. Running a kitchen and primary bathroom renovation simultaneously can save 15–25% on labor versus doing them sequentially. If your timeline is flexible and budget can be staged, doing both in one project is often the most economical path. See <a href="${B}/full-home-remodel-week-by-week-guide">What to Expect During a Full Home Remodel: A Week-by-Week Guide</a> for how simultaneous renovations are sequenced.</p>`,
+    faqs: [
+      { q: "Does a kitchen or bathroom remodel add more value to an Atlanta home?", a: "Kitchen remodels add more raw dollar value in Atlanta — a $50,000 mid-range kitchen renovation typically returns $30,000–$40,000 in added home value. A comparable bathroom renovation returns $25,000–$35,000. However, the return on a bathroom renovation is higher as a percentage if the bathroom is severely outdated relative to the neighborhood standard. The deciding factor is which room is the actual weak point on your listing." },
+      { q: "Is it cheaper to renovate a kitchen and bathroom at the same time?", a: "Yes — bundling a kitchen and primary bathroom renovation saves 15–25% on labor compared to running them sequentially. Shared trades (plumbing, electrical, tile, flooring) are more efficiently scheduled in one mobilization. The main trade-off is living disruption — if both rooms are out of commission simultaneously, you'll likely need to make alternate arrangements for cooking and showering during the project." },
+      { q: "What is the ROI of a kitchen remodel vs. bathroom remodel in Atlanta?", a: "In the Atlanta market, mid-range kitchen remodels ($35,000–$75,000) return approximately 65–75% of cost at resale. Mid-range primary bathroom remodels ($20,000–$50,000) return approximately 55–70%. Both figures depend heavily on the neighborhood comp set — a $100,000 kitchen in a $300,000 neighborhood will underperform; the same kitchen in a $700,000 neighborhood will outperform these averages." },
+    ],
+    bottomLine: "For resale in the next 2–3 years, lead with the kitchen — it moves listings. For a home you'll occupy for 5+ years, lead with the room that is actively reducing your quality of life every day. If budget allows any flexibility, bundling both projects in one renovation saves 15–25% on labor and eliminates the disruption of two separate construction cycles.",
   },
 ];
 
