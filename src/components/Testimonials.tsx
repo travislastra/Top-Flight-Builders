@@ -67,7 +67,7 @@ export default function Testimonials() {
               </p>
               <div>
                 <p className="font-sans font-bold text-[#0D1B2E] text-sm">{t.name}</p>
-                <p className="text-gray-400 text-xs">{t.location}</p>
+                <p className="text-gray-500 text-xs">{t.location}</p>
               </div>
             </div>
           ))}

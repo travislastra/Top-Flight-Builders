@@ -1,5 +1,3 @@
-const BASE = "";
-
 export default function LogoWatermark() {
   return (
     <div
@@ -12,8 +10,10 @@ export default function LogoWatermark() {
       aria-hidden="true"
     >
       <img
-        src={`${BASE}/logo.png`}
+        src="/logo.webp"
         alt=""
+        width={820}
+        height={547}
         className="w-full brightness-0 invert"
         draggable={false}
       />

@@ -152,9 +152,6 @@ export default function RootLayout({
             wait_for_update: 500
           });
         `}} />
-        {/* Preconnect to Google Maps for service-area pages with map embeds */}
-        <link rel="preconnect" href="https://maps.google.com" />
-        <link rel="preconnect" href="https://maps.gstatic.com" crossOrigin="anonymous" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}

@@ -86,8 +86,10 @@ export default function HeroPlaceholder() {
         aria-hidden="true"
       >
         <img
-          src="/logo.png"
+          src="/logo.webp"
           alt=""
+          width={900}
+          height={600}
           className="w-full brightness-0 invert"
           draggable={false}
         />
@@ -99,9 +101,13 @@ export default function HeroPlaceholder() {
             key={i}
             onClick={() => setActive(i)}
             aria-label={`Go to slide ${i + 1}`}
-            className="w-1.5 h-1.5 rounded-full transition-all duration-300"
-            style={{ backgroundColor: i === active ? "white" : "rgba(255,255,255,0.35)", transform: i === active ? "scale(1.4)" : "scale(1)" }}
-          />
+            className="relative p-3 -m-3 rounded-full"
+          >
+            <span
+              className="block w-1.5 h-1.5 rounded-full transition-all duration-300"
+              style={{ backgroundColor: i === active ? "white" : "rgba(255,255,255,0.35)", transform: i === active ? "scale(1.4)" : "scale(1)" }}
+            />
+          </button>
         ))}
       </div>
 

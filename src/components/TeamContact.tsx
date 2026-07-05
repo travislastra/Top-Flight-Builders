@@ -23,7 +23,7 @@ export default function TeamContact() {
         <p className="text-gray-500 text-lg leading-relaxed mb-4 max-w-2xl mx-auto">
           Your dream home is closer than you think. Whether you&apos;re planning a full renovation or a single room refresh, our experts are ready to help you bring it to life.
         </p>
-        <p className="text-gray-400 leading-relaxed mb-10 max-w-xl mx-auto">
+        <p className="text-gray-600 leading-relaxed mb-10 max-w-xl mx-auto">
           We offer free estimates and a no-pressure consultation process. Let&apos;s talk about what&apos;s possible for your space.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">

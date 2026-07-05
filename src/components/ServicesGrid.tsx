@@ -88,6 +88,7 @@ export default function ServicesGrid() {
                 </p>
                 <Link
                   href={service.href}
+                  aria-label={`Learn more about ${service.title}`}
                   className="text-white font-semibold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all group-hover:text-[#4A7FE8]"
                 >
                   Learn More

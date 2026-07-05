@@ -66,7 +66,7 @@ export default function ReviewsSlider() {
                   </div>
                   <div>
                     <p className="font-sans font-bold text-[#0D1B2E] text-sm leading-tight">{review.name}</p>
-                    <p className="text-gray-400 text-xs">{review.date}</p>
+                    <p className="text-gray-500 text-xs">{review.date}</p>
                   </div>
                 </div>
                 <Stars />
@@ -75,7 +75,7 @@ export default function ReviewsSlider() {
                 </p>
                 <div className="flex items-center gap-1.5 mt-4 pt-3 border-t border-gray-100">
                   <GoogleIcon />
-                  <span className="text-xs text-gray-400">Google Review</span>
+                  <span className="text-xs text-gray-500">Google Review</span>
                 </div>
               </div>
             </div>

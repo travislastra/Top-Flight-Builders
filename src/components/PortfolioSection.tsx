@@ -49,7 +49,7 @@ export default function PortfolioSection() {
               </div>
               <div className="p-4">
                 <h3 className="font-sans font-bold text-[#0D1B2E] text-sm mb-1 group-hover:text-[#1E4FBF] transition-colors">{p.title}</h3>
-                <p className="text-gray-400 text-xs mb-3">{p.location}</p>
+                <p className="text-gray-500 text-xs mb-3">{p.location}</p>
                 <span className="text-[#1E4FBF] font-semibold text-xs inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                   View Project
                   <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
