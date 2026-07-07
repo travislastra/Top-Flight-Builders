@@ -67,10 +67,10 @@ export default function Header() {
         {/* Col 1: Logo */}
         <Link href="/" className="flex items-center">
           <Img
-            src="/logo.png"
+            src="/logo.webp"
             alt="TopFlight Builders"
-            width={180}
-            height={60}
+            width={820}
+            height={547}
             className="h-24 w-auto brightness-0 invert"
             priority
           />

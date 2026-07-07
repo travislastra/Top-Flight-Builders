@@ -44,7 +44,7 @@ export default function Footer() {
         <h3 className="font-sans text-2xl font-bold text-white mb-3">
           Ready to Start Your Project?
         </h3>
-        <p className="text-blue-100 mb-6 max-w-xl mx-auto">
+        <p className="text-blue-50 mb-6 max-w-xl mx-auto">
           Contact us today for a free estimate. Greater Atlanta&apos;s trusted remodeling experts.
         </p>
         <Link
@@ -142,7 +142,7 @@ export default function Footer() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
-              <span>Marietta, GA 30066<br /><span className="text-gray-500">Serving Greater Atlanta</span></span>
+              <span>Marietta, GA 30066<br /><span className="text-gray-400">Serving Greater Atlanta</span></span>
             </div>
           </div>
           <h4 className="font-sans font-bold text-white uppercase tracking-wider text-xs mb-3">Follow Us</h4>

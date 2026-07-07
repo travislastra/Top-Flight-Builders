@@ -95,13 +95,13 @@ export default function HeroPlaceholder() {
         />
       </div>
 
-      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 flex gap-4 z-10">
         {SLIDES.map((_, i) => (
           <button
             key={i}
             onClick={() => setActive(i)}
             aria-label={`Go to slide ${i + 1}`}
-            className="relative p-3 -m-3 rounded-full"
+            className="h-11 w-6 flex items-center justify-center rounded-full"
           >
             <span
               className="block w-1.5 h-1.5 rounded-full transition-all duration-300"

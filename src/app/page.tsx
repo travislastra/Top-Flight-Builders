@@ -21,10 +21,11 @@ export default function Home() {
       <link
         rel="preload"
         as="image"
-        // @ts-ignore — imagesrcset/imagesizes not yet in React's link types
+        // @ts-ignore — imagesrcset/imagesizes/fetchpriority not yet in React's link types
         imagesrcset={LCP_SRCSET}
         imagesizes="100vw"
         type="image/webp"
+        fetchpriority="high"
       />
       <HeroPlaceholder />
       <PartnersSlider />
