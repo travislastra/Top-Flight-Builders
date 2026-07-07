@@ -20,13 +20,25 @@ const BASE_SLIDES = [
 // Pre-resolve URLs so render is pure
 const SLIDES = BASE_SLIDES.map((src) => ({
   jpg: resolveImg(src),
-  webp: toWebP(resolveImg(src)),
   srcSet: buildWebPSrcSet(toWebP(resolveImg(src))),
 }));
 
 export default function HeroPlaceholder() {
   const [active, setActive] = useState(0);
+  // Only slide 0 loads on mount; each slide preloads its successor as it becomes active
+  const [loaded, setLoaded] = useState<Set<number>>(() => new Set([0]));
   const bgLogoRef = useRef<HTMLDivElement>(null);
+
+  // Preload the next slide as soon as the current one becomes active (5s before it's needed)
+  useEffect(() => {
+    const next = (active + 1) % SLIDES.length;
+    setLoaded((prev) => {
+      if (prev.has(next)) return prev;
+      const s = new Set(prev);
+      s.add(next);
+      return s;
+    });
+  }, [active]);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -46,16 +58,25 @@ export default function HeroPlaceholder() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  function goToSlide(i: number) {
+    setLoaded((prev) => {
+      if (prev.has(i)) return prev;
+      const s = new Set(prev);
+      s.add(i);
+      return s;
+    });
+    setActive(i);
+  }
+
   return (
     <section className="relative w-full min-h-[90vh] bg-[#0D1B2E] flex flex-col items-center justify-center overflow-hidden">
 
-      {SLIDES.map(({ jpg, webp, srcSet }, i) => (
+      {SLIDES.map(({ jpg, srcSet }, i) => (
         <picture key={jpg} style={{ display: "contents" }}>
-          {/* First slide: preloaded with matching imagesrcset — use same srcset here so browser reuses the fetch */}
-          {/* Other slides: full srcset for bandwidth savings when lazy-loaded */}
-          <source srcSet={srcSet} sizes="100vw" type="image/webp" />
+          {/* Only provide srcSet/src once the slide has been queued to load */}
+          <source srcSet={loaded.has(i) ? srcSet : undefined} sizes="100vw" type="image/webp" />
           <img
-            src={jpg}
+            src={loaded.has(i) ? jpg : undefined}
             alt=""
             aria-hidden="true"
             className="absolute inset-0 w-full h-full object-cover transition-opacity duration-[1800ms] ease-in-out"
@@ -99,7 +120,7 @@ export default function HeroPlaceholder() {
         {SLIDES.map((_, i) => (
           <button
             key={i}
-            onClick={() => setActive(i)}
+            onClick={() => goToSlide(i)}
             aria-label={`Go to slide ${i + 1}`}
             className="h-11 w-6 flex items-center justify-center rounded-full"
           >
