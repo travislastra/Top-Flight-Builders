@@ -47,7 +47,7 @@ export default function ConsentBanner() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-start sm:items-center gap-4">
         <p className="text-gray-300 text-sm leading-relaxed flex-1">
           We use Google Analytics to understand how visitors find and use our site. No advertising, session recording, or behavioral tracking is used.{" "}
-          <Link href="/privacy-policy" className="text-[#4A7FE8] hover:underline">
+          <Link href="/privacy-policy" className="text-[#4A7FE8] underline">
             Privacy Policy
           </Link>
         </p>

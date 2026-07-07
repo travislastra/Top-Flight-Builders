@@ -61,6 +61,7 @@ export default function ServicesGrid() {
             <Link
               key={service.title}
               href={service.href}
+              aria-label={`Learn more about ${service.title}`}
               className="relative rounded-2xl overflow-hidden shadow-sm group min-h-[240px] block"
             >
               {/* Background photo */}
@@ -86,16 +87,12 @@ export default function ServicesGrid() {
                 <p className="text-gray-200 text-sm leading-relaxed mb-5">
                   {service.description}
                 </p>
-                <Link
-                  href={service.href}
-                  aria-label={`Learn more about ${service.title}`}
-                  className="text-white font-semibold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all group-hover:text-[#4A7FE8]"
-                >
+                <span className="text-white font-semibold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all group-hover:text-[#4A7FE8]">
                   Learn More
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
-                </Link>
+                </span>
               </div>
             </Link>
           ))}
