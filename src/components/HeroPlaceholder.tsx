@@ -48,14 +48,21 @@ export default function HeroPlaceholder() {
   }, []);
 
   useEffect(() => {
+    let rafId = 0;
     const handleScroll = () => {
-      if (!bgLogoRef.current) return;
-      const scrollY = window.scrollY;
-      bgLogoRef.current.style.transform = `translateX(-50%) translateY(${scrollY * 0.8}px)`;
-      bgLogoRef.current.style.opacity = String(Math.max(0, 0.08 - Math.max(0, scrollY - 600) * 0.0004));
+      cancelAnimationFrame(rafId);
+      rafId = requestAnimationFrame(() => {
+        if (!bgLogoRef.current) return;
+        const scrollY = window.scrollY;
+        bgLogoRef.current.style.transform = `translateX(-50%) translateY(${scrollY * 0.8}px)`;
+        bgLogoRef.current.style.opacity = String(Math.max(0, 0.08 - Math.max(0, scrollY - 600) * 0.0004));
+      });
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      cancelAnimationFrame(rafId);
+    };
   }, []);
 
   function goToSlide(i: number) {

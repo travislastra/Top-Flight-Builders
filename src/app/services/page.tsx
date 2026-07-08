@@ -3,6 +3,7 @@ import ContactBanner from "@/components/ContactBanner";
 import LogoWatermark from "@/components/LogoWatermark";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ServiceAreaLinks from "@/components/ServiceAreaLinks";
+import { toWebP, buildWebPSrcSet } from "@/lib/image-utils";
 
 export const metadata = {
   title: "Remodeling Services in Marietta, Canton and North Atlanta | TopFlight Builders",
@@ -11,8 +12,6 @@ export const metadata = {
     canonical: "https://topflightbuilders.net/services",
   },
 };
-
-const BASE = "";
 
 const services = [
   {
@@ -108,12 +107,17 @@ export default function ServicesPage() {
               className="group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all min-h-[280px] flex flex-col"
             >
               {/* Background photo */}
-              <img
-                src={`${BASE}${s.photo}`}
-                alt=""
-                aria-hidden="true"
-                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-              />
+              <picture style={{ display: "contents" }}>
+                <source srcSet={buildWebPSrcSet(toWebP(s.photo))} sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw" type="image/webp" />
+                <img
+                  src={s.photo}
+                  alt=""
+                  aria-hidden="true"
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+              </picture>
               {/* Dark overlay — lighter at top for icon, heavier at bottom for text */}
               <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/60 to-black/80" />
 
