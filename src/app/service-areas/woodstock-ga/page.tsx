@@ -9,6 +9,11 @@ export const metadata = {
   title: "Woodstock GA Remodeling & Restoration Contractor",
   description:
     "Kitchen, bathroom, and whole-home remodeling in Woodstock, GA by TopFlight Builders. Serving Cherokee County families. Licensed, insured, 50+ five-star reviews. (404) 369-7129.",
+  openGraph: {
+    title: "Woodstock GA Remodeling & Restoration Contractor | TopFlight Builders",
+    description: "Kitchen, bathroom, and whole-home remodeling in Woodstock, GA by TopFlight Builders. Serving Cherokee County families. Licensed, insured, 50+ five-star reviews. (404) 369-7129.",
+    images: [{ url: "https://topflightbuilders.net/images/bathroom-remodel-frameless-glass-shower-marietta-ga.jpg", width: 1200, height: 630, alt: "Remodeling contractor in Woodstock, GA — TopFlight Builders" }],
+  },
   alternates: {
     canonical:
       "https://topflightbuilders.net/service-areas/woodstock-ga",

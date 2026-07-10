@@ -11,6 +11,11 @@ import ServiceBlogLinks from "@/components/ServiceBlogLinks";
 export const metadata = {
   title: "Deck Building & Replacement in Marietta GA",
   description: "Deck building and replacement in Marietta and Greater Atlanta, GA by TopFlight Builders. Composite and pressure-treated decks, pergolas, and custom railings. Licensed, insured. Free estimate: (404) 369-7129.",
+  openGraph: {
+    title: "Deck Building & Replacement in Marietta GA | TopFlight Builders",
+    description: "Deck building and replacement in Marietta and Greater Atlanta, GA by TopFlight Builders. Composite and pressure-treated decks, pergolas, and custom railings. Licensed, insured. Free estimate: (404) 369-7129.",
+    images: [{ url: "https://topflightbuilders.net/images/bathroom-remodel-frameless-glass-shower-marietta-ga.jpg", width: 1200, height: 630, alt: "TopFlight Builders — deck builder and remodeling contractor in Marietta, GA" }],
+  },
   alternates: {
     canonical: "https://topflightbuilders.net/services/decks",
   },

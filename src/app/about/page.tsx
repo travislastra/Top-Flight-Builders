@@ -6,6 +6,11 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 export const metadata = {
   title: "About Us | Marietta and Canton GA Remodeling",
   description: "TopFlight Builders is a locally owned remodeling contractor serving Marietta and Canton, GA. 20+ years combined experience in kitchens, baths, and full homes. Licensed, insured. (404) 369-7129.",
+  openGraph: {
+    title: "About TopFlight Builders | Marietta and Canton GA Remodeling",
+    description: "TopFlight Builders is a locally owned remodeling contractor serving Marietta and Canton, GA. 20+ years combined experience in kitchens, baths, and full homes. Licensed, insured. (404) 369-7129.",
+    images: [{ url: "https://topflightbuilders.net/images/bathroom-remodel-frameless-glass-shower-marietta-ga.jpg", width: 1200, height: 630, alt: "TopFlight Builders — Marietta remodeling contractor" }],
+  },
   alternates: {
     canonical: "https://topflightbuilders.net/about",
   },

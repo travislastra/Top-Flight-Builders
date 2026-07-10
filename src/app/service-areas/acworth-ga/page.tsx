@@ -9,6 +9,11 @@ export const metadata = {
   title: "Acworth GA Remodeling & Restoration Contractor",
   description:
     "Kitchen, bathroom, and home remodeling in Acworth, GA by TopFlight Builders. Serving Lake Acworth and Lake Allatoona communities. Licensed, insured, 50+ reviews. (404) 369-7129.",
+  openGraph: {
+    title: "Acworth GA Remodeling & Restoration Contractor | TopFlight Builders",
+    description: "Kitchen, bathroom, and home remodeling in Acworth, GA by TopFlight Builders. Serving Lake Acworth and Lake Allatoona communities. Licensed, insured, 50+ reviews. (404) 369-7129.",
+    images: [{ url: "https://topflightbuilders.net/images/bathroom-remodel-frameless-glass-shower-marietta-ga.jpg", width: 1200, height: 630, alt: "Remodeling contractor in Acworth, GA — TopFlight Builders" }],
+  },
   alternates: {
     canonical:
       "https://topflightbuilders.net/service-areas/acworth-ga",

@@ -10,6 +10,11 @@ import ServiceBlogLinks from "@/components/ServiceBlogLinks";
 export const metadata = {
   title: "Commercial Construction and TI in Marietta GA",
   description: "Commercial construction and tenant improvements in Marietta and Canton, GA by TopFlight Builders. Office, retail, and investment properties. Licensed, insured, 50+ five-star reviews. (404) 369-7129.",
+  openGraph: {
+    title: "Commercial Construction & TI in Marietta GA | TopFlight Builders",
+    description: "Commercial construction and tenant improvements in Marietta and Canton, GA by TopFlight Builders. Office, retail, and investment properties. Licensed, insured, 50+ five-star reviews. (404) 369-7129.",
+    images: [{ url: "https://topflightbuilders.net/images/bathroom-remodel-frameless-glass-shower-marietta-ga.jpg", width: 1200, height: 630, alt: "TopFlight Builders — commercial contractor in Marietta, GA" }],
+  },
   alternates: {
     canonical: "https://topflightbuilders.net/services/commercial",
   },

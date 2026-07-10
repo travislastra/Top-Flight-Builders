@@ -13,6 +13,11 @@ import ServiceBlogLinks from "@/components/ServiceBlogLinks";
 export const metadata = {
   title: "Storm, Water and Fire Restoration in Marietta GA",
   description: "Storm, water, and fire restoration in Marietta and Canton, GA by TopFlight Builders. Fast response, expert crews, full rebuild. Licensed, insured, 50+ five-star reviews. Free estimate: (404) 369-7129.",
+  openGraph: {
+    title: "Storm & Water Damage Restoration in Marietta GA | TopFlight Builders",
+    description: "Storm, water, and fire restoration in Marietta and Canton, GA by TopFlight Builders. Fast response, expert crews, full rebuild. Licensed, insured, 50+ five-star reviews. Free estimate: (404) 369-7129.",
+    images: [{ url: "https://topflightbuilders.net/images/storm-damage-restoration-fallen-tree-marietta-ga.jpg", width: 1200, height: 630, alt: "Storm damage restoration by TopFlight Builders in Marietta, GA" }],
+  },
   alternates: {
     canonical: "https://topflightbuilders.net/services/restoration",
   },

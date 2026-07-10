@@ -42,6 +42,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: post.title,
     description: post.excerpt,
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      images: [{ url: `${BASE_URL}/images/bathroom-remodel-frameless-glass-shower-marietta-ga.jpg`, width: 1200, height: 630, alt: post.title }],
+    },
     alternates: {
       canonical: `${BASE_URL}/blog/${slug}`,
     },

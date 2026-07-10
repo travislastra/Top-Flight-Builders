@@ -18,6 +18,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${service.name} in ${cityData.name}, GA`,
     description: `${service.name} in ${cityData.name} and ${cityData.county} County, GA by TopFlight Builders. ${service.typicalRange.split(".")[0]}. Licensed, insured, 50+ five-star reviews. (404) 369-7129.`,
+    openGraph: {
+      title: `${service.name} in ${cityData.name}, GA | TopFlight Builders`,
+      description: `${service.name} in ${cityData.name} and ${cityData.county} County, GA by TopFlight Builders. ${service.typicalRange.split(".")[0]}. Licensed, insured, 50+ five-star reviews. (404) 369-7129.`,
+      images: [{ url: "https://topflightbuilders.net/images/bathroom-remodel-frameless-glass-shower-marietta-ga.jpg", width: 1200, height: 630, alt: `Basement finishing in ${cityData.name}, GA by TopFlight Builders` }],
+    },
     alternates: {
       canonical: `https://topflightbuilders.net/services/${SERVICE_SLUG}/${city}`,
     },

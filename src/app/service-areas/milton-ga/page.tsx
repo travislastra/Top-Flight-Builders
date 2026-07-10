@@ -9,6 +9,11 @@ export const metadata = {
   title: "Milton GA Remodeling & Restoration Contractor",
   description:
     "Kitchen, bathroom, and luxury home remodeling in Milton, GA by TopFlight Builders. Serving Crabapple and Birmingham Crossroads communities. Licensed, insured. (404) 369-7129.",
+  openGraph: {
+    title: "Milton GA Remodeling & Restoration Contractor | TopFlight Builders",
+    description: "Kitchen, bathroom, and luxury home remodeling in Milton, GA by TopFlight Builders. Serving Crabapple and Birmingham Crossroads communities. Licensed, insured. (404) 369-7129.",
+    images: [{ url: "https://topflightbuilders.net/images/bathroom-remodel-frameless-glass-shower-marietta-ga.jpg", width: 1200, height: 630, alt: "Remodeling contractor in Milton, GA — TopFlight Builders" }],
+  },
   alternates: {
     canonical:
       "https://topflightbuilders.net/service-areas/milton-ga",

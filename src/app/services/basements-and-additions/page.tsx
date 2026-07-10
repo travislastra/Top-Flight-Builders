@@ -14,6 +14,11 @@ import ServiceBlogLinks from "@/components/ServiceBlogLinks";
 export const metadata = {
   title: "Basements and Home Additions in Marietta GA",
   description: "Basement finishing and home additions in Marietta and Canton, GA by TopFlight Builders. Full build-out from framing to final finish. Licensed, insured, 50+ five-star reviews. Free estimate: (404) 369-7129.",
+  openGraph: {
+    title: "Basements and Home Additions in Marietta GA | TopFlight Builders",
+    description: "Basement finishing and home additions in Marietta and Canton, GA by TopFlight Builders. Full build-out from framing to final finish. Licensed, insured, 50+ five-star reviews. Free estimate: (404) 369-7129.",
+    images: [{ url: "https://topflightbuilders.net/images/bathroom-remodel-frameless-glass-shower-marietta-ga.jpg", width: 1200, height: 630, alt: "TopFlight Builders — basement and home addition contractor in Marietta, GA" }],
+  },
   alternates: {
     canonical: "https://topflightbuilders.net/services/basements-and-additions",
   },

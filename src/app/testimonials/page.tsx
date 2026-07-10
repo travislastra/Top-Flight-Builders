@@ -7,6 +7,11 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 export const metadata = {
   title: "5-Star Reviews | Marietta Remodeling Contractor",
   description: "Read 50+ five-star Google reviews from homeowners in Marietta and Canton, GA. TopFlight Builders delivers remodeling on time and on budget. Licensed, insured. Free estimate: (404) 369-7129.",
+  openGraph: {
+    title: "5-Star Reviews | Marietta Remodeling Contractor | TopFlight Builders",
+    description: "Read 50+ five-star Google reviews from homeowners in Marietta and Canton, GA. TopFlight Builders delivers remodeling on time and on budget. Licensed, insured. Free estimate: (404) 369-7129.",
+    images: [{ url: "https://topflightbuilders.net/images/bathroom-remodel-frameless-glass-shower-marietta-ga.jpg", width: 1200, height: 630, alt: "TopFlight Builders — 5-star rated remodeling contractor in Marietta, GA" }],
+  },
   alternates: {
     canonical: "https://topflightbuilders.net/testimonials",
   },

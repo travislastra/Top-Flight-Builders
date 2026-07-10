@@ -14,6 +14,11 @@ import ServiceBlogLinks from "@/components/ServiceBlogLinks";
 export const metadata = {
   title: "ADA and Aging in Place Remodeling in Marietta GA",
   description: "ADA and aging in place remodeling in Marietta and Canton, GA by TopFlight Builders. Grab bars, zero-threshold showers, and wider doorways. Licensed, insured, 50+ five-star reviews. (404) 369-7129.",
+  openGraph: {
+    title: "ADA and Aging in Place Remodeling in Marietta GA | TopFlight Builders",
+    description: "ADA and aging in place remodeling in Marietta and Canton, GA by TopFlight Builders. Grab bars, zero-threshold showers, and wider doorways. Licensed, insured, 50+ five-star reviews. (404) 369-7129.",
+    images: [{ url: "https://topflightbuilders.net/images/age-in-place-accessible-shower-marietta-ga.jpg", width: 1200, height: 630, alt: "Accessible shower remodel for aging in place by TopFlight Builders in Marietta, GA" }],
+  },
   alternates: {
     canonical: "https://topflightbuilders.net/services/age-in-place",
   },

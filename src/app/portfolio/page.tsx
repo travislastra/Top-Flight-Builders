@@ -7,6 +7,11 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 export const metadata = {
   title: "Remodeling Portfolio | Marietta and Canton GA",
   description: "Browse completed remodeling projects by TopFlight Builders in Marietta and Canton, GA. Kitchens, bathrooms, full homes, basements, and more. Licensed, insured, 50+ five-star reviews.",
+  openGraph: {
+    title: "Remodeling Portfolio | Marietta and Canton GA | TopFlight Builders",
+    description: "Browse completed remodeling projects by TopFlight Builders in Marietta and Canton, GA. Kitchens, bathrooms, full homes, basements, and more. Licensed, insured, 50+ five-star reviews.",
+    images: [{ url: "https://topflightbuilders.net/images/kitchen-portfolio-cover-homepage-ga.jpg", width: 1200, height: 630, alt: "Remodeling portfolio — TopFlight Builders in Marietta, GA" }],
+  },
   alternates: {
     canonical: "https://topflightbuilders.net/portfolio",
   },

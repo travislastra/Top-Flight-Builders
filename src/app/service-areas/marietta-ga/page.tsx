@@ -11,6 +11,11 @@ export const metadata = {
   title: "Marietta GA Remodeling & Restoration Contractor",
   description:
     "TopFlight Builders is Marietta's trusted remodeling contractor. Kitchens, bathrooms, full homes, and storm restoration in Marietta, GA. Licensed, insured, 50+ five-star reviews. (404) 369-7129.",
+  openGraph: {
+    title: "Marietta GA Remodeling & Restoration Contractor | TopFlight Builders",
+    description: "TopFlight Builders is Marietta's trusted remodeling contractor. Kitchens, bathrooms, full homes, and storm restoration in Marietta, GA. Licensed, insured, 50+ five-star reviews. (404) 369-7129.",
+    images: [{ url: "https://topflightbuilders.net/images/bathroom-remodel-frameless-glass-shower-marietta-ga.jpg", width: 1200, height: 630, alt: "Remodeling contractor in Marietta, GA — TopFlight Builders" }],
+  },
   alternates: {
     canonical:
       "https://topflightbuilders.net/service-areas/marietta-ga",
