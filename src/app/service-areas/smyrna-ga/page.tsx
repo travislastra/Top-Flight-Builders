@@ -20,16 +20,6 @@ export const metadata = {
   },
 };
 
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "GeneralContractor",
-  "@id": "https://topflightbuilders.net/#business",
-  name: "TopFlight Builders LLC",
-  url: "https://topflightbuilders.net",
-  telephone: "+1-404-369-7129",
-  areaServed: { "@type": "City", name: "Smyrna", addressRegion: "GA" },
-};
-
 export default function SmyrnaPage() {
   return (
     <>
@@ -39,10 +29,6 @@ export default function SmyrnaPage() {
           { name: "Service Areas", href: "/service-areas" },
           { name: "Smyrna, GA", href: "/service-areas/smyrna-ga" },
         ]}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
 
       {/* Hero */}

@@ -20,16 +20,6 @@ export const metadata = {
   },
 };
 
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "GeneralContractor",
-  "@id": "https://topflightbuilders.net/#business",
-  name: "TopFlight Builders LLC",
-  url: "https://topflightbuilders.net",
-  telephone: "+1-404-369-7129",
-  areaServed: { "@type": "City", name: "Roswell", addressRegion: "GA" },
-};
-
 export default function RoswellPage() {
   return (
     <>
@@ -39,10 +29,6 @@ export default function RoswellPage() {
           { name: "Service Areas", href: "/service-areas" },
           { name: "Roswell, GA", href: "/service-areas/roswell-ga" },
         ]}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
 
       {/* Hero */}

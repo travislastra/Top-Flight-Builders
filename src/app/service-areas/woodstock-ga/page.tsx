@@ -20,16 +20,6 @@ export const metadata = {
   },
 };
 
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "GeneralContractor",
-  "@id": "https://topflightbuilders.net/#business",
-  name: "TopFlight Builders LLC",
-  url: "https://topflightbuilders.net",
-  telephone: "+1-404-369-7129",
-  areaServed: { "@type": "City", name: "Woodstock", addressRegion: "GA" },
-};
-
 export default function WoodstockPage() {
   return (
     <>
@@ -39,10 +29,6 @@ export default function WoodstockPage() {
           { name: "Service Areas", href: "/service-areas" },
           { name: "Woodstock, GA", href: "/service-areas/woodstock-ga" },
         ]}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
 
       {/* Hero */}
@@ -135,41 +121,6 @@ export default function WoodstockPage() {
           <p className="text-gray-600">
             From Marietta: Take I-575 N approximately 22 miles to Woodstock. Typical drive time is 30 minutes. We schedule Woodstock jobs early morning to avoid the afternoon I-575 backup.
           </p>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="py-16 px-6 bg-[#F7F8FA]">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="font-sans text-3xl font-extrabold text-[#0D1B2E] mb-8">
-            Frequently Asked Questions — Woodstock
-          </h2>
-          <div className="space-y-8">
-            <div>
-              <p className="font-bold text-[#0D1B2E] mb-2">
-                Do you work in Towne Lake and Eagle Watch?
-              </p>
-              <p className="text-gray-600 leading-relaxed">
-                Yes — we&rsquo;re very familiar with both communities. Towne Lake has a large concentration of mid-2000s homes ready for their first serious kitchen or bath renovation, and we&rsquo;ve completed work throughout that area.
-              </p>
-            </div>
-            <div>
-              <p className="font-bold text-[#0D1B2E] mb-2">
-                How do Cherokee County permits work for Woodstock projects?
-              </p>
-              <p className="text-gray-600 leading-relaxed">
-                We handle all permitting through Cherokee County and the City of Woodstock, depending on your specific location. We manage the process start to finish.
-              </p>
-            </div>
-            <div>
-              <p className="font-bold text-[#0D1B2E] mb-2">
-                Can you match new renovation work to my existing Woodstock home&rsquo;s style?
-              </p>
-              <p className="text-gray-600 leading-relaxed">
-                Always. We work within the existing architectural style of your home — whether that&rsquo;s the traditional look common in Towne Lake or something more contemporary.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 

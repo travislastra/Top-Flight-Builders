@@ -383,6 +383,10 @@ export const KENNESAW_FAQS: FAQ[] = [
     q: "Can you handle storm damage from trees near Kennesaw Mountain?",
     a: "Yes — tree falls and storm damage are part of our restoration scope. Kennesaw Mountain area homes are surrounded by mature trees, and high-wind events and ice storms cause damage regularly. We handle emergency tarping, structural assessment, and the full rebuild from framing through finished interior. We coordinate with insurance adjusters and document everything needed for a claim.",
   },
+  {
+    q: "What's the most common renovation you do in Kennesaw?",
+    a: "Kitchen remodels are most popular — many 1980s–90s Kennesaw kitchens still have original cabinetry and laminate countertops. We also do a significant number of master bath renovations and full-home flooring replacements.",
+  },
 ];
 
 export const ACWORTH_FAQS: FAQ[] = [
@@ -420,6 +424,10 @@ export const WOODSTOCK_FAQS: FAQ[] = [
   {
     q: "How do you handle HOA requirements for exterior work in Woodstock communities?",
     a: "We review HOA guidelines before any exterior work and advise on what requires HOA approval versus what falls within standard modification rights. In communities like Towne Lake, exterior paint colors, siding materials, and deck designs often require architectural review board approval. We factor the HOA review timeline into the project schedule when applicable.",
+  },
+  {
+    q: "Can you match new renovation work to my existing Woodstock home's style?",
+    a: "Always. We work within the existing architectural style of your home — whether that's the traditional look common in Towne Lake or something more contemporary.",
   },
 ];
 

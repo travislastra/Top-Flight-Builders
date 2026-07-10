@@ -22,16 +22,6 @@ export const metadata = {
   },
 };
 
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "GeneralContractor",
-  "@id": "https://topflightbuilders.net/#business",
-  name: "TopFlight Builders LLC",
-  url: "https://topflightbuilders.net",
-  telephone: "+1-404-369-7129",
-  areaServed: { "@type": "City", name: "East Cobb", addressRegion: "GA" },
-};
-
 const cityProjects = projects.filter((p) =>
   [
     "kitchen-laundry-remodel-east-cobb",
@@ -50,10 +40,6 @@ export default function EastCobbPage() {
           { name: "Service Areas", href: "/service-areas" },
           { name: "East Cobb, GA", href: "/service-areas/east-cobb-ga" },
         ]}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
 
       {/* Hero */}

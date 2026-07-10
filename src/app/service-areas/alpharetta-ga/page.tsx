@@ -20,16 +20,6 @@ export const metadata = {
   },
 };
 
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "GeneralContractor",
-  "@id": "https://topflightbuilders.net/#business",
-  name: "TopFlight Builders LLC",
-  url: "https://topflightbuilders.net",
-  telephone: "+1-404-369-7129",
-  areaServed: { "@type": "City", name: "Alpharetta", addressRegion: "GA" },
-};
-
 export default function AlpharettaPage() {
   return (
     <>
@@ -39,10 +29,6 @@ export default function AlpharettaPage() {
           { name: "Service Areas", href: "/service-areas" },
           { name: "Alpharetta, GA", href: "/service-areas/alpharetta-ga" },
         ]}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
 
       {/* Hero */}
@@ -135,41 +121,6 @@ export default function AlpharettaPage() {
           <p className="text-gray-600">
             From Marietta: Take I-285 E to GA-400 N, then exit at Haynes Bridge or Windward Pkwy — approximately 28 miles, 35–40 minutes in normal traffic. We schedule Alpharetta jobs to avoid peak GA-400 congestion.
           </p>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="py-16 px-6 bg-[#F7F8FA]">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="font-sans text-3xl font-extrabold text-[#0D1B2E] mb-8">
-            Frequently Asked Questions — Alpharetta
-          </h2>
-          <div className="space-y-8">
-            <div>
-              <p className="font-bold text-[#0D1B2E] mb-2">
-                Do you work in Windward and other large Alpharetta subdivisions?
-              </p>
-              <p className="text-gray-600 leading-relaxed">
-                Yes — Windward and similar large communities in Alpharetta are within our regular service area. Many of these homes were built in the 1990s and early 2000s and are excellent candidates for kitchen and bath renovations.
-              </p>
-            </div>
-            <div>
-              <p className="font-bold text-[#0D1B2E] mb-2">
-                What finish level do your Alpharetta projects typically involve?
-              </p>
-              <p className="text-gray-600 leading-relaxed">
-                Alpharetta clients generally want premium finishes — custom or semi-custom cabinetry, quartz or stone surfaces, upscale fixtures. We are fully equipped for that level and source from the same suppliers used by luxury builders.
-              </p>
-            </div>
-            <div>
-              <p className="font-bold text-[#0D1B2E] mb-2">
-                Do you handle Fulton County permits for Alpharetta projects?
-              </p>
-              <p className="text-gray-600 leading-relaxed">
-                Yes — we manage all Fulton County permitting and work within the City of Alpharetta&rsquo;s requirements as needed.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 

@@ -20,16 +20,6 @@ export const metadata = {
   },
 };
 
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "GeneralContractor",
-  "@id": "https://topflightbuilders.net/#business",
-  name: "TopFlight Builders LLC",
-  url: "https://topflightbuilders.net",
-  telephone: "+1-404-369-7129",
-  areaServed: { "@type": "City", name: "Acworth", addressRegion: "GA" },
-};
-
 export default function AcworthPage() {
   return (
     <>
@@ -39,10 +29,6 @@ export default function AcworthPage() {
           { name: "Service Areas", href: "/service-areas" },
           { name: "Acworth, GA", href: "/service-areas/acworth-ga" },
         ]}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
 
       {/* Hero */}
@@ -135,41 +121,6 @@ export default function AcworthPage() {
           <p className="text-gray-600">
             From Marietta: Take I-75 N approximately 20 miles to Acworth. Total drive time is typically 25–30 minutes depending on traffic. We serve Acworth regularly and schedule crews efficiently for the I-75 corridor.
           </p>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="py-16 px-6 bg-[#F7F8FA]">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="font-sans text-3xl font-extrabold text-[#0D1B2E] mb-8">
-            Frequently Asked Questions — Acworth
-          </h2>
-          <div className="space-y-8">
-            <div>
-              <p className="font-bold text-[#0D1B2E] mb-2">
-                Do you work in the Lake Acworth and Lake Allatoona communities?
-              </p>
-              <p className="text-gray-600 leading-relaxed">
-                Yes — including the waterfront neighborhoods and lake-adjacent subdivisions in the 30101 and 30102 zip codes. We&rsquo;re comfortable with the unique considerations that come with lakefront properties.
-              </p>
-            </div>
-            <div>
-              <p className="font-bold text-[#0D1B2E] mb-2">
-                Do you handle water damage in Acworth, especially from lake flooding?
-              </p>
-              <p className="text-gray-600 leading-relaxed">
-                Absolutely. Water intrusion and flood-related restoration is part of our core restoration service. We handle extraction, drying, mold remediation, and full rebuild.
-              </p>
-            </div>
-            <div>
-              <p className="font-bold text-[#0D1B2E] mb-2">
-                What&rsquo;s a typical project scope in Historic Downtown Acworth?
-              </p>
-              <p className="text-gray-600 leading-relaxed">
-                Older Acworth homes often need kitchen layout redesigns, updated plumbing and electrical alongside cosmetic renovations, and bathroom expansions. We enjoy working with the character of these older homes.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 

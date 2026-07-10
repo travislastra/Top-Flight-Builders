@@ -22,16 +22,6 @@ export const metadata = {
   },
 };
 
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "GeneralContractor",
-  "@id": "https://topflightbuilders.net/#business",
-  name: "TopFlight Builders LLC",
-  url: "https://topflightbuilders.net",
-  telephone: "+1-404-369-7129",
-  areaServed: { "@type": "City", name: "Marietta", addressRegion: "GA" },
-};
-
 const cityProjects = projects.filter((p) =>
   ["kitchen-remodel-marietta", "fallen-tree-remodel"].includes(p.slug)
 );
@@ -45,10 +35,6 @@ export default function MariettaPage() {
           { name: "Service Areas", href: "/service-areas" },
           { name: "Marietta, GA", href: "/service-areas/marietta-ga" },
         ]}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
 
       {/* Hero */}

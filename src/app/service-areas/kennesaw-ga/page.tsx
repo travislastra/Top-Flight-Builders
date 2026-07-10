@@ -20,16 +20,6 @@ export const metadata = {
   },
 };
 
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "GeneralContractor",
-  "@id": "https://topflightbuilders.net/#business",
-  name: "TopFlight Builders LLC",
-  url: "https://topflightbuilders.net",
-  telephone: "+1-404-369-7129",
-  areaServed: { "@type": "City", name: "Kennesaw", addressRegion: "GA" },
-};
-
 export default function KennesawPage() {
   return (
     <>
@@ -39,10 +29,6 @@ export default function KennesawPage() {
           { name: "Service Areas", href: "/service-areas" },
           { name: "Kennesaw, GA", href: "/service-areas/kennesaw-ga" },
         ]}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
 
       {/* Hero */}
@@ -135,41 +121,6 @@ export default function KennesawPage() {
           <p className="text-gray-600">
             From Marietta: Head north on US-41 (Cobb Pkwy) or take I-75 N to Barrett Pkwy W. Kennesaw is approximately 12 miles from our Marietta HQ — about 20 minutes in normal traffic.
           </p>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="py-16 px-6 bg-[#F7F8FA]">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="font-sans text-3xl font-extrabold text-[#0D1B2E] mb-8">
-            Frequently Asked Questions — Kennesaw
-          </h2>
-          <div className="space-y-8">
-            <div>
-              <p className="font-bold text-[#0D1B2E] mb-2">
-                Do you serve the Kennesaw Mountain area neighborhoods?
-              </p>
-              <p className="text-gray-600 leading-relaxed">
-                Yes — we work throughout Kennesaw including the neighborhoods surrounding the Battlefield Park, the Barrett Pkwy corridor, and the Stilesboro Road area.
-              </p>
-            </div>
-            <div>
-              <p className="font-bold text-[#0D1B2E] mb-2">
-                What&rsquo;s the most common renovation you do in Kennesaw?
-              </p>
-              <p className="text-gray-600 leading-relaxed">
-                Kitchen remodels are most popular — many 1980s–90s Kennesaw kitchens still have original cabinetry and laminate countertops that are overdue for an update. We also do a significant number of master bath renovations and full-home flooring replacements.
-              </p>
-            </div>
-            <div>
-              <p className="font-bold text-[#0D1B2E] mb-2">
-                Can you handle storm damage from tree falls common after Kennesaw Mountain storms?
-              </p>
-              <p className="text-gray-600 leading-relaxed">
-                Yes. Storm damage restoration is part of our core offering — we handle everything from emergency tarping through structural repair and final finish work.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 
