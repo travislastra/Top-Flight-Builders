@@ -69,6 +69,12 @@ export default async function BlogPostPage({ params }: Props) {
     "@type": "BlogPosting",
     headline: post.title,
     description: post.excerpt,
+    image: {
+      "@type": "ImageObject",
+      url: `${BASE_URL}/images/bathroom-remodel-frameless-glass-shower-marietta-ga.jpg`,
+      width: 1200,
+      height: 630,
+    },
     datePublished: isoDate,
     dateModified: modifiedDate,
     author: [
