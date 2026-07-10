@@ -12,7 +12,7 @@ import ServiceAreaLinks from "@/components/ServiceAreaLinks";
 import ServiceBlogLinks from "@/components/ServiceBlogLinks";
 
 export const metadata = {
-  title: "Bathroom Remodeling in Marietta and Canton GA | TopFlight Builders",
+  title: "Bathroom Remodeling in Marietta and Canton GA",
   description: "Bathroom remodeling in Marietta and Canton, GA by TopFlight Builders. Spa showers, frameless glass, custom tile, and vanities. Licensed, insured, 50+ five-star reviews. Free estimate: (404) 369-7129.",
   alternates: {
     canonical: "https://topflightbuilders.net/services/bathroom-remodeling",
@@ -37,7 +37,7 @@ export default function BathroomPage() {
         <LogoWatermark />
         <div className="relative z-10">
           <p className="text-[#4A7FE8] font-semibold text-sm uppercase tracking-widest mb-3">Bathroom Remodeling</p>
-          <h1 className="font-sans text-5xl font-extrabold text-white mb-5">Bathroom Remodeling in Atlanta, GA</h1>
+          <h1 className="font-sans text-5xl font-extrabold text-white mb-5">Bathroom Remodeling in Marietta &amp; Canton, GA</h1>
           <p className="text-gray-300 text-lg max-w-xl mx-auto">Spa-inspired bathrooms with premium tile, custom showers, and expert craftsmanship.</p>
         </div>
       </section>

@@ -4,7 +4,7 @@ import LogoWatermark from "@/components/LogoWatermark";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata = {
-  title: "About TopFlight Builders | Marietta and Canton GA Remodeling",
+  title: "About Us | Marietta and Canton GA Remodeling",
   description: "TopFlight Builders is a locally owned remodeling contractor serving Marietta and Canton, GA. 20+ years combined experience in kitchens, baths, and full homes. Licensed, insured. (404) 369-7129.",
   alternates: {
     canonical: "https://topflightbuilders.net/about",

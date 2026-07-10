@@ -6,7 +6,7 @@ import { KENNESAW_FAQS } from "@/lib/faq-data";
 import LogoWatermark from "@/components/LogoWatermark";
 
 export const metadata = {
-  title: "Kennesaw GA Remodeling & Restoration Contractor | TopFlight Builders",
+  title: "Kennesaw GA Remodeling & Restoration Contractor",
   description:
     "Kitchen, bathroom, and home remodeling in Kennesaw, GA by TopFlight Builders. Serving Cobb County homeowners near Kennesaw Mountain. Licensed, insured, 50+ five-star reviews. (404) 369-7129.",
   alternates: {

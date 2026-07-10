@@ -6,7 +6,8 @@ import { posts } from "@/lib/blog-posts";
 import { CITIES, SERVICES } from "@/lib/service-city-data";
 
 const BASE = "https://topflightbuilders.net";
-const NOW = new Date();
+const SITE_LAUNCH = new Date("2026-05-21");
+const SERVICE_UPDATE = new Date("2026-06-15");
 
 // Service-area city pages (10 cities — includes Milton and Smyrna which are not in the matrix)
 const SERVICE_AREA_CITIES = [
@@ -25,33 +26,35 @@ const SERVICE_AREA_CITIES = [
 export default function sitemap(): MetadataRoute.Sitemap {
   // ---------- Core pages ----------
   const core: MetadataRoute.Sitemap = [
-    { url: BASE,                         lastModified: NOW, changeFrequency: "weekly",  priority: 1.0 },
-    { url: `${BASE}/contact`,            lastModified: NOW, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${BASE}/services`,           lastModified: NOW, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${BASE}/portfolio`,          lastModified: NOW, changeFrequency: "weekly",  priority: 0.8 },
-    { url: `${BASE}/testimonials`,       lastModified: NOW, changeFrequency: "monthly", priority: 0.75 },
-    { url: `${BASE}/about`,              lastModified: NOW, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${BASE}/blog`,               lastModified: NOW, changeFrequency: "weekly",  priority: 0.7 },
-    { url: `${BASE}/more-from-us`,       lastModified: NOW, changeFrequency: "monthly", priority: 0.5 },
-    { url: `${BASE}/privacy-policy`,     lastModified: NOW, changeFrequency: "yearly",  priority: 0.2 },
-    { url: `${BASE}/terms`,              lastModified: NOW, changeFrequency: "yearly",  priority: 0.2 },
+    { url: BASE,                         lastModified: SERVICE_UPDATE, changeFrequency: "weekly",  priority: 1.0 },
+    { url: `${BASE}/contact`,            lastModified: SITE_LAUNCH,   changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE}/services`,           lastModified: SERVICE_UPDATE, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE}/portfolio`,          lastModified: SERVICE_UPDATE, changeFrequency: "weekly",  priority: 0.8 },
+    { url: `${BASE}/testimonials`,       lastModified: SITE_LAUNCH,   changeFrequency: "monthly", priority: 0.75 },
+    { url: `${BASE}/about`,              lastModified: SITE_LAUNCH,   changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE}/blog`,               lastModified: SERVICE_UPDATE, changeFrequency: "weekly",  priority: 0.7 },
+    { url: `${BASE}/more-from-us`,       lastModified: SITE_LAUNCH,   changeFrequency: "monthly", priority: 0.5 },
+    { url: `${BASE}/privacy-policy`,     lastModified: SITE_LAUNCH,   changeFrequency: "yearly",  priority: 0.2 },
+    { url: `${BASE}/terms`,              lastModified: SITE_LAUNCH,   changeFrequency: "yearly",  priority: 0.2 },
   ];
 
   // ---------- Standalone service pages ----------
   const servicePages: MetadataRoute.Sitemap = [
-    { url: `${BASE}/services/kitchen-remodeling`,    lastModified: NOW, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${BASE}/services/bathroom-remodeling`,   lastModified: NOW, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${BASE}/services/full-home-remodeling`,  lastModified: NOW, changeFrequency: "monthly", priority: 0.85 },
-    { url: `${BASE}/services/basements-and-additions`, lastModified: NOW, changeFrequency: "monthly", priority: 0.85 },
-    { url: `${BASE}/services/restoration`,           lastModified: NOW, changeFrequency: "monthly", priority: 0.85 },
-    { url: `${BASE}/services/age-in-place`,          lastModified: NOW, changeFrequency: "monthly", priority: 0.85 },
-    { url: `${BASE}/services/commercial`,            lastModified: NOW, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE}/services/kitchen-remodeling`,      lastModified: SERVICE_UPDATE, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE}/services/bathroom-remodeling`,     lastModified: SERVICE_UPDATE, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE}/services/full-home-remodeling`,    lastModified: SERVICE_UPDATE, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${BASE}/services/basements-and-additions`, lastModified: SERVICE_UPDATE, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${BASE}/services/restoration`,             lastModified: SERVICE_UPDATE, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${BASE}/services/age-in-place`,            lastModified: SERVICE_UPDATE, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${BASE}/services/roofing`,                 lastModified: SERVICE_UPDATE, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${BASE}/services/decks`,                   lastModified: SERVICE_UPDATE, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${BASE}/services/commercial`,              lastModified: SITE_LAUNCH,   changeFrequency: "monthly", priority: 0.8 },
   ];
 
   // ---------- Service-area city pages ----------
   const serviceAreaPages: MetadataRoute.Sitemap = SERVICE_AREA_CITIES.map((city) => ({
     url: `${BASE}/service-areas/${city}`,
-    lastModified: NOW,
+    lastModified: SERVICE_UPDATE,
     changeFrequency: "monthly" as const,
     // Primary markets (Marietta, East Cobb) get slightly higher priority
     priority: city === "marietta-ga" || city === "east-cobb-ga" ? 0.85 : 0.8,
@@ -61,7 +64,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const matrixPages: MetadataRoute.Sitemap = SERVICES.flatMap((service) =>
     CITIES.map((city) => ({
       url: `${BASE}/services/${service.slug}/${city.slug}`,
-      lastModified: NOW,
+      lastModified: SITE_LAUNCH,
       changeFrequency: "monthly" as const,
       priority: 0.65,
     }))
@@ -70,7 +73,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // ---------- Project pages ----------
   const projectPages: MetadataRoute.Sitemap = projects.map((project) => ({
     url: `${BASE}/projects/${project.slug}`,
-    lastModified: NOW,
+    lastModified: SITE_LAUNCH,
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
@@ -78,7 +81,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // ---------- Blog posts ----------
   const blogPages: MetadataRoute.Sitemap = posts.map((post) => ({
     url: `${BASE}/blog/${post.slug}`,
-    lastModified: NOW,
+    lastModified: new Date(post.updatedDate ?? post.date),
     changeFrequency: "monthly" as const,
     priority: 0.65,
   }));

@@ -11,7 +11,7 @@ import ServiceAreaLinks from "@/components/ServiceAreaLinks";
 import ServiceBlogLinks from "@/components/ServiceBlogLinks";
 
 export const metadata = {
-  title: "Whole Home Remodeling in Marietta and East Cobb | TopFlight Builders",
+  title: "Whole Home Remodeling in Marietta and East Cobb",
   description: "Whole home remodeling in Marietta and Canton, GA by TopFlight Builders. Coordinated kitchens, baths, flooring, and full interior updates. Licensed, insured, 50+ five-star reviews. (404) 369-7129.",
   alternates: {
     canonical: "https://topflightbuilders.net/services/full-home-remodeling",
@@ -36,7 +36,7 @@ export default function FullHomePage() {
         <LogoWatermark />
         <div className="relative z-10">
           <p className="text-[#4A7FE8] font-semibold text-sm uppercase tracking-widest mb-3">Full Home Remodeling</p>
-          <h1 className="font-sans text-5xl font-extrabold text-white mb-5">Full Home Remodeling in Atlanta, GA</h1>
+          <h1 className="font-sans text-5xl font-extrabold text-white mb-5">Whole Home Remodeling in Marietta &amp; East Cobb, GA</h1>
           <p className="text-gray-300 text-lg max-w-xl mx-auto">Complete home renovations — cohesive design, seamless execution, stunning results.</p>
         </div>
       </section>

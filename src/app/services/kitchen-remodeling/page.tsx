@@ -12,7 +12,7 @@ import ServiceAreaLinks from "@/components/ServiceAreaLinks";
 import ServiceBlogLinks from "@/components/ServiceBlogLinks";
 
 export const metadata = {
-  title: "Kitchen Remodeling in Marietta GA | TopFlight Builders",
+  title: "Kitchen Remodeling in Marietta GA",
   description: "Kitchen remodeling in Marietta and Canton, GA by TopFlight Builders. Custom cabinetry, countertops, and layout redesign. Licensed, insured, 50+ five-star reviews. Free estimate: (404) 369-7129.",
   alternates: {
     canonical: "https://topflightbuilders.net/services/kitchen-remodeling",
@@ -37,7 +37,7 @@ export default function KitchenPage() {
         <LogoWatermark />
         <div className="relative z-10">
           <p className="text-[#4A7FE8] font-semibold text-sm uppercase tracking-widest mb-3">Kitchen Remodeling</p>
-          <h1 className="font-sans text-5xl font-extrabold text-white mb-5">Kitchen Remodeling in Atlanta, GA</h1>
+          <h1 className="font-sans text-5xl font-extrabold text-white mb-5">Kitchen Remodeling in Marietta, GA</h1>
           <p className="text-gray-300 text-lg max-w-xl mx-auto">Custom cabinetry, countertops, layout redesign — we build kitchens that work as beautifully as they look.</p>
         </div>
       </section>

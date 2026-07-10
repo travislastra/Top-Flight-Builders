@@ -8,7 +8,7 @@ import { COMMERCIAL_FAQS } from "@/lib/faq-data";
 import ServiceBlogLinks from "@/components/ServiceBlogLinks";
 
 export const metadata = {
-  title: "Commercial Construction and TI in Marietta GA | TopFlight Builders",
+  title: "Commercial Construction and TI in Marietta GA",
   description: "Commercial construction and tenant improvements in Marietta and Canton, GA by TopFlight Builders. Office, retail, and investment properties. Licensed, insured, 50+ five-star reviews. (404) 369-7129.",
   alternates: {
     canonical: "https://topflightbuilders.net/services/commercial",

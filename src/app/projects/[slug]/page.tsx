@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const project = projects.find((p) => p.slug === slug);
   if (!project) return {};
   return {
-    title: `${project.title} | TopFlight Builders`,
+    title: project.title,
     description: project.excerpt,
     alternates: {
       canonical: `${BASE_URL}/projects/${slug}`,

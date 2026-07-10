@@ -6,7 +6,7 @@ import FAQSection from "@/components/FAQSection";
 import { WOODSTOCK_FAQS } from "@/lib/faq-data";
 
 export const metadata = {
-  title: "Woodstock GA Remodeling & Restoration Contractor | TopFlight Builders",
+  title: "Woodstock GA Remodeling & Restoration Contractor",
   description:
     "Kitchen, bathroom, and whole-home remodeling in Woodstock, GA by TopFlight Builders. Serving Cherokee County families. Licensed, insured, 50+ five-star reviews. (404) 369-7129.",
   alternates: {

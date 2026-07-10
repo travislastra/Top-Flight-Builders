@@ -12,7 +12,7 @@ import ServiceAreaLinks from "@/components/ServiceAreaLinks";
 import ServiceBlogLinks from "@/components/ServiceBlogLinks";
 
 export const metadata = {
-  title: "ADA and Aging in Place Remodeling in Marietta GA | TopFlight Builders",
+  title: "ADA and Aging in Place Remodeling in Marietta GA",
   description: "ADA and aging in place remodeling in Marietta and Canton, GA by TopFlight Builders. Grab bars, zero-threshold showers, and wider doorways. Licensed, insured, 50+ five-star reviews. (404) 369-7129.",
   alternates: {
     canonical: "https://topflightbuilders.net/services/age-in-place",
@@ -103,7 +103,7 @@ export default function AgeInPlacePage() {
         <LogoWatermark />
         <div className="relative z-10">
           <p className="text-[#4A7FE8] font-semibold text-sm uppercase tracking-widest mb-3">Age in Place Remodeling</p>
-          <h1 className="font-sans text-5xl font-extrabold text-white mb-5">Age in Place Remodeling in Atlanta, GA</h1>
+          <h1 className="font-sans text-5xl font-extrabold text-white mb-5">Age in Place Remodeling in Marietta, GA</h1>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
             Stay in the home you love — safely and independently. We design and build ADA-compliant modifications that blend seamlessly with your existing home.
           </p>

@@ -6,7 +6,7 @@ import FAQSection from "@/components/FAQSection";
 import { ALPHARETTA_FAQS } from "@/lib/faq-data";
 
 export const metadata = {
-  title: "Alpharetta GA Remodeling & Restoration Contractor | TopFlight Builders",
+  title: "Alpharetta GA Remodeling & Restoration Contractor",
   description:
     "Kitchen, bathroom, and high-end home remodeling in Alpharetta, GA by TopFlight Builders. Serving Avalon area and surrounding Fulton County communities. Licensed, insured. (404) 369-7129.",
   alternates: {

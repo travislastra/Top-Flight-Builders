@@ -9,7 +9,7 @@ import ServiceAreaLinks from "@/components/ServiceAreaLinks";
 import ServiceBlogLinks from "@/components/ServiceBlogLinks";
 
 export const metadata = {
-  title: "Roofing Replacement & Repair in Marietta GA | TopFlight Builders",
+  title: "Roofing Replacement & Repair in Marietta GA",
   description: "Roof replacement and storm damage repair in Marietta and Greater Atlanta, GA by TopFlight Builders. GAF and Owens Corning shingles, insurance claim support. Licensed, insured. Free estimate: (404) 369-7129.",
   alternates: {
     canonical: "https://topflightbuilders.net/services/roofing",
@@ -32,7 +32,7 @@ export default function RoofingPage() {
         <LogoWatermark />
         <div className="relative z-10">
           <p className="text-[#4A7FE8] font-semibold text-sm uppercase tracking-widest mb-3">Roofing</p>
-          <h1 className="font-sans text-5xl font-extrabold text-white mb-5">Roofing Replacement &amp; Repair in Atlanta, GA</h1>
+          <h1 className="font-sans text-5xl font-extrabold text-white mb-5">Roofing Replacement &amp; Repair in Marietta, GA</h1>
           <p className="text-gray-300 text-lg max-w-xl mx-auto">Storm damage, aging roofs, and full replacements — we document, repair, and rebuild right.</p>
         </div>
       </section>

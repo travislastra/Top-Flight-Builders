@@ -5,7 +5,7 @@ import LogoWatermark from "@/components/LogoWatermark";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata = {
-  title: "Remodeling Portfolio | Marietta and Canton GA | TopFlight Builders",
+  title: "Remodeling Portfolio | Marietta and Canton GA",
   description: "Browse completed remodeling projects by TopFlight Builders in Marietta and Canton, GA. Kitchens, bathrooms, full homes, basements, and more. Licensed, insured, 50+ five-star reviews.",
   alternates: {
     canonical: "https://topflightbuilders.net/portfolio",

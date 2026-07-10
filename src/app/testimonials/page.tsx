@@ -5,7 +5,7 @@ import LogoWatermark from "@/components/LogoWatermark";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata = {
-  title: "5-Star Reviews | Marietta Remodeling Contractor | TopFlight Builders",
+  title: "5-Star Reviews | Marietta Remodeling Contractor",
   description: "Read 50+ five-star Google reviews from homeowners in Marietta and Canton, GA. TopFlight Builders delivers remodeling on time and on budget. Licensed, insured. Free estimate: (404) 369-7129.",
   alternates: {
     canonical: "https://topflightbuilders.net/testimonials",

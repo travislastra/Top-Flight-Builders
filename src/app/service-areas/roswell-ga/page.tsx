@@ -6,7 +6,7 @@ import FAQSection from "@/components/FAQSection";
 import { ROSWELL_FAQS } from "@/lib/faq-data";
 
 export const metadata = {
-  title: "Roswell GA Remodeling & Restoration Contractor | TopFlight Builders",
+  title: "Roswell GA Remodeling & Restoration Contractor",
   description:
     "Kitchen, bathroom, and whole-home remodeling in Roswell, GA by TopFlight Builders. Serving Historic Roswell and surrounding Fulton County communities. Licensed, insured. (404) 369-7129.",
   alternates: {

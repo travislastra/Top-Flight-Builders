@@ -9,7 +9,7 @@ import ServiceAreaLinks from "@/components/ServiceAreaLinks";
 import ServiceBlogLinks from "@/components/ServiceBlogLinks";
 
 export const metadata = {
-  title: "Deck Building & Replacement in Marietta GA | TopFlight Builders",
+  title: "Deck Building & Replacement in Marietta GA",
   description: "Deck building and replacement in Marietta and Greater Atlanta, GA by TopFlight Builders. Composite and pressure-treated decks, pergolas, and custom railings. Licensed, insured. Free estimate: (404) 369-7129.",
   alternates: {
     canonical: "https://topflightbuilders.net/services/decks",
@@ -32,7 +32,7 @@ export default function DecksPage() {
         <LogoWatermark />
         <div className="relative z-10">
           <p className="text-[#4A7FE8] font-semibold text-sm uppercase tracking-widest mb-3">Decks</p>
-          <h1 className="font-sans text-5xl font-extrabold text-white mb-5">Deck Building & Replacement in Atlanta, GA</h1>
+          <h1 className="font-sans text-5xl font-extrabold text-white mb-5">Deck Building &amp; Replacement in Marietta, GA</h1>
           <p className="text-gray-300 text-lg max-w-xl mx-auto">Composite and pressure-treated decks, custom railings, pergolas — built to code with full permitting and inspections.</p>
         </div>
       </section>

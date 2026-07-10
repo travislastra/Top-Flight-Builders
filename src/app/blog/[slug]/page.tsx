@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = posts.find((p) => p.slug === slug);
   if (!post) return {};
   return {
-    title: `${post.title} | TopFlight Builders`,
+    title: post.title,
     description: post.excerpt,
     alternates: {
       canonical: `${BASE_URL}/blog/${slug}`,
@@ -84,7 +84,7 @@ export default async function BlogPostPage({ params }: Props) {
       url: BASE_URL,
       logo: {
         "@type": "ImageObject",
-        url: `${BASE_URL}/logo.png`,
+        url: `${BASE_URL}/logo.webp`,
       },
     },
     mainEntityOfPage: {

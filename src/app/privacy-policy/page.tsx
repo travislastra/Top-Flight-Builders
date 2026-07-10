@@ -2,7 +2,7 @@ import Link from "next/link";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata = {
-  title: "Privacy Policy | TopFlight Builders",
+  title: "Privacy Policy",
   description: "Privacy Policy for TopFlight Builders LLC — how we collect, use, and protect your information, and disclosures required under California law including CIPA.",
   alternates: {
     canonical: "https://topflightbuilders.net/privacy-policy",

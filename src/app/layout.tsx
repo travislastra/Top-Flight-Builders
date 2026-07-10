@@ -76,7 +76,7 @@ const localBusinessSchema = {
   "name": "TopFlight Builders LLC",
   "alternateName": "TopFlight Builders",
   "url": DOMAIN,
-  "logo": `${DOMAIN}/logo.png`,
+  "logo": `${DOMAIN}/logo.webp`,
   "image": `${DOMAIN}/images/bathroom-remodel-frameless-glass-shower-marietta-ga.jpg`,
   "telephone": "+1-404-369-7129",
   "email": "Admin@TopFlightBuilders.net",

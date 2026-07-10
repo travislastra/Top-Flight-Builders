@@ -11,7 +11,7 @@ import ServiceAreaLinks from "@/components/ServiceAreaLinks";
 import ServiceBlogLinks from "@/components/ServiceBlogLinks";
 
 export const metadata = {
-  title: "Storm, Water and Fire Restoration in Marietta GA | TopFlight Builders",
+  title: "Storm, Water and Fire Restoration in Marietta GA",
   description: "Storm, water, and fire restoration in Marietta and Canton, GA by TopFlight Builders. Fast response, expert crews, full rebuild. Licensed, insured, 50+ five-star reviews. Free estimate: (404) 369-7129.",
   alternates: {
     canonical: "https://topflightbuilders.net/services/restoration",
@@ -36,7 +36,7 @@ export default function RestorationPage() {
         <LogoWatermark />
         <div className="relative z-10">
           <p className="text-[#4A7FE8] font-semibold text-sm uppercase tracking-widest mb-3">Restoration</p>
-          <h1 className="font-sans text-5xl font-extrabold text-white mb-5">Home Restoration Services in Atlanta, GA</h1>
+          <h1 className="font-sans text-5xl font-extrabold text-white mb-5">Storm, Water &amp; Fire Restoration in Marietta, GA</h1>
           <p className="text-gray-300 text-lg max-w-xl mx-auto">Expert restoration services for water damage, structural repairs, and full property recovery.</p>
         </div>
       </section>

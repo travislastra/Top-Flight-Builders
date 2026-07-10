@@ -318,6 +318,10 @@ export const MARIETTA_FAQS: FAQ[] = [
     q: "What is the most common renovation project TopFlight does in Marietta?",
     a: "Kitchen remodels in the 30062 and 30066 zip codes — specifically opening up 1980s galley-style layouts and modernizing cabinetry and countertops. We also do a significant number of full bathroom renovations and restoration projects following storm damage. Marietta's mix of home ages and price levels means we see the full range of project types more here than anywhere else.",
   },
+  {
+    q: "What types of homes do you work on in Marietta?",
+    a: "All types — from 1960s ranch homes near the Square to newer construction in the 30066 and 30062 zip codes. We adapt to the age, style, and structure of whatever home we're working on.",
+  },
 ];
 
 export const EAST_COBB_FAQS: FAQ[] = [

@@ -8,7 +8,7 @@ import ProjectCard from "@/components/ProjectCard";
 import { projects } from "@/lib/projects";
 
 export const metadata = {
-  title: "Marietta GA Remodeling & Restoration Contractor | TopFlight Builders",
+  title: "Marietta GA Remodeling & Restoration Contractor",
   description:
     "TopFlight Builders is Marietta's trusted remodeling contractor. Kitchens, bathrooms, full homes, and storm restoration in Marietta, GA. Licensed, insured, 50+ five-star reviews. (404) 369-7129.",
   alternates: {
@@ -142,41 +142,6 @@ export default function MariettaPage() {
           <p className="text-gray-600">
             N/A — this is our home city. Our crew is Marietta-based and knows every neighborhood. We can schedule your estimate quickly and mobilize without delay.
           </p>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="py-16 px-6 bg-[#F7F8FA]">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="font-sans text-3xl font-extrabold text-[#0D1B2E] mb-8">
-            Frequently Asked Questions — Marietta
-          </h2>
-          <div className="space-y-8">
-            <div>
-              <p className="font-bold text-[#0D1B2E] mb-2">
-                Do you pull permits in Cobb County and Marietta City?
-              </p>
-              <p className="text-gray-600 leading-relaxed">
-                Yes — we handle all permitting for both Cobb County and the City of Marietta. Our team knows the local inspectors and the process well, which helps keep your project on schedule.
-              </p>
-            </div>
-            <div>
-              <p className="font-bold text-[#0D1B2E] mb-2">
-                How quickly can you respond to storm or water damage in Marietta?
-              </p>
-              <p className="text-gray-600 leading-relaxed">
-                Our restoration team is based in Marietta and can typically be on-site within 24–48 hours of a damage call. We handle the full scope from emergency tarping and extraction through rebuild.
-              </p>
-            </div>
-            <div>
-              <p className="font-bold text-[#0D1B2E] mb-2">
-                What types of homes do you work on in Marietta?
-              </p>
-              <p className="text-gray-600 leading-relaxed">
-                All types — from 1960s ranch homes near the Square to newer construction in the 30066 and 30062 zip codes. We adapt to the age, style, and structure of whatever home we&rsquo;re working on.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 

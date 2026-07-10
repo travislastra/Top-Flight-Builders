@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const service = SERVICES.find((s) => s.slug === SERVICE_SLUG)!;
   if (!cityData) return {};
   return {
-    title: `${service.name} in ${cityData.name}, GA | TopFlight Builders`,
+    title: `${service.name} in ${cityData.name}, GA`,
     description: `${service.name} in ${cityData.name} and ${cityData.county} County, GA by TopFlight Builders. ${service.typicalRange.split(".")[0]}. Licensed, insured, 50+ five-star reviews. (404) 369-7129.`,
     alternates: {
       canonical: `https://topflightbuilders.net/services/${SERVICE_SLUG}/${city}`,

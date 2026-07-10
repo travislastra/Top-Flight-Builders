@@ -6,7 +6,7 @@ import FAQSection from "@/components/FAQSection";
 import { ACWORTH_FAQS } from "@/lib/faq-data";
 
 export const metadata = {
-  title: "Acworth GA Remodeling & Restoration Contractor | TopFlight Builders",
+  title: "Acworth GA Remodeling & Restoration Contractor",
   description:
     "Kitchen, bathroom, and home remodeling in Acworth, GA by TopFlight Builders. Serving Lake Acworth and Lake Allatoona communities. Licensed, insured, 50+ reviews. (404) 369-7129.",
   alternates: {

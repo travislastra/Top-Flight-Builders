@@ -6,7 +6,7 @@ import { CANTON_FAQS } from "@/lib/faq-data";
 import LogoWatermark from "@/components/LogoWatermark";
 
 export const metadata = {
-  title: "Canton GA Remodeling & Restoration Contractor | TopFlight Builders",
+  title: "Canton GA Remodeling & Restoration Contractor",
   description:
     "Kitchen, bathroom, and whole-home remodeling in Canton, GA by TopFlight Builders. Serving Cherokee County homeowners. Licensed, insured, 50+ five-star reviews. (404) 369-7129.",
   alternates: {

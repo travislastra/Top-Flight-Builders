@@ -12,7 +12,7 @@ import ServiceAreaLinks from "@/components/ServiceAreaLinks";
 import ServiceBlogLinks from "@/components/ServiceBlogLinks";
 
 export const metadata = {
-  title: "Basements and Home Additions in Marietta GA | TopFlight Builders",
+  title: "Basements and Home Additions in Marietta GA",
   description: "Basement finishing and home additions in Marietta and Canton, GA by TopFlight Builders. Full build-out from framing to final finish. Licensed, insured, 50+ five-star reviews. Free estimate: (404) 369-7129.",
   alternates: {
     canonical: "https://topflightbuilders.net/services/basements-and-additions",
@@ -37,7 +37,7 @@ export default function BasementsPage() {
         <LogoWatermark />
         <div className="relative z-10">
           <p className="text-[#4A7FE8] font-semibold text-sm uppercase tracking-widest mb-3">Basements & Additions</p>
-          <h1 className="font-sans text-5xl font-extrabold text-white mb-5">Basements & Additions in Atlanta, GA</h1>
+          <h1 className="font-sans text-5xl font-extrabold text-white mb-5">Basements &amp; Home Additions in Marietta, GA</h1>
           <p className="text-gray-300 text-lg max-w-xl mx-auto">Expand your living space — finished basements, home additions, and new square footage built to match your home.</p>
         </div>
       </section>

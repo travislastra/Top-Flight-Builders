@@ -6,7 +6,7 @@ import FAQSection from "@/components/FAQSection";
 import { SMYRNA_FAQS } from "@/lib/faq-data";
 
 export const metadata = {
-  title: "Smyrna GA Remodeling & Restoration Contractor | TopFlight Builders",
+  title: "Smyrna GA Remodeling & Restoration Contractor",
   description:
     "Kitchen, bathroom, and whole-home remodeling in Smyrna, GA by TopFlight Builders. Serving Smyrna Village, Vinings, and Cumberland communities. Licensed, insured. (404) 369-7129.",
   alternates: {

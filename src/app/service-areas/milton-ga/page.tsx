@@ -6,7 +6,7 @@ import FAQSection from "@/components/FAQSection";
 import { MILTON_FAQS } from "@/lib/faq-data";
 
 export const metadata = {
-  title: "Milton GA Remodeling & Restoration Contractor | TopFlight Builders",
+  title: "Milton GA Remodeling & Restoration Contractor",
   description:
     "Kitchen, bathroom, and luxury home remodeling in Milton, GA by TopFlight Builders. Serving Crabapple and Birmingham Crossroads communities. Licensed, insured. (404) 369-7129.",
   alternates: {
