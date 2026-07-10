@@ -30,14 +30,6 @@ export const metadata: Metadata = {
   },
   description:
     "Remodeling and restoration in Marietta and Canton, GA by TopFlight Builders. Kitchen, bath, and full-home experts. Licensed, insured, 50+ five-star reviews. Free estimate: (404) 369-7129.",
-  keywords: [
-    "kitchen remodeling Atlanta",
-    "bathroom remodeling Atlanta",
-    "home remodeling Marietta GA",
-    "general contractor Atlanta",
-    "remodeling company Atlanta GA",
-    "TopFlight Builders",
-  ],
   alternates: {
     canonical: BASE_URL + "/",
   },
@@ -54,7 +46,7 @@ export const metadata: Metadata = {
         url: BASE_URL + "/images/bathroom-remodel-frameless-glass-shower-marietta-ga.jpg",
         width: 1200,
         height: 630,
-        alt: "TopFlight Builders — Atlanta remodeling experts",
+        alt: "TopFlight Builders — Marietta remodeling experts",
       },
     ],
   },
@@ -67,17 +59,15 @@ export const metadata: Metadata = {
   },
 };
 
-const DOMAIN = "https://topflightbuilders.net";
-
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "GeneralContractor",
-  "@id": `${DOMAIN}/#business`,
+  "@id": `${BASE_URL}/#business`,
   "name": "TopFlight Builders LLC",
   "alternateName": "TopFlight Builders",
-  "url": DOMAIN,
-  "logo": `${DOMAIN}/logo.webp`,
-  "image": `${DOMAIN}/images/bathroom-remodel-frameless-glass-shower-marietta-ga.jpg`,
+  "url": BASE_URL,
+  "logo": `${BASE_URL}/logo.webp`,
+  "image": `${BASE_URL}/images/bathroom-remodel-frameless-glass-shower-marietta-ga.jpg`,
   "telephone": "+1-404-369-7129",
   "email": "Admin@TopFlightBuilders.net",
   "priceRange": "$$-$$$",
@@ -114,7 +104,7 @@ const localBusinessSchema = {
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5.0",
-    "reviewCount": "64",
+    "reviewCount": "50",
     "bestRating": "5",
     "worstRating": "1",
   },
@@ -126,6 +116,7 @@ const localBusinessSchema = {
     "https://www.yelp.com/biz/topflight-builders-marietta-2",
     "https://www.bbb.org/us/ga/marietta/profile/construction-services/topflight-builders-llc-0443-28183084",
     "https://maps.app.goo.gl/G4ZZUXj5a9LV4m8TA",
+    "https://share.google/JqYAUZl0fRwDKEBHm",
   ],
 };
 
