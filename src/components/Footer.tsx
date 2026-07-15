@@ -34,6 +34,7 @@ const company = [
   { label: "More From Us", href: "/more-from-us" },
   { label: "Testimonials", href: "/testimonials" },
   { label: "Blog", href: "/blog" },
+  { label: "AI Info", href: "/ai-info" },
 ];
 
 export default function Footer() {
