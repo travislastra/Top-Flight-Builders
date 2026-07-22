@@ -1,10 +1,10 @@
-import Link from "next/link";
 import ContactBanner from "@/components/ContactBanner";
 import LogoWatermark from "@/components/LogoWatermark";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ServiceSchema from "@/components/ServiceSchema";
 import FAQSection from "@/components/FAQSection";
 import { DECK_FAQS } from "@/lib/faq-data";
+import EstimateCtaLink from "@/components/EstimateCtaLink";
 import ServiceAreaLinks from "@/components/ServiceAreaLinks";
 import ServiceBlogLinks from "@/components/ServiceBlogLinks";
 
@@ -67,9 +67,9 @@ export default function DecksPage() {
             ))}
           </div>
           <div className="text-center">
-            <Link href="/contact" className="bg-[#1E4FBF] hover:bg-[#163A99] text-white font-bold px-8 py-4 rounded-lg transition-colors uppercase tracking-wide text-sm">
+            <EstimateCtaLink source="decks_hub_cta" className="bg-[#1E4FBF] hover:bg-[#163A99] text-white font-bold px-8 py-4 rounded-lg transition-colors uppercase tracking-wide text-sm">
               Get a Free Deck Estimate
-            </Link>
+            </EstimateCtaLink>
           </div>
         </div>
       </section>

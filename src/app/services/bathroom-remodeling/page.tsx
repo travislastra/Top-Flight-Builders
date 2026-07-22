@@ -8,6 +8,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ServiceSchema from "@/components/ServiceSchema";
 import FAQSection from "@/components/FAQSection";
 import { BATHROOM_FAQS } from "@/lib/faq-data";
+import EstimateCtaLink from "@/components/EstimateCtaLink";
 import ServiceAreaLinks from "@/components/ServiceAreaLinks";
 import ServiceBlogLinks from "@/components/ServiceBlogLinks";
 
@@ -71,9 +72,9 @@ export default function BathroomPage() {
                 </li>
               ))}
             </ul>
-            <Link href="/contact" className="bg-[#1E4FBF] hover:bg-[#163A99] text-white font-bold px-7 py-3.5 rounded-lg transition-colors uppercase tracking-wide text-sm">
+            <EstimateCtaLink source="bath_hub_cta" className="bg-[#1E4FBF] hover:bg-[#163A99] text-white font-bold px-7 py-3.5 rounded-lg transition-colors uppercase tracking-wide text-sm">
               Get a Free Estimate
-            </Link>
+            </EstimateCtaLink>
           </div>
         </div>
       </section>

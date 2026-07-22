@@ -7,6 +7,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ServiceSchema from "@/components/ServiceSchema";
 import FAQSection from "@/components/FAQSection";
 import { FULL_HOME_FAQS } from "@/lib/faq-data";
+import EstimateCtaLink from "@/components/EstimateCtaLink";
 import ServiceAreaLinks from "@/components/ServiceAreaLinks";
 import ServiceBlogLinks from "@/components/ServiceBlogLinks";
 
@@ -62,9 +63,9 @@ export default function FullHomePage() {
               </div>
             ))}
           </div>
-          <Link href="/contact" className="bg-[#1E4FBF] hover:bg-[#163A99] text-white font-bold px-8 py-4 rounded-lg transition-colors uppercase tracking-wide text-sm">
+          <EstimateCtaLink source="full_home_hub_cta" className="bg-[#1E4FBF] hover:bg-[#163A99] text-white font-bold px-8 py-4 rounded-lg transition-colors uppercase tracking-wide text-sm">
             Start Your Renovation
-          </Link>
+          </EstimateCtaLink>
         </div>
       </section>
 
