@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Img from "@/components/Img";
 import ContactBanner from "@/components/ContactBanner";
 import ProjectCard from "@/components/ProjectCard";
@@ -8,6 +7,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ServiceSchema from "@/components/ServiceSchema";
 import FAQSection from "@/components/FAQSection";
 import { AGE_IN_PLACE_FAQS } from "@/lib/faq-data";
+import EstimateCtaLink from "@/components/EstimateCtaLink";
 import ServiceAreaLinks from "@/components/ServiceAreaLinks";
 import ServiceBlogLinks from "@/components/ServiceBlogLinks";
 
@@ -139,9 +139,9 @@ export default function AgeInPlacePage() {
                 </div>
               ))}
             </div>
-            <Link href="/contact" className="bg-[#1E4FBF] hover:bg-[#163A99] text-white font-bold px-7 py-3.5 rounded-lg transition-colors uppercase tracking-wide text-sm">
+            <EstimateCtaLink source="age_in_place_hub_cta" className="bg-[#1E4FBF] hover:bg-[#163A99] text-white font-bold px-7 py-3.5 rounded-lg transition-colors uppercase tracking-wide text-sm">
               Schedule a Walkthrough
-            </Link>
+            </EstimateCtaLink>
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-md">

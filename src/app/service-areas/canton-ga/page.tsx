@@ -85,6 +85,7 @@ export default function CantonPage() {
               { label: "Roofing in Canton", href: "/services/roofing/canton-ga" },
               { label: "Decks in Canton", href: "/services/decks/canton-ga" },
               { label: "Age in Place Remodeling in Canton", href: "/services/age-in-place/canton-ga" },
+              { label: "Commercial &amp; Tenant Improvement in Canton", href: "/services/commercial/canton-ga" },
             ].map((s) => (
               <li key={s.href} className="flex items-center gap-3">
                 <svg className="w-5 h-5 text-[#1E4FBF] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { trackEvent } from "@/components/GoogleAnalytics";
 
 export default function FloatingEstimateCta() {
   const pathname = usePathname();
@@ -10,6 +11,7 @@ export default function FloatingEstimateCta() {
   return (
     <Link
       href="/contact"
+      onClick={() => { trackEvent("cta_click", { element: "floating_estimate" }); trackEvent("generate_lead", { source: "floating_cta" }); }}
       className={[
         "fixed z-40 right-4 lg:right-6",
         // On mobile: sits above the 56px call bar + 8px gap

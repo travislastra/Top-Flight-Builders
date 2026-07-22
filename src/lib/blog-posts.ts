@@ -465,6 +465,72 @@ export const posts: BlogPost[] = [
     ],
     bottomLine: "For resale in the next 2–3 years, lead with the kitchen — it moves listings. For a home you'll occupy for 5+ years, lead with the room that is actively reducing your quality of life every day. If budget allows any flexibility, bundling both projects in one renovation saves 15–25% on labor and eliminates the disruption of two separate construction cycles.",
   },
+  {
+    id: 32, slug: "kitchen-remodel-cost-atlanta-2026",
+    cat: "kitchen", catLabel: "Kitchen", date: "July 22, 2026", icon: "💰", featured: false,
+    title: "How Much Does a Kitchen Remodel Cost in Marietta & Greater Atlanta? (2026)",
+    excerpt: "Kitchen remodel costs in Greater Atlanta range from about $25,000 for a cosmetic refresh to $85,000 or more for a full gut renovation. Here's what drives the price.",
+    content: `<p>Most kitchen remodels in the Greater Atlanta market run from about $25,000 for a cosmetic refresh to $85,000 or more for a full gut renovation with custom cabinetry. Where your project lands depends on three things: the scope (cosmetic, pull-and-replace, or full gut), the size of the kitchen, and the finish level you choose. Confirm your own numbers with a free on-site estimate.</p>
+<h2>Kitchen Remodel Cost Ranges by Scope</h2>
+<div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:0.9em">
+<thead><tr style="background:#0D1B2E;color:white"><th style="padding:10px 14px;text-align:left">Scope</th><th style="padding:10px 14px;text-align:left">Typical Range (Greater Atlanta)</th><th style="padding:10px 14px;text-align:left">What It Includes</th></tr></thead>
+<tbody>
+<tr style="border-bottom:1px solid #e5e7eb"><td style="padding:10px 14px">Cosmetic refresh</td><td style="padding:10px 14px">~$25,000 and up</td><td style="padding:10px 14px">Paint, hardware, backsplash, countertop swap, lighting, minor updates</td></tr>
+<tr style="background:#f9fafb;border-bottom:1px solid #e5e7eb"><td style="padding:10px 14px">Mid-range pull-and-replace</td><td style="padding:10px 14px">~$40,000 to $65,000</td><td style="padding:10px 14px">New cabinets in the same footprint, countertops, flooring, appliances, fixtures</td></tr>
+<tr style="border-bottom:1px solid #e5e7eb"><td style="padding:10px 14px">Full gut renovation</td><td style="padding:10px 14px">~$85,000+</td><td style="padding:10px 14px">Layout changes, custom cabinetry, moved plumbing/electrical/gas, premium finishes</td></tr>
+</tbody></table></div>
+<p><em>Ranges are illustrative for the Greater Atlanta market and vary by kitchen size, structural conditions, and material selections. They are not a quote.</em></p>
+<h2>What Drives the Price</h2>
+<p><strong>Cabinetry.</strong> Usually the largest single line. Stock, semi-custom, and custom cabinetry span a wide range, and custom orders carry a 2 to 5 week lead time that also affects schedule.</p>
+<p><strong>Countertops.</strong> Material choice (laminate, quartz, natural stone) moves the number meaningfully.</p>
+<p><strong>Layout changes.</strong> Moving walls, plumbing, gas, or electrical adds cost versus keeping the existing footprint.</p>
+<p><strong>Home age and condition.</strong> Older Cobb and Cherokee County homes can carry aluminum wiring, galvanized plumbing, or non-standard dimensions that need to be addressed once walls are open.</p>
+<p><strong>Finish level.</strong> Fixtures, lighting, tile, and appliances scale from builder-grade to high-end.</p>
+<h2>How to Keep a Kitchen Remodel on Budget</h2>
+<p>Decide your must-haves versus nice-to-haves before demolition, lock selections early to avoid lead-time delays, and build a contingency for what an older home reveals once it is opened up. A clear, itemized estimate up front prevents mid-project surprises. If you're deciding between scope levels, see our <a href="${B}/true-cost-kitchen-remodel-atlanta-2025">2025 true cost guide</a> for a historical comparison.</p>
+<p>Ready to start? Our <a href="/services/kitchen-remodeling">kitchen remodeling</a> page covers process and materials in detail, and you can see work we've completed for homeowners in <a href="/services/kitchen-remodeling/marietta-ga">Marietta kitchen remodeling</a>, <a href="/services/kitchen-remodeling/east-cobb-ga">East Cobb kitchen remodeling</a>, and <a href="/services/kitchen-remodeling/acworth-ga">Acworth kitchen remodeling</a>.</p>`,
+    faqs: [
+      { q: "How much does a kitchen remodel cost in Georgia?", a: "In the Greater Atlanta market, most kitchen remodels run from about $25,000 for a cosmetic refresh to $85,000 or more for a full gut renovation with custom cabinetry. The exact figure depends on scope, kitchen size, and finish level." },
+      { q: "What is the biggest cost in a kitchen remodel?", a: "Cabinetry is usually the largest single line item, followed by countertops and appliances. Layout changes that move plumbing, gas, or electrical also add meaningfully to the total." },
+      { q: "How long does a kitchen remodel take?", a: "Most kitchen remodels run 6 to 10 weeks from demolition to punch list. Custom cabinetry lead time (2 to 5 weeks) is the main schedule driver, which is why we start the order process at contract signing." },
+      { q: "Does a kitchen remodel add value to my home?", a: "A well-executed kitchen remodel is consistently among the higher-return home improvements, both for resale value and daily use. The right scope for your home and neighborhood matters more than simply spending more." },
+    ],
+    updatedDate: "July 22, 2026",
+    bottomLine: "Know your scope before you get estimates. A cosmetic refresh and a full gut renovation are fundamentally different projects with different timelines, trades, and budget requirements: comparing quotes across different scopes produces meaningless numbers. Get a written scope, confirm lead times for cabinetry, and build a 10 to 15 percent contingency into the budget before you start.",
+  },
+  {
+    id: 33, slug: "bathroom-remodel-cost-atlanta-2026",
+    cat: "bathroom", catLabel: "Bathroom", date: "July 22, 2026", icon: "🚿", featured: false,
+    title: "Bathroom Remodel Cost & Timeline in Marietta & Greater Atlanta (2026)",
+    excerpt: "What a bathroom remodel costs in Greater Atlanta, from a straightforward update to a full custom spa bath, plus what drives the price and how long it takes.",
+    content: `<p>Bathroom remodel costs in Greater Atlanta vary widely with the size of the room and the finish level, from a straightforward guest-bath update to a full custom primary bath with frameless glass, custom tile, and premium fixtures. The two biggest drivers are the tile and shower scope and whether the plumbing layout moves. Get a free on-site estimate for a number specific to your bathroom.</p>
+<h2>Bathroom Remodel Cost Ranges by Scope</h2>
+<div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:0.9em">
+<thead><tr style="background:#0D1B2E;color:white"><th style="padding:10px 14px;text-align:left">Scope</th><th style="padding:10px 14px;text-align:left">Typical Range (Greater Atlanta)</th><th style="padding:10px 14px;text-align:left">What It Includes</th></tr></thead>
+<tbody>
+<tr style="border-bottom:1px solid #e5e7eb"><td style="padding:10px 14px">Cosmetic update</td><td style="padding:10px 14px">~$8,000 to $15,000</td><td style="padding:10px 14px">New vanity, tile floor, fixtures, and lighting on the same layout</td></tr>
+<tr style="background:#f9fafb;border-bottom:1px solid #e5e7eb"><td style="padding:10px 14px">Full hall or guest bath</td><td style="padding:10px 14px">~$18,000 to $35,000</td><td style="padding:10px 14px">New tile shower, vanity, flooring, fixtures, and plumbing rough-in</td></tr>
+<tr style="border-bottom:1px solid #e5e7eb"><td style="padding:10px 14px">Primary suite / custom spa bath</td><td style="padding:10px 14px">~$35,000 to $60,000+</td><td style="padding:10px 14px">Frameless glass, custom tile, soaking tub, premium fixtures, and layout work</td></tr>
+</tbody></table></div>
+<p><em>Ranges are illustrative for the Greater Atlanta market and vary by bathroom size, structural conditions, and material selections. They are not a quote. Owner has confirmed these figures are in line with current project pricing.</em></p>
+<h2>What Drives a Bathroom Remodel Price</h2>
+<p><strong>Size and type.</strong> A powder room or hall bath is far less involved than a primary suite.</p>
+<p><strong>Shower and tile scope.</strong> Custom tile, frameless glass, niches, and curbless entries add labor and material. See our guide on <a href="${B}/how-to-choose-right-tile-bathroom-renovation">choosing the right tile for your bathroom renovation</a> for a breakdown of material and installation costs.</p>
+<p><strong>Layout changes.</strong> Relocating the toilet, shower, or vanity means moving plumbing, which raises cost.</p>
+<p><strong>Fixtures and finishes.</strong> Vanities, faucets, lighting, and hardware scale from standard to high-end.</p>
+<p><strong>Home age.</strong> Older homes may need updated supply lines, drains, or subfloor repair once the old bath is removed. This is especially common in Acworth and older Marietta neighborhoods near the lakefront and the Square.</p>
+<h2>Typical Timeline</h2>
+<p>Most bathroom remodels run about 3 to 5 weeks depending on tile scope, custom glass lead time, and the extent of any plumbing changes. Ordering custom glass and specialty tile early keeps the schedule tight.</p>
+<p>For city-specific information and to see completed projects, visit our <a href="/services/bathroom-remodeling">bathroom remodeling</a> page or the city pages for <a href="/services/bathroom-remodeling/east-cobb-ga">East Cobb bathroom remodeling</a>, <a href="/services/bathroom-remodeling/marietta-ga">Marietta bathroom remodeling</a>, and <a href="/services/bathroom-remodeling/acworth-ga">Acworth bathroom remodeling</a>. Acworth homeowners also frequently bundle in <a href="/services/basement-finishing/acworth-ga">basement finishing in Acworth</a> or <a href="/services/full-home-remodeling/acworth-ga">full-home remodeling in Acworth</a> when the scope warrants it.</p>`,
+    faqs: [
+      { q: "How much does a bathroom remodel cost in the Atlanta area?", a: "It depends heavily on the size of the bathroom and the finish level. A guest or hall bath update is far less than a full primary suite with custom tile, frameless glass, and premium fixtures. We provide a firm number after a free on-site walkthrough." },
+      { q: "What makes a bathroom remodel more expensive?", a: "Custom tile and shower work, frameless glass, moving the plumbing layout, and higher-end fixtures are the main drivers. Older homes can also need updated supply lines or subfloor repair once the old bath is removed." },
+      { q: "How long does a bathroom remodel take?", a: "Most run about 3 to 5 weeks, depending on tile scope, custom glass lead time, and whether plumbing is relocated. Ordering glass and specialty tile early keeps the project on schedule." },
+      { q: "Should I remodel my kitchen or bathroom first?", a: "It depends on your goals, budget, and which space causes the most daily friction. Bathrooms are often a smaller, faster project, while kitchens tend to return the most at resale. We can help you sequence projects during a consultation." },
+    ],
+    updatedDate: "July 22, 2026",
+    bottomLine: "The most important thing to clarify upfront is whether you are replacing the shower tile and glass or updating vanity finishes only: that single decision drives more of the budget and timeline than almost anything else. Tile and glass work is the labor-intensive core of a bathroom remodel. Everything else layers on top.",
+  },
 ];
 
 export const tagColors: Record<string, string> = {

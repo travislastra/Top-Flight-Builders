@@ -5,6 +5,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ServiceSchema from "@/components/ServiceSchema";
 import FAQSection from "@/components/FAQSection";
 import { COMMERCIAL_FAQS } from "@/lib/faq-data";
+import EstimateCtaLink from "@/components/EstimateCtaLink";
 import ServiceBlogLinks from "@/components/ServiceBlogLinks";
 
 export const metadata = {
@@ -43,7 +44,8 @@ export default function CommercialPage() {
 
       <section className="py-20 px-6 bg-white">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-gray-600 text-lg leading-relaxed mb-10">Commercial remodeling means renovating or building out commercial spaces — office environments, retail locations, investment properties, and multi-unit buildings — to meet operational, aesthetic, or code requirements. TopFlight Builders handles commercial projects throughout Greater Atlanta, from office renovations and retail build-outs to property management upgrades and investment property work, on time and within budget.</p>
+          <p className="text-gray-600 text-lg leading-relaxed mb-4">Commercial remodeling means renovating or building out commercial spaces such as office environments, retail locations, investment properties, and multi-unit buildings, to meet operational, aesthetic, or code requirements. TopFlight Builders handles commercial projects throughout Greater Atlanta, from office renovations and retail build-outs to property management upgrades and investment property work, on time and within budget.</p>
+          <p className="text-gray-600 mb-10">Our <Link href="/services/commercial/canton-ga" className="text-[#1E4FBF] hover:underline font-semibold">commercial construction in Canton, GA</Link> is particularly active given Cherokee County&apos;s growing business base. See our city pages below for permitting context and local market detail.</p>
           <div className="grid md:grid-cols-2 gap-5 mb-10">
             {["Office renovations & build-outs", "Retail space remodeling", "Property management projects", "Investment property renovations", "Multi-unit upgrades", "Commercial restoration"].map((item) => (
               <div key={item} className="flex items-center gap-3 bg-[#F7F8FA] rounded-xl p-5 border border-gray-100">
@@ -54,9 +56,34 @@ export default function CommercialPage() {
               </div>
             ))}
           </div>
-          <Link href="/contact" className="bg-[#1E4FBF] hover:bg-[#163A99] text-white font-bold px-8 py-4 rounded-lg transition-colors uppercase tracking-wide text-sm">
+          <EstimateCtaLink source="commercial_hub_cta" className="bg-[#1E4FBF] hover:bg-[#163A99] text-white font-bold px-8 py-4 rounded-lg transition-colors uppercase tracking-wide text-sm">
             Request a Commercial Quote
-          </Link>
+          </EstimateCtaLink>
+        </div>
+      </section>
+
+      {/* City-specific commercial pages */}
+      <section className="py-16 px-6 bg-[#F7F8FA]">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-sans text-2xl font-extrabold text-[#0D1B2E] mb-3">Commercial Work by City</h2>
+          <p className="text-gray-600 mb-8">We serve businesses across the northwest Atlanta metro. See city-specific information for permitting, local corridors, and what to expect.</p>
+          <ul className="grid sm:grid-cols-2 gap-3">
+            {[
+              { label: "Commercial TI in Canton, GA", href: "/services/commercial/canton-ga" },
+              { label: "Commercial TI in Marietta, GA", href: "/services/commercial/marietta-ga" },
+              { label: "Commercial TI in Kennesaw, GA", href: "/services/commercial/kennesaw-ga" },
+              { label: "Commercial TI in Acworth, GA", href: "/services/commercial/acworth-ga" },
+              { label: "Commercial TI in Woodstock, GA", href: "/services/commercial/woodstock-ga" },
+              { label: "Commercial TI in East Cobb, GA", href: "/services/commercial/east-cobb-ga" },
+            ].map((item) => (
+              <li key={item.href} className="flex items-center gap-3">
+                <svg className="w-5 h-5 text-[#1E4FBF] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <Link href={item.href} className="text-[#1E4FBF] font-semibold hover:underline text-sm">{item.label}</Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 

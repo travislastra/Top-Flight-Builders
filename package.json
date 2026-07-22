@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "check:titles": "grep -r '<title>[^<]*TopFlight Builders[^<]*TopFlight Builders[^<]*</title>' out/ && echo 'ERROR: title doubling detected' && exit 1 || echo 'OK: no title doubling'"
   },
   "dependencies": {
     "next": "16.2.6",

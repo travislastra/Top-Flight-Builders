@@ -8,6 +8,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ServiceSchema from "@/components/ServiceSchema";
 import FAQSection from "@/components/FAQSection";
 import { KITCHEN_FAQS } from "@/lib/faq-data";
+import EstimateCtaLink from "@/components/EstimateCtaLink";
 import ServiceAreaLinks from "@/components/ServiceAreaLinks";
 import ServiceBlogLinks from "@/components/ServiceBlogLinks";
 
@@ -50,6 +51,7 @@ export default function KitchenPage() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
           <div>
+            <p className="text-gray-700 text-lg leading-relaxed mb-6 font-medium">Most kitchen remodels in the Greater Atlanta market run from about $25,000 for a cosmetic refresh to $85,000 or more for a full gut renovation with custom cabinetry. See our <Link href="/blog/kitchen-remodel-cost-atlanta-2026" className="text-[#1E4FBF] hover:underline font-semibold">2026 cost guide</Link> for a full breakdown by scope.</p>
             <h2 className="font-sans text-3xl font-extrabold text-[#0D1B2E] mb-5">A kitchen that fits your life</h2>
             <p className="text-gray-600 leading-relaxed mb-4">Kitchen remodeling is the process of updating a kitchen&apos;s cabinetry, countertops, flooring, appliances, and layout to improve both function and appearance. TopFlight Builders handles complete kitchen remodels across Greater Atlanta — from custom cabinetry and quartz countertops through finish work and final punch-list. Whether you want a sleek modern kitchen or a warm, traditional space, our team works with you from concept to completion.</p>
             <ul className="space-y-3 mb-8">
@@ -62,9 +64,9 @@ export default function KitchenPage() {
                 </li>
               ))}
             </ul>
-            <Link href="/contact" className="bg-[#1E4FBF] hover:bg-[#163A99] text-white font-bold px-7 py-3.5 rounded-lg transition-colors uppercase tracking-wide text-sm">
+            <EstimateCtaLink source="kitchen_hub_cta" className="bg-[#1E4FBF] hover:bg-[#163A99] text-white font-bold px-7 py-3.5 rounded-lg transition-colors uppercase tracking-wide text-sm">
               Get a Free Estimate
-            </Link>
+            </EstimateCtaLink>
           </div>
           <div className="grid grid-cols-2 gap-3">
             <div className="relative aspect-square rounded-xl overflow-hidden">

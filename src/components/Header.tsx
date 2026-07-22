@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Img from "@/components/Img";
+import { trackEvent } from "@/components/GoogleAnalytics";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -49,7 +50,7 @@ export default function Header() {
     >
       {/* Top bar */}
       <div className="hidden lg:flex justify-end items-center px-8 py-2 bg-[#091523] text-sm text-white gap-6 font-bold">
-        <a href="tel:4043697129" className="text-white hover:text-blue-200 transition-colors">
+        <a href="tel:4043697129" onClick={() => trackEvent("contact", { method: "phone" })} className="text-white hover:text-blue-200 transition-colors">
           (404) 369-7129
         </a>
         <a
@@ -148,6 +149,7 @@ export default function Header() {
           </div>
           <Link
             href="/contact"
+            onClick={() => trackEvent("generate_lead", { source: "header_cta" })}
             className="bg-[#1E4FBF] hover:bg-[#163A99] text-white font-bold text-lg px-5 py-2.5 rounded-lg transition-colors uppercase tracking-wide whitespace-nowrap"
           >
             Get a Quote
@@ -227,7 +229,7 @@ export default function Header() {
             <Link
               href="/contact"
               className="mt-5 mb-2 block text-center bg-[#1E4FBF] hover:bg-[#163A99] text-white font-bold text-base px-5 py-4 rounded-lg uppercase tracking-wide transition-colors"
-              onClick={() => setMobileOpen(false)}
+              onClick={() => { setMobileOpen(false); trackEvent("generate_lead", { source: "header_cta_mobile" }); }}
             >
               Get a Quote
             </Link>

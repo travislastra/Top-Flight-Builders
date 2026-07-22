@@ -1,3 +1,5 @@
+"use client";
+import { trackEvent } from "@/components/GoogleAnalytics";
 export default function ContactBanner() {
   return (
     <section className="bg-[#1E4FBF] py-10 px-6">
@@ -10,7 +12,7 @@ export default function ContactBanner() {
           </div>
           <div>
             <p className="text-blue-200 text-xs uppercase tracking-widest mb-1">Call Us</p>
-            <a href="tel:4043697129" className="font-semibold hover:text-blue-100 transition-colors" style={{color: 'white'}}>
+            <a href="tel:4043697129" onClick={() => trackEvent("contact", { method: "phone" })} className="font-semibold hover:text-blue-100 transition-colors" style={{color: 'white'}}>
               (404) 369-7129
             </a>
           </div>

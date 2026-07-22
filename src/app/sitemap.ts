@@ -71,6 +71,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
+  // ---------- Commercial city pages ----------
+  const commercialCityPages: MetadataRoute.Sitemap = [
+    "canton-ga",
+    "marietta-ga",
+    "kennesaw-ga",
+    "acworth-ga",
+    "woodstock-ga",
+    "east-cobb-ga",
+  ].map((city) => ({
+    url: `${BASE}/services/commercial/${city}`,
+    lastModified: SERVICE_UPDATE,
+    changeFrequency: "monthly" as const,
+    priority: city === "canton-ga" ? 0.8 : 0.7,
+  }));
+
   // ---------- Project pages ----------
   const projectPages: MetadataRoute.Sitemap = projects.map((project) => ({
     url: `${BASE}/projects/${project.slug}`,
@@ -92,6 +107,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...servicePages,
     ...serviceAreaPages,
     ...matrixPages,
+    ...commercialCityPages,
     ...projectPages,
     ...blogPages,
   ];

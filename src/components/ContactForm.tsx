@@ -1,11 +1,16 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { trackEvent } from "@/components/GoogleAnalytics";
 
 const HOUZZ_FORM_URL =
   "https://www.houzz.com/contact-forms/view/6cfb11ee-037b-45f3-aa6d-74c7ea3e6e36";
 
 export default function ContactForm() {
   const [blocked, setBlocked] = useState(false);
+
+  useEffect(() => {
+    trackEvent("form_view", { form_name: "houzz_estimate" });
+  }, []);
 
   return (
     <div className="w-full">
@@ -29,6 +34,7 @@ export default function ContactForm() {
             href={HOUZZ_FORM_URL}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackEvent("generate_lead", { source: "houzz_fallback" })}
             className="inline-block bg-[#1E4FBF] hover:bg-[#163A99] text-white font-bold px-8 py-4 rounded-lg transition-colors uppercase tracking-wide text-sm"
           >
             Request a Free Estimate

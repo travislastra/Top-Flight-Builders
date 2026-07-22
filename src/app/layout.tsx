@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat, Inter } from "next/font/google";
 import "./globals.css";
+import { GOOGLE_REVIEW_COUNT } from "@/lib/reviews";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import MobileCallBar from "@/components/MobileCallBar";
@@ -104,7 +105,7 @@ const localBusinessSchema = {
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5.0",
-    "reviewCount": "50",
+    "reviewCount": String(GOOGLE_REVIEW_COUNT),
     "bestRating": "5",
     "worstRating": "1",
   },

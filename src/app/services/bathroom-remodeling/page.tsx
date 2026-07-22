@@ -8,6 +8,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ServiceSchema from "@/components/ServiceSchema";
 import FAQSection from "@/components/FAQSection";
 import { BATHROOM_FAQS } from "@/lib/faq-data";
+import EstimateCtaLink from "@/components/EstimateCtaLink";
 import ServiceAreaLinks from "@/components/ServiceAreaLinks";
 import ServiceBlogLinks from "@/components/ServiceBlogLinks";
 
@@ -58,6 +59,7 @@ export default function BathroomPage() {
             </div>
           </div>
           <div>
+            <p className="text-gray-700 text-lg leading-relaxed mb-6 font-medium">Bathroom remodel costs in Greater Atlanta vary with size and finish level. See our <Link href="/blog/bathroom-remodel-cost-atlanta-2026" className="text-[#1E4FBF] hover:underline font-semibold">2026 bathroom cost guide</Link> for what to expect, or jump to city-specific pages for <Link href="/services/bathroom-remodeling/east-cobb-ga" className="text-[#1E4FBF] hover:underline font-semibold">East Cobb</Link> and <Link href="/services/bathroom-remodeling/acworth-ga" className="text-[#1E4FBF] hover:underline font-semibold">Acworth</Link>.</p>
             <h2 className="font-sans text-3xl font-extrabold text-[#0D1B2E] mb-5">Bathrooms built to impress</h2>
             <p className="text-gray-600 leading-relaxed mb-4">Bathroom remodeling is the process of updating a bathroom&apos;s shower, tub, tile, vanity, flooring, and fixtures to improve comfort, appearance, and home value. TopFlight Builders handles bathroom renovations throughout Greater Atlanta — from targeted walk-in shower conversions to full master bath overhauls with frameless glass enclosures. Every tile, every fixture, every finish is selected with care.</p>
             <ul className="space-y-3 mb-8">
@@ -70,9 +72,9 @@ export default function BathroomPage() {
                 </li>
               ))}
             </ul>
-            <Link href="/contact" className="bg-[#1E4FBF] hover:bg-[#163A99] text-white font-bold px-7 py-3.5 rounded-lg transition-colors uppercase tracking-wide text-sm">
+            <EstimateCtaLink source="bath_hub_cta" className="bg-[#1E4FBF] hover:bg-[#163A99] text-white font-bold px-7 py-3.5 rounded-lg transition-colors uppercase tracking-wide text-sm">
               Get a Free Estimate
-            </Link>
+            </EstimateCtaLink>
           </div>
         </div>
       </section>
