@@ -1,5 +1,7 @@
+"use client";
 import Link from "next/link";
 import { resolveImg, toWebP, buildWebPSrcSet } from "@/lib/image-utils";
+import { trackEvent } from "@/components/GoogleAnalytics";
 
 const photos = [
   "/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-05.jpg",
@@ -29,12 +31,14 @@ export default function TeamContact() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
           <Link
             href="/contact"
+            onClick={() => trackEvent("generate_lead", { source: "mid_page_cta" })}
             className="bg-[#1E4FBF] hover:bg-[#163A99] text-white font-bold px-8 py-4 rounded-lg transition-colors uppercase tracking-wide text-sm w-full sm:w-auto text-center"
           >
             Contact Us
           </Link>
           <a
             href="tel:4043697129"
+            onClick={() => trackEvent("contact", { method: "phone" })}
             className="bg-[#F7F8FA] hover:bg-[#E8EAED] text-[#0D1B2E] font-bold px-8 py-4 rounded-lg transition-colors uppercase tracking-wide text-sm w-full sm:w-auto text-center"
           >
             (404) 369-7129

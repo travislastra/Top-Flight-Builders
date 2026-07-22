@@ -74,7 +74,6 @@ const localBusinessSchema = {
   "priceRange": "$$-$$$",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "2489 Lakebrooke Dr",
     "addressLocality": "Marietta",
     "addressRegion": "GA",
     "postalCode": "30066",

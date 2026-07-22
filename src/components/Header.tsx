@@ -149,6 +149,7 @@ export default function Header() {
           </div>
           <Link
             href="/contact"
+            onClick={() => trackEvent("generate_lead", { source: "header_cta" })}
             className="bg-[#1E4FBF] hover:bg-[#163A99] text-white font-bold text-lg px-5 py-2.5 rounded-lg transition-colors uppercase tracking-wide whitespace-nowrap"
           >
             Get a Quote
@@ -228,7 +229,7 @@ export default function Header() {
             <Link
               href="/contact"
               className="mt-5 mb-2 block text-center bg-[#1E4FBF] hover:bg-[#163A99] text-white font-bold text-base px-5 py-4 rounded-lg uppercase tracking-wide transition-colors"
-              onClick={() => setMobileOpen(false)}
+              onClick={() => { setMobileOpen(false); trackEvent("generate_lead", { source: "header_cta_mobile" }); }}
             >
               Get a Quote
             </Link>

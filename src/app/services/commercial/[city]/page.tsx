@@ -68,12 +68,12 @@ const COMMERCIAL_CITIES: CommercialCity[] = [
       "Franklin Gateway commercial strip",
     ],
     directAnswer:
-      "TopFlight Builders handles tenant improvements, interior buildouts, and light commercial renovation for offices, retail spaces, and restaurants in Marietta and Cobb County. Marietta is our home market — we pull permits through the City of Marietta and Cobb County Building Inspections and know the inspection schedules and documentation requirements here better than anywhere else.",
+      "TopFlight Builders handles tenant improvements, interior buildouts, and light commercial renovation for offices, retail spaces, and restaurants in Marietta and Cobb County. Marietta is our home market: we pull permits through the City of Marietta and Cobb County Building Inspections and know the inspection schedules and documentation requirements here better than anywhere else.",
     whyUs:
       "Being based in Marietta is a real operational advantage for your project. We can mobilize for site visits the same week you call, respond quickly to issues during construction, and maintain consistent daily oversight without travel time eating into your schedule. One accountable point of contact from permit submittal through certificate of occupancy.",
     localSection: {
       heading: "Serving Marietta and Cobb County",
-      body: "We work throughout Marietta's commercial corridors — Roswell Road, Canton Road, South Marietta Pkwy, and the Franklin Gateway area — as well as unincorporated Cobb County commercial properties. We confirm the correct permitting authority at the walkthrough since addresses near city limits can fall under either jurisdiction.",
+      body: "We work throughout Marietta's commercial corridors: Roswell Road, Canton Road, South Marietta Pkwy, and the Franklin Gateway area, as well as unincorporated Cobb County commercial properties. We confirm the correct permitting authority at the walkthrough since addresses near city limits can fall under either jurisdiction.",
     },
     faqs: COMMERCIAL_MARIETTA_FAQS,
     metadata: {
@@ -100,7 +100,7 @@ const COMMERCIAL_CITIES: CommercialCity[] = [
       "The Barrett Pkwy and Town Center Mall corridors in Kennesaw represent some of the busiest commercial real estate activity in Cobb County, and we have experience working in active commercial centers where minimizing disruption to neighboring tenants matters. We schedule trades efficiently and manage the inspection sequence so your project doesn't stall between approvals.",
     localSection: {
       heading: "Serving Kennesaw and Northwest Cobb County",
-      body: "Kennesaw's Barrett Pkwy corridor and the Town Center Mall area anchor the market we serve here — from national chain fit-outs to local professional office renovations. The Chastain Road and George Busbee Pkwy corridors are also active markets where we work regularly. All commercial permits in Kennesaw run through Cobb County Building Inspections.",
+      body: "Kennesaw's Barrett Pkwy corridor and the Town Center Mall area anchor the market we serve here, from national chain fit-outs to local professional office renovations. The Chastain Road and George Busbee Pkwy corridors are also active markets where we work regularly. All commercial permits in Kennesaw run through Cobb County Building Inspections.",
     },
     faqs: COMMERCIAL_GENERAL_FAQS,
     metadata: {
@@ -127,7 +127,7 @@ const COMMERCIAL_CITIES: CommercialCity[] = [
       "Acworth's mix of historic downtown storefronts and I-75 corridor commercial space means commercial projects here range from character-sensitive renovations in older buildings to standard buildouts in modern retail strips. We've worked in both contexts and adapt our approach to the building type, the lease requirements, and the local permit process.",
     localSection: {
       heading: "Serving Acworth and Lake City Commercial Properties",
-      body: "We work in Acworth's Historic Downtown district, along the US-41 and I-75 corridors, and in the commercial nodes along Lake Acworth Drive and Wade Green Road. The correct permitting authority depends on whether your property falls within the City of Acworth limits or in unincorporated Cobb County — we confirm this at the walkthrough so there are no surprises at submittal.",
+      body: "We work in Acworth's Historic Downtown district, along the US-41 and I-75 corridors, and in the commercial nodes along Lake Acworth Drive and Wade Green Road. The correct permitting authority depends on whether your property falls within the City of Acworth limits or in unincorporated Cobb County; we confirm this at the walkthrough so there are no surprises at submittal.",
     },
     faqs: COMMERCIAL_GENERAL_FAQS,
     metadata: {
@@ -151,10 +151,10 @@ const COMMERCIAL_CITIES: CommercialCity[] = [
     directAnswer:
       "TopFlight Builders handles tenant improvements, interior buildouts, and light commercial renovation for offices, retail spaces, and restaurants in Woodstock and Cherokee County. We work through the City of Woodstock or Cherokee County permit office depending on your address, and we coordinate every trade so your space opens on schedule.",
     whyUs:
-      "Woodstock's Downtown district has seen significant commercial investment over the past decade, and we've been part of that activity — renovating storefronts, reconfiguring office suites, and building out restaurant and retail spaces on and near Main Street. The Towne Lake Pkwy and GA-92 corridors are more standard retail environments where we execute efficient, cost-effective buildouts.",
+      "Woodstock's Downtown district has seen significant commercial investment over the past decade, and we've been part of that activity: renovating storefronts, reconfiguring office suites, and building out restaurant and retail spaces on and near Main Street. The Towne Lake Pkwy and GA-92 corridors are more standard retail environments where we execute efficient, cost-effective buildouts.",
     localSection: {
       heading: "Serving Woodstock and Cherokee County Commercial Properties",
-      body: "We work throughout Woodstock's commercial areas — Downtown Main Street, the GA-92 and Towne Lake Pkwy corridors, and properties along I-575. The correct permitting authority is either the City of Woodstock (Downtown and adjacent areas) or Cherokee County (unincorporated commercial properties). We confirm this at the walkthrough before any permit work begins.",
+      body: "We work throughout Woodstock's commercial areas: Downtown Main Street, the GA-92 and Towne Lake Pkwy corridors, and properties along I-575. The correct permitting authority is either the City of Woodstock (Downtown and adjacent areas) or Cherokee County (unincorporated commercial properties). We confirm this at the walkthrough before any permit work begins.",
     },
     faqs: COMMERCIAL_GENERAL_FAQS,
     metadata: {
@@ -178,7 +178,7 @@ const COMMERCIAL_CITIES: CommercialCity[] = [
     directAnswer:
       "TopFlight Builders handles tenant improvements, interior buildouts, and light commercial renovation for offices, retail, and professional service businesses in the East Cobb area of Cobb County. All commercial permits in unincorporated East Cobb run through Cobb County Building Inspections, and we manage that process from submittal through final inspection.",
     whyUs:
-      "East Cobb's commercial tenants are largely professional services — medical, legal, financial, and specialty retail — where the finish level of the space matters to clients and reflects on the business. We build and renovate commercial spaces that communicate the quality of the business inside, using the same level of execution we bring to the residential high-end market in this area.",
+      "East Cobb's commercial tenants are largely professional services (medical, legal, financial, and specialty retail) where the finish level of the space matters to clients and reflects on the business. We build and renovate commercial spaces that communicate the quality of the business inside, using the same level of execution we bring to the residential high-end market in this area.",
     localSection: {
       heading: "Serving East Cobb Commercial Properties",
       body: "East Cobb's commercial activity centers on the Johnson Ferry and Roswell Road corridors, with professional office parks along Sandy Plains Road and Paper Mill Road. These are unincorporated Cobb County properties, so all commercial permits route through Cobb County Building Inspections. We're well-versed in that process and manage it as part of the project.",
@@ -215,7 +215,7 @@ export async function generateMetadata({
           url: `${BASE}/images/bathroom-remodel-frameless-glass-shower-marietta-ga.jpg`,
           width: 1200,
           height: 630,
-          alt: `Commercial contractor in ${city.name}, GA — TopFlight Builders`,
+          alt: `Commercial contractor in ${city.name}, GA by TopFlight Builders`,
         },
       ],
     },
@@ -385,7 +385,7 @@ export default async function CommercialCityPage({
         </div>
       </section>
 
-      <FAQSection faqs={city.faqs} heading={`Commercial Build-Out FAQs — ${city.name}`} />
+      <FAQSection faqs={city.faqs} heading={`Commercial Build-Out FAQs: ${city.name}`} />
       <ContactBanner />
     </>
   );
