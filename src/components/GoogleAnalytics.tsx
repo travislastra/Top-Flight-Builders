@@ -37,6 +37,13 @@ function loadGA() {
   window.gtag("config", GA_ID);
 }
 
+export function trackEvent(name: string, params?: Record<string, unknown>) {
+  if (typeof window === "undefined") return;
+  if (localStorage.getItem(CONSENT_KEY) !== "granted") return;
+  if (typeof window.gtag !== "function") return;
+  window.gtag("event", name, params);
+}
+
 export default function GoogleAnalytics() {
   useEffect(() => {
     // Load immediately if consent was already granted in a previous visit

@@ -506,3 +506,106 @@ export const SMYRNA_FAQS: FAQ[] = [
     a: "Smyrna is approximately 10 miles south of our Marietta base — typically 15–20 minutes. It's one of our closest markets, which means faster site visit scheduling, faster estimate turnaround, and faster mobilization for emergency restoration calls. For water damage and storm response, Smyrna clients are generally among the first we can reach.",
   },
 ];
+
+export const COMMERCIAL_CANTON_FAQS: FAQ[] = [
+  {
+    q: "What is a tenant improvement, and do you handle the permits in Canton?",
+    a: "A tenant improvement is the interior build-out or renovation of a leased commercial space to fit a new tenant's use. Yes, we handle permitting through the correct authority, either the City of Canton or Cherokee County depending on the address, including drawings, submittal, and scheduling inspections.",
+  },
+  {
+    q: "Do you work around our business hours and opening date?",
+    a: "Yes. For occupied spaces we can phase work and schedule disruptive tasks outside business hours where practical. For new build-outs we map the schedule backward from your target opening date so trades and inspections line up.",
+  },
+  {
+    q: "What types of commercial spaces do you build out in Canton?",
+    a: "Offices, retail storefronts, restaurants and food service, and other light commercial spaces. We coordinate framing, electrical, plumbing, HVAC, and finishes as a single accountable contractor.",
+  },
+  {
+    q: "How is commercial pricing determined?",
+    a: "Commercial pricing depends on the condition of the existing space, the scope of the build-out, and the finish level your use requires. We provide a clear, itemized estimate after a walkthrough so there are no mid-project surprises.",
+  },
+  {
+    q: "Do you serve areas outside Canton in Cherokee County?",
+    a: "Yes. We work throughout Cherokee County and the northwest Atlanta metro, including Woodstock, Holly Springs, and Hickory Flat, as well as our Cobb County home market.",
+  },
+];
+
+export const COMMERCIAL_MARIETTA_FAQS: FAQ[] = [
+  {
+    q: "Who pulls the permits for commercial work in Marietta?",
+    a: "It depends on the address. Properties within the City of Marietta permit through the City's Building and Inspections department. Unincorporated Cobb County addresses permit through Cobb County Building Inspections. We confirm the correct authority at the walkthrough and handle the full submittal and inspection process.",
+  },
+  {
+    q: "Do you work in occupied commercial spaces in Marietta?",
+    a: "Yes. We sequence and phase work to minimize disruption. Disruptive tasks like demolition, loud trade work, and dust-generating activities can be scheduled for evenings, weekends, or low-traffic periods where the lease and building management allow.",
+  },
+  {
+    q: "What commercial work do you handle in Marietta?",
+    a: "Tenant improvements and interior build-outs for leased space, office reconfiguration and renovation, retail fit-outs, restaurant and food-service build-outs, and light commercial restoration and repair. We coordinate all trades under one contract.",
+  },
+  {
+    q: "How quickly can you mobilize for a Marietta commercial project?",
+    a: "Marietta is our home market. We can schedule a walkthrough within days, and our crews can mobilize as soon as scope and schedule are confirmed. Being local means no travel padding your timeline or budget.",
+  },
+];
+
+export const COMMERCIAL_GENERAL_FAQS: FAQ[] = [
+  {
+    q: "Do you handle all the trades on a commercial project or just general contracting?",
+    a: "We self-perform general contracting and manage all trade subcontractors, including framing, electrical, plumbing, HVAC, flooring, and finish work. You deal with one point of contact throughout, and we coordinate the schedule and inspections.",
+  },
+  {
+    q: "How do you handle commercial permitting and inspections?",
+    a: "We prepare and submit permit applications through the correct local authority, coordinate trade-specific inspections, and schedule the final certificate of occupancy inspection. The process varies by jurisdiction and scope, but we manage it as part of the project, not as an add-on.",
+  },
+  {
+    q: "What types of commercial spaces do you build out?",
+    a: "Offices, retail storefronts, restaurants and food service, professional services suites, and light commercial spaces. We also handle commercial restoration and post-damage repair.",
+  },
+  {
+    q: "How is commercial project pricing determined?",
+    a: "Commercial pricing depends on the existing condition of the space, the scope of the build-out, the finish level required for the use, and permit and inspection requirements. We provide an itemized estimate after a walkthrough so pricing is transparent before work begins.",
+  },
+  {
+    q: "Can you work around our business hours and opening date?",
+    a: "Yes. For occupied spaces we phase and schedule disruptive work during off-hours where practical. For new build-outs we map the schedule backward from your target opening date to ensure trades and inspections line up.",
+  },
+];
+
+export const KITCHEN_COST_FAQS: FAQ[] = [
+  {
+    q: "How much does a kitchen remodel cost in Georgia?",
+    a: "In the Greater Atlanta market, most kitchen remodels run from about $25,000 for a cosmetic refresh to $85,000 or more for a full gut renovation with custom cabinetry. The exact figure depends on scope, kitchen size, and finish level.",
+  },
+  {
+    q: "What is the biggest cost in a kitchen remodel?",
+    a: "Cabinetry is usually the largest single line item, followed by countertops and appliances. Layout changes that move plumbing, gas, or electrical also add meaningfully to the total.",
+  },
+  {
+    q: "How long does a kitchen remodel take?",
+    a: "Most kitchen remodels run 6 to 10 weeks from demolition to punch list. Custom cabinetry lead time (2 to 5 weeks) is the main schedule driver, which is why we start the order process at contract signing.",
+  },
+  {
+    q: "Does a kitchen remodel add value to my home?",
+    a: "A well-executed kitchen remodel is consistently among the higher-return home improvements, both for resale value and daily use. The right scope for your home and neighborhood matters more than simply spending more.",
+  },
+];
+
+export const BATHROOM_COST_FAQS: FAQ[] = [
+  {
+    q: "How much does a bathroom remodel cost in the Atlanta area?",
+    a: "It depends heavily on the size of the bathroom and the finish level. A guest or hall bath update is far less than a full primary suite with custom tile, frameless glass, and premium fixtures. We provide a firm number after a free on-site walkthrough.",
+  },
+  {
+    q: "What makes a bathroom remodel more expensive?",
+    a: "Custom tile and shower work, frameless glass, moving the plumbing layout, and higher-end fixtures are the main drivers. Older homes can also need updated supply lines or subfloor repair once the old bath is removed.",
+  },
+  {
+    q: "How long does a bathroom remodel take?",
+    a: "Most run about 3 to 5 weeks, depending on tile scope, custom glass lead time, and whether plumbing is relocated. Ordering glass and specialty tile early keeps the project on schedule.",
+  },
+  {
+    q: "Should I remodel my kitchen or bathroom first?",
+    a: "It depends on your goals, budget, and which space causes the most daily friction. Bathrooms are often a smaller, faster project, while kitchens tend to return the most at resale. We can help you sequence projects during a consultation.",
+  },
+];

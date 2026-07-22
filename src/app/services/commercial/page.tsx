@@ -60,6 +60,31 @@ export default function CommercialPage() {
         </div>
       </section>
 
+      {/* City-specific commercial pages */}
+      <section className="py-16 px-6 bg-[#F7F8FA]">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-sans text-2xl font-extrabold text-[#0D1B2E] mb-3">Commercial Work by City</h2>
+          <p className="text-gray-600 mb-8">We serve businesses across the northwest Atlanta metro. See city-specific information for permitting, local corridors, and what to expect.</p>
+          <ul className="grid sm:grid-cols-2 gap-3">
+            {[
+              { label: "Commercial TI in Canton, GA", href: "/services/commercial/canton-ga" },
+              { label: "Commercial TI in Marietta, GA", href: "/services/commercial/marietta-ga" },
+              { label: "Commercial TI in Kennesaw, GA", href: "/services/commercial/kennesaw-ga" },
+              { label: "Commercial TI in Acworth, GA", href: "/services/commercial/acworth-ga" },
+              { label: "Commercial TI in Woodstock, GA", href: "/services/commercial/woodstock-ga" },
+              { label: "Commercial TI in East Cobb, GA", href: "/services/commercial/east-cobb-ga" },
+            ].map((item) => (
+              <li key={item.href} className="flex items-center gap-3">
+                <svg className="w-5 h-5 text-[#1E4FBF] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <Link href={item.href} className="text-[#1E4FBF] font-semibold hover:underline text-sm">{item.label}</Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
       <FAQSection faqs={COMMERCIAL_FAQS} />
       <ServiceBlogLinks cat="fullhome" heading="Renovation Planning Guides" />
       <ContactBanner />

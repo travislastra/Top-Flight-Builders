@@ -1,5 +1,6 @@
 import Link from "next/link";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import ServiceSchema from "@/components/ServiceSchema";
 import ContactBanner from "@/components/ContactBanner";
 import LogoWatermark from "@/components/LogoWatermark";
 import ProjectCard from "@/components/ProjectCard";
@@ -92,26 +93,6 @@ export default function ServiceCityPage({ citySlug, serviceSlug }: Props) {
     .filter((p) => p.location.toLowerCase().includes(city.name.toLowerCase()))
     .slice(0, 3);
 
-  const localBusinessSchema = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "GeneralContractor",
-        "@id": "https://topflightbuilders.net/#business",
-        "name": "TopFlight Builders LLC",
-        "url": "https://topflightbuilders.net",
-        "telephone": "+1-404-369-7129",
-        "areaServed": { "@type": "City", "name": city.name, "addressRegion": "GA" },
-      },
-      {
-        "@type": "Service",
-        "serviceType": service.name,
-        "provider": { "@id": "https://topflightbuilders.net/#business" },
-        "areaServed": { "@type": "City", "name": city.name, "addressRegion": "GA" },
-      },
-    ],
-  };
-
   const cityQuestion = getCityQuestion(citySlug);
   const timeline = getTimeline(serviceSlug);
 
@@ -130,10 +111,11 @@ export default function ServiceCityPage({ citySlug, serviceSlug }: Props) {
         ]}
       />
 
-      {/* LocalBusiness + Service JSON-LD */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      {/* Service JSON-LD — provider @id links to the single LocalBusiness node in layout.tsx */}
+      <ServiceSchema
+        serviceType={service.name}
+        areaServedSingle={city.name}
+        url={`https://topflightbuilders.net/services/${serviceSlug}/${citySlug}`}
       />
 
       {/* ── HERO ──────────────────────────────────────────────────────────── */}

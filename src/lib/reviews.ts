@@ -5,6 +5,10 @@ export interface Review {
   text: string;
 }
 
+// Keep this in sync with the Google review count shown on Google Business Profile.
+// This is the single source of truth for all "50+ reviews" claims site-wide.
+export const GOOGLE_REVIEW_COUNT = 50;
+
 export const reviews: Review[] = [
   {
     name: "Kara Girage",
