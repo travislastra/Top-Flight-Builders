@@ -128,13 +128,52 @@ The bathroom cost table uses ranges drawn from the existing content on `/service
 
 ---
 
+## Batch 3 (committed: 6c24b5d)
+
+**Goal:** Wire `generate_lead` on all service hub page estimate CTAs. Previously these CTAs were static `<Link>` elements inside server components with no event tracking.
+
+### New Component
+
+**`src/components/EstimateCtaLink.tsx`** — `"use client"` wrapper around `next/link`'s `Link`. Accepts `source` (required), `href` (default `/contact`), `className`, and `children`. On click, calls the consent-gated `trackEvent("generate_lead", { source })` from `GoogleAnalytics.tsx`. No new consent logic introduced.
+
+### Pages Updated
+
+| Page | Route | Source Label | CTA Label |
+|------|-------|-------------|-----------|
+| Kitchen Remodeling | `/services/kitchen-remodeling` | `kitchen_hub_cta` | Get a Free Estimate |
+| Bathroom Remodeling | `/services/bathroom-remodeling` | `bath_hub_cta` | Get a Free Estimate |
+| Restoration | `/services/restoration` | `restoration_hub_cta` | Contact Us Now |
+| Basements & Additions | `/services/basements-and-additions` | `basements_hub_cta` | Get a Free Estimate |
+| Full Home Remodeling | `/services/full-home-remodeling` | `full_home_hub_cta` | Start Your Renovation |
+| Age in Place | `/services/age-in-place` | `age_in_place_hub_cta` | Schedule a Walkthrough |
+| Decks | `/services/decks` | `decks_hub_cta` | Get a Free Deck Estimate |
+| Roofing | `/services/roofing` | `roofing_hub_cta` | Get a Free Roof Inspection |
+| Commercial | `/services/commercial` | `commercial_hub_cta` | Request a Commercial Quote |
+
+Siding (`/services/siding`) is a `redirect()` to decks with no CTA — skipped as planned.
+
+Also committed: pre-existing em-dash fix in `commercial/page.tsx` (em dashes replaced with "such as ... ," phrasing).
+
+### Verification Results (Batch 3)
+
+| Check | Result |
+|-------|--------|
+| `npm run build` | ✓ 173 pages, zero errors |
+| `npm run check:titles` | ✓ No title doubling |
+| `npm run lint` (new files only) | ✓ Zero warnings or errors |
+| Em dash grep on new/changed lines | ✓ Empty — no em dashes |
+| EstimateCtaLink present on all 9 hubs | ✓ Confirmed by grep |
+| Consent gating | ✓ Inherited from `trackEvent` in GoogleAnalytics.tsx — no bypass |
+| Static export compatibility | ✓ "use client" + onClick hydrates client-side; no server APIs used |
+
+---
+
 ## Open Items for Owner Review
 
 1. **Cost figures — bathroom cost table:** Confirm ranges ($8K–$15K / $18K–$35K / $35K–$60K+) match current pricing before deploying.
 2. **streetAddress:** Layout schema uses city-only address per your request. Confirm you're comfortable with this for Google Business Profile consistency.
 3. **GA4 key event:** Mark `generate_lead` as a key event in GA4 > Admin > Conversions after deploying.
 4. **Houzz iframe:** Form submission tracking is not possible cross-origin. `form_view` on mount is the best available proxy. If you migrate to a self-hosted form, full funnel tracking becomes possible.
-5. **Service page inline CTAs:** "Get a Free Estimate" buttons embedded in individual service pages (kitchen, bathroom, etc.) are in server components. Tracking requires a follow-on client wrapper component task.
 
 ---
 
