@@ -28,11 +28,6 @@ function loadGA() {
   script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
   document.head.appendChild(script);
 
-  // Init gtag queue (may already exist from the consent-defaults head script)
-  window.dataLayer = window.dataLayer || [];
-  window.gtag = function gtag(...args: unknown[]) {
-    window.dataLayer.push(args);
-  };
   window.gtag("js", new Date());
   window.gtag("config", GA_ID);
 }
