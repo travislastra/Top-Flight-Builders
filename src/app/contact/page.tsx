@@ -34,7 +34,7 @@ export default function ContactPage() {
       <section className="py-20 px-6 bg-[#F7F8FA]">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12">
           {/* Contact info */}
-          <div>
+          <div data-placement="contact_page">
             <h2 className="font-sans text-3xl font-extrabold text-[#0D1B2E] mb-8">Get in Touch</h2>
             <div className="space-y-6 mb-10">
               {[

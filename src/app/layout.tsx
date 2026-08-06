@@ -8,6 +8,7 @@ import MobileCallBar from "@/components/MobileCallBar";
 import FloatingEstimateCta from "@/components/FloatingEstimateCta";
 import ConsentBanner from "@/components/ConsentBanner";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import AnalyticsEvents from "@/components/AnalyticsEvents";
 
 const montserrat = Montserrat({
   variable: "--font-sans",
@@ -158,6 +159,7 @@ export default function RootLayout({
         <FloatingEstimateCta />
         <ConsentBanner />
         <GoogleAnalytics />
+        <AnalyticsEvents />
       </body>
     </html>
   );
