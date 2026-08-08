@@ -34,7 +34,6 @@ export default function ContactForm() {
             href={HOUZZ_FORM_URL}
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => trackEvent("generate_lead", { source: "houzz_fallback" })}
             className="inline-block bg-[#1E4FBF] hover:bg-[#163A99] text-white font-bold px-8 py-4 rounded-lg transition-colors uppercase tracking-wide text-sm"
           >
             Request a Free Estimate

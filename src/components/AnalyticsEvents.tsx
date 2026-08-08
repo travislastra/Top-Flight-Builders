@@ -34,19 +34,19 @@ export default function AnalyticsEvents() {
 
       if (href.startsWith("tel:")) {
         const phone = href.replace(/\D/g, "");
-        const key = `phone_call_click:${href}:${placement}`;
+        const key = `contact:phone:${href}:${placement}`;
         if (!canFire(key)) return;
         if (typeof window.gtag === "function") {
-          window.gtag("event", "phone_call_click", { link_placement: placement, phone_number: phone });
+          window.gtag("event", "contact", { method: "phone", link_placement: placement, phone_number: phone });
         }
         return;
       }
 
       if (href.startsWith("mailto:")) {
-        const key = `email_click:${href}:${placement}`;
+        const key = `contact:email:${href}:${placement}`;
         if (!canFire(key)) return;
         if (typeof window.gtag === "function") {
-          window.gtag("event", "email_click", { link_placement: placement });
+          window.gtag("event", "contact", { method: "email", link_placement: placement });
         }
         return;
       }

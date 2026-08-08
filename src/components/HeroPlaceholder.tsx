@@ -3,7 +3,6 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { resolveImg, toWebP, buildWebPSrcSet } from "@/lib/image-utils";
-import { trackEvent } from "@/components/GoogleAnalytics";
 
 const BASE_SLIDES = [
   "/images/projects/more-from-us/topflight-builders-remodeling-project-marietta-ga-01.jpg",
@@ -77,7 +76,7 @@ export default function HeroPlaceholder() {
   }
 
   return (
-    <section className="relative w-full min-h-[90vh] bg-[#0D1B2E] flex flex-col items-center justify-center overflow-hidden">
+    <section data-placement="hero" className="relative w-full min-h-[90vh] bg-[#0D1B2E] flex flex-col items-center justify-center overflow-hidden">
 
       {SLIDES.map(({ jpg, srcSet }, i) => (
         <picture key={jpg} style={{ display: "contents" }}>
@@ -160,7 +159,6 @@ export default function HeroPlaceholder() {
           </Link>
           <Link
             href="/contact"
-            onClick={() => trackEvent("generate_lead", { source: "hero_cta" })}
             className="bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold px-8 py-4 rounded-lg transition-colors uppercase tracking-wide text-sm w-full sm:w-auto text-center"
           >
             Get Started

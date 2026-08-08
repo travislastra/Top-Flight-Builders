@@ -1,21 +1,16 @@
 "use client";
 import Link from "next/link";
-import { trackEvent } from "@/components/GoogleAnalytics";
 
 interface Props {
-  source: string;
+  source?: string;
   href?: string;
   className?: string;
   children: React.ReactNode;
 }
 
-export default function EstimateCtaLink({ source, href = "/contact", className, children }: Props) {
+export default function EstimateCtaLink({ href = "/contact", className, children }: Props) {
   return (
-    <Link
-      href={href}
-      onClick={() => trackEvent("generate_lead", { source })}
-      className={className}
-    >
+    <Link href={href} className={className}>
       {children}
     </Link>
   );
