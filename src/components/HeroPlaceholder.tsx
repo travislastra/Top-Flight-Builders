@@ -76,7 +76,7 @@ export default function HeroPlaceholder() {
   }
 
   return (
-    <section data-placement="hero" className="relative w-full min-h-[90vh] bg-[#0D1B2E] flex flex-col items-center justify-center overflow-hidden">
+    <section data-section="hero" className="relative w-full min-h-[90vh] bg-[#0D1B2E] flex flex-col items-center justify-center overflow-hidden">
 
       {SLIDES.map(({ jpg, srcSet }, i) => (
         <picture key={jpg} style={{ display: "contents" }}>

@@ -39,7 +39,7 @@ const company = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0D1B2E] text-gray-300">
+    <footer data-section="footer" className="bg-[#0D1B2E] text-gray-300">
       {/* Start Your Project strip */}
       <div className="bg-[#1E4FBF] py-10 px-6 text-center">
         <h3 className="font-sans text-2xl font-bold text-white mb-3">

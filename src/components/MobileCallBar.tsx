@@ -2,7 +2,7 @@
 export default function MobileCallBar() {
   return (
     <a
-      data-placement="sticky_mobile_bar"
+      data-section="sticky_mobile_bar"
       href="tel:4043697129"
       className="fixed bottom-0 left-0 right-0 z-50 flex items-center justify-center gap-2.5 bg-[#1E4FBF] text-white font-bold text-base uppercase tracking-wide shadow-[0_-2px_10px_rgba(0,0,0,0.25)] lg:hidden"
       style={{ minHeight: "56px" }}

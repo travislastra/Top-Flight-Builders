@@ -14,12 +14,7 @@ function canFire(key: string): boolean {
 }
 
 function getPlacement(el: Element): string {
-  if (el.closest('[data-placement="sticky_mobile_bar"]')) return "sticky_mobile_bar";
-  if (el.closest('[data-placement="top_bar"]')) return "top_bar";
-  if (el.closest("header")) return "header";
-  if (el.closest("footer")) return "footer";
-  if (el.closest('[data-placement="contact_page"]')) return "contact_page";
-  return "inline_content";
+  return el.closest("[data-section]")?.getAttribute("data-section") ?? "inline_content";
 }
 
 export default function AnalyticsEvents() {

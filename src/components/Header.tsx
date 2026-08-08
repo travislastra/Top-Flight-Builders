@@ -45,10 +45,11 @@ export default function Header() {
   return (
     <header
       ref={headerRef}
+      data-section="header"
       className="sticky top-0 z-50 bg-[#0D1B2E] shadow-lg"
     >
       {/* Top bar */}
-      <div data-placement="top_bar" className="hidden lg:flex justify-end items-center px-8 py-2 bg-[#091523] text-sm text-white gap-6 font-bold">
+      <div data-section="top_bar" className="hidden lg:flex justify-end items-center px-8 py-2 bg-[#091523] text-sm text-white gap-6 font-bold">
         <a href="tel:4043697129" className="text-white hover:text-blue-200 transition-colors">
           (404) 369-7129
         </a>
