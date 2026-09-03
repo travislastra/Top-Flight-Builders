@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "check:ga4": "node scripts/check-ga4-params.mjs",
     "check:titles": "grep -r '<title>[^<]*TopFlight Builders[^<]*TopFlight Builders[^<]*</title>' out/ && echo 'ERROR: title doubling detected' && exit 1 || echo 'OK: no title doubling'"
   },
   "dependencies": {
