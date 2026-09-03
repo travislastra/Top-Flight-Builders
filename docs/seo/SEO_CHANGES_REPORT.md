@@ -1,6 +1,55 @@
 # TopFlight Builders — SEO Changes Report
 
-Branch: `seo/growth-batch-1` | Status: committed, not deployed | Last updated: 2026-07-22
+Branch: `seo/growth-batch-1` | Status: deployed | Last updated: 2026-09-03
+
+---
+
+## Analytics schema correction (2026-08-08, commit `dbdba8b`)
+
+**Read this before acting on any analytics section below.** Batches 2 and 3 shipped a GA4 event
+schema that corrupted traffic attribution. It has been removed. The tables in those sections are
+kept as a historical changelog of what was done, not as a spec to restore.
+
+**What went wrong.** `source` is a reserved GA4 traffic-source parameter. Sent as an event
+parameter it is not stored as a custom dimension. GA4 reads it as a manual traffic-source override
+and rewrites the session's source. Because `medium` was never supplied alongside it, affected
+sessions attributed to values like `header_cta / (not set)`, so CTA labels showed up in the
+Traffic Acquisition report as if they were referrers.
+
+The full reserved set, any of which causes this: `source`, `medium`, `campaign`, `term`,
+`content`, `campaign_id`, `source_platform`, `campaign_source`, `campaign_medium`,
+`campaign_term`, `campaign_content`.
+
+**Scope.** 16 labels across two batches. Batch 2 (`0c3d97d`) wired 7 via direct `trackEvent`
+calls: `header_cta`, `header_cta_mobile`, `hero_cta`, `mid_page_cta`, `floating_cta`,
+`houzz_fallback`, and the `ContactForm` fallback. Batch 3 (`6c24b5d`) added 9 more through
+`EstimateCtaLink`, which took `source` as a required prop: `kitchen_hub_cta`, `bath_hub_cta`,
+`restoration_hub_cta`, `basements_hub_cta`, `full_home_hub_cta`, `age_in_place_hub_cta`,
+`decks_hub_cta`, `roofing_hub_cta`, `commercial_hub_cta`.
+
+**Affected window.** 2026-07-22 (`0c3d97d`) through 2026-08-08 (`dbdba8b`). When reading GA4,
+start the range at 2026-08-09 to exclude the bad attribution.
+
+**Current schema.** `src/components/AnalyticsEvents.tsx` is now the only event emitter, a single
+delegated click listener on `document`. `link_placement` replaces `source` and is safe because it
+is not a reserved name.
+
+| Event | Parameters |
+|-------|------------|
+| `contact` | `method` (`"phone"` or `"email"`), `link_placement`, plus `phone_number` on phone |
+| `quote_cta_click` | `link_placement`, `cta_text` |
+| `form_view` | `form_name` (unchanged, `ContactForm`) |
+
+`generate_lead` and `cta_click` no longer exist. Mark **`quote_cta_click`** as the key event in
+GA4, not `generate_lead`.
+
+**Known leftover (inert, no GA4 impact).** The 9 service hub pages still pass a `source` prop to
+`EstimateCtaLink`, and the string is still visible in the served HTML as React props payload.
+`EstimateCtaLink` ignores the prop, so nothing is sent to GA4. It is dead code, safe to remove
+whenever those pages are next touched.
+
+**Guardrail.** `npm run check:ga4` fails if a reserved key is reintroduced into any
+`gtag("event", ...)` or `trackEvent(...)` params object under `src/`.
 
 ---
 
@@ -22,6 +71,10 @@ Branch: `seo/growth-batch-1` | Status: committed, not deployed | Last updated: 2
 
 ### G1 — Lead-Intent Tracking
 
+> **Superseded by `dbdba8b`.** The `source` parameter used throughout this
+> section broke GA4 session attribution. See "Analytics schema correction" at the top of this
+> file. Do not restore it.
+
 **Goal:** Consent-gated `generate_lead` event on every primary estimate CTA routing to /contact; `form_view` when the contact page form mounts.
 
 **Changes made:**
@@ -36,7 +89,7 @@ Branch: `seo/growth-batch-1` | Status: committed, not deployed | Last updated: 2
 
 **Houzz iframe limitation:** The Houzz iframe form submit cannot be intercepted (cross-origin). Proxy tracking: `form_view` fires on mount (the intent signal), and `generate_lead` fires only if the iframe is blocked and the user clicks the fallback link. This is the maximum coverage possible without server-side form ownership.
 
-**GA4 action required (owner):** In GA4 Property > Conversions, mark `generate_lead` as a key event. Optionally also mark `form_view`.
+**GA4 action required (owner):** ~~mark `generate_lead` as a key event~~ Obsolete. `generate_lead` was removed in `dbdba8b`; mark `quote_cta_click` instead.
 
 **Out of scope — follow-on task:** Inline "Get a Free Estimate" / "Get Started" links on individual service and service-area pages are in server components. Tracking them requires either converting each page to a client component or creating a shared `EstimateCta` client wrapper. Flagged for next batch.
 
@@ -130,6 +183,9 @@ The bathroom cost table uses ranges drawn from the existing content on `/service
 
 ## Batch 3 (committed: 6c24b5d)
 
+> **Superseded by `dbdba8b`.** `EstimateCtaLink` no longer tracks, and its `source`
+> prop is ignored. See "Analytics schema correction" at the top of this file.
+
 **Goal:** Wire `generate_lead` on all service hub page estimate CTAs. Previously these CTAs were static `<Link>` elements inside server components with no event tracking.
 
 ### New Component
@@ -172,7 +228,9 @@ Also committed: pre-existing em-dash fix in `commercial/page.tsx` (em dashes rep
 
 1. **Cost figures — bathroom cost table:** Confirm ranges ($8K–$15K / $18K–$35K / $35K–$60K+) match current pricing before deploying.
 2. **streetAddress:** Layout schema uses city-only address per your request. Confirm you're comfortable with this for Google Business Profile consistency.
-3. **GA4 key event:** Mark `generate_lead` as a key event in GA4 > Admin > Conversions after deploying.
+3. **GA4 key event:** Mark `quote_cta_click` as a key event in GA4 > Admin > Conversions.
+   (Was `generate_lead`, which no longer exists as of `dbdba8b`.) Also register `link_placement`,
+   `cta_text`, and `method` as custom dimensions, otherwise the parameters stay invisible in reports.
 4. **Houzz iframe:** Form submission tracking is not possible cross-origin. `form_view` on mount is the best available proxy. If you migrate to a self-hosted form, full funnel tracking becomes possible.
 
 ---
