@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TopFlight Builders — Search &amp; AI Visibility Report</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blue:#1E4FBF;         /* TopFlight brand blue */
+    --blue-bright:#4F86F7;  /* accent on dark */
+    --navy:#171933;         /* deep navy for dark sections/cover */
+    --navy-2:#23264a;       /* circle / lighter navy */
+    --ink:#1A1A2E;          /* body text */
+    --muted:#6B7280;        /* muted gray */
+    --muted-light:#A7ADCB;  /* muted on dark */
+    --line:#E4E7EE;         /* card borders */
+    --tint:#EEF3FE;         /* light blue callout fill */
+    --tint-border:#C9D8F5;
+    --bg:#eceef2;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--bg);color:var(--ink);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased;line-height:1.5}
+  h1,h2,h3,.font-head{font-family:'Montserrat','Inter',sans-serif}
+  .page{
+    position:relative;width:8.5in;min-height:11in;background:#fff;margin:26px auto;
+    padding:0.72in 0.72in 0;overflow:hidden;box-shadow:0 8px 34px rgba(23,25,51,.14);
+    display:flex;flex-direction:column;
+  }
+  .eyebrow{font-family:'Montserrat';font-size:10.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--blue)}
+  .eyebrow.gray{color:var(--muted)}
+  .lead{color:var(--muted);font-size:14px;line-height:1.65;max-width:78%}
+  .accent{color:var(--blue)}
+
+  /* ---------- interior header ---------- */
+  .ihead{display:flex;justify-content:space-between;align-items:center;padding-bottom:13px;border-bottom:1px solid var(--line);margin-bottom:26px}
+  .wordmark{font-family:'Montserrat';font-weight:800;font-size:19px;letter-spacing:-.01em;color:var(--ink)}
+  .wordmark span{color:var(--blue)}
+  .ihead .sect{font-family:'Montserrat';font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+
+  /* ---------- footer ---------- */
+  .foot{margin-top:auto;margin-left:-0.72in;margin-right:-0.72in;background:var(--blue);color:#fff;
+    display:flex;justify-content:space-between;padding:12px 0.72in;font-family:'Montserrat';font-size:9.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+  .foot.plain{background:transparent;color:var(--muted);border-top:1px solid var(--line);margin-top:26px}
+  .ifoot{margin-top:auto;display:flex;justify-content:space-between;padding:14px 0 16px;border-top:1px solid var(--line);
+    font-family:'Montserrat';font-size:9px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+
+  h2.title{font-family:'Montserrat';font-weight:800;font-size:31px;line-height:1.1;letter-spacing:-.02em;margin:9px 0 12px}
+
+  /* ---------- cards ---------- */
+  .grid{display:grid;gap:14px}
+  .g2{grid-template-columns:1fr 1fr}
+  .g3{grid-template-columns:1fr 1fr 1fr}
+  .g4{grid-template-columns:repeat(4,1fr)}
+  .card{border:1px solid var(--line);border-radius:13px;padding:17px 18px;background:#fff}
+  .numbadge{width:26px;height:26px;border-radius:7px;background:var(--blue);color:#fff;font-family:'Montserrat';font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+  .card h3{font-family:'Montserrat';font-size:14.5px;font-weight:700;margin-bottom:6px}
+  .card p{font-size:12px;color:var(--muted);line-height:1.6}
+
+  /* ---------- stat cards ---------- */
+  .stat{border:1px solid var(--line);border-radius:13px;padding:16px 16px;text-align:center}
+  .stat .big{font-family:'Montserrat';font-weight:800;font-size:30px;letter-spacing:-.02em;color:var(--ink);line-height:1}
+  .stat .lbl{font-family:'Montserrat';font-size:9px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-top:9px}
+  .stat.fill{background:var(--blue);border-color:var(--blue)}
+  .stat.fill .big{color:#fff}
+  .stat.fill .lbl{color:#cfe0ff}
+
+  /* ---------- callout ---------- */
+  .callout{border-left:4px solid var(--blue);background:var(--tint);border-radius:0 11px 11px 0;padding:15px 18px;margin:0}
+  .callout h4{font-family:'Montserrat';font-size:13px;font-weight:700;color:var(--blue);margin-bottom:5px}
+  .callout p{font-size:12px;color:#33405c;line-height:1.62}
+  .callout.gray{border-left-color:var(--muted);background:#f5f6f8}
+  .callout.gray h4{color:var(--ink)}
+
+  /* ---------- lists ---------- */
+  .collbl{font-family:'Montserrat';font-size:13px;font-weight:700;margin-bottom:9px}
+  ul.dot{list-style:none}
+  ul.dot li{position:relative;padding-left:17px;font-size:12px;color:#33405c;margin-bottom:8px;line-height:1.5}
+  ul.dot li::before{content:'';position:absolute;left:0;top:7px;width:6px;height:6px;border-radius:50%;background:var(--blue)}
+
+  /* ---------- table ---------- */
+  table.data{width:100%;border-collapse:collapse;font-size:12px}
+  table.data thead th{background:var(--navy);color:#fff;font-family:'Montserrat';font-size:9.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-align:left;padding:10px 12px}
+  table.data thead th.num{text-align:right}
+  table.data thead th.hi{background:var(--blue)}
+  table.data td{padding:9px 12px;border-bottom:1px solid var(--line);color:#33405c}
+  table.data td.num{text-align:right;font-variant-numeric:tabular-nums}
+  table.data td.hicol{background:var(--tint);font-weight:700;color:var(--blue);text-align:right;font-variant-numeric:tabular-nums}
+  table.data tr.strong td{font-weight:700;color:var(--ink)}
+  .pill{display:inline-block;font-family:'Montserrat';font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:20px}
+  .pill.win{background:#e4edff;color:var(--blue)}
+  .pill.mid{background:#fff2df;color:#b9760f}
+  .pill.low{background:#fbe6e6;color:#c0392b}
+
+  /* ---------- trend chart ---------- */
+  .chartwrap{border:1px solid var(--line);border-radius:13px;padding:16px 18px 12px}
+  .chart{display:flex;align-items:flex-end;gap:3px;height:132px;border-bottom:1px solid var(--line);padding-bottom:0}
+  .bar{flex:1;background:#c9d8f5;border-radius:2px 2px 0 0;min-height:2px}
+  .bar.hi{background:var(--blue)}
+  .chart-x{display:flex;justify-content:space-between;font-size:9px;color:var(--muted);margin-top:7px;font-family:'Montserrat';letter-spacing:.04em}
+  .chart-note{display:flex;gap:14px;margin-top:9px;font-size:10px;color:var(--muted)}
+  .chart-note span{display:flex;align-items:center;gap:5px}
+  .swatch{width:9px;height:9px;border-radius:2px;display:inline-block}
+
+  /* ================= COVER ================= */
+  .cover{background:var(--navy);color:#fff;padding:0;min-height:11in;display:flex;flex-direction:column}
+  .cover .inner{padding:0.8in 0.72in 0;position:relative;z-index:2;flex:1;display:flex;flex-direction:column}
+  .circle{position:absolute;border-radius:50%;background:var(--navy-2);opacity:.55;z-index:1}
+  .c1{width:520px;height:520px;top:-140px;right:-150px}
+  .c2{width:260px;height:260px;top:230px;right:120px;opacity:.35}
+  .cover .logo{height:38px;width:auto;margin-bottom:6px}
+  .cover .brandsub{font-family:'Montserrat';font-size:10px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--muted-light);border-top:2px solid var(--blue-bright);display:inline-block;padding-top:8px;margin-top:4px}
+  .cover h1{font-family:'Montserrat';font-weight:800;font-size:41px;line-height:1.06;letter-spacing:-.025em;margin:26px 0 0}
+  .cover h1 .b{color:var(--blue-bright)}
+  .cover .sub{color:#c4c9e4;font-size:14px;max-width:80%;margin-top:16px;line-height:1.6}
+  .cover .ceyebrow{font-family:'Montserrat';font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--blue-bright)}
+  .herostat{background:#fff;color:var(--ink);border-radius:14px;border-top:4px solid var(--blue);
+    margin:30px 0 0;padding:22px 26px;display:flex;align-items:center;gap:26px;box-shadow:0 18px 40px rgba(0,0,0,.28);position:relative;z-index:3}
+  .herostat .n{font-family:'Montserrat';font-weight:800;font-size:52px;letter-spacing:-.03em;color:var(--blue);line-height:.9;white-space:nowrap}
+  .herostat .n small{font-size:20px;color:var(--muted);font-weight:700}
+  .herostat .divider{width:1px;align-self:stretch;background:var(--line)}
+  .herostat h3{font-family:'Montserrat';font-size:16px;font-weight:700;margin-bottom:5px}
+  .herostat p{font-size:12px;color:var(--muted);line-height:1.55}
+  .prepared{display:grid;grid-template-columns:1fr 1fr 1fr;border:1px solid rgba(255,255,255,.16);border-radius:12px;margin-top:24px}
+  .prepared>div{padding:15px 18px;border-right:1px solid rgba(255,255,255,.16)}
+  .prepared>div:last-child{border-right:none}
+  .prepared .k{font-family:'Montserrat';font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--muted-light);margin-bottom:7px}
+  .prepared .v{font-family:'Montserrat';font-weight:700;font-size:14px;color:#fff}
+  .prepared .v2{font-size:11.5px;color:#b7bcd8;margin-top:2px}
+  .inside{margin-top:24px}
+  .inside .eyebrow{color:var(--muted-light)}
+  .inside ul{list-style:none;margin-top:12px}
+  .inside li{display:flex;gap:11px;align-items:flex-start;margin-bottom:11px;font-size:12.5px;color:#d3d7ee;line-height:1.5}
+  .chk{flex:none;width:19px;height:19px;border-radius:50%;background:var(--blue);color:#fff;font-size:11px;display:flex;align-items:center;justify-content:center;margin-top:1px}
+  .cover .cfoot{margin-top:auto;margin-left:-0.72in;margin-right:-0.72in;background:var(--blue);color:#fff;display:flex;justify-content:space-between;padding:13px 0.72in;font-family:'Montserrat';font-size:9.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+
+  /* dark next-steps band */
+  .band{position:relative;background:var(--navy);color:#fff;border-radius:16px;padding:26px 28px;overflow:hidden;margin-top:6px}
+  .band .circle{width:300px;height:300px;top:-90px;right:-90px;opacity:.5}
+  .band .eyebrow{color:var(--blue-bright)}
+  .band h3{font-family:'Montserrat';font-weight:800;font-size:22px;line-height:1.12;margin:8px 0 8px;position:relative;z-index:2}
+  .band p{color:#c4c9e4;font-size:12.5px;max-width:82%;position:relative;z-index:2;line-height:1.6}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:20px;position:relative;z-index:2}
+  .steps .num{font-family:'Montserrat';font-weight:800;font-size:20px;color:var(--blue-bright);margin-bottom:6px}
+  .steps h4{font-family:'Montserrat';font-size:12.5px;font-weight:700;margin-bottom:4px}
+  .steps p{font-size:11px;color:#aeb4d6;max-width:100%}
+
+  .sig{display:flex;justify-content:space-between;align-items:flex-end;margin-top:22px}
+  .sig .name{font-family:'Montserrat';font-weight:700;font-size:15px}
+  .sig .role{font-size:11.5px;color:var(--muted);margin-top:2px}
+  .sig .right{text-align:right;font-size:11px;color:var(--muted)}
+  .disc{font-size:9.5px;color:#9aa0ac;line-height:1.5;margin-top:14px;border-top:1px solid var(--line);padding-top:10px}
+
+  @media print{
+    html,body{background:#fff}
+    .page{margin:0;box-shadow:none;width:100%;min-height:auto;page-break-after:always}
+    .page:last-child{page-break-after:auto}
+    @page{size:letter;margin:0}
+  }
+</style>
+</head>
+<body>
+
+<!-- ================= PAGE 1 · COVER ================= -->
+<section class="page cover">
+  <span class="circle c1"></span>
+  <span class="circle c2"></span>
+  <div class="inner">
+    <img class="logo" src="https://topflightbuilders.net/logo.webp" alt="TopFlight Builders">
+    <div><span class="brandsub">Remodeling &amp; Restoration · Marietta, GA</span></div>
+
+    <div style="margin-top:30px">
+      <div class="ceyebrow">Search &amp; AI Visibility Report</div>
+      <h1>You're showing up.<br><span class="b">Now let's get you found.</span></h1>
+      <p class="sub">A 90-day read on where TopFlight Builders ranks across Google and the AI answer engines — what's already working, where the calls are leaking out, and the clearest moves to fix it.</p>
+    </div>
+
+    <div class="herostat">
+      <div class="n">+806%</div>
+      <div class="divider"></div>
+      <div>
+        <h3>Growth in Google Search impressions</h3>
+        <p>Over the last 90 days your visibility climbed from 673 impressions in the first 19 days to 6,100 in the most recent 20, as your site and Google Business Profile came online. The demand is finding you — now it's about converting it into clicks and calls.</p>
+      </div>
+    </div>
+
+    <div class="prepared">
+      <div>
+        <div class="k">Prepared for</div>
+        <div class="v">TopFlight Builders</div>
+        <div class="v2">Remodeling &amp; Restoration</div>
+      </div>
+      <div>
+        <div class="k">Prepared by</div>
+        <div class="v">Travis Lastra</div>
+        <div class="v2">SEO &amp; Local Search</div>
+      </div>
+      <div>
+        <div class="k">Date</div>
+        <div class="v">July 28, 2026</div>
+        <div class="v2">Data: last 90 days</div>
+      </div>
+    </div>
+
+    <div class="inside">
+      <div class="eyebrow">What's inside</div>
+      <ul>
+        <li><span class="chk">✓</span><span><strong style="color:#fff">Your Search Console numbers</strong> for the last 90 days, and what the growth curve is really telling you.</span></li>
+        <li><span class="chk">✓</span><span><strong style="color:#fff">Where you rank best on Google</strong> — the restoration win, the remodeling gap, and the Map Pack you're missing.</span></li>
+        <li><span class="chk">✓</span><span><strong style="color:#fff">How the AI engines answer for you</strong> today — ChatGPT, Perplexity, and Google AI Overviews, checked live.</span></li>
+        <li><span class="chk">✓</span><span><strong style="color:#fff">The near-page-one queries and the review gap</strong> that are costing you calls right now.</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="cfoot"><span>Confidential · Prepared for TopFlight Builders</span><span>topflightbuilders.net</span></div>
+</section>
+
+<!-- ================= PAGE 2 · SNAPSHOT ================= -->
+<section class="page">
+  <div class="ihead"><div class="wordmark">Top<span>Flight</span> Builders</div><div class="sect">90-Day Search Snapshot</div></div>
+
+  <div class="eyebrow">The Snapshot</div>
+  <h2 class="title">Ninety days of Search Console,<br>in five numbers.</h2>
+  <p class="lead">This is Google Search only — organic web results pulled from your Search Console for June&nbsp;18 to July&nbsp;26, 2026. It does not include Maps or ads. Two things jump out: impressions are climbing fast, and almost every click so far comes from people searching your name.</p>
+
+  <div class="grid g4" style="margin-top:20px">
+    <div class="stat fill"><div class="big">6,773</div><div class="lbl">Search impressions</div></div>
+    <div class="stat"><div class="big">69</div><div class="lbl">Clicks</div></div>
+    <div class="stat"><div class="big">1.0%</div><div class="lbl">Avg click-through rate</div></div>
+    <div class="stat"><div class="big">~19</div><div class="lbl">Avg position</div></div>
+  </div>
+
+  <div class="chartwrap" style="margin-top:18px">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:11px">
+      <div class="collbl" style="margin:0">Daily search impressions</div>
+      <div style="font-size:10px;color:var(--muted);font-family:'Montserrat';letter-spacing:.04em">JUN 18 → JUL 26, 2026</div>
+    </div>
+    <div class="chart">
+<div class="bar" style="height:7.1%"></div>
+<div class="bar" style="height:3.5%"></div>
+<div class="bar" style="height:4.7%"></div>
+<div class="bar" style="height:2.0%"></div>
+<div class="bar" style="height:7.3%"></div>
+<div class="bar" style="height:2.2%"></div>
+<div class="bar" style="height:5.9%"></div>
+<div class="bar" style="height:2.9%"></div>
+<div class="bar" style="height:1.5%"></div>
+<div class="bar" style="height:1.2%"></div>
+<div class="bar" style="height:1.9%"></div>
+<div class="bar" style="height:6.9%"></div>
+<div class="bar" style="height:1.7%"></div>
+<div class="bar" style="height:3.7%"></div>
+<div class="bar" style="height:5.4%"></div>
+<div class="bar" style="height:3.2%"></div>
+<div class="bar" style="height:11.3%"></div>
+<div class="bar" style="height:14.0%"></div>
+<div class="bar hi" style="height:27.2%"></div>
+<div class="bar hi" style="height:52.7%"></div>
+<div class="bar hi" style="height:52.9%"></div>
+<div class="bar hi" style="height:57.1%"></div>
+<div class="bar hi" style="height:58.6%"></div>
+<div class="bar hi" style="height:43.8%"></div>
+<div class="bar hi" style="height:80.9%"></div>
+<div class="bar hi" style="height:58.3%"></div>
+<div class="bar hi" style="height:71.5%"></div>
+<div class="bar hi" style="height:69.1%"></div>
+<div class="bar hi" style="height:35.6%"></div>
+<div class="bar hi" style="height:100.0%"></div>
+<div class="bar hi" style="height:32.6%"></div>
+<div class="bar hi" style="height:44.1%"></div>
+<div class="bar hi" style="height:50.5%"></div>
+<div class="bar hi" style="height:45.1%"></div>
+<div class="bar hi" style="height:37.0%"></div>
+<div class="bar hi" style="height:39.5%"></div>
+<div class="bar hi" style="height:33.4%"></div>
+<div class="bar hi" style="height:32.3%"></div>
+<div class="bar hi" style="height:35.5%"></div>
+    </div>
+    <div class="chart-x"><span>Jun 18</span><span>Jul 6 · liftoff</span><span>Jul 26</span></div>
+    <div class="chart-note">
+      <span><i class="swatch" style="background:#c9d8f5"></i>Early ramp</span>
+      <span><i class="swatch" style="background:var(--blue)"></i>After the site &amp; profile went live</span>
+    </div>
+  </div>
+
+  <div class="callout" style="margin-top:18px">
+    <h4>What the growth curve means</h4>
+    <p>Impressions are up 806% quarter-over-quarter, with a clear liftoff in early July. Google is now indexing and testing your pages against far more searches than it was two months ago. That is the leading indicator of momentum — clicks and calls follow once your positions climb from page two onto page one.</p>
+  </div>
+
+  <div class="grid g2" style="margin-top:18px">
+    <div>
+      <div class="collbl">Brand searches — <span class="accent">already working</span></div>
+      <ul class="dot">
+        <li><strong>17 of your 69 clicks</strong> came from just 204 impressions where someone searched "TopFlight" or "Top Flight Builders."</li>
+        <li>Average position <strong>1.3</strong>, with a <strong>25–30% click-through rate.</strong></li>
+        <li>When people already know your name, they find you and click instantly. That part is solved.</li>
+      </ul>
+    </div>
+    <div>
+      <div class="collbl">Non-brand searches — <span class="accent">the opportunity</span></div>
+      <ul class="dot">
+        <li>The other <strong>4,059 impressions</strong> (kitchen, bath, remodeling, city terms) produced just <strong>1 click.</strong></li>
+        <li>Those listings sit on <strong>page 2–3</strong> — positions 16 to 31 — where almost no one clicks.</li>
+        <li>You are being <em>seen</em> by new customers, not yet <em>chosen</em> by them.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="ifoot"><span>TopFlight Builders · Search &amp; AI Visibility</span><span>Page 2 of 5</span></div>
+</section>
+
+<!-- ================= PAGE 3 · GOOGLE ================= -->
+<section class="page">
+  <div class="ihead"><div class="wordmark">Top<span>Flight</span> Builders</div><div class="sect">Where You Rank · Google</div></div>
+
+  <div class="eyebrow">On Google</div>
+  <h2 class="title">Strong on restoration. Quiet on<br>remodeling. Absent from the map.</h2>
+  <p class="lead">Across live searches and your Search Console data, one clear pattern emerges. You win the specific, high-intent restoration searches, you're buried on the broad remodeling terms, and you're not yet in the local map results at all.</p>
+
+  <div class="grid g3" style="margin-top:20px">
+    <div class="card">
+      <div class="numbadge">1</div>
+      <h3>Restoration is your win</h3>
+      <p>You're the <strong>#1 organic result</strong> for "storm and fallen tree damage home repair contractor Marietta GA," above Relief Remediation, Capital, and Integrity. Your data agrees: "home restoration near me" sits at position 7 and "tenant improvement Canton" at position 4.</p>
+    </div>
+    <div class="card">
+      <div class="numbadge">2</div>
+      <h3>Remodeling is the gap</h3>
+      <p>Kitchen, bath, and whole-home city terms rank on <strong>page 2–3</strong> (positions 16–31). Directories like Houzz, Thumbtack, and Yelp, plus established design-build brands, own page one for these searches today.</p>
+    </div>
+    <div class="card">
+      <div class="numbadge">3</div>
+      <h3>The Map Pack is missing</h3>
+      <p>On both remodeling and restoration searches, Google's local 3-pack shows Integrity, Big House, and AEM. You are <strong>not in it.</strong> Each of them carries 250+ Google reviews; you're at roughly 50 — the clearest thing separating you.</p>
+    </div>
+  </div>
+
+  <div class="collbl" style="margin:22px 0 10px">Non-brand searches you're already being seen for</div>
+  <table class="data">
+    <thead><tr><th>Search term</th><th class="num">Impressions (90d)</th><th class="num hi">Your position</th></tr></thead>
+    <tbody>
+      <tr class="strong"><td>tenant improvement canton ga <span class="pill win">Near top</span></td><td class="num">68</td><td class="hicol">3.6</td></tr>
+      <tr><td>kitchen remodeling marietta</td><td class="num">57</td><td class="hicol">18.1</td></tr>
+      <tr><td>kitchen remodeling marietta ga</td><td class="num">54</td><td class="hicol">23.1</td></tr>
+      <tr><td>kitchen remodeling acworth ga</td><td class="num">45</td><td class="hicol">19.5</td></tr>
+      <tr><td>bathroom remodeling east cobb ga</td><td class="num">42</td><td class="hicol">16.6</td></tr>
+      <tr class="strong"><td>home restoration near me <span class="pill win">Page 1</span></td><td class="num">39</td><td class="hicol">7.3</td></tr>
+      <tr><td>home remodeling canton ga</td><td class="num">39</td><td class="hicol">19.9</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:10.5px;color:var(--muted);margin-top:9px;line-height:1.5">The pattern is unmistakable: your restoration and commercial terms already sit at the top of page one, while the higher-volume remodeling terms are stuck one to two pages back — seen hundreds of times, clicked almost never.</p>
+
+  <div class="ifoot"><span>TopFlight Builders · Search &amp; AI Visibility</span><span>Page 3 of 5</span></div>
+</section>
+
+<!-- ================= PAGE 4 · AI ENGINES ================= -->
+<section class="page">
+  <div class="ihead"><div class="wordmark">Top<span>Flight</span> Builders</div><div class="sect">Where You Rank · AI</div></div>
+
+  <div class="eyebrow">On the AI Engines</div>
+  <h2 class="title">The AI answer engines<br>are split on you.</h2>
+  <p class="lead">More buyers now ask ChatGPT, Perplexity, and Google's AI Overview "who should I hire" instead of scrolling links. We asked all three the same Marietta remodeling-and-restoration questions live on July 28, 2026. Here is how each one answered.</p>
+
+  <div class="grid g3" style="margin-top:20px">
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px"><h3 style="margin:0">ChatGPT</h3><span class="pill win">Recommended</span></div>
+      <p><strong>Your strongest AI surface.</strong> It named <strong>TopFlight Builders (5.0)</strong> in its top handful of recommended contractors, right alongside Alair, GreatHouse, and Green Basements. You show up as a genuine recommendation, not a footnote.</p>
+    </div>
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px"><h3 style="margin:0">Perplexity</h3><span class="pill mid">Cited, not ranked</span></div>
+      <p>It <strong>mentions</strong> TopFlight, but only as a "newer / boutique option," while its ranked list leads with Integrity, Big House, AEM, and Quality Craftsmen. You're in the conversation, just not near the top of it.</p>
+    </div>
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px"><h3 style="margin:0">Google AI Overview</h3><span class="pill low">Not cited</span></div>
+      <p>The biggest gap. Even on the fallen-tree query you rank <strong>#1</strong> for in classic results, its AI Overview named Capital, Relief, and Integrity — and left you out entirely.</p>
+    </div>
+  </div>
+
+  <div class="collbl" style="margin:22px 0 10px">How each surface treats you today</div>
+  <table class="data">
+    <thead><tr><th>Surface</th><th>What it does for TopFlight</th><th class="hi">Verdict</th></tr></thead>
+    <tbody>
+      <tr><td class="strong" style="font-weight:700;color:var(--ink)">ChatGPT</td><td>Lists you in the top few named contractors for remodeling + restoration</td><td class="hicol">Recommended</td></tr>
+      <tr><td class="strong" style="font-weight:700;color:var(--ink)">Perplexity</td><td>Names you as a secondary "boutique" option below the review leaders</td><td class="hicol">Cited</td></tr>
+      <tr><td class="strong" style="font-weight:700;color:var(--ink)">Google AI Overview</td><td>Omits you, even where you rank #1 in the classic blue links</td><td class="hicol">Missing</td></tr>
+      <tr><td class="strong" style="font-weight:700;color:var(--ink)">Google organic</td><td>#1 for storm / fallen-tree repair; page 2–3 for remodeling terms</td><td class="hicol">Mixed</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout" style="margin-top:20px">
+    <h4>Why the gap — and why it's fixable</h4>
+    <p>AI engines lean on the same signals as the Map Pack: third-party review counts, directory presence (Houzz, Yelp, BBB), and consistent mentions across the web. Your dedicated <strong>/ai-info</strong> page is a smart head start that most competitors don't have. The missing ingredient is the same one holding back your map ranking — the volume and consistency of outside signals, reviews most of all.</p>
+  </div>
+
+  <div class="ifoot"><span>TopFlight Builders · Search &amp; AI Visibility</span><span>Page 4 of 5</span></div>
+</section>
+
+<!-- ================= PAGE 5 · OPPORTUNITY + NEXT STEPS ================= -->
+<section class="page">
+  <div class="ihead"><div class="wordmark">Top<span>Flight</span> Builders</div><div class="sect">The Opportunity</div></div>
+
+  <div class="eyebrow">The Opportunity</div>
+  <h2 class="title">Turning impressions into calls.</h2>
+  <p class="lead">You already have more than twenty non-brand terms parked at positions 8–20 — the doorstep of page one. These are the fastest wins: small pushes here convert directly into clicks, because the demand is already landing on your listings.</p>
+
+  <div class="collbl" style="margin:20px 0 10px">Striking distance — near-page-one terms worth chasing first</div>
+  <table class="data">
+    <thead><tr><th>Search term</th><th class="num">Impressions (90d)</th><th class="num hi">Position</th></tr></thead>
+    <tbody>
+      <tr><td>kitchen remodeling marietta</td><td class="num">57</td><td class="hicol">18.1</td></tr>
+      <tr><td>kitchen remodeling acworth ga</td><td class="num">45</td><td class="hicol">19.5</td></tr>
+      <tr><td>bathroom remodeling east cobb ga</td><td class="num">42</td><td class="hicol">16.6</td></tr>
+      <tr><td>home remodeling canton ga</td><td class="num">39</td><td class="hicol">19.9</td></tr>
+      <tr><td>home remodeling company acworth ga</td><td class="num">26</td><td class="hicol">11.3</td></tr>
+      <tr><td>remodeling acworth ga</td><td class="num">25</td><td class="hicol">12.4</td></tr>
+    </tbody>
+  </table>
+
+  <div class="band">
+    <span class="circle"></span>
+    <div class="eyebrow">Next Steps</div>
+    <h3>Four moves, in priority order.</h3>
+    <p>Each one compounds: reviews lift both your map ranking and your AI citations, restoration content feeds the searches you already win, and the remodeling pages are a short climb from page one.</p>
+    <div class="steps">
+      <div><div class="num">01</div><h4>Build a reviews engine</h4><p>Close the 250-vs-50 gap with an ask-for-review step after every job. Biggest single lever for both the map and AI.</p></div>
+      <div><div class="num">02</div><h4>Own restoration</h4><p>Double down where you already win — city storm, tree, and water-damage pages with insurance-claim stories.</p></div>
+      <div><div class="num">03</div><h4>Rescue remodeling pages</h4><p>Push the kitchen, bath, and city pages from position 16–23 onto page one with stronger content and local signals.</p></div>
+      <div><div class="num">04</div><h4>Feed the AI engines</h4><p>Grow /ai-info, keep name-address-phone consistent across Houzz, Yelp, and BBB, add FAQ and structured data.</p></div>
+    </div>
+  </div>
+
+  <div class="sig">
+    <div>
+      <div class="name">Travis Lastra</div>
+      <div class="role">SEO &amp; Local Search · Prepared for TopFlight Builders</div>
+    </div>
+    <div class="right">
+      Report date: July 28, 2026<br>topflightbuilders.net
+    </div>
+  </div>
+
+  <div class="disc">Search figures are from Google Search Console (June 18 – July 26, 2026, Web search). Map Pack and AI-engine observations were captured live on July 28, 2026 and reflect that moment; results personalize by location and device and change over time. This report is a diagnostic summary, not a guarantee of specific ranking outcomes.</div>
+
+  <div class="ifoot"><span>TopFlight Builders · Search &amp; AI Visibility</span><span>Page 5 of 5</span></div>
+</section>
+
+</body>
+</html>
