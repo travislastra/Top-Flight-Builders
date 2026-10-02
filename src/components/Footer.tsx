@@ -38,8 +38,11 @@ const company = [
 ];
 
 export default function Footer() {
+  // Bottom padding clears the fixed FloatingEstimateCta (44px tall, bottom 72px
+  // on mobile above the call bar, bottom 24px on lg) plus an 8px gap, so the
+  // bottom-bar links stay clickable when scrolled to the end.
   return (
-    <footer data-section="footer" className="bg-[#0D1B2E] text-gray-300">
+    <footer data-section="footer" className="bg-[#0D1B2E] text-gray-300 pb-[124px] lg:pb-[76px]">
       {/* Start Your Project strip */}
       <div className="bg-[#1E4FBF] py-10 px-6 text-center">
         <h3 className="font-sans text-2xl font-bold text-white mb-3">
