@@ -1,6 +1,6 @@
 "use client";
 import { useEffect } from "react";
-import { CONSENT_KEY } from "./ConsentBanner";
+import { analyticsAllowed, getConsent } from "./ConsentBanner";
 
 // ── SWAP THIS when you have the real Measurement ID ──────────────────────────
 const GA_ID = "G-2LK6KF7J88";
@@ -10,17 +10,19 @@ declare global {
   interface Window {
     dataLayer: unknown[];
     gtag: (...args: unknown[]) => void;
+    topflightOptInTz?: boolean;
   }
 }
 
 function loadGA() {
-  // Don't double-inject
-  if (document.querySelector(`script[src*="${GA_ID}"]`)) return;
-
-  // Update Consent Mode to granted
-  if (typeof window.gtag === "function") {
+  // An explicit Accept overrides the region default (EEA/UK/CH, US-CA), which
+  // denies analytics_storage. Ad signals stay denied for everyone.
+  if (getConsent() === "granted" && typeof window.gtag === "function") {
     window.gtag("consent", "update", { analytics_storage: "granted" });
   }
+
+  // Don't double-inject
+  if (document.querySelector(`script[src*="${GA_ID}"]`)) return;
 
   // Inject GA4 async loader
   const script = document.createElement("script");
@@ -34,15 +36,16 @@ function loadGA() {
 
 export function trackEvent(name: string, params?: Record<string, unknown>) {
   if (typeof window === "undefined") return;
-  if (localStorage.getItem(CONSENT_KEY) !== "granted") return;
+  if (!analyticsAllowed()) return;
   if (typeof window.gtag !== "function") return;
   window.gtag("event", name, params);
 }
 
 export default function GoogleAnalytics() {
   useEffect(() => {
-    // Load immediately if consent was already granted in a previous visit
-    if (localStorage.getItem(CONSENT_KEY) === "granted") loadGA();
+    // Load unless the visitor opted out (explicit "denied" or Global Privacy
+    // Control). Consent Mode defaults in layout.tsx decide what is stored.
+    if (analyticsAllowed()) loadGA();
 
     // Load when user accepts in this session
     window.addEventListener("topflight:consent-granted", loadGA);
