@@ -131,19 +131,46 @@ export default function RootLayout({
         {/*
           Consent Mode v2 defaults — MUST be synchronous and first in <head>
           so defaults are set before any analytics script can initialize.
-          GA4 is NOT loaded here; GoogleAnalytics component injects it only
-          after the visitor grants consent via the ConsentBanner.
+          GA4 is NOT loaded here; the GoogleAnalytics component injects it.
+          Mirrors Rio Body Wax:
+            - Everyone: analytics_storage granted, ad signals denied.
+            - EEA/UK/CH and US-CA (Google resolves the region by IP): all
+              denied until the visitor clicks Accept.
+            - Saved "denied", or Global Privacy Control with no saved choice:
+              all denied (GA is not loaded at all in that case).
+          Also sets window.topflightOptInTz: true when the browser time zone is
+          European or US Pacific. ConsentBanner shows the opt-in banner to
+          those visitors and the opt-out notice to everyone else.
         */}
         <script dangerouslySetInnerHTML={{ __html: `
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
-          gtag('consent', 'default', {
-            analytics_storage: 'denied',
-            ad_storage: 'denied',
-            ad_user_data: 'denied',
-            ad_personalization: 'denied',
-            wait_for_update: 500
-          });
+          (function(){
+            var z = true;
+            try {
+              z = /^(Europe\\/|Atlantic\\/(Reykjavik|Canary|Madeira|Azores|Faroe)$|America\\/Los_Angeles$)/.test(Intl.DateTimeFormat().resolvedOptions().timeZone || '');
+            } catch (e) {}
+            window.topflightOptInTz = z;
+          })();
+          (function(){
+            var s = null;
+            try { s = localStorage.getItem('topflight-consent-v1'); } catch (e) {}
+            var a = s === 'denied' || (s !== 'granted' && navigator.globalPrivacyControl === true) ? 'denied' : 'granted';
+            gtag('consent', 'default', {
+              analytics_storage: a,
+              ad_storage: 'denied',
+              ad_user_data: 'denied',
+              ad_personalization: 'denied'
+            });
+            gtag('consent', 'default', {
+              analytics_storage: 'denied',
+              ad_storage: 'denied',
+              ad_user_data: 'denied',
+              ad_personalization: 'denied',
+              wait_for_update: 500,
+              region: ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','IS','LI','NO','GB','CH','US-CA']
+            });
+          })();
         `}} />
         <script
           type="application/ld+json"
