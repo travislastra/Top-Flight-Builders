@@ -273,7 +273,7 @@ export default function ServiceCityPage({ citySlug, serviceSlug }: Props) {
             </p>
             <p className="text-gray-600 leading-relaxed">
               {city.slug === "marietta-ga"
-                ? "Operating from Marietta means we can mobilize same-day for estimates, respond quickly to questions during your project, and maintain consistent daily oversight — advantages that compound over a multi-week renovation."
+                ? "Operating from Marietta means estimates are easy to schedule, we can respond quickly to questions during your project, and we keep consistent daily oversight. Those advantages compound over a multi-week renovation."
                 : `The drive to ${city.name} is well within our regular service range — our crews make the trip consistently, which means your project gets the same level of oversight and responsiveness as a job in our own backyard. We don't pad timelines or reduce site visits because of distance.`}
             </p>
           </div>

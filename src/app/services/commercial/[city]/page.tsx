@@ -70,7 +70,7 @@ const COMMERCIAL_CITIES: CommercialCity[] = [
     directAnswer:
       "TopFlight Builders handles tenant improvements, interior buildouts, and light commercial renovation for offices, retail spaces, and restaurants in Marietta and Cobb County. Marietta is our home market: we pull permits through the City of Marietta and Cobb County Building Inspections and know the inspection schedules and documentation requirements here better than anywhere else.",
     whyUs:
-      "Being based in Marietta is a real operational advantage for your project. We can mobilize for site visits the same week you call, respond quickly to issues during construction, and maintain consistent daily oversight without travel time eating into your schedule. One accountable point of contact from permit submittal through certificate of occupancy.",
+      "Being based in Marietta is a real operational advantage for your project. Site visits are easy to schedule, we respond quickly to issues during construction, and maintain consistent daily oversight without travel time eating into your schedule. One accountable point of contact from permit submittal through certificate of occupancy.",
     localSection: {
       heading: "Serving Marietta and Cobb County",
       body: "We work throughout Marietta's commercial corridors: Roswell Road, Canton Road, South Marietta Pkwy, and the Franklin Gateway area, as well as unincorporated Cobb County commercial properties. We confirm the correct permitting authority at the walkthrough since addresses near city limits can fall under either jurisdiction.",

@@ -292,7 +292,7 @@ export const SERVICES: ServiceData[] = [
     slug: "roofing",
     name: "Roofing",
     shortName: "Roofing",
-    parentPageUrl: "/services",
+    parentPageUrl: "/services/roofing",
     processSteps: [
       "Roof inspection and photo documentation",
       "Insurance claim assistance if storm-related",
@@ -315,7 +315,7 @@ export const SERVICES: ServiceData[] = [
     slug: "decks",
     name: "Deck Building & Replacement",
     shortName: "Decks",
-    parentPageUrl: "/services",
+    parentPageUrl: "/services/decks",
     processSteps: [
       "Design consultation and material selection",
       "Permit application and approval",
@@ -397,7 +397,7 @@ export const UNIQUE_HOOKS: Record<string, UniqueHook> = {
 
   "marietta-ga-restoration": {
     openingHook: "Marietta's mature tree canopy — beautiful as it is — means storm damage from fallen limbs and trees is one of the most common restoration calls we receive in this market. We've rebuilt rooflines, replaced structural framing, and restored finished interiors in Marietta homes after everything from isolated storm strikes to the multi-day power outages that accompany major Georgia weather events.",
-    localContext: "Being headquartered in Marietta means we can respond to emergency calls the same day — not the next business day — and we already know the neighborhoods, the permit office, and the preferred inspection schedule.",
+    localContext: "Being headquartered in Marietta means we're close by when water damage hits, and we already know the neighborhoods, the permit office, and the preferred inspection schedule.",
   },
 
   "marietta-ga-roofing": {
@@ -444,7 +444,7 @@ export const UNIQUE_HOOKS: Record<string, UniqueHook> = {
 
   "canton-ga-restoration": {
     openingHook: "Canton's proximity to the Etowah River and its tributary creeks means flooding events — particularly along the river corridor and in lower-lying subdivisions — are a recurring reality. We've responded to water intrusion and storm damage calls in the Holly Springs and Etowah River corridor areas where drainage issues compound the damage from heavy rain events.",
-    localContext: "Getting crews from Marietta to Canton quickly after a storm is a priority — the 40-minute drive is manageable, and we carry the equipment to begin assessment and extraction the same day we're called.",
+    localContext: "Canton is about a 40-minute drive from our Marietta headquarters, a trip our crews make regularly, and we take emergency water damage calls here too.",
   },
 
   "canton-ga-roofing": {
@@ -491,7 +491,7 @@ export const UNIQUE_HOOKS: Record<string, UniqueHook> = {
 
   "kennesaw-ga-restoration": {
     openingHook: "Kennesaw's mature neighborhoods — particularly the areas with heavy tree cover around the Kennesaw Mountain foothills — see storm damage from fallen trees and limbs regularly during Georgia's spring and summer storm season. We've handled restoration projects in the 30144 zip code ranging from roof-and-ceiling repairs after limb strikes to more extensive structural rebuilds following direct tree falls.",
-    localContext: "A 20-minute drive from our Marietta headquarters means we can respond to Kennesaw emergencies quickly and begin damage assessment and protection the same day.",
+    localContext: "Kennesaw is about a 20-minute drive from our Marietta headquarters, so it's an easy market for us to cover when storm or water damage hits.",
   },
 
   "kennesaw-ga-roofing": {
@@ -538,7 +538,7 @@ export const UNIQUE_HOOKS: Record<string, UniqueHook> = {
 
   "acworth-ga-restoration": {
     openingHook: "Acworth's proximity to Lake Acworth and Lake Allatoona creates moisture exposure conditions that accelerate wear on rooflines, siding, and even interior spaces during high-humidity seasons. We've responded to storm and water damage calls in the Lake Acworth area and the I-75 corridor communities multiple times — the combination of Georgia storms and lakeside humidity means restoration work here often uncovers secondary moisture damage that a less thorough assessment would miss.",
-    localContext: "We carry commercial drying equipment and can begin extraction and drying within hours of a water intrusion event in Acworth — stopping active damage quickly is especially critical in a high-humidity environment where mold colonization happens faster.",
+    localContext: "Stopping active water damage quickly matters even more in Acworth, where lake humidity means wet materials grow mold faster. We take emergency water damage jobs here, then handle the repair and rebuild.",
   },
 
   "acworth-ga-roofing": {
@@ -585,7 +585,7 @@ export const UNIQUE_HOOKS: Record<string, UniqueHook> = {
 
   "woodstock-ga-restoration": {
     openingHook: "Woodstock's mid-2000s construction boom produced homes with similar characteristics throughout the Towne Lake and Eagle Watch communities — which means storm and water damage in this market often follows predictable patterns. The roof-to-wall transitions and window installations from that era are common failure points, and we see them regularly in restoration calls from this zip code.",
-    localContext: "We respond to storm damage calls in Woodstock throughout the year — the I-575 access makes it a manageable emergency response market, and we're set up to provide same-day assessment after major weather events.",
+    localContext: "We handle storm damage calls in Woodstock throughout the year, and the I-575 access makes it an easy drive from our Marietta headquarters.",
   },
 
   "woodstock-ga-roofing": {
