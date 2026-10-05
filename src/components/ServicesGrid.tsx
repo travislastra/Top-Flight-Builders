@@ -30,13 +30,19 @@ const services = [
     photo: "/images/projects/basement-east-cobb/basement-finishing-east-cobb-ga-03.jpg",
     title: "Basements & Additions",
     description: "Expand your living space with a fully finished basement or home addition — designed and built to seamlessly match your existing home.",
-    href: "/services",
+    href: "/services/basements-and-additions",
   },
   {
     photo: "/images/age-in-place-accessible-shower-marietta-ga.jpg",
     title: "Age in Place Remodeling",
     description: "ADA-compliant modifications that let you stay in your home safely and independently — grab bars, zero-threshold showers, wider doorways, and more.",
     href: "/services/age-in-place",
+  },
+  {
+    photo: "/images/projects/kitchen-deck-east-cobb/kitchen-deck-remodel-east-cobb-ga-14.jpg",
+    title: "Deck Building",
+    description: "New decks and deck replacements in composite or pressure-treated lumber, permitted and inspected.",
+    href: "/services/decks",
   },
 ];
 

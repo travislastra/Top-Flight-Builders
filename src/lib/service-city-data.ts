@@ -292,7 +292,7 @@ export const SERVICES: ServiceData[] = [
     slug: "roofing",
     name: "Roofing",
     shortName: "Roofing",
-    parentPageUrl: "/services",
+    parentPageUrl: "/services/roofing",
     processSteps: [
       "Roof inspection and photo documentation",
       "Insurance claim assistance if storm-related",
@@ -315,7 +315,7 @@ export const SERVICES: ServiceData[] = [
     slug: "decks",
     name: "Deck Building & Replacement",
     shortName: "Decks",
-    parentPageUrl: "/services",
+    parentPageUrl: "/services/decks",
     processSteps: [
       "Design consultation and material selection",
       "Permit application and approval",
