@@ -97,12 +97,20 @@ const localBusinessSchema = {
     { "@type": "City", "name": "East Cobb" },
     { "@type": "City", "name": "Milton" },
   ],
-  "openingHoursSpecification": [{
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-    "opens": "08:00",
-    "closes": "18:00",
-  }],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "07:00",
+      "closes": "19:00",
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday", "Sunday"],
+      "opens": "09:00",
+      "closes": "16:00",
+    },
+  ],
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5.0",
