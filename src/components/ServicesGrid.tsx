@@ -44,6 +44,12 @@ const services = [
     description: "New decks and deck replacements in composite or pressure-treated lumber, permitted and inspected.",
     href: "/services/decks",
   },
+  {
+    photo: "/images/projects/restoration-fallen-tree-marietta/restoration-fallen-tree-marietta-ga-01.jpg",
+    title: "Roofing",
+    description: "Roof replacement and storm damage roof repair, from decking to new shingles.",
+    href: "/services/roofing",
+  },
 ];
 
 export default function ServicesGrid() {
