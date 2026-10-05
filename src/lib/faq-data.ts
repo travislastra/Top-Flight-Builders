@@ -108,7 +108,7 @@ export const FULL_HOME_FAQS: FAQ[] = [
 export const RESTORATION_FAQS: FAQ[] = [
   {
     q: "How quickly can you respond to storm or water damage?",
-    a: "We're typically on-site for an assessment within 24–48 hours for locations in our primary service area. Emergency tarping for storm-damaged roofs can often be arranged same-day or next-day. The initial phone assessment with you happens the day you contact us. Atlanta's humid climate means the 48-hour window matters — mold can begin colonizing wet materials before many contractors even return a call.",
+    a: "Call (404) 369-7129. We take emergency water damage jobs, and talking to us directly is the fastest way to get a crew scheduled. We'll ask what happened and set a time to come out. Atlanta's humidity means wet materials can start growing mold quickly, so don't wait to call.",
   },
   {
     q: "Do you work directly with insurance adjusters?",
@@ -300,7 +300,7 @@ export const MARIETTA_FAQS: FAQ[] = [
   },
   {
     q: "How quickly can you respond to emergency damage in Marietta?",
-    a: "We're Marietta-based, so our response time here is faster than anywhere else in our service area. For water damage and storm calls, we can typically be on-site for assessment within 24 hours and have emergency tarping or water extraction started same-day or next-day. The initial phone assessment happens the day you contact us.",
+    a: "We're based in Marietta, so it's the part of our service area we're closest to. We take emergency water damage jobs. Call (404) 369-7129 and we'll talk through what happened and set a time to come out.",
   },
   {
     q: "Do you work on older Marietta homes from the 1960s and 1970s?",
@@ -362,7 +362,7 @@ export const CANTON_FAQS: FAQ[] = [
   },
   {
     q: "How far is the Canton area from your crew, and does that affect scheduling?",
-    a: "Canton is approximately 35 miles north of our Marietta base via I-575, about 40–45 minutes. We schedule Canton and Cherokee County jobs in clusters to run the drive efficiently and have crew arrive early. The distance doesn't affect quality or responsiveness — it just means we plan carefully. Emergency calls in Canton still get a response within 24 hours.",
+    a: "Canton is approximately 35 miles north of our Marietta base via I-575, about 40–45 minutes. We schedule Canton and Cherokee County jobs in clusters to run the drive efficiently and have crew arrive early. The distance doesn't affect quality or responsiveness. It just means we plan carefully. We take emergency water damage calls in Canton too.",
   },
 ];
 
@@ -503,7 +503,7 @@ export const SMYRNA_FAQS: FAQ[] = [
   },
   {
     q: "How quickly can you respond to projects in Smyrna?",
-    a: "Smyrna is approximately 10 miles south of our Marietta base — typically 15–20 minutes. It's one of our closest markets, which means faster site visit scheduling, faster estimate turnaround, and faster mobilization for emergency restoration calls. For water damage and storm response, Smyrna clients are generally among the first we can reach.",
+    a: "Smyrna is approximately 10 miles south of our Marietta base, typically 15 to 20 minutes. It's one of our closest markets, which makes site visits and estimates easy to schedule. We take emergency water damage calls in Smyrna too.",
   },
 ];
 
