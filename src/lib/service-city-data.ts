@@ -267,7 +267,7 @@ export const SERVICES: ServiceData[] = [
   },
   {
     slug: "restoration",
-    name: "Storm, Water & Fire Restoration",
+    name: "Water Damage Restoration",
     shortName: "Restoration",
     parentPageUrl: "/services/restoration",
     processSteps: [
@@ -396,7 +396,7 @@ export const UNIQUE_HOOKS: Record<string, UniqueHook> = {
   },
 
   "marietta-ga-restoration": {
-    openingHook: "Marietta's mature tree canopy — beautiful as it is — means storm damage from fallen limbs and trees is one of the most common restoration calls we receive in this market. We've rebuilt rooflines, replaced structural framing, and restored finished interiors in Marietta homes after everything from isolated storm strikes to the multi-day power outages that accompany major Georgia weather events.",
+    openingHook: "We handle water damage restoration in Marietta homes: burst and leaking pipes, failed supply lines, water heaters, appliance leaks, roof leaks and basement water. We tear out what the water ruined and rebuild it, and we repair storm and fire damage too. Marietta's mature tree canopy, beautiful as it is, means storm damage from fallen limbs and trees is one of the most common restoration calls we receive in this market. We've rebuilt rooflines, replaced structural framing, and restored finished interiors in Marietta homes after everything from isolated storm strikes to the multi-day power outages that accompany major Georgia weather events.",
     localContext: "Being headquartered in Marietta means we're close by when water damage hits, and we already know the neighborhoods, the permit office, and the preferred inspection schedule.",
   },
 
@@ -443,7 +443,7 @@ export const UNIQUE_HOOKS: Record<string, UniqueHook> = {
   },
 
   "canton-ga-restoration": {
-    openingHook: "Canton's proximity to the Etowah River and its tributary creeks means flooding events — particularly along the river corridor and in lower-lying subdivisions — are a recurring reality. We've responded to water intrusion and storm damage calls in the Holly Springs and Etowah River corridor areas where drainage issues compound the damage from heavy rain events.",
+    openingHook: "We handle water damage restoration in Canton from the leak to the rebuild: burst pipes, failed water heaters, roof leaks and basement water, plus storm and fire damage repair. Canton's proximity to the Etowah River and its tributary creeks means flooding events, particularly along the river corridor and in lower-lying subdivisions, are a recurring reality. We've responded to water intrusion and storm damage calls in the Holly Springs and Etowah River corridor areas where drainage issues compound the damage from heavy rain events.",
     localContext: "Canton is about a 40-minute drive from our Marietta headquarters, a trip our crews make regularly, and we take emergency water damage calls here too.",
   },
 
@@ -490,7 +490,7 @@ export const UNIQUE_HOOKS: Record<string, UniqueHook> = {
   },
 
   "kennesaw-ga-restoration": {
-    openingHook: "Kennesaw's mature neighborhoods — particularly the areas with heavy tree cover around the Kennesaw Mountain foothills — see storm damage from fallen trees and limbs regularly during Georgia's spring and summer storm season. We've handled restoration projects in the 30144 zip code ranging from roof-and-ceiling repairs after limb strikes to more extensive structural rebuilds following direct tree falls.",
+    openingHook: "We handle water damage restoration in Kennesaw homes, from burst and leaking pipes and failed water heaters to roof leaks and basement water, and we rebuild what the water ruined. We repair storm and fire damage too. Kennesaw's mature neighborhoods, particularly the areas with heavy tree cover around the Kennesaw Mountain foothills, see storm damage from fallen trees and limbs regularly during Georgia's spring and summer storm season. We've handled restoration projects in the 30144 zip code ranging from roof-and-ceiling repairs after limb strikes to more extensive structural rebuilds following direct tree falls.",
     localContext: "Kennesaw is about a 20-minute drive from our Marietta headquarters, so it's an easy market for us to cover when storm or water damage hits.",
   },
 
@@ -537,7 +537,7 @@ export const UNIQUE_HOOKS: Record<string, UniqueHook> = {
   },
 
   "acworth-ga-restoration": {
-    openingHook: "Acworth's proximity to Lake Acworth and Lake Allatoona creates moisture exposure conditions that accelerate wear on rooflines, siding, and even interior spaces during high-humidity seasons. We've responded to storm and water damage calls in the Lake Acworth area and the I-75 corridor communities multiple times — the combination of Georgia storms and lakeside humidity means restoration work here often uncovers secondary moisture damage that a less thorough assessment would miss.",
+    openingHook: "We handle water damage restoration in Acworth, from burst pipes and failed water heaters to roof leaks and basement water, plus storm and fire damage repair. Acworth's proximity to Lake Acworth and Lake Allatoona creates moisture exposure conditions that accelerate wear on rooflines, siding, and even interior spaces during high-humidity seasons. We've responded to storm and water damage calls in the Lake Acworth area and the I-75 corridor communities multiple times. The combination of Georgia storms and lakeside humidity means restoration work here often uncovers secondary moisture damage that a less thorough assessment would miss.",
     localContext: "Stopping active water damage quickly matters even more in Acworth, where lake humidity means wet materials grow mold faster. We take emergency water damage jobs here, then handle the repair and rebuild.",
   },
 
@@ -584,7 +584,7 @@ export const UNIQUE_HOOKS: Record<string, UniqueHook> = {
   },
 
   "woodstock-ga-restoration": {
-    openingHook: "Woodstock's mid-2000s construction boom produced homes with similar characteristics throughout the Towne Lake and Eagle Watch communities — which means storm and water damage in this market often follows predictable patterns. The roof-to-wall transitions and window installations from that era are common failure points, and we see them regularly in restoration calls from this zip code.",
+    openingHook: "We handle water damage restoration in Woodstock homes, plus storm and fire damage repair. Woodstock's mid-2000s construction boom produced homes with similar characteristics throughout the Towne Lake and Eagle Watch communities, which means water and storm damage in this market often follows predictable patterns. The roof-to-wall transitions and window installations from that era are common failure points, and we see them regularly in restoration calls from this zip code.",
     localContext: "We handle storm damage calls in Woodstock throughout the year, and the I-575 access makes it an easy drive from our Marietta headquarters.",
   },
 
@@ -631,7 +631,7 @@ export const UNIQUE_HOOKS: Record<string, UniqueHook> = {
   },
 
   "east-cobb-ga-restoration": {
-    openingHook: "East Cobb's mature tree canopy — one of the features that makes the neighborhood so appealing — also means tree-related storm damage is a recurring reality. When a tree comes down on a high-value home in the 30068 zip code, the restoration work has to be done at the level the home deserves — structural, exterior, and interior finish work that matches or exceeds the original quality.",
+    openingHook: "We handle water damage restoration in East Cobb homes, from burst and leaking pipes to roof leaks and basement water, plus storm and fire damage repair. East Cobb's mature tree canopy (one of the features that makes the neighborhood so appealing) also means tree-related storm damage is a recurring reality. When a tree comes down on a high-value home in the 30068 zip code, the restoration work has to be done at the level the home deserves: structural, exterior, and interior finish work that matches or exceeds the original quality.",
     localContext: "We've restored East Cobb homes after storm damage that required structural framing repair, custom millwork replacement, and premium paint matching — work that requires experience with high-quality original construction.",
   },
 
@@ -678,7 +678,7 @@ export const UNIQUE_HOOKS: Record<string, UniqueHook> = {
   },
 
   "roswell-ga-restoration": {
-    openingHook: "Restoration work in historic Roswell homes carries a different standard than in newer markets — matching original millwork profiles, replicating period-appropriate paint sheens, and sourcing materials that fit the home's character is part of the job. We've restored water and storm-damaged spaces in Roswell where the finish work had to match 80-year-old craftsman trim or 1960s-era plaster walls.",
+    openingHook: "We handle water damage restoration in Roswell homes, plus storm and fire damage repair. Restoration work in historic Roswell homes carries a different standard than in newer markets: matching original millwork profiles, replicating period-appropriate paint sheens, and sourcing materials that fit the home's character is part of the job. We've restored water and storm-damaged spaces in Roswell where the finish work had to match 80-year-old craftsman trim or 1960s-era plaster walls.",
     localContext: "Roswell's Vickery Creek corridor sees localized flooding during major storm events — we've responded to water intrusion calls in this area where creek-level rises combined with poor drainage overwhelmed older drainage systems.",
   },
 
@@ -725,7 +725,7 @@ export const UNIQUE_HOOKS: Record<string, UniqueHook> = {
   },
 
   "alpharetta-ga-restoration": {
-    openingHook: "Restoration work in Alpharetta homes carries a higher expectation for finish quality than in most markets — when we're rebuilding a damaged space in a home with custom millwork and premium materials throughout, the restored section has to be indistinguishable from the original. We source matching materials, replicate texture and finish details, and don't consider the job done until the seam disappears.",
+    openingHook: "We handle water damage restoration in Alpharetta homes, plus storm and fire damage repair. Restoration work in Alpharetta carries a higher expectation for finish quality than in most markets. When we're rebuilding a damaged space in a home with custom millwork and premium materials throughout, the restored section has to be indistinguishable from the original. We source matching materials, replicate texture and finish details, and don't consider the job done until the seam disappears.",
     localContext: "Alpharetta's 2000s construction era includes homes with premium original finishes — Brazilian hardwood floors, coffered ceilings, and custom cabinetry that requires sourcing and skill to match properly during restoration.",
   },
 
