@@ -272,7 +272,7 @@ export const SERVICES: ServiceData[] = [
     parentPageUrl: "/services/restoration",
     processSteps: [
       "Emergency response and damage assessment",
-      "Water extraction and industrial drying",
+      "Water damage cleanup and repair",
       "Mold testing and remediation if present",
       "Structural repair — framing, drywall, subfloor",
       "Finish work matching existing home",
@@ -280,7 +280,7 @@ export const SERVICES: ServiceData[] = [
     ],
     typicalRange: "Restoration scopes in Greater Atlanta range widely — minor water intrusion repairs from $5,000 to full structural rebuilds following fire or major flooding at $100,000+",
     keyMaterials: [
-      "Commercial-grade drying equipment",
+      "Drywall, flooring and framing repair",
       "Antimicrobial treatment systems",
       "Matching drywall and texture systems",
       "Moisture barriers and waterproofing",
